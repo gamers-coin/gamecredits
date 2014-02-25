@@ -6,9 +6,100 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>930</width>
-    <height>509</height>
+    <width>1224</width>
+    <height>672</height>
    </rect>
+  </property>
+  <property name="palette">
+   <palette>
+    <active>
+     <colorrole role="Button">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>0</red>
+        <green>0</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Base">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>102</red>
+        <green>102</green>
+        <blue>102</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Window">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>99</red>
+        <green>98</green>
+        <blue>98</blue>
+       </color>
+      </brush>
+     </colorrole>
+    </active>
+    <inactive>
+     <colorrole role="Button">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>0</red>
+        <green>0</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Base">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>102</red>
+        <green>102</green>
+        <blue>102</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Window">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>99</red>
+        <green>98</green>
+        <blue>98</blue>
+       </color>
+      </brush>
+     </colorrole>
+    </inactive>
+    <disabled>
+     <colorrole role="Button">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>0</red>
+        <green>0</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Base">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>99</red>
+        <green>98</green>
+        <blue>98</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Window">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>99</red>
+        <green>98</green>
+        <blue>98</blue>
+       </color>
+      </brush>
+     </colorrole>
+    </disabled>
+   </palette>
   </property>
   <property name="windowTitle">
    <string>Form</string>
@@ -31,7 +122,7 @@
     </widget>
    </item>
    <item>
-    <layout class="QHBoxLayout" name="horizontalLayout" stretch="1,1">
+    <layout class="QHBoxLayout" name="horizontalLayout" stretch="1,0">
      <item>
       <layout class="QVBoxLayout" name="verticalLayout_2">
        <item>
@@ -89,6 +180,16 @@
             </item>
            </layout>
           </item>
+          <item alignment="Qt::AlignHCenter">
+           <widget class="QLabel" name="label_2">
+            <property name="text">
+             <string/>
+            </property>
+            <property name="pixmap">
+             <pixmap resource="../bitcoin.qrc">:/images/gmclogo</pixmap>
+            </property>
+           </widget>
+          </item>
           <item>
            <layout class="QFormLayout" name="formLayout_2">
             <property name="fieldGrowthPolicy">
@@ -100,14 +201,14 @@
             <property name="verticalSpacing">
              <number>12</number>
             </property>
-            <item row="0" column="0">
+            <item row="1" column="0">
              <widget class="QLabel" name="label">
               <property name="text">
                <string>Balance:</string>
               </property>
              </widget>
             </item>
-            <item row="0" column="1">
+            <item row="1" column="1">
              <widget class="QLabel" name="labelBalance">
               <property name="font">
                <font>
@@ -129,14 +230,14 @@
               </property>
              </widget>
             </item>
-            <item row="1" column="0">
+            <item row="2" column="0">
              <widget class="QLabel" name="label_3">
               <property name="text">
                <string>Unconfirmed:</string>
               </property>
              </widget>
             </item>
-            <item row="1" column="1">
+            <item row="2" column="1">
              <widget class="QLabel" name="labelUnconfirmed">
               <property name="font">
                <font>
@@ -158,14 +259,14 @@
               </property>
              </widget>
             </item>
-            <item row="2" column="0">
+            <item row="3" column="0">
              <widget class="QLabel" name="labelImmatureText">
               <property name="text">
                <string>Immature:</string>
               </property>
              </widget>
             </item>
-            <item row="2" column="1">
+            <item row="3" column="1">
              <widget class="QLabel" name="labelImmature">
               <property name="font">
                <font>
@@ -190,7 +291,7 @@
         </widget>
        </item>
        <item>
-        <spacer name="verticalSpacer">
+        <spacer name="verticalSpacer_2">
          <property name="orientation">
           <enum>Qt::Vertical</enum>
          </property>
@@ -202,20 +303,6 @@
          </property>
         </spacer>
        </item>
-       <item>
-        <widget class="QLabel" name="label_2">
-         <property name="text">
-          <string/>
-         </property>
-         <property name="pixmap">
-          <pixmap resource="../bitcoin.qrc">:/images/gmclogo</pixmap>
-         </property>
-        </widget>
-       </item>
-      </layout>
-     </item>
-     <item>
-      <layout class="QVBoxLayout" name="verticalLayout_3">
        <item>
         <widget class="QFrame" name="frame_2">
          <property name="frameShape">
@@ -288,7 +375,7 @@
         </widget>
        </item>
        <item>
-        <spacer name="verticalSpacer_2">
+        <spacer name="verticalSpacer">
          <property name="orientation">
           <enum>Qt::Vertical</enum>
          </property>
@@ -301,6 +388,9 @@
         </spacer>
        </item>
       </layout>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_3"/>
      </item>
     </layout>
    </item>
