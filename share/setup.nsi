@@ -5,7 +5,7 @@ SetCompressor /SOLID lzma
 
 # General Symbol Definitions
 !define REGKEY "SOFTWARE\$(^Name)"
-!define VERSION 0.8.6.2
+!define VERSION 0.8.7.2
 !define COMPANY "Gamerscoin project"
 !define URL http://www.gamerscoin.org/
 
@@ -45,13 +45,13 @@ Var StartMenuGroup
 !insertmacro MUI_LANGUAGE English
 
 # Installer attributes
-OutFile gamerscoin-0.8.6.2-win32-setup.exe
+OutFile gamerscoin-0.8.7.2-win32-setup.exe
 InstallDir $PROGRAMFILES\Gamerscoin
 CRCCheck on
 XPStyle on
 BrandingText " "
 ShowInstDetails show
-VIProductVersion 0.8.6.2
+VIProductVersion 0.8.7.2
 VIAddVersionKey ProductName Gamerscoin
 VIAddVersionKey ProductVersion "${VERSION}"
 VIAddVersionKey CompanyName "${COMPANY}"
