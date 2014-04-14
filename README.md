@@ -1,11 +1,11 @@
 Gamerscoin integration/staging tree
 ================================
-
 Copyright (c) 2009-2013 Bitcoin Developers
-
 Copyright (c) 2011-2013 Litecoin Developers
-
 Copyright (c) 2011-2013 Gamerscoin Developers
+
+![Gamerscoin](https://raw.githubusercontent.com/gamers-coin/gamers-coinv3/01d1ca6d63b565ea46dcee3b6552b030d57d1187/src/qt/res/icons/bitcoin.png)
+
 
 What is Gamerscoin?
 ----------------
@@ -17,7 +17,8 @@ Gamerscoin is a lite version of Bitcoin using scrypt as a proof-of-work algorith
 
 The rest is the same as Bitcoin.
  - 50 coins per block
- - 2016 blocks to retarget difficulty
+ - 1 blocks to retarget difficulty
+ - KGW Implemented
 
 
 License
