@@ -1,8 +1,8 @@
 Gamerscoin integration/staging tree
 ================================
-Copyright (c) 2009-2013 Bitcoin Developers
-Copyright (c) 2011-2013 Litecoin Developers
-Copyright (c) 2011-2013 Gamerscoin Developers
+Copyright (c) 2009-2013 Bitcoin Developers<br>
+Copyright (c) 2011-2013 Litecoin Developers<br>
+Copyright (c) 2011-2014 Gamerscoin Developers<br>
 
 ![Gamerscoin](https://raw.githubusercontent.com/gamers-coin/gamers-coinv3/01d1ca6d63b565ea46dcee3b6552b030d57d1187/src/qt/res/icons/bitcoin.png)
 
@@ -14,8 +14,6 @@ Gamerscoin is a lite version of Bitcoin using scrypt as a proof-of-work algorith
  - 2.5 minute block targets
  - subsidy halves in 840k blocks (~4 years)
  - ~84 million total coins
-
-The rest is the same as Bitcoin.
  - 50 coins per block
  - 1 blocks to retarget difficulty
  - KGW Implemented
