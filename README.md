@@ -53,13 +53,63 @@ The process for compiling the Gamerscoin daemon, gamerscoind, from the source co
 
 ###Update and install dependencies
 
- ```
+```
 apt-get update && apt-get upgrade
 apt-get install ntp git build-essential libssl-dev libdb-dev libdb++-dev libboost-all-dev libqrencode-dev
 
 wget http://miniupnp.free.fr/files/download.php?file=miniupnpc-1.8.tar.gz && tar -zxf download.php\?file\=miniupnpc-1.8.tar.gz && cd miniupnpc-1.8/
 make && make install && cd .. && rm -rf miniupnpc-1.8 download.php\?file\=miniupnpc-1.8.tar.gz
- ```
+```
+Note: Debian testing and unstable require libboost1.54-all-dev.
+
+###Compile the daemon
+```
+git clone https://github.com/gamers-coin/gamers-coinv3.git
+```
+
+###Compile gamerscoind
+```
+cd gamers-coinv3/src/
+make -f makefile.unix USE_UPNP=1 USE_QRCODE=1 USE_IPV6=1
+strip gamerscoind
+```
+
+###Add a user and move gamerscoind
+```
+adduser gamerscoin && usermod -g users gamerscoin && delgroup gamerscoin && chmod 0701 /home/gamerscoin
+mkdir /home/gamerscoin/bin
+cp ~/gamers-coinv3/src/gamerscoind /home/gamerscoin/bin/gamerscoind
+chown -R gamerscoin:users /home/gamerscoin/bin
+cd && rm -rf gamers-coinv3
+```
+
+###Run the daemon
+```
+su gamerscoin
+cd && bin/gamerscoind
+```
+
+On the first run, gamerscoind will return an error and tell you to make a configuration file, named gamerscoin.conf, in order to add a username and password to the file.
+```
+nano ~/.gamerscoin/gamerscoin.conf && chmod 0600 ~/.gamerscoin/gamerscoin.conf
+```
+Add the following to your config file, changing the username and password to something secure: 
+```
+daemon=1
+rpcuser=<username>
+rpcpassword=<secure password>
+```
+
+You can just copy the username and password provided by the error message when you first ran gamerscoind.
+
+Run gamerscoind once more to start the daemon! 
+
+###Using gamerscoind
+```
+gamerscoind help
+```
+
+The above command will list all available functions of the Gamerscoin daemon. To safely stop the daemon, execute Gamerscoind stop. 
 
 #Testing
 -------
