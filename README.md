@@ -1,4 +1,4 @@
-Gamerscoin integration/staging tree
+#Gamerscoin integration/staging tree
 ================================
 Copyright (c) 2009-2013 Bitcoin Developers<br>
 Copyright (c) 2011-2013 Litecoin Developers<br>
@@ -7,7 +7,7 @@ Copyright (c) 2011-2014 Gamerscoin Developers<br>
 ![Gamerscoin](https://raw.githubusercontent.com/gamers-coin/gamers-coinv3/01d1ca6d63b565ea46dcee3b6552b030d57d1187/src/qt/res/icons/bitcoin.png)
 
 
-What is Gamerscoin?
+#What is Gamerscoin?
 ----------------
 
 Gamerscoin is a lite version of Bitcoin using scrypt as a proof-of-work algorithm.
@@ -19,13 +19,13 @@ Gamerscoin is a lite version of Bitcoin using scrypt as a proof-of-work algorith
  - KGW Implemented
 
 
-License
+#License
 -------
 
 Gamerscoin is released under the terms of the MIT license. See `COPYING` for more
 information or see http://opensource.org/licenses/MIT.
 
-Development process
+#Development process
 -------------------
 
 Developers work in their own trees, then submit pull requests when they think
@@ -47,7 +47,21 @@ The `master` branch is regularly built and tested, but is not guaranteed to be
 completely stable. [Tags](https://github.com/bitcoin/bitcoin/tags) are created
 regularly to indicate new official, stable release versions of Gamerscoin.
 
-Testing
+#Compiling the Gamerscoin daemon from source on Debian
+-----------------------------------------------------
+The process for compiling the Gamerscoin daemon, gamerscoind, from the source code is pretty simple. This guide is based on the latest stable version of Debian Linux, though it should not need many modifications for any distro forked from Debian, such as Ubuntu and Xubuntu.
+
+###Update and install dependencies
+
+ ```
+apt-get update && apt-get upgrade
+apt-get install ntp git build-essential libssl-dev libdb-dev libdb++-dev libboost-all-dev libqrencode-dev
+
+wget http://miniupnp.free.fr/files/download.php?file=miniupnpc-1.8.tar.gz && tar -zxf download.php\?file\=miniupnpc-1.8.tar.gz && cd miniupnpc-1.8/
+make && make install && cd .. && rm -rf miniupnpc-1.8 download.php\?file\=miniupnpc-1.8.tar.gz
+ ```
+
+#Testing
 -------
 
 Testing and code review is the bottleneck for development; we get more pull
