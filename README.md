@@ -18,6 +18,7 @@ Gamerscoin is a lite version of Bitcoin using scrypt as a proof-of-work algorith
  - 1 blocks to retarget difficulty
  - KGW Implemented
 
+[![tip for next commit](http://game4commit.gamers-coin.org/projects/12.svg)](http://game4commit.gamers-coin.org/projects/12)
 
 #License
 -------
