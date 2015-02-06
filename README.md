@@ -1,15 +1,16 @@
-#Gamerscoin integration/staging tree
+#GameCredits integration/staging tree
 ================================
 Copyright (c) 2009-2013 Bitcoin Developers<br>
 Copyright (c) 2011-2013 Litecoin Developers<br>
 Copyright (c) 2011-2014 Gamerscoin Developers<br>
+Copyright (c) 2015-2016 GameCredits Developers<br>
 
 ![Gamerscoin](https://raw.githubusercontent.com/gamers-coin/gamers-coinv3/01d1ca6d63b565ea46dcee3b6552b030d57d1187/src/qt/res/icons/bitcoin.png)![Gamerscoin](http://i.imgur.com/Nfb8DQx.png)
 
-#What is Gamerscoin?
+#What is GameCredits?
 ----------------
 
-Gamerscoin is a lite version of Bitcoin using scrypt as a proof-of-work algorithm.
+GameCredits is a lite version of Bitcoin using scrypt as a proof-of-work algorithm.
  - 2.5 minute block targets
  - subsidy halves in 840k blocks (~4 years)
  - ~84 million total coins
@@ -17,12 +18,16 @@ Gamerscoin is a lite version of Bitcoin using scrypt as a proof-of-work algorith
  - 1 blocks to retarget difficulty
  - KGW Implemented
 
+# We :heart: Pull Requests!
+Seriously, we really do.  It doesn't matter whether you're fixing a typo or overhauling a major area of the code base.  You will be showered in :thumbsup: :thumbsup: :thumbsup:<br><br>
+Get paid to contribute to GameCredits.<br>
+Projects Funds
 [![tip for next commit](http://game4commit.gamers-coin.org/projects/12.svg)](http://game4commit.gamers-coin.org/projects/12)
 
 #License
 -------
 
-Gamerscoin is released under the terms of the MIT license. See `COPYING` for more
+GameCredits is released under the terms of the MIT license. See `COPYING` for more
 information or see http://opensource.org/licenses/MIT.
 
 #Development process
@@ -31,7 +36,7 @@ information or see http://opensource.org/licenses/MIT.
 Developers work in their own trees, then submit pull requests when they think
 their feature or bug fix is ready.
 
-If it is a simple/trivial/non-controversial change, then one of the Gamerscoin
+If it is a simple/trivial/non-controversial change, then one of the GameCredits
 development team members simply pulls it.
 
 If it is a *more complicated or potentially controversial* change, then the patch
@@ -45,11 +50,11 @@ controversial.
 
 The `master` branch is regularly built and tested, but is not guaranteed to be
 completely stable. [Tags](https://github.com/bitcoin/bitcoin/tags) are created
-regularly to indicate new official, stable release versions of Gamerscoin.
+regularly to indicate new official, stable release versions of GameCredits.
 
-#Compiling the Gamerscoin daemon from source on Debian
+#Compiling the GameCredits daemon from source on Debian
 -----------------------------------------------------
-The process for compiling the Gamerscoin daemon, gamerscoind, from the source code is pretty simple. This guide is based on the latest stable version of Debian Linux, though it should not need many modifications for any distro forked from Debian, such as Ubuntu and Xubuntu.
+The process for compiling the GameCredits daemon, gamerscoind, from the source code is pretty simple. This guide is based on the latest stable version of Debian Linux, though it should not need many modifications for any distro forked from Debian, such as Ubuntu and Xubuntu.
 
 ###Update and install dependencies
 
@@ -109,7 +114,7 @@ Run gamerscoind once more to start the daemon!
 gamerscoind help
 ```
 
-The above command will list all available functions of the Gamerscoin daemon. To safely stop the daemon, execute Gamerscoind stop. 
+The above command will list all available functions of the GameCredits daemon. To safely stop the daemon, execute Gamerscoind stop. 
 
 #Testing
 -------
