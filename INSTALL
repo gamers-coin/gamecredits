@@ -1,9 +1,9 @@
-Building Gamerscoin
+Building GameCredits
 
-See doc/readme-qt.rst for instructions on building Gamerscoin-Qt,
+See doc/readme-qt.rst for instructions on building GameCredits-Qt,
 the intended-for-end-users, nice-graphical-interface, reference
-implementation of Gamerscoin.
+implementation of GameCredits.
 
-See doc/build-*.txt for instructions on building gamerscoind,
+See doc/build-*.txt for instructions on building gamecreditsd,
 the intended-for-services, no-graphical-interface, reference
-implementation of Gamerscoin.
+implementation of GameCredits.
