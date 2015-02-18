@@ -5,7 +5,7 @@ SetCompressor /SOLID lzma
 
 # General Symbol Definitions
 !define REGKEY "SOFTWARE\$(^Name)"
-!define VERSION 0.8.9.3
+!define VERSION 0.8.9.4
 !define COMPANY "GameCredits project"
 !define URL http://www.gamecredits.org/
 
@@ -45,13 +45,13 @@ Var StartMenuGroup
 !insertmacro MUI_LANGUAGE English
 
 # Installer attributes
-OutFile gamecredits-0.8.9.3-win32-setup.exe
+OutFile gamecredits-0.8.9.4-win32-setup.exe
 InstallDir $PROGRAMFILES\GameCredits
 CRCCheck on
 XPStyle on
 BrandingText " "
 ShowInstDetails show
-VIProductVersion 0.8.9.3
+VIProductVersion 0.8.9.4
 VIAddVersionKey ProductName GameCredits
 VIAddVersionKey ProductVersion "${VERSION}"
 VIAddVersionKey CompanyName "${COMPANY}"
