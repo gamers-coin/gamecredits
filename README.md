@@ -2,10 +2,10 @@
 ================================
 Copyright (c) 2009-2013 Bitcoin Developers<br>
 Copyright (c) 2011-2013 Litecoin Developers<br>
-Copyright (c) 2011-2014 Gamerscoin Developers<br>
+Copyright (c) 2011-2014 GameCredits Developers<br>
 Copyright (c) 2015-2016 GameCredits Developers<br>
 
-![Gamerscoin](https://raw.githubusercontent.com/gamers-coin/gamers-coinv3/01d1ca6d63b565ea46dcee3b6552b030d57d1187/src/qt/res/icons/bitcoin.png)![Gamerscoin](http://i.imgur.com/Nfb8DQx.png)
+![GameCredits](https://raw.githubusercontent.com/gamers-coin/gamers-coinv3/01d1ca6d63b565ea46dcee3b6552b030d57d1187/src/qt/res/icons/bitcoin.png)![GameCredits](http://i.imgur.com/Nfb8DQx.png)
 
 #What is GameCredits?
 ----------------
@@ -54,7 +54,7 @@ regularly to indicate new official, stable release versions of GameCredits.
 
 #Compiling the GameCredits daemon from source on Debian
 -----------------------------------------------------
-The process for compiling the GameCredits daemon, gamerscoind, from the source code is pretty simple. This guide is based on the latest stable version of Debian Linux, though it should not need many modifications for any distro forked from Debian, such as Ubuntu and Xubuntu.
+The process for compiling the GameCredits daemon, gamecreditsd, from the source code is pretty simple. This guide is based on the latest stable version of Debian Linux, though it should not need many modifications for any distro forked from Debian, such as Ubuntu and Xubuntu.
 
 ###Update and install dependencies
 
@@ -72,31 +72,31 @@ Note: Debian testing and unstable require libboost1.54-all-dev.
 git clone https://github.com/gamers-coin/gamers-coinv3.git
 ```
 
-###Compile gamerscoind
+###Compile gamecreditsd
 ```
 cd gamers-coinv3/src/
 make -f makefile.unix USE_UPNP=1 USE_QRCODE=1 USE_IPV6=1
-strip gamerscoind
+strip gamecreditsd
 ```
 
-###Add a user and move gamerscoind
+###Add a user and move gamecreditsd
 ```
-adduser gamerscoin && usermod -g users gamerscoin && delgroup gamerscoin && chmod 0701 /home/gamerscoin
-mkdir /home/gamerscoin/bin
-cp ~/gamers-coinv3/src/gamerscoind /home/gamerscoin/bin/gamerscoind
-chown -R gamerscoin:users /home/gamerscoin/bin
+adduser gamecredits && usermod -g users gamecredits && delgroup gamecredits && chmod 0701 /home/gamecredits
+mkdir /home/gamecredits/bin
+cp ~/gamers-coinv3/src/gamecreditsd /home/gamecredits/bin/gamecreditsd
+chown -R gamecredits:users /home/gamecredits/bin
 cd && rm -rf gamers-coinv3
 ```
 
 ###Run the daemon
 ```
-su gamerscoin
-cd && bin/gamerscoind
+su gamecredits
+cd && bin/gamecreditsd
 ```
 
-On the first run, gamerscoind will return an error and tell you to make a configuration file, named gamerscoin.conf, in order to add a username and password to the file.
+On the first run, gamecreditsd will return an error and tell you to make a configuration file, named gamecredits.conf, in order to add a username and password to the file.
 ```
-nano ~/.gamerscoin/gamerscoin.conf && chmod 0600 ~/.gamerscoin/gamerscoin.conf
+nano ~/.gamecredits/gamecredits.conf && chmod 0600 ~/.gamecredits/gamecredits.conf
 ```
 Add the following to your config file, changing the username and password to something secure: 
 ```
@@ -105,16 +105,16 @@ rpcuser=<username>
 rpcpassword=<secure password>
 ```
 
-You can just copy the username and password provided by the error message when you first ran gamerscoind.
+You can just copy the username and password provided by the error message when you first ran gamecreditsd.
 
-Run gamerscoind once more to start the daemon! 
+Run gamecreditsd once more to start the daemon! 
 
-###Using gamerscoind
+###Using gamecreditsd
 ```
-gamerscoind help
+gamecreditsd help
 ```
 
-The above command will list all available functions of the GameCredits daemon. To safely stop the daemon, execute Gamerscoind stop. 
+The above command will list all available functions of the GameCredits daemon. To safely stop the daemon, execute GameCreditsd stop. 
 
 #Testing
 -------
@@ -137,5 +137,5 @@ Unit tests for the GUI code are in `src/qt/test/`. To compile and run them:
 
     qmake BITCOIN_QT_TEST=1 -o Makefile.test bitcoin-qt.pro
     make -f Makefile.test
-    ./gamerscoin-qt_test
+    ./gamecredits-qt_test
 
