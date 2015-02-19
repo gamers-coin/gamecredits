@@ -5,7 +5,7 @@ Copyright (c) 2011-2013 Litecoin Developers<br>
 Copyright (c) 2011-2014 GameCredits Developers<br>
 Copyright (c) 2015-2016 GameCredits Developers<br>
 
-![GameCredits](https://raw.githubusercontent.com/gamers-coin/gamers-coinv3/01d1ca6d63b565ea46dcee3b6552b030d57d1187/src/qt/res/icons/bitcoin.png)![GameCredits](http://i.imgur.com/Nfb8DQx.png)
+![GameCredits](http://i.imgur.com/nbdHS3Z.png)![GameCredits](https://raw.githubusercontent.com/gamers-coin/gamers-coinv3/01d1ca6d63b565ea46dcee3b6552b030d57d1187/src/qt/res/icons/bitcoin.png)![GameCredits](http://i.imgur.com/Nfb8DQx.png)
 
 #What is GameCredits?
 ----------------
