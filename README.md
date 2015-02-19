@@ -70,7 +70,7 @@ Note: Debian testing and unstable require libboost1.54-all-dev.
 
 ###Compile the daemon
 ```
-git clone https://github.com/gamers-coin/gamers-coinv3.git
+git clone https://github.com/gamers-coin/GameCredits.git
 ```
 
 ###Compile gamecreditsd
@@ -84,9 +84,9 @@ strip gamecreditsd
 ```
 adduser gamecredits && usermod -g users gamecredits && delgroup gamecredits && chmod 0701 /home/gamecredits
 mkdir /home/gamecredits/bin
-cp ~/gamers-coinv3/src/gamecreditsd /home/gamecredits/bin/gamecreditsd
+cp ~/GameCredits/src/gamecreditsd /home/gamecredits/bin/gamecreditsd
 chown -R gamecredits:users /home/gamecredits/bin
-cd && rm -rf gamers-coinv3
+cd && rm -rf GameCredits
 ```
 
 ###Run the daemon
