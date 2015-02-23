@@ -2884,7 +2884,7 @@ bool InitBlockIndex() {
         //   vMerkleTree: 97ddfbbae6
 
         // Genesis block
-        const char* pszTimestamp = "18.12.2014 gamecreditsv3 born";
+        const char* pszTimestamp = "18.12.2014 gamerscoinv3 born";
         CTransaction txNew;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
