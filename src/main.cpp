@@ -1256,7 +1256,7 @@ unsigned int static GetNextWorkRequired_V2(const CBlockIndex* pindexLast, const 
 {
         static const int64 BlocksTargetSpacing = .5 * 60; // 30 seconds
 		static const int64 BlocksTargetSpacing_New = 1.5 * 60; // // 90 seconds
-		static const int64 Target_Time_Switch = 996000; // Hardforkon the 28th February 2015
+		static const int64 Target_Time_Switch = 1036320; // Hardfork on the 11th March 2015
 		
 		int nHeight = pindexLast->nHeight + 1;
 		
