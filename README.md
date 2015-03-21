@@ -140,3 +140,4 @@ Unit tests for the GUI code are in `src/qt/test/`. To compile and run them:
     make -f Makefile.test
     ./gamecredits-qt_test
 
+xxx test
