@@ -1,13 +1,15 @@
-// Copyright (c) 2009-2012 The Bitcoin developers
+// Original Code: Copyright (c) 2009-2014 The Bitcoin Core Developers
+// Modified Code: Copyright (c) 2015 Gamecredits Foundation
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
-#ifndef BITCOIN_CHECKPOINT_H
-#define BITCOIN_CHECKPOINT_H
+
+#ifndef BITMARK_CHECKPOINT_H
+#define BITMARK_CHECKPOINT_H
 
 #include <map>
 
-class uint256;
 class CBlockIndex;
+class uint256;
 
 /** Block-chain checkpoints are compiled-in sanity checks.
  * They are updated every release or three.
@@ -23,7 +25,9 @@ namespace Checkpoints
     // Returns last CBlockIndex* in mapBlockIndex that is a checkpoint
     CBlockIndex* GetLastCheckpoint(const std::map<uint256, CBlockIndex*>& mapBlockIndex);
 
-    double GuessVerificationProgress(CBlockIndex *pindex);
+    double GuessVerificationProgress(CBlockIndex *pindex, bool fSigchecks = true);
+
+    extern bool fEnabled;
 }
 
 #endif

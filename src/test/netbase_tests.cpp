@@ -1,9 +1,13 @@
-#include <boost/test/unit_test.hpp>
-
-#include <string>
-#include <vector>
+// Original Code: Copyright (c) 2012-2014 The Bitcoin Core Developers
+// Modified Code: Copyright (c) 2015 Gamecredits Foundation
+// Distributed under the MIT/X11 software license, see the accompanying
+// file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #include "netbase.h"
+
+#include <string>
+
+#include <boost/test/unit_test.hpp>
 
 using namespace std;
 
@@ -52,10 +56,10 @@ bool static TestSplitHost(string test, string host, int port)
 
 BOOST_AUTO_TEST_CASE(netbase_splithost)
 {
-    BOOST_CHECK(TestSplitHost("www.bitcoin.org", "www.bitcoin.org", -1));
-    BOOST_CHECK(TestSplitHost("[www.bitcoin.org]", "www.bitcoin.org", -1));
-    BOOST_CHECK(TestSplitHost("www.bitcoin.org:80", "www.bitcoin.org", 80));
-    BOOST_CHECK(TestSplitHost("[www.bitcoin.org]:80", "www.bitcoin.org", 80));
+    BOOST_CHECK(TestSplitHost("www.bitmark.org", "www.bitmark.org", -1));
+    BOOST_CHECK(TestSplitHost("[www.bitmark.org]", "www.bitmark.org", -1));
+    BOOST_CHECK(TestSplitHost("www.bitmark.org:80", "www.bitmark.org", 80));
+    BOOST_CHECK(TestSplitHost("[www.bitmark.org]:80", "www.bitmark.org", 80));
     BOOST_CHECK(TestSplitHost("127.0.0.1", "127.0.0.1", -1));
     BOOST_CHECK(TestSplitHost("127.0.0.1:40002", "127.0.0.1", 40002));
     BOOST_CHECK(TestSplitHost("[127.0.0.1]", "127.0.0.1", -1));
@@ -90,7 +94,7 @@ BOOST_AUTO_TEST_CASE(netbase_lookupnumeric)
 
 BOOST_AUTO_TEST_CASE(onioncat_test)
 {
-    // values from http://www.cypherpunk.at/onioncat/wiki/OnionCat
+    // values from https://web.archive.org/web/20121122003543/http://www.cypherpunk.at/onioncat/wiki/OnionCat
     CNetAddr addr1("5wyqrzbvrdsumnok.onion");
     CNetAddr addr2("FD87:D87E:EB43:edb1:8e4:3588:e546:35ca");
     BOOST_CHECK(addr1 == addr2);

@@ -1,12 +1,17 @@
+// Original Code: Copyright (c) 2011-2014 The Bitcoin Core Developers
+// Modified Code: Copyright (c) 2015 Gamecredits Foundation
+// Distributed under the MIT/X11 software license, see the accompanying
+// file COPYING or http://www.opensource.org/licenses/mit-license.php.
+
 #ifndef MACDOCKICONHANDLER_H
 #define MACDOCKICONHANDLER_H
 
-#include <QObject>
 #include <QMainWindow>
+#include <QObject>
 
 QT_BEGIN_NAMESPACE
-class QMenu;
 class QIcon;
+class QMenu;
 class QWidget;
 QT_END_NAMESPACE
 

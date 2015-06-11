@@ -1,8 +1,11 @@
-#include <boost/test/unit_test.hpp>
+// Original Code: Copyright (c) 2012-2014 The Bitcoin Core Developers
+// Modified Code: Copyright (c) 2015 Gamecredits Foundation
+// Distributed under the MIT/X11 software license, see the accompanying
+// file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "init.h"
-#include "main.h"
 #include "util.h"
+
+#include <boost/test/unit_test.hpp>
 
 BOOST_AUTO_TEST_SUITE(allocator_tests)
 

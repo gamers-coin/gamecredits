@@ -1,47 +1,76 @@
-GameCredits 0.8.x BETA
-====================
+Bitmark 0.9.4 BETA
+=====================
 
-Copyright (c) 2009-2013 Bitcoin Developers
-Copyright (c) 2011-2013 GameCredits Developers
-
-Distributed under the MIT/X11 software license, see the accompanying
-file COPYING or http://www.opensource.org/licenses/mit-license.php.
-This product includes software developed by the OpenSSL Project for use in the [OpenSSL Toolkit](http://www.openssl.org/). This product includes
-cryptographic software written by Eric Young ([eay@cryptsoft.com](mailto:eay@cryptsoft.com)), and UPnP software written by Thomas Bernard.
-
-
-Intro
----------------------
-GameCredits is a free open source peer-to-peer electronic cash system that is
-completely decentralized, without the need for a central server or trusted
-parties.  Users hold the crypto keys to their own money and transact directly
-with each other, with the help of a P2P network to check for double-spending.
+Copyright (c) 2009-2015 Bitmark Developers
 
 
 Setup
 ---------------------
+[Bitmark Core](http://bitmark.org/en/download) is the original Bitmark client and it builds the backbone of the network. However, it downloads and stores the entire history of Bitmark transactions (which is currently several GBs); depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more. Thankfully you only have to do this once. If you would like the process to go faster you can [download the blockchain directly](bootstrap.md).
+
+Running
+---------------------
+The following are some helpful notes on how to run Bitmark on your native platform. 
+
+### Unix
+
 You need the Qt4 run-time libraries to run GameCredits-Qt. On Debian or Ubuntu:
-	`sudo apt-get install libqtgui4`
+
+	sudo apt-get install libqtgui4
 
 Unpack the files into a directory and run:
 
-- bin/32/gamecredits-qt (GUI, 32-bit)
-- bin/32/gamecreditsd (headless, 32-bit)
-- bin/64/gamecredits-qt (GUI, 64-bit)
-- bin/64/gamecreditsd (headless, 64-bit)
+- bin/32/gamecredits-qt (GUI, 32-bit) or bin/32/gamecreditsd (headless, 32-bit)
+- bin/64/gamecredits-qt (GUI, 64-bit) or bin/64/gamecreditsd (headless, 64-bit)
 
-See the documentation at the [GameCredits Wiki](http://gamecredits.info)
+
+
+### Windows
+
+Unpack the files into a directory, and then run gamecredits-qt.exe.
+
+### OSX
+
+Drag GameCredits-Qt to your applications folder, and then run GameCredits-Qt.
+
+### Need Help?
+
+* See the documentation at the [Bitmark Wiki](https://en.bitmark.it/wiki/Main_Page)
 for help and more information.
+* Ask for help on [#bitmark](http://webchat.freenode.net?channels=bitmark) on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net?channels=bitmark).
+* Ask for help on the [bitcointalk](https://bitcointalk.org/) forums, in the [Technical Support board](https://bitcointalk.org/index.php?board=4.0).
 
-
-Other Pages
+Building
 ---------------------
-- [Unix Build Notes](build-unix.md)
+The following are developer notes on how to build Bitmark on your native platform. They are not complete guides, but include notes on the necessary libraries, compile flags, etc.
+
 - [OSX Build Notes](build-osx.md)
+- [Unix Build Notes](build-unix.md)
 - [Windows Build Notes](build-msw.md)
+
+Development
+---------------------
+The Bitmark repo's [root README](https://github.com/project-bitmark/bitmark/blob/master/README.md) contains relevant information on the development process and automated testing.
+
 - [Coding Guidelines](coding.md)
-- [Release Process](release-process.md)
-- [Release Notes](release-notes.md)
 - [Multiwallet Qt Development](multiwallet-qt.md)
-- [Unit Tests](unit-tests.md)
+- [Release Notes](release-notes.md)
+- [Release Process](release-process.md)
+- [Source Code Documentation (External Link)](https://dev.visucore.com/bitmark/doxygen/)
 - [Translation Process](translation_process.md)
+- [Unit Tests](unit-tests.md)
+
+### Resources
+* Discuss on the [bitcointalk](https://bitcointalk.org/) forums, in the [Development & Technical Discussion board](https://bitcointalk.org/index.php?board=6.0).
+* Discuss on [#bitmark-dev](http://webchat.freenode.net/?channels=bitmark) on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net/?channels=bitmark-dev).
+
+### Miscellaneous
+- [Assets Attribution](assets-attribution.md)
+- [Files](files.md)
+- [Tor Support](tor.md)
+
+License
+---------------------
+Distributed under the [MIT/X11 software license](http://www.opensource.org/licenses/mit-license.php).
+This product includes software developed by the OpenSSL Project for use in the [OpenSSL Toolkit](http://www.openssl.org/). This product includes
+cryptographic software written by Eric Young ([eay@cryptsoft.com](mailto:eay@cryptsoft.com)), and UPnP software written by Thomas Bernard.

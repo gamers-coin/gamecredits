@@ -1,3 +1,8 @@
+// Original Code: Copyright (c) 2011-2014 The Bitcoin Core Developers
+// Modified Code: Copyright (c) 2015 Gamecredits Foundation
+// Distributed under the MIT/X11 software license, see the accompanying
+// file COPYING or http://www.opensource.org/licenses/mit-license.php.
+
 #include "editaddressdialog.h"
 #include "ui_editaddressdialog.h"
 
@@ -9,7 +14,10 @@
 
 EditAddressDialog::EditAddressDialog(Mode mode, QWidget *parent) :
     QDialog(parent),
-    ui(new Ui::EditAddressDialog), mapper(0), mode(mode), model(0)
+    ui(new Ui::EditAddressDialog),
+    mapper(0),
+    mode(mode),
+    model(0)
 {
     ui->setupUi(this);
 
