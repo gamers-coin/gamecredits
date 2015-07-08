@@ -1,7 +1,15 @@
-#include <boost/test/unit_test.hpp>
+// Original Code: Copyright (c) 2012-2014 The Bitcoin Core Developers
+// Modified Code: Copyright (c) 2015 Gamecredits Foundation
+// Distributed under the MIT/X11 software license, see the accompanying
+// file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "uint256.h"
 #include "main.h"
+#include "serialize.h"
+#include "uint256.h"
+
+#include <vector>
+
+#include <boost/test/unit_test.hpp>
 
 using namespace std;
 
