@@ -25,6 +25,7 @@
         <file alias="add">res/icons/add.png</file>
         <file alias="gamecredits_testnet">res/icons/gamecredits_testnet.png</file>
 		<file alias="gamecredits_foundation">res/icons/gmc_foundation_logo.png</file>
+		<file alias="gamecredits_sponsor">res/icons/sponsor-icon.png</file>
         <file alias="toolbar_testnet">res/icons/toolbar_testnet.png</file>
         <file alias="edit">res/icons/edit.png</file>
         <file alias="history">res/icons/history.png</file>
