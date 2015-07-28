@@ -142,6 +142,6 @@ Threads
 
 - ThreadRPCServer : Remote procedure call handler, listens on port 40001 for connections and services them.
 
-- BitmarkMiner : Generates gamecredits (if wallet is enabled).
+- GamecreditsMiner : Generates gamecredits (if wallet is enabled).
 
 - Shutdown : Does an orderly shutdown of everything.

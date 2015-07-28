@@ -4,8 +4,8 @@
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITMARK_DB_H
-#define BITMARK_DB_H
+#ifndef GAMECREDITS_DB_H
+#define GAMECREDITS_DB_H
 
 #include "serialize.h"
 #include "sync.h"
@@ -306,4 +306,4 @@ public:
     bool static Rewrite(const std::string& strFile, const char* pszSkip = NULL);
 };
 
-#endif // BITMARK_DB_H
+#endif // GAMECREDITS_DB_H

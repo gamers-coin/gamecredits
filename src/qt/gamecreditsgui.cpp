@@ -56,9 +56,9 @@
 #include <QUrlQuery>
 #endif
 
-const QString BitmarkGUI::DEFAULT_WALLET = "~Default";
+const QString GamecreditsGUI::DEFAULT_WALLET = "~Default";
 
-BitmarkGUI::BitmarkGUI(bool fIsTestnet, QWidget *parent) :
+GamecreditsGUI::GamecreditsGUI(bool fIsTestnet, QWidget *parent) :
     QMainWindow(parent),
     clientModel(0),
     walletFrame(0),
@@ -202,7 +202,7 @@ BitmarkGUI::BitmarkGUI(bool fIsTestnet, QWidget *parent) :
     subscribeToCoreSignals();
 }
 
-BitmarkGUI::~BitmarkGUI()
+GamecreditsGUI::~GamecreditsGUI()
 {
     // Unsubscribe from notifications from core
     unsubscribeFromCoreSignals();
@@ -216,7 +216,7 @@ BitmarkGUI::~BitmarkGUI()
 #endif
 }
 
-void BitmarkGUI::createActions(bool fIsTestnet)
+void GamecreditsGUI::createActions(bool fIsTestnet)
 {
     QActionGroup *tabGroup = new QActionGroup(this);
 
@@ -332,7 +332,7 @@ void BitmarkGUI::createActions(bool fIsTestnet)
 #endif
 }
 
-void BitmarkGUI::createMenuBar()
+void GamecreditsGUI::createMenuBar()
 {
 #ifdef Q_OS_MAC
     // Create a decoupled menu bar on Mac which stays even if the window is closed
@@ -377,7 +377,7 @@ void BitmarkGUI::createMenuBar()
     help->addAction(aboutQtAction);
 }
 
-void BitmarkGUI::createToolBars()
+void GamecreditsGUI::createToolBars()
 {
     if(walletFrame)
     {
@@ -391,7 +391,7 @@ void BitmarkGUI::createToolBars()
     }
 }
 
-void BitmarkGUI::setClientModel(ClientModel *clientModel)
+void GamecreditsGUI::setClientModel(ClientModel *clientModel)
 {
     this->clientModel = clientModel;
     if(clientModel)
@@ -421,7 +421,7 @@ void BitmarkGUI::setClientModel(ClientModel *clientModel)
 }
 
 #ifdef ENABLE_WALLET
-bool BitmarkGUI::addWallet(const QString& name, WalletModel *walletModel)
+bool GamecreditsGUI::addWallet(const QString& name, WalletModel *walletModel)
 {
     if(!walletFrame)
         return false;
@@ -429,14 +429,14 @@ bool BitmarkGUI::addWallet(const QString& name, WalletModel *walletModel)
     return walletFrame->addWallet(name, walletModel);
 }
 
-bool BitmarkGUI::setCurrentWallet(const QString& name)
+bool GamecreditsGUI::setCurrentWallet(const QString& name)
 {
     if(!walletFrame)
         return false;
     return walletFrame->setCurrentWallet(name);
 }
 
-void BitmarkGUI::removeAllWallets()
+void GamecreditsGUI::removeAllWallets()
 {
     if(!walletFrame)
         return;
@@ -445,7 +445,7 @@ void BitmarkGUI::removeAllWallets()
 }
 #endif
 
-void BitmarkGUI::setWalletActionsEnabled(bool enabled)
+void GamecreditsGUI::setWalletActionsEnabled(bool enabled)
 {
     overviewAction->setEnabled(enabled);
     sendCoinsAction->setEnabled(enabled);
@@ -461,7 +461,7 @@ void BitmarkGUI::setWalletActionsEnabled(bool enabled)
     openAction->setEnabled(enabled);
 }
 
-void BitmarkGUI::createTrayIcon(bool fIsTestnet)
+void GamecreditsGUI::createTrayIcon(bool fIsTestnet)
 {
 #ifndef Q_OS_MAC
     trayIcon = new QSystemTrayIcon(this);
@@ -483,7 +483,7 @@ void BitmarkGUI::createTrayIcon(bool fIsTestnet)
     notificator = new Notificator(QApplication::applicationName(), trayIcon, this);
 }
 
-void BitmarkGUI::createTrayIconMenu()
+void GamecreditsGUI::createTrayIconMenu()
 {
     QMenu *trayIconMenu;
 #ifndef Q_OS_MAC
@@ -521,7 +521,7 @@ void BitmarkGUI::createTrayIconMenu()
 }
 
 #ifndef Q_OS_MAC
-void BitmarkGUI::trayIconActivated(QSystemTrayIcon::ActivationReason reason)
+void GamecreditsGUI::trayIconActivated(QSystemTrayIcon::ActivationReason reason)
 {
     if(reason == QSystemTrayIcon::Trigger)
     {
@@ -531,7 +531,7 @@ void BitmarkGUI::trayIconActivated(QSystemTrayIcon::ActivationReason reason)
 }
 #endif
 
-void BitmarkGUI::optionsClicked()
+void GamecreditsGUI::optionsClicked()
 {
     if(!clientModel || !clientModel->getOptionsModel())
         return;
@@ -541,7 +541,7 @@ void BitmarkGUI::optionsClicked()
     dlg.exec();
 }
 
-void BitmarkGUI::aboutClicked()
+void GamecreditsGUI::aboutClicked()
 {
     if(!clientModel)
         return;
@@ -551,7 +551,7 @@ void BitmarkGUI::aboutClicked()
     dlg.exec();
 }
 
-void BitmarkGUI::showHelpMessageClicked()
+void GamecreditsGUI::showHelpMessageClicked()
 {
     HelpMessageDialog *help = new HelpMessageDialog(this);
     help->setAttribute(Qt::WA_DeleteOnClose);
@@ -559,7 +559,7 @@ void BitmarkGUI::showHelpMessageClicked()
 }
 
 #ifdef ENABLE_WALLET
-void BitmarkGUI::openClicked()
+void GamecreditsGUI::openClicked()
 {
     OpenURIDialog dlg(this);
     if(dlg.exec())
@@ -568,42 +568,42 @@ void BitmarkGUI::openClicked()
     }
 }
 
-void BitmarkGUI::gotoOverviewPage()
+void GamecreditsGUI::gotoOverviewPage()
 {
     overviewAction->setChecked(true);
     if (walletFrame) walletFrame->gotoOverviewPage();
 }
 
-void BitmarkGUI::gotoHistoryPage()
+void GamecreditsGUI::gotoHistoryPage()
 {
     historyAction->setChecked(true);
     if (walletFrame) walletFrame->gotoHistoryPage();
 }
 
-void BitmarkGUI::gotoReceiveCoinsPage()
+void GamecreditsGUI::gotoReceiveCoinsPage()
 {
     receiveCoinsAction->setChecked(true);
     if (walletFrame) walletFrame->gotoReceiveCoinsPage();
 }
 
-void BitmarkGUI::gotoSendCoinsPage(QString addr)
+void GamecreditsGUI::gotoSendCoinsPage(QString addr)
 {
     sendCoinsAction->setChecked(true);
     if (walletFrame) walletFrame->gotoSendCoinsPage(addr);
 }
 
-void BitmarkGUI::gotoSignMessageTab(QString addr)
+void GamecreditsGUI::gotoSignMessageTab(QString addr)
 {
     if (walletFrame) walletFrame->gotoSignMessageTab(addr);
 }
 
-void BitmarkGUI::gotoVerifyMessageTab(QString addr)
+void GamecreditsGUI::gotoVerifyMessageTab(QString addr)
 {
     if (walletFrame) walletFrame->gotoVerifyMessageTab(addr);
 }
 #endif
 
-void BitmarkGUI::setNumConnections(int count)
+void GamecreditsGUI::setNumConnections(int count)
 {
     QString icon;
     switch(count)
@@ -618,7 +618,7 @@ void BitmarkGUI::setNumConnections(int count)
     labelConnectionsIcon->setToolTip(tr("%n active connection(s) to GameCredits network", "", count));
 }
 
-void BitmarkGUI::setNumBlocks(int count)
+void GamecreditsGUI::setNumBlocks(int count)
 {
     // Prevent orphan statusbar messages (e.g. hover Quit in main menu, wait until chain-sync starts -> garbelled text)
     statusBar()->clearMessage();
@@ -725,7 +725,7 @@ void BitmarkGUI::setNumBlocks(int count)
     progressBar->setToolTip(tooltip);
 }
 
-void BitmarkGUI::message(const QString &title, const QString &message, unsigned int style, bool *ret)
+void GamecreditsGUI::message(const QString &title, const QString &message, unsigned int style, bool *ret)
 {
     QString strTitle = tr("GameCredits"); // default title
     // Default to information icon
@@ -788,7 +788,7 @@ void BitmarkGUI::message(const QString &title, const QString &message, unsigned 
         notificator->notify((Notificator::Class)nNotifyIcon, strTitle, message);
 }
 
-void BitmarkGUI::changeEvent(QEvent *e)
+void GamecreditsGUI::changeEvent(QEvent *e)
 {
     QMainWindow::changeEvent(e);
 #ifndef Q_OS_MAC // Ignored on Mac
@@ -807,7 +807,7 @@ void BitmarkGUI::changeEvent(QEvent *e)
 #endif
 }
 
-void BitmarkGUI::closeEvent(QCloseEvent *event)
+void GamecreditsGUI::closeEvent(QCloseEvent *event)
 {
     if(clientModel)
     {
@@ -823,7 +823,7 @@ void BitmarkGUI::closeEvent(QCloseEvent *event)
 }
 
 #ifdef ENABLE_WALLET
-void BitmarkGUI::incomingTransaction(const QString& date, int unit, qint64 amount, const QString& type, const QString& address)
+void GamecreditsGUI::incomingTransaction(const QString& date, int unit, qint64 amount, const QString& type, const QString& address)
 {
     // On new transaction, make an info balloon
     message((amount)<0 ? tr("Sent transaction") : tr("Incoming transaction"),
@@ -832,20 +832,20 @@ void BitmarkGUI::incomingTransaction(const QString& date, int unit, qint64 amoun
                 "Type: %3\n"
                 "Address: %4\n")
                   .arg(date)
-                  .arg(BitmarkUnits::formatWithUnit(unit, amount, true))
+                  .arg(GamecreditsUnits::formatWithUnit(unit, amount, true))
                   .arg(type)
                   .arg(address), CClientUIInterface::MSG_INFORMATION);
 }
 #endif
 
-void BitmarkGUI::dragEnterEvent(QDragEnterEvent *event)
+void GamecreditsGUI::dragEnterEvent(QDragEnterEvent *event)
 {
     // Accept only URIs
     if(event->mimeData()->hasUrls())
         event->acceptProposedAction();
 }
 
-void BitmarkGUI::dropEvent(QDropEvent *event)
+void GamecreditsGUI::dropEvent(QDropEvent *event)
 {
     if(event->mimeData()->hasUrls())
     {
@@ -857,7 +857,7 @@ void BitmarkGUI::dropEvent(QDropEvent *event)
     event->acceptProposedAction();
 }
 
-bool BitmarkGUI::eventFilter(QObject *object, QEvent *event)
+bool GamecreditsGUI::eventFilter(QObject *object, QEvent *event)
 {
     // Catch status tip events
     if (event->type() == QEvent::StatusTip)
@@ -870,7 +870,7 @@ bool BitmarkGUI::eventFilter(QObject *object, QEvent *event)
 }
 
 #ifdef ENABLE_WALLET
-bool BitmarkGUI::handlePaymentRequest(const SendCoinsRecipient& recipient)
+bool GamecreditsGUI::handlePaymentRequest(const SendCoinsRecipient& recipient)
 {
     // URI has to be valid
     if (walletFrame && walletFrame->handlePaymentRequest(recipient))
@@ -883,7 +883,7 @@ bool BitmarkGUI::handlePaymentRequest(const SendCoinsRecipient& recipient)
         return false;
 }
 
-void BitmarkGUI::setEncryptionStatus(int status)
+void GamecreditsGUI::setEncryptionStatus(int status)
 {
     switch(status)
     {
@@ -913,7 +913,7 @@ void BitmarkGUI::setEncryptionStatus(int status)
 }
 #endif
 
-void BitmarkGUI::showNormalIfMinimized(bool fToggleHidden)
+void GamecreditsGUI::showNormalIfMinimized(bool fToggleHidden)
 {
     // activateWindow() (sometimes) helps with keyboard focus on Windows
     if (isHidden())
@@ -935,12 +935,12 @@ void BitmarkGUI::showNormalIfMinimized(bool fToggleHidden)
         hide();
 }
 
-void BitmarkGUI::toggleHidden()
+void GamecreditsGUI::toggleHidden()
 {
     showNormalIfMinimized(true);
 }
 
-void BitmarkGUI::detectShutdown()
+void GamecreditsGUI::detectShutdown()
 {
     if (ShutdownRequested())
     {
@@ -950,7 +950,7 @@ void BitmarkGUI::detectShutdown()
     }
 }
 
-static bool ThreadSafeMessageBox(BitmarkGUI *gui, const std::string& message, const std::string& caption, unsigned int style)
+static bool ThreadSafeMessageBox(GamecreditsGUI *gui, const std::string& message, const std::string& caption, unsigned int style)
 {
     bool modal = (style & CClientUIInterface::MODAL);
     bool ret = false;
@@ -964,13 +964,13 @@ static bool ThreadSafeMessageBox(BitmarkGUI *gui, const std::string& message, co
     return ret;
 }
 
-void BitmarkGUI::subscribeToCoreSignals()
+void GamecreditsGUI::subscribeToCoreSignals()
 {
     // Connect signals to client
     uiInterface.ThreadSafeMessageBox.connect(boost::bind(ThreadSafeMessageBox, this, _1, _2, _3));
 }
 
-void BitmarkGUI::unsubscribeFromCoreSignals()
+void GamecreditsGUI::unsubscribeFromCoreSignals()
 {
     // Disconnect signals from client
     uiInterface.ThreadSafeMessageBox.disconnect(boost::bind(ThreadSafeMessageBox, this, _1, _2, _3));

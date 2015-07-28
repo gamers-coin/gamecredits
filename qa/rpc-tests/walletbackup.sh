@@ -39,7 +39,7 @@ if [ $# -lt 1 ]; then
         exit 1
 fi
 
-BITMARKD=${1}/gamecreditsd
+GAMECREDITSD=${1}/gamecreditsd
 CLI=${1}/gamecredits-cli
 
 DIR="${BASH_SOURCE%/*}"
@@ -55,7 +55,7 @@ echo "Starting nodes..."
 D4=${D}/node4
 CreateDataDir $D4 port=11030 rpcport=11031
 B4ARGS="-datadir=$D4"
-$BITMARKD $BITMARKDARGS $B4ARGS &
+$GAMECREDITSD $GAMECREDITSDARGS $B4ARGS &
 B4PID=$!
 
 # Want default keypool for 1/2/3, and
@@ -80,17 +80,17 @@ function CreateConfDir {
 D1=${D}/node1
 CreateConfDir $D1 port=11000 rpcport=11001 addnode=127.0.0.1:11030
 B1ARGS="-datadir=$D1"
-$BITMARKD $B1ARGS &
+$GAMECREDITSD $B1ARGS &
 B1PID=$!
 D2=${D}/node2
 CreateConfDir $D2 port=11010 rpcport=11011 addnode=127.0.0.1:11030
 B2ARGS="-datadir=$D2"
-$BITMARKD $B2ARGS &
+$GAMECREDITSD $B2ARGS &
 B2PID=$!
 D3=${D}/node3
 CreateConfDir $D3 port=11020 rpcport=11021 addnode=127.0.0.1:11030 addnode=127.0.0.1:11000
 B3ARGS="-datadir=$D3"
-$BITMARKD $BITMARKDARGS $B3ARGS &
+$GAMECREDITSD $GAMECREDITSDARGS $B3ARGS &
 B3PID=$!
 
 # Wait until all nodes are at the same block number
@@ -231,11 +231,11 @@ function EraseThree {
   rm $D3/regtest/wallet.dat
 }
 function StartThree {
-  $BITMARKD $BITMARKDARGS $B1ARGS &
+  $GAMECREDITSD $GAMECREDITSDARGS $B1ARGS &
   B1PID=$!
-  $BITMARKD $BITMARKDARGS $B2ARGS &
+  $GAMECREDITSD $GAMECREDITSDARGS $B2ARGS &
   B2PID=$!
-  $BITMARKD $BITMARKDARGS $B3ARGS &
+  $GAMECREDITSD $GAMECREDITSDARGS $B3ARGS &
   B3PID=$!
 }
 

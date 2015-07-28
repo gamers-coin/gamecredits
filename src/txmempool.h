@@ -3,8 +3,8 @@
 // Modified Code: Copyright (c) 2015 Gamecredits Foundation
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
-#ifndef BITMARK_TXMEMPOOL_H
-#define BITMARK_TXMEMPOOL_H
+#ifndef GAMECREDITS_TXMEMPOOL_H
+#define GAMECREDITS_TXMEMPOOL_H
 
 #include <list>
 
@@ -111,4 +111,4 @@ public:
     bool HaveCoins(const uint256 &txid);
 };
 
-#endif /* BITMARK_TXMEMPOOL_H */
+#endif /* GAMECREDITS_TXMEMPOOL_H */

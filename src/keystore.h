@@ -4,8 +4,8 @@
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITMARK_KEYSTORE_H
-#define BITMARK_KEYSTORE_H
+#ifndef GAMECREDITS_KEYSTORE_H
+#define GAMECREDITS_KEYSTORE_H
 
 #include "key.h"
 #include "sync.h"

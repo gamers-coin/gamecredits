@@ -40,7 +40,7 @@
       <key>CFBundleTypeRole</key>
       <string>Editor</string>
       <key>CFBundleURLName</key>
-      <string>org.gamecredits.BitmarkPayment</string>
+      <string>org.gamecredits.GamecreditsPayment</string>
       <key>CFBundleURLSchemes</key>
       <array>
         <string>gamecredits</string>

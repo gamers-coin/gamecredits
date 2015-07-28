@@ -4,8 +4,8 @@
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITMARK_THREADSAFETY_H
-#define BITMARK_THREADSAFETY_H
+#ifndef GAMECREDITS_THREADSAFETY_H
+#define GAMECREDITS_THREADSAFETY_H
 
 #ifdef __clang__
 // TL;DR Add GUARDED_BY(mutex) to member variables. The others are
@@ -52,4 +52,4 @@
 #define SHARED_LOCKS_REQUIRED(...)
 #define NO_THREAD_SAFETY_ANALYSIS
 #endif  // __GNUC__
-#endif  // BITMARK_THREADSAFETY_H
+#endif  // GAMECREDITS_THREADSAFETY_H

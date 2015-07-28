@@ -4,8 +4,8 @@
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITMARK_MINER_H
-#define BITMARK_MINER_H
+#ifndef GAMECREDITS_MINER_H
+#define GAMECREDITS_MINER_H
 
 #include <stdint.h>
 
@@ -17,7 +17,7 @@ class CScript;
 class CWallet;
 
 /** Run the miner threads */
-void GenerateBitmarks(bool fGenerate, CWallet* pwallet, int nThreads);
+void GenerateGamecreditss(bool fGenerate, CWallet* pwallet, int nThreads);
 /** Generate a new block, without valid proof-of-work */
 CBlockTemplate* CreateNewBlock(const CScript& scriptPubKeyIn);
 CBlockTemplate* CreateNewBlockWithKey(CReserveKey& reservekey);
@@ -33,4 +33,4 @@ void SHA256Transform(void* pstate, void* pinput, const void* pinit);
 extern double dHashesPerSec;
 extern int64_t nHPSTimerStart;
 
-#endif // BITMARK_MINER_H
+#endif // GAMECREDITS_MINER_H

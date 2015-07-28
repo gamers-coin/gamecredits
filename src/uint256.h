@@ -4,8 +4,8 @@
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITMARK_UINT256_H
-#define BITMARK_UINT256_H
+#ifndef GAMECREDITS_UINT256_H
+#define GAMECREDITS_UINT256_H
 
 #include <stdint.h>
 #include <stdio.h>

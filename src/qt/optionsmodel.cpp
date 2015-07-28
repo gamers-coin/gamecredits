@@ -57,7 +57,7 @@ void OptionsModel::Init()
 
     // Display
     if (!settings.contains("nDisplayUnit"))
-        settings.setValue("nDisplayUnit", BitmarkUnits::GMC);
+        settings.setValue("nDisplayUnit", GamecreditsUnits::GMC);
     nDisplayUnit = settings.value("nDisplayUnit").toInt();
 
     if (!settings.contains("bDisplayAddresses"))

@@ -120,7 +120,7 @@ void Shutdown()
 #ifdef ENABLE_WALLET
     if (pwalletMain)
         bitdb.Flush(false);
-    GenerateBitmarks(false, NULL, 0);
+    GenerateGamecreditss(false, NULL, 0);
 #endif
     StopNode();
     UnregisterNodeSignals(GetNodeSignals());
@@ -198,7 +198,7 @@ std::string HelpMessage(HelpMessageMode hmm)
     strUsage += "  -checkblocks=<n>       " + _("How many blocks to check at startup (default: 288, 0 = all)") + "\n";
     strUsage += "  -checklevel=<n>        " + _("How thorough the block verification of -checkblocks is (0-4, default: 3)") + "\n";
     strUsage += "  -conf=<file>           " + _("Specify configuration file (default: gamecredits.conf)") + "\n";
-    if (hmm == HMM_BITMARKD)
+    if (hmm == HMM_GAMECREDITSD)
     {
 #if !defined(WIN32)
         strUsage += "  -daemon                " + _("Run in the background as a daemon and accept commands") + "\n";
@@ -274,7 +274,7 @@ std::string HelpMessage(HelpMessageMode hmm)
     strUsage += "                         " + _("If <category> is not supplied, output all debugging information.") + "\n";
     strUsage += "                         " + _("<category> can be:");
     strUsage +=                                 " addrman, alert, coindb, db, lock, rand, rpc, selectcoins, mempool, net"; // Don't translate these and qt below
-    if (hmm == HMM_BITMARK_QT)
+    if (hmm == HMM_GAMECREDITS_QT)
         strUsage += ", qt";
     strUsage += ".\n";
 #ifdef ENABLE_WALLET
@@ -1121,7 +1121,7 @@ bool AppInit2(boost::thread_group& threadGroup)
 #ifdef ENABLE_WALLET
     // Generate coins in the background
     if (pwalletMain)
-        GenerateBitmarks(GetBoolArg("-gen", false), pwalletMain, GetArg("-genproclimit", -1));
+        GenerateGamecreditss(GetBoolArg("-gen", false), pwalletMain, GetArg("-genproclimit", -1));
 #endif
 
     // ********************************************************* Step 12: finished

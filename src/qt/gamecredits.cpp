@@ -142,11 +142,11 @@ void DebugMessageHandler(QtMsgType type, const QMessageLogContext& context, cons
 /** Class encapsulating Gamecredits Core startup and shutdown.
  * Allows running startup and shutdown in a different thread from the UI thread.
  */
-class BitmarkCore: public QObject
+class GamecreditsCore: public QObject
 {
     Q_OBJECT
 public:
-    explicit BitmarkCore();
+    explicit GamecreditsCore();
 
 public slots:
     void initialize();
@@ -165,12 +165,12 @@ private:
 };
 
 /** Main Gamecredits application object */
-class BitmarkApplication: public QApplication
+class GamecreditsApplication: public QApplication
 {
     Q_OBJECT
 public:
-    explicit BitmarkApplication(int &argc, char **argv);
-    ~BitmarkApplication();
+    explicit GamecreditsApplication(int &argc, char **argv);
+    ~GamecreditsApplication();
 
 #ifdef ENABLE_WALLET
     /// Create payment server
@@ -191,7 +191,7 @@ public:
     /// Get process return value
     int getReturnValue() { return returnValue; }
 
-    /// Get window identifier of QMainWindow (BitmarkGUI)
+    /// Get window identifier of QMainWindow (GamecreditsGUI)
     WId getMainWinId() const;
 
 public slots:
@@ -210,7 +210,7 @@ private:
     QThread *coreThread;
     OptionsModel *optionsModel;
     ClientModel *clientModel;
-    BitmarkGUI *window;
+    GamecreditsGUI *window;
     QTimer *pollShutdownTimer;
 #ifdef ENABLE_WALLET
     PaymentServer* paymentServer;
@@ -223,18 +223,18 @@ private:
 
 #include "gamecredits.moc"
 
-BitmarkCore::BitmarkCore():
+GamecreditsCore::GamecreditsCore():
     QObject()
 {
 }
 
-void BitmarkCore::handleRunawayException(std::exception *e)
+void GamecreditsCore::handleRunawayException(std::exception *e)
 {
     PrintExceptionContinue(e, "Runaway exception");
     emit runawayException(QString::fromStdString(strMiscWarning));
 }
 
-void BitmarkCore::initialize()
+void GamecreditsCore::initialize()
 {
     try
     {
@@ -255,7 +255,7 @@ void BitmarkCore::initialize()
     }
 }
 
-void BitmarkCore::shutdown()
+void GamecreditsCore::shutdown()
 {
     try
     {
@@ -272,7 +272,7 @@ void BitmarkCore::shutdown()
     }
 }
 
-BitmarkApplication::BitmarkApplication(int &argc, char **argv):
+GamecreditsApplication::GamecreditsApplication(int &argc, char **argv):
     QApplication(argc, argv),
     coreThread(0),
     optionsModel(0),
@@ -289,7 +289,7 @@ BitmarkApplication::BitmarkApplication(int &argc, char **argv):
     startThread();
 }
 
-BitmarkApplication::~BitmarkApplication()
+GamecreditsApplication::~GamecreditsApplication()
 {
     LogPrintf("Stopping thread\n");
     emit stopThread();
@@ -307,27 +307,27 @@ BitmarkApplication::~BitmarkApplication()
 }
 
 #ifdef ENABLE_WALLET
-void BitmarkApplication::createPaymentServer()
+void GamecreditsApplication::createPaymentServer()
 {
     paymentServer = new PaymentServer(this);
 }
 #endif
 
-void BitmarkApplication::createOptionsModel()
+void GamecreditsApplication::createOptionsModel()
 {
     optionsModel = new OptionsModel();
 }
 
-void BitmarkApplication::createWindow(bool isaTestNet)
+void GamecreditsApplication::createWindow(bool isaTestNet)
 {
-    window = new BitmarkGUI(isaTestNet, 0);
+    window = new GamecreditsGUI(isaTestNet, 0);
 
     pollShutdownTimer = new QTimer(window);
     connect(pollShutdownTimer, SIGNAL(timeout()), window, SLOT(detectShutdown()));
     pollShutdownTimer->start(200);
 }
 
-void BitmarkApplication::createSplashScreen(bool isaTestNet)
+void GamecreditsApplication::createSplashScreen(bool isaTestNet)
 {
     SplashScreen *splash = new SplashScreen(QPixmap(), 0, isaTestNet);
     splash->setAttribute(Qt::WA_DeleteOnClose);
@@ -335,10 +335,10 @@ void BitmarkApplication::createSplashScreen(bool isaTestNet)
     connect(this, SIGNAL(splashFinished(QWidget*)), splash, SLOT(slotFinish(QWidget*)));
 }
 
-void BitmarkApplication::startThread()
+void GamecreditsApplication::startThread()
 {
     coreThread = new QThread(this);
-    BitmarkCore *executor = new BitmarkCore();
+    GamecreditsCore *executor = new GamecreditsCore();
     executor->moveToThread(coreThread);
 
     /*  communication to and from thread */
@@ -354,13 +354,13 @@ void BitmarkApplication::startThread()
     coreThread->start();
 }
 
-void BitmarkApplication::requestInitialize()
+void GamecreditsApplication::requestInitialize()
 {
     LogPrintf("Requesting initialize\n");
     emit requestedInitialize();
 }
 
-void BitmarkApplication::requestShutdown()
+void GamecreditsApplication::requestShutdown()
 {
     LogPrintf("Requesting shutdown\n");
     window->hide();
@@ -382,7 +382,7 @@ void BitmarkApplication::requestShutdown()
     emit requestedShutdown();
 }
 
-void BitmarkApplication::initializeResult(int retval)
+void GamecreditsApplication::initializeResult(int retval)
 {
     LogPrintf("Initialization result: %i\n", retval);
     // Set exit result: 0 if successful, 1 if failure
@@ -437,19 +437,19 @@ void BitmarkApplication::initializeResult(int retval)
     }
 }
 
-void BitmarkApplication::shutdownResult(int retval)
+void GamecreditsApplication::shutdownResult(int retval)
 {
     LogPrintf("Shutdown result: %i\n", retval);
     quit(); // Exit main loop after shutdown finished
 }
 
-void BitmarkApplication::handleRunawayException(const QString &message)
+void GamecreditsApplication::handleRunawayException(const QString &message)
 {
-    QMessageBox::critical(0, "Runaway exception", BitmarkGUI::tr("A fatal error occurred. GameCredits can no longer continue safely and will quit.") + QString("\n\n") + message);
+    QMessageBox::critical(0, "Runaway exception", GamecreditsGUI::tr("A fatal error occurred. GameCredits can no longer continue safely and will quit.") + QString("\n\n") + message);
     ::exit(1);
 }
 
-WId BitmarkApplication::getMainWinId() const
+WId GamecreditsApplication::getMainWinId() const
 {
     if (!window)
         return 0;
@@ -457,7 +457,7 @@ WId BitmarkApplication::getMainWinId() const
     return window->winId();
 }
 
-#ifndef BITMARK_QT_TEST
+#ifndef GAMECREDITS_QT_TEST
 int main(int argc, char *argv[])
 {
     SetupEnvironment();
@@ -479,7 +479,7 @@ int main(int argc, char *argv[])
 
     GUIUtil::SubstituteFonts();
 
-    BitmarkApplication app(argc, argv);
+    GamecreditsApplication app(argc, argv);
 #if QT_VERSION > 0x050100
     // Generate high-dpi pixmaps
     QApplication::setAttribute(Qt::AA_UseHighDpiPixmaps);
@@ -615,4 +615,4 @@ int main(int argc, char *argv[])
     }
     return app.getReturnValue();
 }
-#endif // BITMARK_QT_TEST
+#endif // GAMECREDITS_QT_TEST

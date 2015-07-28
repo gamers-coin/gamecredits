@@ -13,7 +13,7 @@
 #include <QHBoxLayout>
 #include <QLabel>
 
-WalletFrame::WalletFrame(BitmarkGUI *_gui) :
+WalletFrame::WalletFrame(GamecreditsGUI *_gui) :
     QFrame(_gui),
     gui(_gui)
 {
@@ -44,7 +44,7 @@ bool WalletFrame::addWallet(const QString& name, WalletModel *walletModel)
         return false;
 
     WalletView *walletView = new WalletView(this);
-    walletView->setBitmarkGUI(gui);
+    walletView->setGamecreditsGUI(gui);
     walletView->setClientModel(clientModel);
     walletView->setWalletModel(walletModel);
     walletView->showOutOfSyncWarning(bOutOfSync);

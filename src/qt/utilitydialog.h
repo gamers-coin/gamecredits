@@ -9,7 +9,7 @@
 #include <QDialog>
 #include <QObject>
 
-class BitmarkGUI;
+class GamecreditsGUI;
 class ClientModel;
 
 namespace Ui {
@@ -64,7 +64,7 @@ class ShutdownWindow : public QObject
     Q_OBJECT
 
 public:
-    static void showShutdownWindow(BitmarkGUI *window);
+    static void showShutdownWindow(GamecreditsGUI *window);
 };
 
 #endif // UTILITYDIALOG_H

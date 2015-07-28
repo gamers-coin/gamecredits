@@ -35,7 +35,7 @@ public:
         ProxyPort,              // int
         ProxySocksVersion,      // int
         Fee,                    // qint64
-        DisplayUnit,            // BitmarkUnits::Unit
+        DisplayUnit,            // GamecreditsUnits::Unit
         DisplayAddresses,       // bool
         ThirdPartyTxUrls,       // QString
         Language,               // QString

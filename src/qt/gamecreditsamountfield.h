@@ -3,8 +3,8 @@
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITMARKAMOUNTFIELD_H
-#define BITMARKAMOUNTFIELD_H
+#ifndef GAMECREDITSAMOUNTFIELD_H
+#define GAMECREDITSAMOUNTFIELD_H
 
 #include <QWidget>
 
@@ -15,14 +15,14 @@ QT_END_NAMESPACE
 
 /** Widget for entering gamecredits amounts.
   */
-class BitmarkAmountField: public QWidget
+class GamecreditsAmountField: public QWidget
 {
     Q_OBJECT
 
     Q_PROPERTY(qint64 value READ value WRITE setValue NOTIFY textChanged USER true)
 
 public:
-    explicit BitmarkAmountField(QWidget *parent = 0);
+    explicit GamecreditsAmountField(QWidget *parent = 0);
 
     qint64 value(bool *valid=0) const;
     void setValue(qint64 value);
@@ -70,4 +70,4 @@ private slots:
 
 };
 
-#endif // BITMARKAMOUNTFIELD_H
+#endif // GAMECREDITSAMOUNTFIELD_H

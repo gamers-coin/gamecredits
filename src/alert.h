@@ -4,8 +4,8 @@
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef _BITMARKALERT_H_
-#define _BITMARKALERT_H_ 1
+#ifndef _GAMECREDITSALERT_H_
+#define _GAMECREDITSALERT_H_ 1
 
 #include "serialize.h"
 #include "sync.h"

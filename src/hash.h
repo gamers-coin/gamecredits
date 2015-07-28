@@ -4,8 +4,8 @@
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITMARK_HASH_H
-#define BITMARK_HASH_H
+#ifndef GAMECREDITS_HASH_H
+#define GAMECREDITS_HASH_H
 
 #include "serialize.h"
 #include "uint256.h"

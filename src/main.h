@@ -4,8 +4,8 @@
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITMARK_MAIN_H
-#define BITMARK_MAIN_H
+#ifndef GAMECREDITS_MAIN_H
+#define GAMECREDITS_MAIN_H
 
 #if defined(HAVE_CONFIG_H)
 #include "gamecredits-config.h"

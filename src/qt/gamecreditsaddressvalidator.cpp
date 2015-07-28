@@ -16,12 +16,12 @@
   - All lower-case letters except for 'l'
 */
 
-BitmarkAddressEntryValidator::BitmarkAddressEntryValidator(QObject *parent) :
+GamecreditsAddressEntryValidator::GamecreditsAddressEntryValidator(QObject *parent) :
     QValidator(parent)
 {
 }
 
-QValidator::State BitmarkAddressEntryValidator::validate(QString &input, int &pos) const
+QValidator::State GamecreditsAddressEntryValidator::validate(QString &input, int &pos) const
 {
     Q_UNUSED(pos);
 
@@ -81,16 +81,16 @@ QValidator::State BitmarkAddressEntryValidator::validate(QString &input, int &po
     return state;
 }
 
-BitmarkAddressCheckValidator::BitmarkAddressCheckValidator(QObject *parent) :
+GamecreditsAddressCheckValidator::GamecreditsAddressCheckValidator(QObject *parent) :
     QValidator(parent)
 {
 }
 
-QValidator::State BitmarkAddressCheckValidator::validate(QString &input, int &pos) const
+QValidator::State GamecreditsAddressCheckValidator::validate(QString &input, int &pos) const
 {
     Q_UNUSED(pos);
     // Validate the passed GameCredits address
-    CBitmarkAddress addr(input.toStdString());
+    CGamecreditsAddress addr(input.toStdString());
     if (addr.IsValid())
         return QValidator::Acceptable;
 

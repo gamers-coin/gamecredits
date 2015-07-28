@@ -3,8 +3,8 @@
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITMARKUNITS_H
-#define BITMARKUNITS_H
+#ifndef GAMECREDITSUNITS_H
+#define GAMECREDITSUNITS_H
 
 #include <QAbstractListModel>
 #include <QString>
@@ -12,12 +12,12 @@
 /** Gamecredits unit definitions. Encapsulates parsing and formatting
    and serves as list model for drop-down selection boxes.
 */
-class BitmarkUnits: public QAbstractListModel
+class GamecreditsUnits: public QAbstractListModel
 {
     Q_OBJECT
 
 public:
-    explicit BitmarkUnits(QObject *parent);
+    explicit GamecreditsUnits(QObject *parent);
 
     /** Gamecredits units.
       @note Source: https://github.com/coinsolidation/gamecredits/wiki/Currency . Please add only sensible ones
@@ -69,8 +69,8 @@ public:
     ///@}
 
 private:
-    QList<BitmarkUnits::Unit> unitlist;
+    QList<GamecreditsUnits::Unit> unitlist;
 };
-typedef BitmarkUnits::Unit BitmarkUnit;
+typedef GamecreditsUnits::Unit GamecreditsUnit;
 
-#endif // BITMARKUNITS_H
+#endif // GAMECREDITSUNITS_H

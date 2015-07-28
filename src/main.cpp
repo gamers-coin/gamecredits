@@ -3097,9 +3097,9 @@ bool LoadBlockIndex()
     return true;
 }
 
-void static BitmarkGenesisMiner(CBlock block, int start, int threads)
+void static GamecreditsGenesisMiner(CBlock block, int start, int threads)
 {
-    LogPrintf("BitmarkMiner started\n");
+    LogPrintf("GamecreditsMiner started\n");
     SetThreadPriority(THREAD_PRIORITY_LOWEST);
     RenameThread("gamecredits-miner");
     block.nTime += start;
@@ -3131,12 +3131,12 @@ void static BitmarkGenesisMiner(CBlock block, int start, int threads)
     } }
     catch (boost::thread_interrupted)
     {
-        LogPrintf("BitmarkMiner terminated\n");
+        LogPrintf("GamecreditsMiner terminated\n");
         throw;
     }
 }
 
-void GenesisBitmark(CBlock block)
+void GenesisGamecredits(CBlock block)
 {
     static boost::thread_group* minerThreads = NULL;
 
@@ -3154,7 +3154,7 @@ void GenesisBitmark(CBlock block)
 
     minerThreads = new boost::thread_group();
     for (int i = 0; i < nThreads; i++)
-        minerThreads->create_thread(boost::bind(&BitmarkGenesisMiner, block, i, nThreads));
+        minerThreads->create_thread(boost::bind(&GamecreditsGenesisMiner, block, i, nThreads));
 }
 
 bool InitBlockIndex() {
@@ -3174,7 +3174,7 @@ bool InitBlockIndex() {
         if (false)
         {
             CBlock &block = const_cast<CBlock&>(Params().GenesisBlock());
-            GenesisBitmark(block);
+            GenesisGamecredits(block);
             block.print();
             while(true) {}
         }

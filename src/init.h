@@ -4,8 +4,8 @@
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITMARK_INIT_H
-#define BITMARK_INIT_H
+#ifndef GAMECREDITS_INIT_H
+#define GAMECREDITS_INIT_H
 
 #include <string>
 
@@ -26,8 +26,8 @@ bool AppInit2(boost::thread_group& threadGroup);
 /* The help message mode determines what help message to show */
 enum HelpMessageMode
 {
-    HMM_BITMARKD,
-    HMM_BITMARK_QT
+    HMM_GAMECREDITSD,
+    HMM_GAMECREDITS_QT
 };
 
 std::string HelpMessage(HelpMessageMode mode);

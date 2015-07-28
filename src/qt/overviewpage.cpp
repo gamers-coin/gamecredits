@@ -25,7 +25,7 @@ class TxViewDelegate : public QAbstractItemDelegate
 {
     Q_OBJECT
 public:
-    TxViewDelegate(): QAbstractItemDelegate(), unit(BitmarkUnits::GMC)
+    TxViewDelegate(): QAbstractItemDelegate(), unit(GamecreditsUnits::GMC)
     {
 
     }
@@ -73,7 +73,7 @@ public:
             foreground = option.palette.color(QPalette::Text);
         }
         painter->setPen(foreground);
-        QString amountText = BitmarkUnits::formatWithUnit(unit, amount, true);
+        QString amountText = GamecreditsUnits::formatWithUnit(unit, amount, true);
         if(!confirmed)
         {
             amountText = QString("[") + amountText + QString("]");
@@ -142,10 +142,10 @@ void OverviewPage::setBalance(qint64 balance, qint64 unconfirmedBalance, qint64 
     currentBalance = balance;
     currentUnconfirmedBalance = unconfirmedBalance;
     currentImmatureBalance = immatureBalance;
-    ui->labelBalance->setText(BitmarkUnits::formatWithUnit(unit, balance));
-    ui->labelUnconfirmed->setText(BitmarkUnits::formatWithUnit(unit, unconfirmedBalance));
-    ui->labelImmature->setText(BitmarkUnits::formatWithUnit(unit, immatureBalance));
-    ui->labelTotal->setText(BitmarkUnits::formatWithUnit(unit, balance + unconfirmedBalance + immatureBalance));
+    ui->labelBalance->setText(GamecreditsUnits::formatWithUnit(unit, balance));
+    ui->labelUnconfirmed->setText(GamecreditsUnits::formatWithUnit(unit, unconfirmedBalance));
+    ui->labelImmature->setText(GamecreditsUnits::formatWithUnit(unit, immatureBalance));
+    ui->labelTotal->setText(GamecreditsUnits::formatWithUnit(unit, balance + unconfirmedBalance + immatureBalance));
 
     // only show immature (newly mined) balance if it's non-zero, so as not to complicate things
     // for the non-mining users

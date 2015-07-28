@@ -79,7 +79,7 @@ WalletView::~WalletView()
 {
 }
 
-void WalletView::setBitmarkGUI(BitmarkGUI *gui)
+void WalletView::setGamecreditsGUI(GamecreditsGUI *gui)
 {
     if (gui)
     {

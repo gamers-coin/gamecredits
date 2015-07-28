@@ -79,7 +79,7 @@ QVariant RecentRequestsTableModel::data(const QModelIndex &index, int role) cons
             if (rec->recipient.amount == 0 && role == Qt::DisplayRole)
                 return tr("(no amount)");
             else
-                return BitmarkUnits::format(walletModel->getOptionsModel()->getDisplayUnit(), rec->recipient.amount);
+                return GamecreditsUnits::format(walletModel->getOptionsModel()->getDisplayUnit(), rec->recipient.amount);
         }
     }
     return QVariant();

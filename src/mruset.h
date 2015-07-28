@@ -3,8 +3,8 @@
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITMARK_MRUSET_H
-#define BITMARK_MRUSET_H
+#ifndef GAMECREDITS_MRUSET_H
+#define GAMECREDITS_MRUSET_H
 
 #include <deque>
 #include <set>

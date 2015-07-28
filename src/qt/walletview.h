@@ -8,7 +8,7 @@
 
 #include <QStackedWidget>
 
-class BitmarkGUI;
+class GamecreditsGUI;
 class ClientModel;
 class OverviewPage;
 class ReceiveCoinsDialog;
@@ -36,7 +36,7 @@ public:
     explicit WalletView(QWidget *parent);
     ~WalletView();
 
-    void setBitmarkGUI(BitmarkGUI *gui);
+    void setGamecreditsGUI(GamecreditsGUI *gui);
     /** Set the client model.
         The client model represents the part of the core that communicates with the P2P network, and is wallet-agnostic.
     */

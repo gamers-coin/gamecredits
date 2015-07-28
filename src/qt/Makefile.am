@@ -148,7 +148,7 @@ QT_MOC_CPP = \
   moc_walletmodel.cpp \
   moc_walletview.cpp
 
-BITMARK_MM = \
+GAMECREDITS_MM = \
   macdockiconhandler.mm \
   macnotificationhandler.mm
 
@@ -165,7 +165,7 @@ PROTOBUF_CC = paymentrequest.pb.cc
 PROTOBUF_H = paymentrequest.pb.h
 PROTOBUF_PROTO = paymentrequest.proto
 
-BITMARK_QT_H = \
+GAMECREDITS_QT_H = \
   addressbookpage.h \
   addresstablemodel.h \
   askpassphrasedialog.h \
@@ -260,7 +260,7 @@ RES_ICONS = \
   res/icons/tx_output.png \
   res/icons/tx_mined.png
 
-BITMARK_QT_CPP = \
+GAMECREDITS_QT_CPP = \
   gamecredits.cpp \
   gamecreditsaddressvalidator.cpp \
   gamecreditsamountfield.cpp \
@@ -283,7 +283,7 @@ BITMARK_QT_CPP = \
   winshutdownmonitor.cpp
 
 if ENABLE_WALLET
-BITMARK_QT_CPP += \
+GAMECREDITS_QT_CPP += \
   addressbookpage.cpp \
   addresstablemodel.cpp \
   askpassphrasedialog.cpp \
@@ -319,11 +319,11 @@ RES_IMAGES = \
 
 RES_MOVIES = $(wildcard res/movies/spinner-*.png)
 
-BITMARK_RC = res/gamecredits-qt-res.rc
+GAMECREDITS_RC = res/gamecredits-qt-res.rc
 
 libgamecreditsqt_a_CPPFLAGS = $(AM_CPPFLAGS) $(QT_INCLUDES) \
   -I$(top_srcdir)/src/qt/forms $(QT_DBUS_INCLUDES)
-libgamecreditsqt_a_SOURCES = $(BITMARK_QT_CPP) $(BITMARK_QT_H) $(QT_FORMS_UI) \
+libgamecreditsqt_a_SOURCES = $(GAMECREDITS_QT_CPP) $(GAMECREDITS_QT_H) $(QT_FORMS_UI) \
   $(QT_QRC) $(QT_TS) $(PROTOBUF_PROTO) $(RES_ICONS) $(RES_IMAGES) $(RES_MOVIES)
 
 nodist_libgamecreditsqt_a_SOURCES = $(QT_MOC_CPP) $(QT_MOC) $(PROTOBUF_CC) \
@@ -341,16 +341,16 @@ gamecredits_qt_CPPFLAGS = $(AM_CPPFLAGS) $(QT_INCLUDES) \
   -I$(top_srcdir)/src/qt/forms
 gamecredits_qt_SOURCES = gamecredits.cpp
 if TARGET_DARWIN
-  gamecredits_qt_SOURCES += $(BITMARK_MM)
+  gamecredits_qt_SOURCES += $(GAMECREDITS_MM)
 endif
 if TARGET_WINDOWS
-  gamecredits_qt_SOURCES += $(BITMARK_RC)
+  gamecredits_qt_SOURCES += $(GAMECREDITS_RC)
 endif
-gamecredits_qt_LDADD = libgamecreditsqt.a $(LIBBITMARK_SERVER)
+gamecredits_qt_LDADD = libgamecreditsqt.a $(LIBGAMECREDITS_SERVER)
 if ENABLE_WALLET
-gamecredits_qt_LDADD += $(LIBBITMARK_WALLET)
+gamecredits_qt_LDADD += $(LIBGAMECREDITS_WALLET)
 endif
-gamecredits_qt_LDADD += $(LIBBITMARK_CLI) $(LIBBITMARK_COMMON) $(LIBLEVELDB) $(LIBMEMENV) \
+gamecredits_qt_LDADD += $(LIBGAMECREDITS_CLI) $(LIBGAMECREDITS_COMMON) $(LIBLEVELDB) $(LIBMEMENV) \
   $(BOOST_LIBS) $(QT_LIBS) $(QT_DBUS_LIBS) $(QR_LIBS) $(PROTOBUF_LIBS) $(BDB_LIBS)
 gamecredits_qt_LDFLAGS = $(QT_LDFLAGS)
 
@@ -366,7 +366,7 @@ QT_QM=$(QT_TS:.ts=.qm)
 gamecreditstrings.cpp: FORCE
 	$(MAKE) -C $(top_srcdir)/src qt/gamecreditstrings.cpp
 
-translate: gamecreditstrings.cpp $(QT_FORMS_UI) $(QT_FORMS_UI) $(BITMARK_QT_CPP) $(BITMARK_QT_H) $(BITMARK_MM)
+translate: gamecreditstrings.cpp $(QT_FORMS_UI) $(QT_FORMS_UI) $(GAMECREDITS_QT_CPP) $(GAMECREDITS_QT_H) $(GAMECREDITS_MM)
 	@test -n $(LUPDATE) || echo "lupdate is required for updating translations"
 	@QT_SELECT=$(QT_SELECT) $(LUPDATE) $^ -locations relative -no-obsolete -ts locale/gamecredits_en.ts
 

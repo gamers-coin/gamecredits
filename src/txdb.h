@@ -4,8 +4,8 @@
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITMARK_TXDB_LEVELDB_H
-#define BITMARK_TXDB_LEVELDB_H
+#ifndef GAMECREDITS_TXDB_LEVELDB_H
+#define GAMECREDITS_TXDB_LEVELDB_H
 
 #include "leveldbwrapper.h"
 #include "main.h"
@@ -67,4 +67,4 @@ public:
     bool LoadBlockIndexGuts();
 };
 
-#endif // BITMARK_TXDB_LEVELDB_H
+#endif // GAMECREDITS_TXDB_LEVELDB_H

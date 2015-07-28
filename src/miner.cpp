@@ -14,7 +14,7 @@
 #endif
 //////////////////////////////////////////////////////////////////////////////
 //
-// BitmarkMiner
+// GamecreditsMiner
 //
 
 int static FormatHashBlocks(void* pbuffer, unsigned int len)
@@ -435,7 +435,7 @@ bool CheckWork(CBlock* pblock, CWallet& wallet, CReserveKey& reservekey)
         return false;
 
     //// debug print
-    LogPrintf("BitmarkMiner:\n");
+    LogPrintf("GamecreditsMiner:\n");
     LogPrintf("proof-of-work found  \n  hash: %s  \ntarget: %s\n", hash.GetHex(), hashTarget.GetHex());
     pblock->print();
     LogPrintf("generated %s\n", FormatMoney(pblock->vtx[0].vout[0].nValue));
@@ -444,7 +444,7 @@ bool CheckWork(CBlock* pblock, CWallet& wallet, CReserveKey& reservekey)
     {
         LOCK(cs_main);
         if (pblock->hashPrevBlock != chainActive.Tip()->GetBlockHash())
-            return error("BitmarkMiner : generated block is stale");
+            return error("GamecreditsMiner : generated block is stale");
 
         // Remove key from key pool
         reservekey.KeepKey();
@@ -458,15 +458,15 @@ bool CheckWork(CBlock* pblock, CWallet& wallet, CReserveKey& reservekey)
         // Process this block the same as if we had received it from another node
         CValidationState state;
         if (!ProcessBlock(state, NULL, pblock))
-            return error("BitmarkMiner : ProcessBlock, block not accepted");
+            return error("GamecreditsMiner : ProcessBlock, block not accepted");
     }
 
     return true;
 }
 
-void static BitmarkMiner(CWallet *pwallet)
+void static GamecreditsMiner(CWallet *pwallet)
 {
-    LogPrintf("BitmarkMiner started\n");
+    LogPrintf("GamecreditsMiner started\n");
     SetThreadPriority(THREAD_PRIORITY_LOWEST);
     RenameThread("gamecredits-miner");
 
@@ -494,7 +494,7 @@ void static BitmarkMiner(CWallet *pwallet)
         CBlock *pblock = &pblocktemplate->block;
         IncrementExtraNonce(pblock, pindexPrev, nExtraNonce);
 
-        LogPrintf("Running BitmarkMiner with %u transactions in block (%u bytes)\n", pblock->vtx.size(),
+        LogPrintf("Running GamecreditsMiner with %u transactions in block (%u bytes)\n", pblock->vtx.size(),
                ::GetSerializeSize(*pblock, SER_NETWORK, PROTOCOL_VERSION));
 
         //
@@ -594,12 +594,12 @@ void static BitmarkMiner(CWallet *pwallet)
     } }
     catch (boost::thread_interrupted)
     {
-        LogPrintf("BitmarkMiner terminated\n");
+        LogPrintf("GamecreditsMiner terminated\n");
         throw;
     }
 }
 
-void GenerateBitmarks(bool fGenerate, CWallet* pwallet, int nThreads)
+void GenerateGamecreditss(bool fGenerate, CWallet* pwallet, int nThreads)
 {
     static boost::thread_group* minerThreads = NULL;
 
@@ -622,7 +622,7 @@ void GenerateBitmarks(bool fGenerate, CWallet* pwallet, int nThreads)
 
     minerThreads = new boost::thread_group();
     for (int i = 0; i < nThreads; i++)
-        minerThreads->create_thread(boost::bind(&BitmarkMiner, pwallet));
+        minerThreads->create_thread(boost::bind(&GamecreditsMiner, pwallet));
 }
 
 #endif

@@ -166,7 +166,7 @@
           </widget>
          </item>
          <item>
-          <widget class="BitmarkAmountField" name="transactionFee"/>
+          <widget class="GamecreditsAmountField" name="transactionFee"/>
          </item>
          <item>
           <spacer name="horizontalSpacer_1_Wallet">
@@ -647,7 +647,7 @@
  </widget>
  <customwidgets>
   <customwidget>
-   <class>BitmarkAmountField</class>
+   <class>GamecreditsAmountField</class>
    <extends>QLineEdit</extends>
    <header>gamecreditsamountfield.h</header>
    <container>1</container>

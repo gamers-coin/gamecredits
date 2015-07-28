@@ -3,8 +3,8 @@
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITMARKGUI_H
-#define BITMARKGUI_H
+#ifndef GAMECREDITSGUI_H
+#define GAMECREDITSGUI_H
 
 #if defined(HAVE_CONFIG_H)
 #include "gamecredits-config.h"
@@ -33,15 +33,15 @@ QT_END_NAMESPACE
   Gamecredits GUI main class. This class represents the main window of the Gamecredits UI. It communicates with both the client and
   wallet models to give the user an up-to-date view of the current core state.
 */
-class BitmarkGUI : public QMainWindow
+class GamecreditsGUI : public QMainWindow
 {
     Q_OBJECT
 
 public:
     static const QString DEFAULT_WALLET;
 
-    explicit BitmarkGUI(bool fIsTestnet = false, QWidget *parent = 0);
-    ~BitmarkGUI();
+    explicit GamecreditsGUI(bool fIsTestnet = false, QWidget *parent = 0);
+    ~GamecreditsGUI();
 
     /** Set the client model.
         The client model represents the part of the core that communicates with the P2P network, and is wallet-agnostic.
@@ -194,4 +194,4 @@ private slots:
     void detectShutdown();
 };
 
-#endif // BITMARKGUI_H
+#endif // GAMECREDITSGUI_H

@@ -3,8 +3,8 @@
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITMARK_NETBASE_H
-#define BITMARK_NETBASE_H
+#ifndef GAMECREDITS_NETBASE_H
+#define GAMECREDITS_NETBASE_H
 
 #if defined(HAVE_CONFIG_H)
 #include "gamecredits-config.h"

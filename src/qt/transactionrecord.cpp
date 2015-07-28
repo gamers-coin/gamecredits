@@ -55,7 +55,7 @@ QList<TransactionRecord> TransactionRecord::decomposeTransaction(const CWallet *
                 {
                     // Received by GameCredits Address
                     sub.type = TransactionRecord::RecvWithAddress;
-                    sub.address = CBitmarkAddress(address).ToString();
+                    sub.address = CGamecreditsAddress(address).ToString();
                 }
                 else
                 {
@@ -116,7 +116,7 @@ QList<TransactionRecord> TransactionRecord::decomposeTransaction(const CWallet *
                 {
                     // Sent to GameCredits Address
                     sub.type = TransactionRecord::SendToAddress;
-                    sub.address = CBitmarkAddress(address).ToString();
+                    sub.address = CGamecreditsAddress(address).ToString();
                 }
                 else
                 {

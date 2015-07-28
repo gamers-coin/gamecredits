@@ -12,8 +12,8 @@
 // - E-mail usually won't line-break if there's no punctuation to break at.
 // - Double-clicking selects the whole number as one word if it's all alphanumeric.
 //
-#ifndef BITMARK_BASE58_H
-#define BITMARK_BASE58_H
+#ifndef GAMECREDITS_BASE58_H
+#define GAMECREDITS_BASE58_H
 
 #include "chainparams.h"
 #include "key.h"
@@ -99,17 +99,17 @@ public:
  * Script-hash-addresses have version 5 (or 196 testnet).
  * The data vector contains RIPEMD160(SHA256(cscript)), where cscript is the serialized redemption script.
  */
-class CBitmarkAddress : public CBase58Data {
+class CGamecreditsAddress : public CBase58Data {
 public:
     bool Set(const CKeyID &id);
     bool Set(const CScriptID &id);
     bool Set(const CTxDestination &dest);
     bool IsValid() const;
 
-    CBitmarkAddress() {}
-    CBitmarkAddress(const CTxDestination &dest) { Set(dest); }
-    CBitmarkAddress(const std::string& strAddress) { SetString(strAddress); }
-    CBitmarkAddress(const char* pszAddress) { SetString(pszAddress); }
+    CGamecreditsAddress() {}
+    CGamecreditsAddress(const CTxDestination &dest) { Set(dest); }
+    CGamecreditsAddress(const std::string& strAddress) { SetString(strAddress); }
+    CGamecreditsAddress(const char* pszAddress) { SetString(pszAddress); }
 
     CTxDestination Get() const;
     bool GetKeyID(CKeyID &keyID) const;
@@ -119,7 +119,7 @@ public:
 /**
  * A base58-encoded secret key
  */
-class CBitmarkSecret : public CBase58Data
+class CGamecreditsSecret : public CBase58Data
 {
 public:
     void SetKey(const CKey& vchSecret);
@@ -128,11 +128,11 @@ public:
     bool SetString(const char* pszSecret);
     bool SetString(const std::string& strSecret);
 
-    CBitmarkSecret(const CKey& vchSecret) { SetKey(vchSecret); }
-    CBitmarkSecret() {}
+    CGamecreditsSecret(const CKey& vchSecret) { SetKey(vchSecret); }
+    CGamecreditsSecret() {}
 };
 
-template<typename K, int Size, CChainParams::Base58Type Type> class CBitmarkExtKeyBase : public CBase58Data
+template<typename K, int Size, CChainParams::Base58Type Type> class CGamecreditsExtKeyBase : public CBase58Data
 {
 public:
     void SetKey(const K &key) {
@@ -147,14 +147,14 @@ public:
         return ret;
     }
 
-    CBitmarkExtKeyBase(const K &key) {
+    CGamecreditsExtKeyBase(const K &key) {
         SetKey(key);
     }
 
-    CBitmarkExtKeyBase() {}
+    CGamecreditsExtKeyBase() {}
 };
 
-typedef CBitmarkExtKeyBase<CExtKey, 74, CChainParams::EXT_SECRET_KEY> CBitmarkExtKey;
-typedef CBitmarkExtKeyBase<CExtPubKey, 74, CChainParams::EXT_PUBLIC_KEY> CBitmarkExtPubKey;
+typedef CGamecreditsExtKeyBase<CExtKey, 74, CChainParams::EXT_SECRET_KEY> CGamecreditsExtKey;
+typedef CGamecreditsExtKeyBase<CExtPubKey, 74, CChainParams::EXT_PUBLIC_KEY> CGamecreditsExtPubKey;
 
-#endif // BITMARK_BASE58_H
+#endif // GAMECREDITS_BASE58_H

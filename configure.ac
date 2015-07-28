@@ -10,9 +10,9 @@ AC_INIT([GameCredits Core],[_CLIENT_VERSION_MAJOR._CLIENT_VERSION_MINOR._CLIENT_
 AC_CONFIG_AUX_DIR([src/build-aux])
 AC_CONFIG_MACRO_DIR([src/m4])
 AC_CANONICAL_HOST
-AH_TOP([#ifndef BITMARK_CONFIG_H])
-AH_TOP([#define BITMARK_CONFIG_H])
-AH_BOTTOM([#endif //BITMARK_CONFIG_H])
+AH_TOP([#ifndef GAMECREDITS_CONFIG_H])
+AH_TOP([#define GAMECREDITS_CONFIG_H])
+AH_BOTTOM([#endif //GAMECREDITS_CONFIG_H])
 
 # This m4 will only be used if a system copy cannot be found. This is helpful
 # on systems where autotools are installed but the pkg-config macros are not in
@@ -391,7 +391,7 @@ AC_SUBST(LIBMEMENV)
 
 if test x$enable_wallet != xno; then
     dnl Check for libdb_cxx only if wallet enabled
-    BITMARK_FIND_BDB48
+    GAMECREDITS_FIND_BDB48
 fi
 
 dnl Check for libminiupnpc (optional)
@@ -511,7 +511,7 @@ AC_ARG_WITH([daemon],
   [build_gamecreditsd=$withval],
   [build_gamecreditsd=yes])
 
-BITMARK_QT_INIT
+GAMECREDITS_QT_INIT
 
 if test x$use_pkgconfig = xyes; then
 
@@ -525,9 +525,9 @@ if test x$use_pkgconfig = xyes; then
     [
       PKG_CHECK_MODULES([SSL], [libssl], [INCLUDES="$INCLUDES $SSL_CFLAGS"; LIBS="$LIBS $SSL_LIBS"], [AC_MSG_ERROR(openssl  not found.)])
       PKG_CHECK_MODULES([CRYPTO], [libcrypto], [INCLUDES="$INCLUDES $CRYPTO_CFLAGS"; LIBS="$LIBS $CRYPTO_LIBS"], [AC_MSG_ERROR(libcrypto  not found.)])
-      BITMARK_QT_CHECK([PKG_CHECK_MODULES([PROTOBUF], [protobuf], [have_protobuf=yes], [BITMARK_QT_FAIL(libprotobuf not found)])])
+      GAMECREDITS_QT_CHECK([PKG_CHECK_MODULES([PROTOBUF], [protobuf], [have_protobuf=yes], [GAMECREDITS_QT_FAIL(libprotobuf not found)])])
       if test x$use_qr != xno; then
-        BITMARK_QT_CHECK([PKG_CHECK_MODULES([QR], [libqrencode], [have_qrencode=yes], [have_qrencode=no])])
+        GAMECREDITS_QT_CHECK([PKG_CHECK_MODULES([QR], [libqrencode], [have_qrencode=yes], [have_qrencode=no])])
       fi
     ]
   )
@@ -538,25 +538,25 @@ else
   AC_CHECK_HEADER([openssl/ssl.h],, AC_MSG_ERROR(libssl headers missing),)
   AC_CHECK_LIB([ssl],         [main],, AC_MSG_ERROR(libssl missing))
 
-  BITMARK_QT_CHECK(AC_CHECK_LIB([protobuf] ,[main],,BITMARK_QT_FAIL(libprotobuf not found)))
+  GAMECREDITS_QT_CHECK(AC_CHECK_LIB([protobuf] ,[main],,GAMECREDITS_QT_FAIL(libprotobuf not found)))
   if test x$use_qr != xno; then
-    BITMARK_QT_CHECK([AC_CHECK_LIB([qrencode], [main],, [have_qrencode=no])])
-    BITMARK_QT_CHECK([AC_CHECK_HEADER([qrencode.h],, have_qrencode=no)])
+    GAMECREDITS_QT_CHECK([AC_CHECK_LIB([qrencode], [main],, [have_qrencode=no])])
+    GAMECREDITS_QT_CHECK([AC_CHECK_HEADER([qrencode.h],, have_qrencode=no)])
   fi
 fi
 
-BITMARK_QT_PATH_PROGS([PROTOC], [protoc],$protoc_bin_path)
+GAMECREDITS_QT_PATH_PROGS([PROTOC], [protoc],$protoc_bin_path)
 
 AC_MSG_CHECKING([whether to build gamecreditsd])
-AM_CONDITIONAL([BUILD_BITMARKD], [test x$build_gamecreditsd = xyes])
+AM_CONDITIONAL([BUILD_GAMECREDITSD], [test x$build_gamecreditsd = xyes])
 AC_MSG_RESULT($build_gamecreditsd)
 
 AC_MSG_CHECKING([whether to build gamecredits-cli])
-AM_CONDITIONAL([BUILD_BITMARK_CLI], [test x$build_gamecredits_cli = xyes])
+AM_CONDITIONAL([BUILD_GAMECREDITS_CLI], [test x$build_gamecredits_cli = xyes])
 AC_MSG_RESULT($build_gamecredits_cli)
 
 dnl sets $gamecredits_enable_qt, $gamecredits_enable_qt_test, $gamecredits_enable_qt_dbus
-BITMARK_QT_CONFIGURE([$use_pkgconfig], [qt4])
+GAMECREDITS_QT_CONFIGURE([$use_pkgconfig], [qt4])
 
 AC_LANG_POP
 

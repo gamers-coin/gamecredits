@@ -1,4 +1,4 @@
-TOR SUPPORT IN BITMARK
+TOR SUPPORT IN GAMECREDITS
 ======================
 
 It is possible to run Gamecredits as a Tor hidden service, and connect to such services.

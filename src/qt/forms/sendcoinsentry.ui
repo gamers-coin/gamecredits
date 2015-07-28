@@ -139,7 +139,7 @@
      </widget>
     </item>
     <item row="2" column="1">
-     <widget class="BitmarkAmountField" name="payAmount"/>
+     <widget class="GamecreditsAmountField" name="payAmount"/>
     </item>
     <item row="3" column="0">
      <widget class="QLabel" name="messageLabel">
@@ -660,7 +660,7 @@
      </widget>
     </item>
     <item row="2" column="1">
-     <widget class="BitmarkAmountField" name="payAmount_is">
+     <widget class="GamecreditsAmountField" name="payAmount_is">
       <property name="acceptDrops">
        <bool>false</bool>
       </property>
@@ -1196,7 +1196,7 @@
      </widget>
     </item>
     <item row="2" column="1">
-     <widget class="BitmarkAmountField" name="payAmount_s">
+     <widget class="GamecreditsAmountField" name="payAmount_s">
       <property name="acceptDrops">
        <bool>false</bool>
       </property>
@@ -1212,7 +1212,7 @@
    <header>qvalidatedlineedit.h</header>
   </customwidget>
   <customwidget>
-   <class>BitmarkAmountField</class>
+   <class>GamecreditsAmountField</class>
    <extends>QLineEdit</extends>
    <header>gamecreditsamountfield.h</header>
   </customwidget>

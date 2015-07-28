@@ -11,10 +11,10 @@ tail -q -n 1 -F "$DATADIR/regtest/debug.log" | grep -m 1 -q "Done loading" &
 WAITER=$!
 PORT=`expr $BASHPID + 10000`
 "@abs_top_builddir@/src/gamecreditsd@EXEEXT@" -connect=0.0.0.0 -datadir="$DATADIR" -rpcuser=user -rpcpassword=pass -listen -keypool=3 -debug -debug=net -logtimestamps -port=$PORT -regtest -rpcport=`expr $PORT + 1` &
-BITMARKD=$!
+GAMECREDITSD=$!
 
 #Install a watchdog.
-(sleep 10 && kill -0 $WAITER 2>/dev/null && kill -9 $BITMARKD $$)&
+(sleep 10 && kill -0 $WAITER 2>/dev/null && kill -9 $GAMECREDITSD $$)&
 wait $WAITER
 
 if [ -n "$TIMEOUT" ]; then
@@ -25,8 +25,8 @@ else
   RETURN=$?
 fi
 
-(sleep 15 && kill -0 $BITMARKD 2>/dev/null && kill -9 $BITMARKD $$)&
-kill $BITMARKD && wait $BITMARKD
+(sleep 15 && kill -0 $GAMECREDITSD 2>/dev/null && kill -9 $GAMECREDITSD $$)&
+kill $GAMECREDITSD && wait $GAMECREDITSD
 
 # timeout returns 124 on timeout, otherwise the return value of the child
 exit $RETURN

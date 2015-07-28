@@ -100,8 +100,8 @@ void setupAddressWidget(QValidatedLineEdit *widget, QWidget *parent)
 #if QT_VERSION >= 0x040700
     widget->setPlaceholderText(QObject::tr("Enter a GameCredits address (e.g. bQ3Gyigyd12kJDkhwi9M9QSZ9qu6M4NZzR)"));
 #endif
-    widget->setValidator(new BitmarkAddressEntryValidator(parent));
-    widget->setCheckValidator(new BitmarkAddressCheckValidator(parent));
+    widget->setValidator(new GamecreditsAddressEntryValidator(parent));
+    widget->setCheckValidator(new GamecreditsAddressCheckValidator(parent));
 }
 
 void setupAmountWidget(QLineEdit *widget, QWidget *parent)
@@ -113,7 +113,7 @@ void setupAmountWidget(QLineEdit *widget, QWidget *parent)
     widget->setAlignment(Qt::AlignRight|Qt::AlignVCenter);
 }
 
-bool parseBitmarkURI(const QUrl &uri, SendCoinsRecipient *out)
+bool parseGamecreditsURI(const QUrl &uri, SendCoinsRecipient *out)
 {
     // return if URI is not valid or is no gamecredits: URI
     if(!uri.isValid() || uri.scheme() != QString("gamecredits"))
@@ -152,7 +152,7 @@ bool parseBitmarkURI(const QUrl &uri, SendCoinsRecipient *out)
         {
             if(!i->second.isEmpty())
             {
-                if(!BitmarkUnits::parse(BitmarkUnits::GMC, i->second, &rv.amount))
+                if(!GamecreditsUnits::parse(GamecreditsUnits::GMC, i->second, &rv.amount))
                 {
                     return false;
                 }
@@ -170,7 +170,7 @@ bool parseBitmarkURI(const QUrl &uri, SendCoinsRecipient *out)
     return true;
 }
 
-bool parseBitmarkURI(QString uri, SendCoinsRecipient *out)
+bool parseGamecreditsURI(QString uri, SendCoinsRecipient *out)
 {
     // Convert gamecredits:// to gamecredits:
     //
@@ -181,17 +181,17 @@ bool parseBitmarkURI(QString uri, SendCoinsRecipient *out)
         uri.replace(0, 10, "gamecredits:");
     }
     QUrl uriInstance(uri);
-    return parseBitmarkURI(uriInstance, out);
+    return parseGamecreditsURI(uriInstance, out);
 }
 
-QString formatBitmarkURI(const SendCoinsRecipient &info)
+QString formatGamecreditsURI(const SendCoinsRecipient &info)
 {
     QString ret = QString("gamecredits:%1").arg(info.address);
     int paramCount = 0;
 
     if (info.amount)
     {
-        ret += QString("?amount=%1").arg(BitmarkUnits::format(BitmarkUnits::GMC, info.amount));
+        ret += QString("?amount=%1").arg(GamecreditsUnits::format(GamecreditsUnits::GMC, info.amount));
         paramCount++;
     }
 
@@ -214,7 +214,7 @@ QString formatBitmarkURI(const SendCoinsRecipient &info)
 
 bool isDust(const QString& address, qint64 amount)
 {
-    CTxDestination dest = CBitmarkAddress(address.toStdString()).Get();
+    CTxDestination dest = CGamecreditsAddress(address.toStdString()).Get();
     CScript script; script.SetDestination(dest);
     CTxOut txOut(amount, script);
     return txOut.IsDust(CTransaction::nMinRelayTxFee);

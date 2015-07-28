@@ -4,10 +4,10 @@ SUBDIRS = src
 
 GZIP_ENV="-9n"
 
-BITMARKD_BIN=$(top_builddir)/src/gamecreditsd$(EXEEXT)
-BITMARK_QT_BIN=$(top_builddir)/src/qt/gamecredits-qt$(EXEEXT)
-BITMARK_CLI_BIN=$(top_builddir)/src/gamecredits-cli$(EXEEXT)
-BITMARK_WIN_INSTALLER=$(PACKAGE)-$(PACKAGE_VERSION)-win$(WINDOWS_BITS)-setup$(EXEEXT)
+GAMECREDITSD_BIN=$(top_builddir)/src/gamecreditsd$(EXEEXT)
+GAMECREDITS_QT_BIN=$(top_builddir)/src/qt/gamecredits-qt$(EXEEXT)
+GAMECREDITS_CLI_BIN=$(top_builddir)/src/gamecredits-cli$(EXEEXT)
+GAMECREDITS_WIN_INSTALLER=$(PACKAGE)-$(PACKAGE_VERSION)-win$(WINDOWS_BITS)-setup$(EXEEXT)
 
 OSX_APP=GameCredits-Qt.app
 OSX_DMG=GameCredits-Qt.dmg
@@ -45,15 +45,15 @@ distcheck-hook:
 distcleancheck:
 	@:
 
-$(BITMARK_WIN_INSTALLER): $(BITMARKD_BIN) $(BITMARK_QT_BIN) $(BITMARK_CLI_BIN)
+$(GAMECREDITS_WIN_INSTALLER): $(GAMECREDITSD_BIN) $(GAMECREDITS_QT_BIN) $(GAMECREDITS_CLI_BIN)
 	$(MKDIR_P) $(top_builddir)/release
-	STRIPPROG="$(STRIP)" $(INSTALL_STRIP_PROGRAM) $(BITMARKD_BIN) $(top_builddir)/release
-	STRIPPROG="$(STRIP)" $(INSTALL_STRIP_PROGRAM) $(BITMARK_QT_BIN) $(top_builddir)/release
-	STRIPPROG="$(STRIP)" $(INSTALL_STRIP_PROGRAM) $(BITMARK_CLI_BIN) $(top_builddir)/release
+	STRIPPROG="$(STRIP)" $(INSTALL_STRIP_PROGRAM) $(GAMECREDITSD_BIN) $(top_builddir)/release
+	STRIPPROG="$(STRIP)" $(INSTALL_STRIP_PROGRAM) $(GAMECREDITS_QT_BIN) $(top_builddir)/release
+	STRIPPROG="$(STRIP)" $(INSTALL_STRIP_PROGRAM) $(GAMECREDITS_CLI_BIN) $(top_builddir)/release
 	@test -f $(MAKENSIS) && $(MAKENSIS) $(top_builddir)/share/setup.nsi || \
 	  echo error: could not build $@
 
-$(BITMARKD_BIN) $(BITMARK_QT_BIN) $(BITMARK_CLI_BIN):
+$(GAMECREDITSD_BIN) $(GAMECREDITS_QT_BIN) $(GAMECREDITS_CLI_BIN):
 	make -C $(dir $@) $(notdir $@)
 
 $(OSX_APP)/Contents/PkgInfo:
@@ -72,7 +72,7 @@ $(OSX_APP)/Contents/Resources/gamecredits.icns: $(OSX_INSTALLER_ICONS)
 	$(MKDIR_P) $(@D)
 	$(INSTALL_DATA) $< $@
 
-$(OSX_APP)/Contents/MacOS/GameCredits-Qt: $(BITMARK_QT_BIN)
+$(OSX_APP)/Contents/MacOS/GameCredits-Qt: $(GAMECREDITS_QT_BIN)
 	$(MKDIR_P) $(@D)
 	STRIPPROG="$(STRIP)" $(INSTALL_STRIP_PROGRAM)  $< $@
 
@@ -99,7 +99,7 @@ appbundle: $(OSX_APP_BUILT)
 deploy: $(OSX_DMG)
 endif
 if TARGET_WINDOWS
-deploy: $(BITMARK_WIN_INSTALLER)
+deploy: $(GAMECREDITS_WIN_INSTALLER)
 endif
 
 if USE_LCOV
@@ -131,7 +131,7 @@ test_gamecredits_filtered.info: test_gamecredits.info
 block_test.info: test_gamecredits_filtered.info
 	$(MKDIR_P) qa/tmp
 	-@TIMEOUT=15 qa/pull-tester/run-gamecreditsd-for-test.sh $(JAVA) -jar $(JAVA_COMPARISON_TOOL) qa/tmp/compTool 0
-	$(LCOV) -c -d $(abs_builddir)/src --t BitmarkJBlockTest -o $@
+	$(LCOV) -c -d $(abs_builddir)/src --t GamecreditsJBlockTest -o $@
 	$(LCOV) -z -d $(abs_builddir)/src
 	$(LCOV) -z -d $(abs_builddir)/src/leveldb
 
@@ -164,7 +164,7 @@ endif
 
 EXTRA_DIST = $(top_srcdir)/share/genbuild.sh qa/pull-tester/pull-tester.sh qa/rpc-tests $(DIST_DOCS) $(WINDOWS_PACKAGING) $(OSX_PACKAGING)
 
-CLEANFILES = $(OSX_DMG) $(BITMARK_WIN_INSTALLER)
+CLEANFILES = $(OSX_DMG) $(GAMECREDITS_WIN_INSTALLER)
 
 .INTERMEDIATE: $(COVERAGE_INFO)
 

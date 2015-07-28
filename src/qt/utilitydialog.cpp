@@ -71,7 +71,7 @@ HelpMessageDialog::HelpMessageDialog(QWidget *parent) :
         tr("Usage:") + "\n" +
         "  gamecredits-qt [" + tr("command-line options") + "]                     " + "\n";
 
-    coreOptions = QString::fromStdString(HelpMessage(HMM_BITMARK_QT));
+    coreOptions = QString::fromStdString(HelpMessage(HMM_GAMECREDITS_QT));
 
     uiOptions = tr("UI options") + ":\n" +
         "  -choosedatadir            " + tr("Choose data directory on startup (default: 0)") + "\n" +
@@ -117,7 +117,7 @@ void HelpMessageDialog::on_okButton_accepted()
 
 
 /** "Shutdown" window */
-void ShutdownWindow::showShutdownWindow(BitmarkGUI *window)
+void ShutdownWindow::showShutdownWindow(GamecreditsGUI *window)
 {
     if (!window)
         return;

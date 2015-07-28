@@ -34,7 +34,7 @@ QString OpenURIDialog::getURI()
 void OpenURIDialog::accept()
 {
     SendCoinsRecipient rcp;
-    if(GUIUtil::parseBitmarkURI(getURI(), &rcp))
+    if(GUIUtil::parseGamecreditsURI(getURI(), &rcp))
     {
         /* Only accept value URIs */
         QDialog::accept();

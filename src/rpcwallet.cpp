@@ -107,11 +107,11 @@ Value getnewaddress(const Array& params, bool fHelp)
 
     pwalletMain->SetAddressBook(keyID, strAccount, "receive");
 
-    return CBitmarkAddress(keyID).ToString();
+    return CGamecreditsAddress(keyID).ToString();
 }
 
 
-CBitmarkAddress GetAccountAddress(string strAccount, bool bForceNew=false)
+CGamecreditsAddress GetAccountAddress(string strAccount, bool bForceNew=false)
 {
     CWalletDB walletdb(pwalletMain->strWalletFile);
 
@@ -146,7 +146,7 @@ CBitmarkAddress GetAccountAddress(string strAccount, bool bForceNew=false)
         walletdb.WriteAccount(strAccount, account);
     }
 
-    return CBitmarkAddress(account.vchPubKey.GetID());
+    return CGamecreditsAddress(account.vchPubKey.GetID());
 }
 
 Value getaccountaddress(const Array& params, bool fHelp)
@@ -203,7 +203,7 @@ Value getrawchangeaddress(const Array& params, bool fHelp)
 
     CKeyID keyID = vchPubKey.GetID();
 
-    return CBitmarkAddress(keyID).ToString();
+    return CGamecreditsAddress(keyID).ToString();
 }
 
 
@@ -221,7 +221,7 @@ Value setaccount(const Array& params, bool fHelp)
             + HelpExampleRpc("setaccount", "\"1D1ZrZNe3JUo7ZycKEYQQiQAWd9y54F4XZ\", \"tabby\"")
         );
 
-    CBitmarkAddress address(params[0].get_str());
+    CGamecreditsAddress address(params[0].get_str());
     if (!address.IsValid())
         throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid GameCredits address");
 
@@ -259,7 +259,7 @@ Value getaccount(const Array& params, bool fHelp)
             + HelpExampleRpc("getaccount", "\"1D1ZrZNe3JUo7ZycKEYQQiQAWd9y54F4XZ\"")
         );
 
-    CBitmarkAddress address(params[0].get_str());
+    CGamecreditsAddress address(params[0].get_str());
     if (!address.IsValid())
         throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid GameCredits address");
 
@@ -293,9 +293,9 @@ Value getaddressesbyaccount(const Array& params, bool fHelp)
 
     // Find all addresses that have the given account
     Array ret;
-    BOOST_FOREACH(const PAIRTYPE(CBitmarkAddress, CAddressBookData)& item, pwalletMain->mapAddressBook)
+    BOOST_FOREACH(const PAIRTYPE(CGamecreditsAddress, CAddressBookData)& item, pwalletMain->mapAddressBook)
     {
-        const CBitmarkAddress& address = item.first;
+        const CGamecreditsAddress& address = item.first;
         const string& strName = item.second.name;
         if (strName == strAccount)
             ret.push_back(address.ToString());
@@ -326,7 +326,7 @@ Value sendtoaddress(const Array& params, bool fHelp)
             + HelpExampleRpc("sendtoaddress", "\"1M72Sfpbz1BPpXFHz9m3CdqATR44Jvaydd\", 0.1, \"donation\", \"seans outpost\"")
         );
 
-    CBitmarkAddress address(params[0].get_str());
+    CGamecreditsAddress address(params[0].get_str());
     if (!address.IsValid())
         throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid GameCredits address");
 
@@ -382,12 +382,12 @@ Value listaddressgroupings(const Array& params, bool fHelp)
         BOOST_FOREACH(CTxDestination address, grouping)
         {
             Array addressInfo;
-            addressInfo.push_back(CBitmarkAddress(address).ToString());
+            addressInfo.push_back(CGamecreditsAddress(address).ToString());
             addressInfo.push_back(ValueFromAmount(balances[address]));
             {
                 LOCK(pwalletMain->cs_wallet);
-                if (pwalletMain->mapAddressBook.find(CBitmarkAddress(address).Get()) != pwalletMain->mapAddressBook.end())
-                    addressInfo.push_back(pwalletMain->mapAddressBook.find(CBitmarkAddress(address).Get())->second.name);
+                if (pwalletMain->mapAddressBook.find(CGamecreditsAddress(address).Get()) != pwalletMain->mapAddressBook.end())
+                    addressInfo.push_back(pwalletMain->mapAddressBook.find(CGamecreditsAddress(address).Get())->second.name);
             }
             jsonGrouping.push_back(addressInfo);
         }
@@ -424,7 +424,7 @@ Value signmessage(const Array& params, bool fHelp)
     string strAddress = params[0].get_str();
     string strMessage = params[1].get_str();
 
-    CBitmarkAddress addr(strAddress);
+    CGamecreditsAddress addr(strAddress);
     if (!addr.IsValid())
         throw JSONRPCError(RPC_TYPE_ERROR, "Invalid address");
 
@@ -470,7 +470,7 @@ Value getreceivedbyaddress(const Array& params, bool fHelp)
        );
 
     // Gamecredits address
-    CBitmarkAddress address = CBitmarkAddress(params[0].get_str());
+    CGamecreditsAddress address = CGamecreditsAddress(params[0].get_str());
     CScript scriptPubKey;
     if (!address.IsValid())
         throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid GameCredits address");
@@ -759,7 +759,7 @@ Value sendfrom(const Array& params, bool fHelp)
         );
 
     string strAccount = AccountFromValue(params[0]);
-    CBitmarkAddress address(params[1].get_str());
+    CGamecreditsAddress address(params[1].get_str());
     if (!address.IsValid())
         throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid GameCredits address");
     int64_t nAmount = AmountFromValue(params[2]);
@@ -829,13 +829,13 @@ Value sendmany(const Array& params, bool fHelp)
     if (params.size() > 3 && params[3].type() != null_type && !params[3].get_str().empty())
         wtx.mapValue["comment"] = params[3].get_str();
 
-    set<CBitmarkAddress> setAddress;
+    set<CGamecreditsAddress> setAddress;
     vector<pair<CScript, int64_t> > vecSend;
 
     int64_t totalAmount = 0;
     BOOST_FOREACH(const Pair& s, sendTo)
     {
-        CBitmarkAddress address(s.name_);
+        CGamecreditsAddress address(s.name_);
         if (!address.IsValid())
             throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, string("Invalid GameCredits address: ")+s.name_);
 
@@ -914,7 +914,7 @@ Value addmultisigaddress(const Array& params, bool fHelp)
     pwalletMain->AddCScript(inner);
 
     pwalletMain->SetAddressBook(innerID, strAccount, "send");
-    return CBitmarkAddress(innerID).ToString();
+    return CGamecreditsAddress(innerID).ToString();
 }
 
 
@@ -943,7 +943,7 @@ Value ListReceived(const Array& params, bool fByAccounts)
         fIncludeEmpty = params[1].get_bool();
 
     // Tally
-    map<CBitmarkAddress, tallyitem> mapTally;
+    map<CGamecreditsAddress, tallyitem> mapTally;
     for (map<uint256, CWalletTx>::iterator it = pwalletMain->mapWallet.begin(); it != pwalletMain->mapWallet.end(); ++it)
     {
         const CWalletTx& wtx = (*it).second;
@@ -971,11 +971,11 @@ Value ListReceived(const Array& params, bool fByAccounts)
     // Reply
     Array ret;
     map<string, tallyitem> mapAccountTally;
-    BOOST_FOREACH(const PAIRTYPE(CBitmarkAddress, CAddressBookData)& item, pwalletMain->mapAddressBook)
+    BOOST_FOREACH(const PAIRTYPE(CGamecreditsAddress, CAddressBookData)& item, pwalletMain->mapAddressBook)
     {
-        const CBitmarkAddress& address = item.first;
+        const CGamecreditsAddress& address = item.first;
         const string& strAccount = item.second.name;
-        map<CBitmarkAddress, tallyitem>::iterator it = mapTally.find(address);
+        map<CGamecreditsAddress, tallyitem>::iterator it = mapTally.find(address);
         if (it == mapTally.end() && !fIncludeEmpty)
             continue;
 
@@ -1091,7 +1091,7 @@ Value listreceivedbyaccount(const Array& params, bool fHelp)
 
 static void MaybePushAddress(Object & entry, const CTxDestination &dest)
 {
-    CBitmarkAddress addr;
+    CGamecreditsAddress addr;
     if (addr.Set(dest))
         entry.push_back(Pair("address", addr.ToString()));
 }

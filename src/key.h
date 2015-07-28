@@ -4,8 +4,8 @@
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITMARK_KEY_H
-#define BITMARK_KEY_H
+#ifndef GAMECREDITS_KEY_H
+#define GAMECREDITS_KEY_H
 
 #include "allocators.h"
 #include "hash.h"

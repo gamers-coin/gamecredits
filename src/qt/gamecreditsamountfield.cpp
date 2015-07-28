@@ -15,7 +15,7 @@
 #include <QKeyEvent>
 #include <qmath.h> // for qPow()
 
-BitmarkAmountField::BitmarkAmountField(QWidget *parent) :
+GamecreditsAmountField::GamecreditsAmountField(QWidget *parent) :
     QWidget(parent),
     amount(0),
     currentUnit(-1)
@@ -30,7 +30,7 @@ BitmarkAmountField::BitmarkAmountField(QWidget *parent) :
     QHBoxLayout *layout = new QHBoxLayout(this);
     layout->addWidget(amount);
     unit = new QValueComboBox(this);
-    unit->setModel(new BitmarkUnits(this));
+    unit->setModel(new GamecreditsUnits(this));
     layout->addWidget(unit);
     layout->addStretch(1);
     layout->setContentsMargins(0,0,0,0);
@@ -48,7 +48,7 @@ BitmarkAmountField::BitmarkAmountField(QWidget *parent) :
     unitChanged(unit->currentIndex());
 }
 
-void BitmarkAmountField::setText(const QString &text)
+void GamecreditsAmountField::setText(const QString &text)
 {
     if (text.isEmpty())
         amount->clear();
@@ -56,20 +56,20 @@ void BitmarkAmountField::setText(const QString &text)
         amount->setValue(text.toDouble());
 }
 
-void BitmarkAmountField::clear()
+void GamecreditsAmountField::clear()
 {
     amount->clear();
     unit->setCurrentIndex(0);
 }
 
-bool BitmarkAmountField::validate()
+bool GamecreditsAmountField::validate()
 {
     bool valid = true;
     if (amount->value() == 0.0)
         valid = false;
-    else if (!BitmarkUnits::parse(currentUnit, text(), 0))
+    else if (!GamecreditsUnits::parse(currentUnit, text(), 0))
         valid = false;
-    else if (amount->value() > BitmarkUnits::maxAmount(currentUnit))
+    else if (amount->value() > GamecreditsUnits::maxAmount(currentUnit))
         valid = false;
 
     setValid(valid);
@@ -77,7 +77,7 @@ bool BitmarkAmountField::validate()
     return valid;
 }
 
-void BitmarkAmountField::setValid(bool valid)
+void GamecreditsAmountField::setValid(bool valid)
 {
     if (valid)
         amount->setStyleSheet("");
@@ -85,7 +85,7 @@ void BitmarkAmountField::setValid(bool valid)
         amount->setStyleSheet(STYLE_INVALID);
 }
 
-QString BitmarkAmountField::text() const
+QString GamecreditsAmountField::text() const
 {
     if (amount->text().isEmpty())
         return QString();
@@ -93,7 +93,7 @@ QString BitmarkAmountField::text() const
         return amount->text();
 }
 
-bool BitmarkAmountField::eventFilter(QObject *object, QEvent *event)
+bool GamecreditsAmountField::eventFilter(QObject *object, QEvent *event)
 {
     if (event->type() == QEvent::FocusIn)
     {
@@ -114,17 +114,17 @@ bool BitmarkAmountField::eventFilter(QObject *object, QEvent *event)
     return QWidget::eventFilter(object, event);
 }
 
-QWidget *BitmarkAmountField::setupTabChain(QWidget *prev)
+QWidget *GamecreditsAmountField::setupTabChain(QWidget *prev)
 {
     QWidget::setTabOrder(prev, amount);
     QWidget::setTabOrder(amount, unit);
     return unit;
 }
 
-qint64 BitmarkAmountField::value(bool *valid_out) const
+qint64 GamecreditsAmountField::value(bool *valid_out) const
 {
     qint64 val_out = 0;
-    bool valid = BitmarkUnits::parse(currentUnit, text(), &val_out);
+    bool valid = GamecreditsUnits::parse(currentUnit, text(), &val_out);
     if (valid_out)
     {
         *valid_out = valid;
@@ -132,24 +132,24 @@ qint64 BitmarkAmountField::value(bool *valid_out) const
     return val_out;
 }
 
-void BitmarkAmountField::setValue(qint64 value)
+void GamecreditsAmountField::setValue(qint64 value)
 {
-    setText(BitmarkUnits::format(currentUnit, value));
+    setText(GamecreditsUnits::format(currentUnit, value));
 }
 
-void BitmarkAmountField::setReadOnly(bool fReadOnly)
+void GamecreditsAmountField::setReadOnly(bool fReadOnly)
 {
     amount->setReadOnly(fReadOnly);
     unit->setEnabled(!fReadOnly);
 }
 
-void BitmarkAmountField::unitChanged(int idx)
+void GamecreditsAmountField::unitChanged(int idx)
 {
     // Use description tooltip for current unit for the combobox
     unit->setToolTip(unit->itemData(idx, Qt::ToolTipRole).toString());
 
     // Determine new unit ID
-    int newUnit = unit->itemData(idx, BitmarkUnits::UnitRole).toInt();
+    int newUnit = unit->itemData(idx, GamecreditsUnits::UnitRole).toInt();
 
     // Parse current value and convert to new unit
     bool valid = false;
@@ -158,9 +158,9 @@ void BitmarkAmountField::unitChanged(int idx)
     currentUnit = newUnit;
 
     // Set max length after retrieving the value, to prevent truncation
-    amount->setDecimals(BitmarkUnits::decimals(currentUnit));
-    amount->setMaximum(qPow(10, BitmarkUnits::amountDigits(currentUnit)) - qPow(10, -amount->decimals()));
-    amount->setSingleStep((double)nSingleStep / (double)BitmarkUnits::factor(currentUnit));
+    amount->setDecimals(GamecreditsUnits::decimals(currentUnit));
+    amount->setMaximum(qPow(10, GamecreditsUnits::amountDigits(currentUnit)) - qPow(10, -amount->decimals()));
+    amount->setSingleStep((double)nSingleStep / (double)GamecreditsUnits::factor(currentUnit));
 
     if (valid)
     {
@@ -175,12 +175,12 @@ void BitmarkAmountField::unitChanged(int idx)
     setValid(true);
 }
 
-void BitmarkAmountField::setDisplayUnit(int newUnit)
+void GamecreditsAmountField::setDisplayUnit(int newUnit)
 {
     unit->setValue(newUnit);
 }
 
-void BitmarkAmountField::setSingleStep(qint64 step)
+void GamecreditsAmountField::setSingleStep(qint64 step)
 {
     nSingleStep = step;
     unitChanged(unit->currentIndex());

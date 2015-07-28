@@ -12,11 +12,11 @@ endif
 
 bin_PROGRAMS =
 
-if BUILD_BITMARKD
+if BUILD_GAMECREDITSD
   bin_PROGRAMS += gamecreditsd
 endif
 
-if BUILD_BITMARK_CLI
+if BUILD_GAMECREDITS_CLI
   bin_PROGRAMS += gamecredits-cli
 endif
 
@@ -24,7 +24,7 @@ SUBDIRS = . $(BUILD_QT) $(BUILD_TEST)
 DIST_SUBDIRS = . qt test
 .PHONY: FORCE
 # gamecredits core #
-BITMARK_CORE_H = \
+GAMECREDITS_CORE_H = \
   addrman.h \
   alert.h \
   allocators.h \
@@ -110,7 +110,7 @@ libgamecredits_server_a_SOURCES = \
   txdb.cpp \
   txmempool.cpp \
   $(JSON_H) \
-  $(BITMARK_CORE_H)
+  $(GAMECREDITS_CORE_H)
 
 libgamecredits_wallet_a_SOURCES = \
   db.cpp \
@@ -119,7 +119,7 @@ libgamecredits_wallet_a_SOURCES = \
   rpcwallet.cpp \
   wallet.cpp \
   walletdb.cpp \
-  $(BITMARK_CORE_H)
+  $(GAMECREDITS_CORE_H)
 
 libgamecredits_common_a_SOURCES = \
   base58.cpp \
@@ -136,7 +136,7 @@ libgamecredits_common_a_SOURCES = \
   sync.cpp \
   util.cpp \
   version.cpp \
-  $(BITMARK_CORE_H)
+  $(GAMECREDITS_CORE_H)
 
 if GLIBC_BACK_COMPAT
 libgamecredits_common_a_SOURCES += compat/glibc_compat.cpp
@@ -145,7 +145,7 @@ endif
 
 libgamecredits_cli_a_SOURCES = \
   rpcclient.cpp \
-  $(BITMARK_CORE_H)
+  $(GAMECREDITS_CORE_H)
 
 nodist_libgamecredits_common_a_SOURCES = $(top_srcdir)/src/obj/build.h
 #

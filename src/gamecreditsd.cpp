@@ -95,7 +95,7 @@ bool AppInit(int argc, char* argv[])
                   "  gamecreditsd [options] help                " + _("List commands") + "\n" +
                   "  gamecreditsd [options] help <command>      " + _("Get help for a command") + "\n";
 
-            strUsage += "\n" + HelpMessage(HMM_BITMARKD);
+            strUsage += "\n" + HelpMessage(HMM_GAMECREDITSD);
             strUsage += "\n" + HelpMessageCli(false);
 
             fprintf(stdout, "%s", strUsage.c_str());

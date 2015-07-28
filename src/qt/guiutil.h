@@ -42,9 +42,9 @@ namespace GUIUtil
     void setupAmountWidget(QLineEdit *widget, QWidget *parent);
 
     // Parse "gamecredits:" URI into recipient object, return true on successful parsing
-    bool parseBitmarkURI(const QUrl &uri, SendCoinsRecipient *out);
-    bool parseBitmarkURI(QString uri, SendCoinsRecipient *out);
-    QString formatBitmarkURI(const SendCoinsRecipient &info);
+    bool parseGamecreditsURI(const QUrl &uri, SendCoinsRecipient *out);
+    bool parseGamecreditsURI(QString uri, SendCoinsRecipient *out);
+    QString formatGamecreditsURI(const SendCoinsRecipient &info);
 
     // Returns true if given address+amount meets "dust" definition
     bool isDust(const QString& address, qint64 amount);
