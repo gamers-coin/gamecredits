@@ -1,4 +1,4 @@
-The following is a list of assets used in the bitmark source and their proper attribution.
+The following is a list of assets used in the gamecredits source and their proper attribution.
 
 [Wladimir van der Laan](https://github.com/laanwj)
 -----------------------
@@ -93,12 +93,12 @@ Jonas Schnelli
 -----------------------
 
 ### Info
-* Designer: Jonas Schnelli (based on the original bitmark logo from Bitboy)
+* Designer: Jonas Schnelli (based on the original gamecredits logo from Bitboy)
 * License: MIT
 
 ### Assets Used
-	src/qt/res/icons/bitmark.icns, src/qt/res/src/bitmark.svg,
-	src/qt/res/src/bitmark.ico, src/qt/res/src/bitmark.png,
-	src/qt/res/src/bitmark_testnet.png, docs/bitmark_logo_doxygen.png,
+	src/qt/res/icons/gamecredits.icns, src/qt/res/src/gamecredits.svg,
+	src/qt/res/src/gamecredits.ico, src/qt/res/src/gamecredits.png,
+	src/qt/res/src/gamecredits_testnet.png, docs/gamecredits_logo_doxygen.png,
 	src/qt/res/icons/toolbar.png, src/qt/res/icons/toolbar_testnet.png,
 	src/qt/res/images/splash.png, src/qt/res/images/splash_testnet.png

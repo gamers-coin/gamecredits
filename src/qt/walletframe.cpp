@@ -5,7 +5,7 @@
 
 #include "walletframe.h"
 
-#include "bitmarkgui.h"
+#include "gamecreditsgui.h"
 #include "walletview.h"
 
 #include <cstdio>

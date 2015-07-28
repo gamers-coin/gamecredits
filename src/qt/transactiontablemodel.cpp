@@ -6,7 +6,7 @@
 #include "transactiontablemodel.h"
 
 #include "addresstablemodel.h"
-#include "bitmarkunits.h"
+#include "gamecreditsunits.h"
 #include "guiconstants.h"
 #include "guiutil.h"
 #include "optionsmodel.h"

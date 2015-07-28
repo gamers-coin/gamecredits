@@ -12,13 +12,13 @@ Files and Folders
 This file takes care of generating `.qm` files from `.ts` files. It is mostly
 automated.
 
-### src/qt/bitmark.qrc
+### src/qt/gamecredits.qrc
 
 This file must be updated whenever a new translation is added. Please note that
 files must end with `.qm`, not `.ts`.
 
     <qresource prefix="/translations">
-        <file alias="en">locale/bitmark_en.qm</file>
+        <file alias="en">locale/gamecredits_en.qm</file>
         ...
     </qresource>
 
@@ -26,17 +26,17 @@ files must end with `.qm`, not `.ts`.
 
 This directory contains all translations. Filenames must adhere to this format:
 
-    bitmark_xx_YY.ts or bitmark_xx.ts
+    gamecredits_xx_YY.ts or gamecredits_xx.ts
 
-#### bitmark_en.ts (Source file)
+#### gamecredits_en.ts (Source file)
 
-`src/qt/locale/bitmark_en.ts` is treated in a special way. It is used as the
+`src/qt/locale/gamecredits_en.ts` is treated in a special way. It is used as the
 source for all other translations. Whenever a string in the code is changed
 this file must be updated to reflect those changes. A  custom script is used
 to extract strings from the non-Qt parts. This script makes use of `gettext`,
 so make sure that utility is installed (ie, `apt-get install gettext` on 
 Ubuntu/Debian). Once this has been updated, lupdate (included in the Qt SDK)
-is used to update bitmark_en.ts. This process has been automated, from src/qt,
+is used to update gamecredits_en.ts. This process has been automated, from src/qt,
 simply run:
     make translate
     
@@ -44,7 +44,7 @@ simply run:
 
 When new plurals are added to the source file, it's important to do the following steps:
 
-1. Open bitmark_en.ts in Qt Linguist (also included in the Qt SDK)
+1. Open gamecredits_en.ts in Qt Linguist (also included in the Qt SDK)
 2. Search for `%n`, which will take you to the parts in the translation that use plurals
 3. Look for empty `English Translation (Singular)` and `English Translation (Plural)` fields
 4. Add the appropriate strings for the singular and plural form of the base string
@@ -60,7 +60,7 @@ in Transifex and can be translated.
 
 To create the pull-request you have to do:
 
-    git add src/qt/bitmarkstrings.cpp src/qt/locale/bitmark_en.ts
+    git add src/qt/gamecreditstrings.cpp src/qt/locale/gamecredits_en.ts
     git commit
 
 Syncing with Transifex
@@ -68,7 +68,7 @@ Syncing with Transifex
 
 We are using https://transifex.com as a frontend for translating the client.
 
-https://www.transifex.com/projects/p/bitmark/resource/tx/
+https://www.transifex.com/projects/p/gamecredits/resource/tx/
 
 The "Transifex client" (see: http://support.transifex.com/customer/portal/topics/440187-transifex-client/articles)
 is used to fetch new translations from Transifex. The configuration for this client (`.tx/config`)
@@ -80,8 +80,8 @@ postprocessing steps before committing the translations.
 ### Fetching new translations
 
 1. `python contrib/devtools/update-translations.py`
-2. update `src/qt/bitmark.qrc` manually or via
-   `ls src/qt/locale/*ts|xargs -n1 basename|sed 's/\(bitmark_\(.*\)\).ts/<file alias="\2">locale\/\1.qm<\/file>/'`
+2. update `src/qt/gamecredits.qrc` manually or via
+   `ls src/qt/locale/*ts|xargs -n1 basename|sed 's/\(gamecredits_\(.*\)\).ts/<file alias="\2">locale\/\1.qm<\/file>/'`
 3. update `src/qt/Makefile.am` manually or via
-   `ls src/qt/locale/*ts|xargs -n1 basename|sed 's/\(bitmark_\(.*\)\).ts/  locale\/\1.ts \\/'`
+   `ls src/qt/locale/*ts|xargs -n1 basename|sed 's/\(gamecredits_\(.*\)\).ts/  locale\/\1.ts \\/'`
 4. `git add` new translations from `src/qt/locale/`

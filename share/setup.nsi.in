@@ -7,10 +7,10 @@ SetCompressor /SOLID lzma
 !define REGKEY "SOFTWARE\$(^Name)"
 !define VERSION @CLIENT_VERSION_MAJOR@.@CLIENT_VERSION_MINOR@.@CLIENT_VERSION_REVISION@
 !define COMPANY "Gamecredits Foundation"
-!define URL http://github.com/project-bitmark/bitmark/
+!define URL http://github.com/project-gamecredits/gamecredits/
 
 # MUI Symbol Definitions
-!define MUI_ICON "@abs_top_srcdir@/share/pixmaps/bitmark.ico"
+!define MUI_ICON "@abs_top_srcdir@/share/pixmaps/gamecredits.ico"
 !define MUI_WELCOMEFINISHPAGE_BITMAP "@abs_top_srcdir@/share/pixmaps/nsis-wizard.bmp"
 !define MUI_HEADERIMAGE
 !define MUI_HEADERIMAGE_RIGHT

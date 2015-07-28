@@ -41,8 +41,8 @@ SignVerifyMessageDialog::SignVerifyMessageDialog(QWidget *parent) :
     ui->messageIn_VM->installEventFilter(this);
     ui->signatureIn_VM->installEventFilter(this);
 
-    ui->signatureOut_SM->setFont(GUIUtil::bitmarkAddressFont());
-    ui->signatureIn_VM->setFont(GUIUtil::bitmarkAddressFont());
+    ui->signatureOut_SM->setFont(GUIUtil::gamecreditsAddressFont());
+    ui->signatureIn_VM->setFont(GUIUtil::gamecreditsAddressFont());
 }
 
 SignVerifyMessageDialog::~SignVerifyMessageDialog()

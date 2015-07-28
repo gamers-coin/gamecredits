@@ -6,7 +6,7 @@ define(_CLIENT_VERSION_REVISION, 4)
 define(_CLIENT_VERSION_BUILD, 3)
 define(_CLIENT_VERSION_IS_RELEASE, true)
 define(_COPYRIGHT_YEAR, 2015)
-AC_INIT([GameCredits Core],[_CLIENT_VERSION_MAJOR._CLIENT_VERSION_MINOR._CLIENT_VERSION_REVISION],[info@bitmark.org],[gamecredits])
+AC_INIT([GameCredits Core],[_CLIENT_VERSION_MAJOR._CLIENT_VERSION_MINOR._CLIENT_VERSION_REVISION],[info@gamecredits.org],[gamecredits])
 AC_CONFIG_AUX_DIR([src/build-aux])
 AC_CONFIG_MACRO_DIR([src/m4])
 AC_CANONICAL_HOST
@@ -111,7 +111,7 @@ AC_ARG_WITH([protoc-bindir],[AS_HELP_STRING([--with-protoc-bindir=BIN_DIR],[spec
 
 
 AC_CONFIG_SRCDIR([src])
-AC_CONFIG_HEADERS([src/bitmark-config.h])
+AC_CONFIG_HEADERS([src/gamecredits-config.h])
 
 dnl Checks for programs.
 AC_PROG_CXX
@@ -299,7 +299,7 @@ dnl Check for pthread compile/link requirements
 AX_PTHREAD
 INCLUDES="$INCLUDES $PTHREAD_CFLAGS"
 
-# The following macro will add the necessary defines to bitmark-config.h, but
+# The following macro will add the necessary defines to gamecredits-config.h, but
 # they also need to be passed down to any subprojects. Pull the results out of
 # the cache and add them to CPPFLAGS.
 AC_SYS_LARGEFILE
@@ -502,8 +502,8 @@ fi
 AC_ARG_WITH([cli],
   [AS_HELP_STRING([--with-cli],
   [with CLI (default is yes)])],
-  [build_bitmark_cli=$withval],
-  [build_bitmark_cli=yes])
+  [build_gamecredits_cli=$withval],
+  [build_gamecredits_cli=yes])
 
 AC_ARG_WITH([daemon],
   [AS_HELP_STRING([--with-daemon],
@@ -552,10 +552,10 @@ AM_CONDITIONAL([BUILD_BITMARKD], [test x$build_gamecreditsd = xyes])
 AC_MSG_RESULT($build_gamecreditsd)
 
 AC_MSG_CHECKING([whether to build gamecredits-cli])
-AM_CONDITIONAL([BUILD_BITMARK_CLI], [test x$build_bitmark_cli = xyes])
-AC_MSG_RESULT($build_bitmark_cli)
+AM_CONDITIONAL([BUILD_BITMARK_CLI], [test x$build_gamecredits_cli = xyes])
+AC_MSG_RESULT($build_gamecredits_cli)
 
-dnl sets $bitmark_enable_qt, $bitmark_enable_qt_test, $bitmark_enable_qt_dbus
+dnl sets $gamecredits_enable_qt, $gamecredits_enable_qt_test, $gamecredits_enable_qt_dbus
 BITMARK_QT_CONFIGURE([$use_pkgconfig], [qt4])
 
 AC_LANG_POP
@@ -614,14 +614,14 @@ else
 fi
 
 dnl these are only used when qt is enabled
-if test x$bitmark_enable_qt != xno; then
+if test x$gamecredits_enable_qt != xno; then
   BUILD_QT=qt
   dnl enable dbus support
   AC_MSG_CHECKING([whether to build GUI with support for D-Bus])
-  if test x$bitmark_enable_qt_dbus != xno; then
+  if test x$gamecredits_enable_qt_dbus != xno; then
     AC_DEFINE([USE_DBUS],[1],[Define if dbus support should be compiled in])
   fi
-  AC_MSG_RESULT($bitmark_enable_qt_dbus)
+  AC_MSG_RESULT($gamecredits_enable_qt_dbus)
 
   dnl enable qr support
   AC_MSG_CHECKING([whether to build GUI with support for QR codes])
@@ -645,7 +645,7 @@ if test x$bitmark_enable_qt != xno; then
   fi
 
   AC_MSG_CHECKING([whether to build test_gamecredits-qt])
-  if test x$use_tests$bitmark_enable_qt_test = xyesyes; then
+  if test x$use_tests$gamecredits_enable_qt_test = xyesyes; then
     AC_MSG_RESULT([yes])
     BUILD_TEST_QT="test"
   else
@@ -653,7 +653,7 @@ if test x$bitmark_enable_qt != xno; then
   fi
 fi
 
-AC_MSG_CHECKING([whether to build test_bitmark])
+AC_MSG_CHECKING([whether to build test_gamecredits])
 if test x$use_tests = xyes; then
   AC_MSG_RESULT([yes])
   BUILD_TEST="test"
@@ -699,6 +699,6 @@ AC_SUBST(BUILD_TEST)
 AC_SUBST(BUILD_QT)
 AC_SUBST(BUILD_TEST_QT)
 AC_CONFIG_FILES([Makefile src/Makefile src/test/Makefile src/qt/Makefile src/qt/test/Makefile share/setup.nsi share/qt/Info.plist])
-AC_CONFIG_FILES([qa/pull-tester/run-bitmarkd-for-test.sh],[chmod +x qa/pull-tester/run-bitmarkd-for-test.sh])
+AC_CONFIG_FILES([qa/pull-tester/run-gamecreditsd-for-test.sh],[chmod +x qa/pull-tester/run-gamecreditsd-for-test.sh])
 AC_CONFIG_FILES([qa/pull-tester/build-tests.sh],[chmod +x qa/pull-tester/build-tests.sh])
 AC_OUTPUT

@@ -141,7 +141,7 @@
         <string>&amp;Request payment</string>
        </property>
        <property name="icon">
-        <iconset resource="../bitmark.qrc">
+        <iconset resource="../gamecredits.qrc">
          <normaloff>:/icons/receiving_addresses</normaloff>:/icons/receiving_addresses</iconset>
        </property>
       </widget>
@@ -161,7 +161,7 @@
         <string>Clear</string>
        </property>
        <property name="icon">
-        <iconset resource="../bitmark.qrc">
+        <iconset resource="../gamecredits.qrc">
          <normaloff>:/icons/remove</normaloff>:/icons/remove</iconset>
        </property>
        <property name="autoRepeatDelay">
@@ -267,7 +267,7 @@
            <bool>false</bool>
           </property>
           <property name="icon">
-           <iconset resource="../bitmark.qrc">
+           <iconset resource="../gamecredits.qrc">
             <normaloff>:/icons/edit</normaloff>:/icons/edit</iconset>
           </property>
          </widget>
@@ -284,7 +284,7 @@
            <bool>false</bool>
           </property>
           <property name="icon">
-           <iconset resource="../bitmark.qrc">
+           <iconset resource="../gamecredits.qrc">
             <normaloff>:/icons/remove</normaloff>:/icons/remove</iconset>
           </property>
          </widget>
@@ -313,7 +313,7 @@
   <customwidget>
    <class>BitmarkAmountField</class>
    <extends>QLineEdit</extends>
-   <header>bitmarkamountfield.h</header>
+   <header>gamecreditsamountfield.h</header>
   </customwidget>
  </customwidgets>
  <tabstops>
@@ -328,7 +328,7 @@
   <tabstop>removeRequestButton</tabstop>
  </tabstops>
  <resources>
-  <include location="../bitmark.qrc"/>
+  <include location="../gamecredits.qrc"/>
  </resources>
  <connections/>
 </ui>

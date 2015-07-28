@@ -92,7 +92,7 @@ B2ADDRESS=$( $CLI $B2ARGS getaccountaddress "from1" )
 
 # Have B1 create two transactions; second will
 # spend change from first, since B1 starts with only a single
-# 50 bitmark output:
+# 50 gamecredits output:
 $CLI $B1ARGS move "" "foo" 10.0 > /dev/null
 $CLI $B1ARGS move "" "bar" 10.0 > /dev/null
 TXID1=$( $CLI $B1ARGS sendfrom foo $B2ADDRESS 1.0 0)

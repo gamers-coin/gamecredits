@@ -2,7 +2,7 @@
 #define CLIENTVERSION_H
 
 #if defined(HAVE_CONFIG_H)
-#include "bitmark-config.h"
+#include "gamecredits-config.h"
 #else
 //
 // client versioning and copyright year

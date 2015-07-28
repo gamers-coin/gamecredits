@@ -1,16 +1,16 @@
-Bitmark 0.9.4 BETA
+Gamecredits 0.9.4 BETA
 =====================
 
-Copyright (c) 2009-2015 Bitmark Developers
+Copyright (c) 2009-2015 Gamecredits Developers
 
 
 Setup
 ---------------------
-[Bitmark Core](http://bitmark.org/en/download) is the original Bitmark client and it builds the backbone of the network. However, it downloads and stores the entire history of Bitmark transactions (which is currently several GBs); depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more. Thankfully you only have to do this once. If you would like the process to go faster you can [download the blockchain directly](bootstrap.md).
+[Gamecredits Core](http://gamecredits.org/en/download) is the original Gamecredits client and it builds the backbone of the network. However, it downloads and stores the entire history of Gamecredits transactions (which is currently several GBs); depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more. Thankfully you only have to do this once. If you would like the process to go faster you can [download the blockchain directly](bootstrap.md).
 
 Running
 ---------------------
-The following are some helpful notes on how to run Bitmark on your native platform. 
+The following are some helpful notes on how to run Gamecredits on your native platform. 
 
 ### Unix
 
@@ -35,14 +35,14 @@ Drag GameCredits-Qt to your applications folder, and then run GameCredits-Qt.
 
 ### Need Help?
 
-* See the documentation at the [Bitmark Wiki](https://en.bitmark.it/wiki/Main_Page)
+* See the documentation at the [Gamecredits Wiki](https://en.gamecredits.it/wiki/Main_Page)
 for help and more information.
-* Ask for help on [#bitmark](http://webchat.freenode.net?channels=bitmark) on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net?channels=bitmark).
+* Ask for help on [#gamecredits](http://webchat.freenode.net?channels=gamecredits) on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net?channels=gamecredits).
 * Ask for help on the [bitcointalk](https://bitcointalk.org/) forums, in the [Technical Support board](https://bitcointalk.org/index.php?board=4.0).
 
 Building
 ---------------------
-The following are developer notes on how to build Bitmark on your native platform. They are not complete guides, but include notes on the necessary libraries, compile flags, etc.
+The following are developer notes on how to build Gamecredits on your native platform. They are not complete guides, but include notes on the necessary libraries, compile flags, etc.
 
 - [OSX Build Notes](build-osx.md)
 - [Unix Build Notes](build-unix.md)
@@ -50,19 +50,19 @@ The following are developer notes on how to build Bitmark on your native platfor
 
 Development
 ---------------------
-The Bitmark repo's [root README](https://github.com/project-bitmark/bitmark/blob/master/README.md) contains relevant information on the development process and automated testing.
+The Gamecredits repo's [root README](https://github.com/project-gamecredits/gamecredits/blob/master/README.md) contains relevant information on the development process and automated testing.
 
 - [Coding Guidelines](coding.md)
 - [Multiwallet Qt Development](multiwallet-qt.md)
 - [Release Notes](release-notes.md)
 - [Release Process](release-process.md)
-- [Source Code Documentation (External Link)](https://dev.visucore.com/bitmark/doxygen/)
+- [Source Code Documentation (External Link)](https://dev.visucore.com/gamecredits/doxygen/)
 - [Translation Process](translation_process.md)
 - [Unit Tests](unit-tests.md)
 
 ### Resources
 * Discuss on the [bitcointalk](https://bitcointalk.org/) forums, in the [Development & Technical Discussion board](https://bitcointalk.org/index.php?board=6.0).
-* Discuss on [#bitmark-dev](http://webchat.freenode.net/?channels=bitmark) on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net/?channels=bitmark-dev).
+* Discuss on [#gamecredits-dev](http://webchat.freenode.net/?channels=gamecredits) on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net/?channels=gamecredits-dev).
 
 ### Miscellaneous
 - [Assets Attribution](assets-attribution.md)

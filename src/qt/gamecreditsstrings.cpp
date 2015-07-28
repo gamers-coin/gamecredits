@@ -8,7 +8,7 @@
 #else
 #define UNUSED
 #endif
-static const char UNUSED *bitmark_strings[] = {
+static const char UNUSED *gamecredits_strings[] = {
 QT_TRANSLATE_NOOP("gamecredits-core", ""
 "%s, you must set a rpcpassword in the configuration file:\n"
 "%s\n"
@@ -211,7 +211,7 @@ QT_TRANSLATE_NOOP("gamecredits-core", "Password for JSON-RPC connections"),
 QT_TRANSLATE_NOOP("gamecredits-core", "Prepend debug output with timestamp (default: 1)"),
 QT_TRANSLATE_NOOP("gamecredits-core", "Print block on startup, if found in block index"),
 QT_TRANSLATE_NOOP("gamecredits-core", "Print block tree on startup (default: 0)"),
-QT_TRANSLATE_NOOP("gamecredits-core", "RPC SSL options: (see the Bitmark Wiki for SSL setup instructions)"),
+QT_TRANSLATE_NOOP("gamecredits-core", "RPC SSL options: (see the Gamecredits Wiki for SSL setup instructions)"),
 QT_TRANSLATE_NOOP("gamecredits-core", "RPC client options:"),
 QT_TRANSLATE_NOOP("gamecredits-core", "RPC server options:"),
 QT_TRANSLATE_NOOP("gamecredits-core", "Randomly drop 1 of every <n> network messages"),
@@ -221,7 +221,7 @@ QT_TRANSLATE_NOOP("gamecredits-core", "Rescan the block chain for missing wallet
 QT_TRANSLATE_NOOP("gamecredits-core", "Rescanning..."),
 QT_TRANSLATE_NOOP("gamecredits-core", "Run a thread to flush wallet periodically (default: 1)"),
 QT_TRANSLATE_NOOP("gamecredits-core", "Run in the background as a daemon and accept commands"),
-QT_TRANSLATE_NOOP("gamecredits-core", "SSL options: (see the Bitmark Wiki for SSL setup instructions)"),
+QT_TRANSLATE_NOOP("gamecredits-core", "SSL options: (see the Gamecredits Wiki for SSL setup instructions)"),
 QT_TRANSLATE_NOOP("gamecredits-core", "Select SOCKS version for -proxy (4 or 5, default: 5)"),
 QT_TRANSLATE_NOOP("gamecredits-core", "Send command to GameCredits Core"),
 QT_TRANSLATE_NOOP("gamecredits-core", "Send commands to node running on <ip> (default: 127.0.0.1)"),

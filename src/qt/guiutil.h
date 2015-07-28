@@ -26,7 +26,7 @@ class QUrl;
 class QWidget;
 QT_END_NAMESPACE
 
-/** Utility functions used by the Bitmark Qt UI.
+/** Utility functions used by the Gamecredits Qt UI.
  */
 namespace GUIUtil
 {
@@ -34,14 +34,14 @@ namespace GUIUtil
     QString dateTimeStr(const QDateTime &datetime);
     QString dateTimeStr(qint64 nTime);
 
-    // Render Bitmark addresses in monospace font
-    QFont bitmarkAddressFont();
+    // Render Gamecredits addresses in monospace font
+    QFont gamecreditsAddressFont();
 
     // Set up widgets for address and amounts
     void setupAddressWidget(QValidatedLineEdit *widget, QWidget *parent);
     void setupAmountWidget(QLineEdit *widget, QWidget *parent);
 
-    // Parse "bitmark:" URI into recipient object, return true on successful parsing
+    // Parse "gamecredits:" URI into recipient object, return true on successful parsing
     bool parseBitmarkURI(const QUrl &uri, SendCoinsRecipient *out);
     bool parseBitmarkURI(QString uri, SendCoinsRecipient *out);
     QString formatBitmarkURI(const SendCoinsRecipient &info);

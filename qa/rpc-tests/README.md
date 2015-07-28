@@ -1,9 +1,9 @@
 Regression tests of RPC interface
 =================================
 
-### [python-bitmarkrpc](https://github.com/jgarzik/python-bitmarkrpc)
-Git subtree of [https://github.com/jgarzik/python-bitmarkrpc](https://github.com/jgarzik/python-bitmarkrpc).
-Changes to python-bitmarkrpc should be made upstream, and then
+### [python-gamecreditsrpc](https://github.com/jgarzik/python-gamecreditsrpc)
+Git subtree of [https://github.com/jgarzik/python-gamecreditsrpc](https://github.com/jgarzik/python-gamecreditsrpc).
+Changes to python-gamecreditsrpc should be made upstream, and then
 pulled here using git subtree.
 
 ### [skeleton.py](skeleton.py)

@@ -7,7 +7,7 @@
 #define NOTIFICATOR_H
 
 #if defined(HAVE_CONFIG_H)
-#include "bitmark-config.h"
+#include "gamecredits-config.h"
 #endif
 
 #include <QIcon>

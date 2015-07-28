@@ -5,7 +5,7 @@
 
 #include "qvalidatedlineedit.h"
 
-#include "bitmarkaddressvalidator.h"
+#include "gamecreditsaddressvalidator.h"
 #include "guiconstants.h"
 
 QValidatedLineEdit::QValidatedLineEdit(QWidget *parent) :

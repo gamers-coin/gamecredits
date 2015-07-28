@@ -64,7 +64,7 @@ public:
 };
 
 /**
- * Bitmark RPC command dispatcher.
+ * Gamecredits RPC command dispatcher.
  */
 class CRPCTable
 {

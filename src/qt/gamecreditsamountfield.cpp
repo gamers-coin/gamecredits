@@ -3,9 +3,9 @@
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "bitmarkamountfield.h"
+#include "gamecreditsamountfield.h"
 
-#include "bitmarkunits.h"
+#include "gamecreditsunits.h"
 #include "guiconstants.h"
 #include "qvaluecombobox.h"
 

@@ -7,7 +7,7 @@
 #include "ui_sendcoinsdialog.h"
 
 #include "addresstablemodel.h"
-#include "bitmarkunits.h"
+#include "gamecreditsunits.h"
 #include "coincontroldialog.h"
 #include "guiutil.h"
 #include "optionsmodel.h"

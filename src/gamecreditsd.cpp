@@ -21,8 +21,8 @@
  *
  * \section intro_sec Introduction
  *
- * This is the developer documentation of the reference client for an experimental new digital currency called Bitmark (http://github.com/coinsolidation/bitmark),
- * which enables instant payments to anyone, anywhere in the world. Bitmark uses peer-to-peer technology to operate
+ * This is the developer documentation of the reference client for an experimental new digital currency called Gamecredits (http://github.com/coinsolidation/gamecredits),
+ * which enables instant payments to anyone, anywhere in the world. Gamecredits uses peer-to-peer technology to operate
  * with no central authority: managing transactions and issuing money are carried out collectively by the network.
  *
  * The software is a community-driven open source project, released under the MIT license.
@@ -64,7 +64,7 @@ bool AppInit(int argc, char* argv[])
         //
         // Parameters
         //
-        // If Qt is used, parameters/gamecredits.conf are parsed in qt/bitmark.cpp's main()
+        // If Qt is used, parameters/gamecredits.conf are parsed in qt/gamecredits.cpp's main()
         ParseParameters(argc, argv);
         if (!boost::filesystem::is_directory(GetDataDir(false)))
         {
@@ -105,7 +105,7 @@ bool AppInit(int argc, char* argv[])
         // Command-line RPC
         bool fCommandLine = false;
         for (int i = 1; i < argc; i++)
-            if (!IsSwitchChar(argv[i][0]) && !boost::algorithm::istarts_with(argv[i], "bitmark:"))
+            if (!IsSwitchChar(argv[i][0]) && !boost::algorithm::istarts_with(argv[i], "gamecredits:"))
                 fCommandLine = true;
 
         if (fCommandLine)

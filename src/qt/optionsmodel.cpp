@@ -4,12 +4,12 @@
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #if defined(HAVE_CONFIG_H)
-#include "bitmark-config.h"
+#include "gamecredits-config.h"
 #endif
 
 #include "optionsmodel.h"
 
-#include "bitmarkunits.h"
+#include "gamecreditsunits.h"
 #include "guiutil.h"
 
 #include "init.h"

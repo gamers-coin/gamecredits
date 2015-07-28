@@ -28,7 +28,7 @@
       </sizepolicy>
      </property>
      <property name="pixmap">
-      <pixmap resource="../bitmark.qrc">:/images/about</pixmap>
+      <pixmap resource="../gamecredits.qrc">:/images/about</pixmap>
      </property>
     </widget>
    </item>
@@ -89,7 +89,7 @@
   </layout>
  </widget>
  <resources>
-  <include location="../bitmark.qrc"/>
+  <include location="../gamecredits.qrc"/>
  </resources>
  <connections>
   <connection>

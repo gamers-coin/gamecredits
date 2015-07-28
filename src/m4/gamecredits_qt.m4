@@ -1,18 +1,18 @@
 dnl Helper for cases where a qt dependency is not met.
-dnl Output: If qt version is auto, set bitmark_enable_qt to false. Else, exit.
+dnl Output: If qt version is auto, set gamecredits_enable_qt to false. Else, exit.
 AC_DEFUN([BITMARK_QT_FAIL],[
-  if test "x$bitmark_qt_want_version" = "xauto" && test x$bitmark_qt_force != xyes; then
-    if test x$bitmark_enable_qt != xno; then
+  if test "x$gamecredits_qt_want_version" = "xauto" && test x$gamecredits_qt_force != xyes; then
+    if test x$gamecredits_enable_qt != xno; then
       AC_MSG_WARN([$1; gamecredits-qt frontend will not be built])
     fi
-    bitmark_enable_qt=no
+    gamecredits_enable_qt=no
   else
     AC_MSG_ERROR([$1])
   fi
 ])
 
 AC_DEFUN([BITMARK_QT_CHECK],[
-  if test "x$bitmark_enable_qt" != "xno" && test x$bitmark_qt_want_version != xno; then
+  if test "x$gamecredits_enable_qt" != "xno" && test x$gamecredits_qt_want_version != xno; then
     true
     $1
   else
@@ -51,13 +51,13 @@ AC_DEFUN([BITMARK_QT_INIT],[
     [AS_HELP_STRING([--with-gui],
     [with GUI (no|qt4|qt5|auto. default is auto, qt4 tried first.)])],
     [
-     bitmark_qt_want_version=$withval
-     if test x$bitmark_qt_want_version = xyes; then
-       bitmark_qt_force=yes
-       bitmark_qt_want_version=auto
+     gamecredits_qt_want_version=$withval
+     if test x$gamecredits_qt_want_version = xyes; then
+       gamecredits_qt_force=yes
+       gamecredits_qt_want_version=auto
      fi
     ],
-    [bitmark_qt_want_version=auto])
+    [gamecredits_qt_want_version=auto])
 
   AC_ARG_WITH([qt-incdir],[AS_HELP_STRING([--with-qt-incdir=INC_DIR],[specify qt include path (overridden by pkgconfig)])], [qt_include_path=$withval], [])
   AC_ARG_WITH([qt-libdir],[AS_HELP_STRING([--with-qt-libdir=LIB_DIR],[specify qt lib path (overridden by pkgconfig)])], [qt_lib_path=$withval], [])
@@ -77,7 +77,7 @@ dnl Inputs: $2: If $1 is "yes" and --with-gui=auto, which qt version should be
 dnl         tried first.
 dnl Outputs: See _BITMARK_QT_FIND_LIBS_*
 dnl Outputs: Sets variables for all qt-related tools.
-dnl Outputs: bitmark_enable_qt, bitmark_enable_qt_dbus, bitmark_enable_qt_test
+dnl Outputs: gamecredits_enable_qt, gamecredits_enable_qt_dbus, gamecredits_enable_qt_test
 AC_DEFUN([BITMARK_QT_CONFIGURE],[
   use_pkgconfig=$1
 
@@ -94,11 +94,11 @@ AC_DEFUN([BITMARK_QT_CONFIGURE],[
     BITMARK_QT_CHECK([_BITMARK_QT_FIND_LIBS_WITHOUT_PKGCONFIG])
   fi
 
-  BITMARK_QT_PATH_PROGS([MOC], [moc-qt${bitmark_qt_got_major_vers} moc${bitmark_qt_got_major_vers} moc], $qt_bin_path)
-  BITMARK_QT_PATH_PROGS([UIC], [uic-qt${bitmark_qt_got_major_vers} uic${bitmark_qt_got_major_vers} uic], $qt_bin_path)
-  BITMARK_QT_PATH_PROGS([RCC], [rcc-qt${bitmark_qt_got_major_vers} rcc${bitmark_qt_got_major_vers} rcc], $qt_bin_path)
-  BITMARK_QT_PATH_PROGS([LRELEASE], [lrelease-qt${bitmark_qt_got_major_vers} lrelease${bitmark_qt_got_major_vers} lrelease], $qt_bin_path)
-  BITMARK_QT_PATH_PROGS([LUPDATE], [lupdate-qt${bitmark_qt_got_major_vers} lupdate${bitmark_qt_got_major_vers} lupdate],$qt_bin_path, yes)
+  BITMARK_QT_PATH_PROGS([MOC], [moc-qt${gamecredits_qt_got_major_vers} moc${gamecredits_qt_got_major_vers} moc], $qt_bin_path)
+  BITMARK_QT_PATH_PROGS([UIC], [uic-qt${gamecredits_qt_got_major_vers} uic${gamecredits_qt_got_major_vers} uic], $qt_bin_path)
+  BITMARK_QT_PATH_PROGS([RCC], [rcc-qt${gamecredits_qt_got_major_vers} rcc${gamecredits_qt_got_major_vers} rcc], $qt_bin_path)
+  BITMARK_QT_PATH_PROGS([LRELEASE], [lrelease-qt${gamecredits_qt_got_major_vers} lrelease${gamecredits_qt_got_major_vers} lrelease], $qt_bin_path)
+  BITMARK_QT_PATH_PROGS([LUPDATE], [lupdate-qt${gamecredits_qt_got_major_vers} lupdate${gamecredits_qt_got_major_vers} lupdate],$qt_bin_path, yes)
 
   MOC_DEFS='-DHAVE_CONFIG_H -I$(top_srcdir)/src'
   case $host in
@@ -119,14 +119,14 @@ AC_DEFUN([BITMARK_QT_CONFIGURE],[
   dnl enable qt support
   AC_MSG_CHECKING(whether to build GameCredits Core GUI)
   BITMARK_QT_CHECK([
-    bitmark_enable_qt=yes
-    bitmark_enable_qt_test=yes
+    gamecredits_enable_qt=yes
+    gamecredits_enable_qt_test=yes
     if test x$have_qt_test = xno; then
-      bitmark_enable_qt_test=no
+      gamecredits_enable_qt_test=no
     fi
-    bitmark_enable_qt_dbus=no
+    gamecredits_enable_qt_dbus=no
     if test x$use_dbus != xno && test x$have_qt_dbus = xyes; then
-      bitmark_enable_qt_dbus=yes
+      gamecredits_enable_qt_dbus=yes
     fi
     if test x$use_dbus = xyes && test x$have_qt_dbus = xno; then
       AC_MSG_ERROR("libQtDBus not found. Install libQtDBus or remove --with-qtdbus.")
@@ -135,9 +135,9 @@ AC_DEFUN([BITMARK_QT_CONFIGURE],[
       AC_MSG_WARN("lupdate is required to update qt translations")
     fi
   ],[
-    bitmark_enable_qt=no
+    gamecredits_enable_qt=no
   ])
-  AC_MSG_RESULT([$bitmark_enable_qt (Qt${bitmark_qt_got_major_vers})])
+  AC_MSG_RESULT([$gamecredits_enable_qt (Qt${gamecredits_qt_got_major_vers})])
 
   AC_SUBST(QT_INCLUDES)
   AC_SUBST(QT_LIBS)
@@ -146,7 +146,7 @@ AC_DEFUN([BITMARK_QT_CONFIGURE],[
   AC_SUBST(QT_DBUS_LIBS)
   AC_SUBST(QT_TEST_INCLUDES)
   AC_SUBST(QT_TEST_LIBS)
-  AC_SUBST(QT_SELECT, qt${bitmark_qt_got_major_vers})
+  AC_SUBST(QT_SELECT, qt${gamecredits_qt_got_major_vers})
   AC_SUBST(MOC_DEFS)
 ])
 
@@ -156,9 +156,9 @@ dnl ----
 
 dnl Internal. Check if the included version of Qt is Qt5.
 dnl Requires: INCLUDES must be populated as necessary.
-dnl Output: bitmark_cv_qt5=yes|no
+dnl Output: gamecredits_cv_qt5=yes|no
 AC_DEFUN([_BITMARK_QT_CHECK_QT5],[
-  AC_CACHE_CHECK(for Qt 5, bitmark_cv_qt5,[
+  AC_CACHE_CHECK(for Qt 5, gamecredits_cv_qt5,[
   AC_TRY_COMPILE(
     [#include <QtCore>],
     [
@@ -168,17 +168,17 @@ AC_DEFUN([_BITMARK_QT_CHECK_QT5],[
       return 0;
       #endif
     ],
-    bitmark_cv_qt5=yes,
-    bitmark_cv_qt5=no)
+    gamecredits_cv_qt5=yes,
+    gamecredits_cv_qt5=no)
 ])])
 
 dnl Internal. Check if the linked version of Qt was built as static libs.
 dnl Requires: Qt5. This check cannot determine if Qt4 is static.
 dnl Requires: INCLUDES and LIBS must be populated as necessary.
-dnl Output: bitmark_cv_static_qt=yes|no
+dnl Output: gamecredits_cv_static_qt=yes|no
 dnl Output: Defines QT_STATICPLUGIN if plugins are static.
 AC_DEFUN([_BITMARK_QT_IS_STATIC],[
-  AC_CACHE_CHECK(for static Qt, bitmark_cv_static_qt,[
+  AC_CACHE_CHECK(for static Qt, gamecredits_cv_static_qt,[
   AC_TRY_COMPILE(
     [#include <QtCore>],
     [
@@ -188,10 +188,10 @@ AC_DEFUN([_BITMARK_QT_IS_STATIC],[
       choke me
       #endif
     ],
-    [bitmark_cv_static_qt=yes],
-    [bitmark_cv_static_qt=no])
+    [gamecredits_cv_static_qt=yes],
+    [gamecredits_cv_static_qt=no])
   ])
-  if test xbitmark_cv_static_qt = xyes; then
+  if test xgamecredits_cv_static_qt = xyes; then
     AC_DEFINE(QT_STATICPLUGIN, 1, [Define this symbol for static Qt plugins])
   fi
 ])
@@ -216,12 +216,12 @@ AC_DEFUN([_BITMARK_QT_CHECK_STATIC_PLUGINS],[
 ])
 
 dnl Internal. Find Qt libraries using pkg-config.
-dnl Inputs: bitmark_qt_want_version (from --with-gui=). The version to check
+dnl Inputs: gamecredits_qt_want_version (from --with-gui=). The version to check
 dnl         first.
-dnl Inputs: $1: If bitmark_qt_want_version is "auto", check for this version
+dnl Inputs: $1: If gamecredits_qt_want_version is "auto", check for this version
 dnl         first.
 dnl Outputs: All necessary QT_* variables are set.
-dnl Outputs: bitmark_qt_got_major_vers is set to "4" or "5".
+dnl Outputs: gamecredits_qt_got_major_vers is set to "4" or "5".
 dnl Outputs: have_qt_test and have_qt_dbus are set (if applicable) to yes|no.
 AC_DEFUN([_BITMARK_QT_FIND_LIBS_WITH_PKGCONFIG],[
   m4_ifdef([PKG_CHECK_MODULES],[
@@ -229,28 +229,28 @@ AC_DEFUN([_BITMARK_QT_FIND_LIBS_WITH_PKGCONFIG],[
   if test x$auto_priority_version == x; then
     auto_priority_version=qt5
   fi
-    if test x$bitmark_qt_want_version == xqt5 ||  ( test x$bitmark_qt_want_version == xauto && test x$auto_priority_version == xqt5 ); then
+    if test x$gamecredits_qt_want_version == xqt5 ||  ( test x$gamecredits_qt_want_version == xauto && test x$auto_priority_version == xqt5 ); then
       QT_LIB_PREFIX=Qt5
-      bitmark_qt_got_major_vers=5
+      gamecredits_qt_got_major_vers=5
     else
       QT_LIB_PREFIX=Qt
-      bitmark_qt_got_major_vers=4
+      gamecredits_qt_got_major_vers=4
     fi
     qt5_modules="Qt5Core Qt5Gui Qt5Network Qt5Widgets"
     qt4_modules="QtCore QtGui QtNetwork"
     BITMARK_QT_CHECK([
-      if test x$bitmark_qt_want_version == xqt5 || ( test x$bitmark_qt_want_version == xauto && test x$auto_priority_version == xqt5 ); then
+      if test x$gamecredits_qt_want_version == xqt5 || ( test x$gamecredits_qt_want_version == xauto && test x$auto_priority_version == xqt5 ); then
         PKG_CHECK_MODULES([QT], [$qt5_modules], [QT_INCLUDES="$QT_CFLAGS"; have_qt=yes],[have_qt=no])
-      elif test x$bitmark_qt_want_version == xqt4 || ( test x$bitmark_qt_want_version == xauto && test x$auto_priority_version == xqt4 ); then
+      elif test x$gamecredits_qt_want_version == xqt4 || ( test x$gamecredits_qt_want_version == xauto && test x$auto_priority_version == xqt4 ); then
         PKG_CHECK_MODULES([QT], [$qt4_modules], [QT_INCLUDES="$QT_CFLAGS"; have_qt=yes], [have_qt=no])
       fi
 
       dnl qt version is set to 'auto' and the preferred version wasn't found. Now try the other.
-      if test x$have_qt == xno && test x$bitmark_qt_want_version == xauto; then
+      if test x$have_qt == xno && test x$gamecredits_qt_want_version == xauto; then
         if test x$auto_priority_version = x$qt5; then
-          PKG_CHECK_MODULES([QT], [$qt4_modules], [QT_INCLUDES="$QT_CFLAGS"; have_qt=yes; QT_LIB_PREFIX=Qt; bitmark_qt_got_major_vers=4], [have_qt=no])
+          PKG_CHECK_MODULES([QT], [$qt4_modules], [QT_INCLUDES="$QT_CFLAGS"; have_qt=yes; QT_LIB_PREFIX=Qt; gamecredits_qt_got_major_vers=4], [have_qt=no])
         else
-          PKG_CHECK_MODULES([QT], [$qt5_modules], [QT_INCLUDES="$QT_CFLAGS"; have_qt=yes; QT_LIB_PREFIX=Qt5; bitmark_qt_got_major_vers=5], [have_qt=no])
+          PKG_CHECK_MODULES([QT], [$qt5_modules], [QT_INCLUDES="$QT_CFLAGS"; have_qt=yes; QT_LIB_PREFIX=Qt5; gamecredits_qt_got_major_vers=5], [have_qt=no])
         fi
       fi
       if test x$have_qt != xyes; then
@@ -270,10 +270,10 @@ AC_DEFUN([_BITMARK_QT_FIND_LIBS_WITH_PKGCONFIG],[
 
 dnl Internal. Find Qt libraries without using pkg-config. Version is deduced
 dnl from the discovered headers.
-dnl Inputs: bitmark_qt_want_version (from --with-gui=). The version to use.
+dnl Inputs: gamecredits_qt_want_version (from --with-gui=). The version to use.
 dnl         If "auto", the version will be discovered by _BITMARK_QT_CHECK_QT5.
 dnl Outputs: All necessary QT_* variables are set.
-dnl Outputs: bitmark_qt_got_major_vers is set to "4" or "5".
+dnl Outputs: gamecredits_qt_got_major_vers is set to "4" or "5".
 dnl Outputs: have_qt_test and have_qt_dbus are set (if applicable) to yes|no.
 AC_DEFUN([_BITMARK_QT_FIND_LIBS_WITHOUT_PKGCONFIG],[
   TEMP_CPPFLAGS="$CPPFLAGS"
@@ -290,15 +290,15 @@ AC_DEFUN([_BITMARK_QT_FIND_LIBS_WITHOUT_PKGCONFIG],[
   BITMARK_QT_CHECK([AC_CHECK_HEADER([QLocalSocket],, BITMARK_QT_FAIL(QtNetwork headers missing))])
 
   BITMARK_QT_CHECK([
-    if test x$bitmark_qt_want_version = xauto; then
+    if test x$gamecredits_qt_want_version = xauto; then
       _BITMARK_QT_CHECK_QT5
     fi
-    if test x$bitmark_cv_qt5 == xyes || test x$bitmark_qt_want_version = xqt5; then
+    if test x$gamecredits_cv_qt5 == xyes || test x$gamecredits_qt_want_version = xqt5; then
       QT_LIB_PREFIX=Qt5
-      bitmark_qt_got_major_vers=5
+      gamecredits_qt_got_major_vers=5
     else
       QT_LIB_PREFIX=Qt
-      bitmark_qt_got_major_vers=4
+      gamecredits_qt_got_major_vers=4
     fi
   ])
 
@@ -309,7 +309,7 @@ AC_DEFUN([_BITMARK_QT_FIND_LIBS_WITHOUT_PKGCONFIG],[
     fi
     if test x$qt_plugin_path != x; then
       LIBS="$LIBS -L$qt_plugin_path/accessible"
-      if test x$bitmark_qt_got_major_vers == x5; then
+      if test x$gamecredits_qt_got_major_vers == x5; then
         LIBS="$LIBS -L$qt_plugin_path/platforms"
       else
         LIBS="$LIBS -L$qt_plugin_path/codecs"
@@ -326,7 +326,7 @@ AC_DEFUN([_BITMARK_QT_FIND_LIBS_WITHOUT_PKGCONFIG],[
   BITMARK_QT_CHECK(AC_CHECK_LIB([${QT_LIB_PREFIX}Core]   ,[main],,BITMARK_QT_FAIL(lib$QT_LIB_PREFIXCore not found)))
   BITMARK_QT_CHECK(AC_CHECK_LIB([${QT_LIB_PREFIX}Gui]    ,[main],,BITMARK_QT_FAIL(lib$QT_LIB_PREFIXGui not found)))
   BITMARK_QT_CHECK(AC_CHECK_LIB([${QT_LIB_PREFIX}Network],[main],,BITMARK_QT_FAIL(lib$QT_LIB_PREFIXNetwork not found)))
-  if test x$bitmark_qt_got_major_vers == x5; then
+  if test x$gamecredits_qt_got_major_vers == x5; then
     BITMARK_QT_CHECK(AC_CHECK_LIB([${QT_LIB_PREFIX}Widgets],[main],,BITMARK_QT_FAIL(lib$QT_LIB_PREFIXWidgets not found)))
   fi
   QT_LIBS="$LIBS"
@@ -342,9 +342,9 @@ AC_DEFUN([_BITMARK_QT_FIND_LIBS_WITHOUT_PKGCONFIG],[
   dnl _BITMARK_QT_CHECK_STATIC_PLUGINS does a quick link-check and appends the
   dnl results to QT_LIBS.
   BITMARK_QT_CHECK([
-    if test x$bitmark_qt_got_major_vers == x5; then
+    if test x$gamecredits_qt_got_major_vers == x5; then
       _BITMARK_QT_IS_STATIC
-      if test x$bitmark_cv_static_qt == xyes; then 
+      if test x$gamecredits_cv_static_qt == xyes; then 
         AC_DEFINE(QT_STATICPLUGIN, 1, [Define this symbol if qt plugins are static])
         _BITMARK_QT_CHECK_STATIC_PLUGINS([Q_IMPORT_PLUGIN(AccessibleFactory)], [-lqtaccessiblewidgets])
         if test x$TARGET_OS == xwindows; then

@@ -6,7 +6,7 @@
 #include "overviewpage.h"
 #include "ui_overviewpage.h"
 
-#include "bitmarkunits.h"
+#include "gamecreditsunits.h"
 #include "clientmodel.h"
 #include "guiconstants.h"
 #include "guiutil.h"

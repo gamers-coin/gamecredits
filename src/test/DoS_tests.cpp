@@ -119,7 +119,7 @@ BOOST_AUTO_TEST_CASE(DoS_checknbits)
 {
     using namespace boost::assign; // for 'map_list_of()'
 
-    // Timestamps,nBits from the bitmark block chain.
+    // Timestamps,nBits from the gamecredits block chain.
     // These are the block-chain checkpoint blocks
     typedef std::map<int64_t, unsigned int> BlockData;
     BlockData chainData =

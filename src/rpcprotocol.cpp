@@ -209,7 +209,7 @@ int ReadHTTPMessage(std::basic_istream<char>& stream, map<string,
 }
 
 //
-// JSON-RPC protocol.  Bitmark speaks version 1.0 for maximum compatibility,
+// JSON-RPC protocol.  Gamecredits speaks version 1.0 for maximum compatibility,
 // but uses JSON-RPC 1.1/2.0 standards for parts of the 1.0 standard that were
 // unspecified (HTTP errors and contents of 'error').
 //

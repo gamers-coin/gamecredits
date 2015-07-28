@@ -4,10 +4,10 @@
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #if defined(HAVE_CONFIG_H)
-#include "bitmark-config.h"
+#include "gamecredits-config.h"
 #endif
 
-#include "bitmarkgui.h"
+#include "gamecreditsgui.h"
 
 #include "clientmodel.h"
 #include "guiconstants.h"
@@ -74,7 +74,7 @@ static void InitMessage(const std::string &message)
  */
 static std::string Translate(const char* psz)
 {
-    return QCoreApplication::translate("bitmark-core", psz).toStdString();
+    return QCoreApplication::translate("gamecredits-core", psz).toStdString();
 }
 
 /** Set up translations */
@@ -114,11 +114,11 @@ static void initTranslations(QTranslator &qtTranslatorBase, QTranslator &qtTrans
     if (qtTranslator.load("qt_" + lang_territory, QLibraryInfo::location(QLibraryInfo::TranslationsPath)))
         QApplication::installTranslator(&qtTranslator);
 
-    // Load e.g. bitmark_de.qm (shortcut "de" needs to be defined in bitmark.qrc)
+    // Load e.g. gamecredits_de.qm (shortcut "de" needs to be defined in gamecredits.qrc)
     if (translatorBase.load(lang, ":/translations/"))
         QApplication::installTranslator(&translatorBase);
 
-    // Load e.g. bitmark_de_DE.qm (shortcut "de_DE" needs to be defined in bitmark.qrc)
+    // Load e.g. gamecredits_de_DE.qm (shortcut "de_DE" needs to be defined in gamecredits.qrc)
     if (translator.load(lang_territory, ":/translations/"))
         QApplication::installTranslator(&translator);
 }
@@ -139,7 +139,7 @@ void DebugMessageHandler(QtMsgType type, const QMessageLogContext& context, cons
 }
 #endif
 
-/** Class encapsulating Bitmark Core startup and shutdown.
+/** Class encapsulating Gamecredits Core startup and shutdown.
  * Allows running startup and shutdown in a different thread from the UI thread.
  */
 class BitmarkCore: public QObject
@@ -164,7 +164,7 @@ private:
     void handleRunawayException(std::exception *e);
 };
 
-/** Main Bitmark application object */
+/** Main Gamecredits application object */
 class BitmarkApplication: public QApplication
 {
     Q_OBJECT
@@ -221,7 +221,7 @@ private:
     void startThread();
 };
 
-#include "bitmark.moc"
+#include "gamecredits.moc"
 
 BitmarkCore::BitmarkCore():
     QObject()
@@ -423,7 +423,7 @@ void BitmarkApplication::initializeResult(int retval)
         }
 #ifdef ENABLE_WALLET
         // Now that initialization/startup is done, process any command-line
-        // bitmark: URIs or payment requests:
+        // gamecredits: URIs or payment requests:
         connect(paymentServer, SIGNAL(receivedPaymentRequest(SendCoinsRecipient)),
                          window, SLOT(handlePaymentRequest(SendCoinsRecipient)));
         connect(window, SIGNAL(receivedURI(QString)),
@@ -475,7 +475,7 @@ int main(int argc, char *argv[])
     QTextCodec::setCodecForCStrings(QTextCodec::codecForTr());
 #endif
 
-    Q_INIT_RESOURCE(bitmark);
+    Q_INIT_RESOURCE(gamecredits);
 
     GUIUtil::SubstituteFonts();
 
@@ -569,7 +569,7 @@ int main(int argc, char *argv[])
         exit(0);
 
     // Start up the payment server early, too, so impatient users that click on
-    // bitmark: links repeatedly have their payment requests routed to this process:
+    // gamecredits: links repeatedly have their payment requests routed to this process:
     app.createPaymentServer();
 #endif
 

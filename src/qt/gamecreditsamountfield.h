@@ -13,7 +13,7 @@ class QDoubleSpinBox;
 class QValueComboBox;
 QT_END_NAMESPACE
 
-/** Widget for entering bitmark amounts.
+/** Widget for entering gamecredits amounts.
   */
 class BitmarkAmountField: public QWidget
 {

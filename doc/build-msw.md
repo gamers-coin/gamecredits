@@ -72,11 +72,11 @@ MSYS shell:
 	mkdir miniupnpc
 	cp *.h miniupnpc/
 
-Bitmark
+Gamecredits
 -------
 MSYS shell:
 
-	cd \bitmark
+	cd \gamecredits
 	sh autogen.sh
 	sh configure
 	mingw32-make

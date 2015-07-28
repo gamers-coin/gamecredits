@@ -31,10 +31,10 @@ SendCoinsEntry::SendCoinsEntry(QWidget *parent) :
     ui->addAsLabel->setPlaceholderText(tr("Enter a label for this address to add it to your address book"));
 #endif
 
-    // normal bitmark address field
+    // normal gamecredits address field
     GUIUtil::setupAddressWidget(ui->payTo, this);
-    // just a label for displaying bitmark address(es)
-    ui->payTo_is->setFont(GUIUtil::bitmarkAddressFont());
+    // just a label for displaying gamecredits address(es)
+    ui->payTo_is->setFont(GUIUtil::gamecreditsAddressFont());
 }
 
 SendCoinsEntry::~SendCoinsEntry()

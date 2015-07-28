@@ -43,7 +43,7 @@ static const int MAX_PAYMENT_REQUEST_SIZE = 50000; // bytes
 #define SPINNER_FRAMES 35
 
 #define QAPP_ORG_NAME "GameCredits"
-#define QAPP_ORG_DOMAIN "bitmark.org"
+#define QAPP_ORG_DOMAIN "gamecredits.org"
 #define QAPP_APP_NAME_DEFAULT "GameCredits-Qt"
 #define QAPP_APP_NAME_TESTNET "GameCredits-Qt-testnet"
 

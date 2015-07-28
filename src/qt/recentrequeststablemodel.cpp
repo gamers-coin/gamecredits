@@ -5,7 +5,7 @@
 
 #include "recentrequeststablemodel.h"
 
-#include "bitmarkunits.h"
+#include "gamecreditsunits.h"
 #include "guiutil.h"
 #include "optionsmodel.h"
 

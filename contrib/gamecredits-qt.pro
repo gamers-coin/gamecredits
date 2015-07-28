@@ -18,4 +18,4 @@ FORMS += \
     ../src/qt/forms/transactiondescdialog.ui \
 
 RESOURCES += \
-    ../src/qt/bitmark.qrc
+    ../src/qt/gamecredits.qrc

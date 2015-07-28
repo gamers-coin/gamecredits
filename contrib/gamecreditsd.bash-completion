@@ -6,7 +6,7 @@
 have gamecreditsd && {
 
 # call $gamecreditsd for RPC
-_bitmark_rpc() {
+_gamecredits_rpc() {
     # determine already specified args necessary for RPC
     local rpcargs=()
     for i in ${COMP_LINE}; do
@@ -19,10 +19,10 @@ _bitmark_rpc() {
     $gamecreditsd "${rpcargs[@]}" "$@"
 }
 
-# Add bitmark accounts to COMPREPLY
-_bitmark_accounts() {
+# Add gamecredits accounts to COMPREPLY
+_gamecredits_accounts() {
     local accounts
-    accounts=$(_bitmark_rpc listaccounts | awk '/".*"/ { a=$1; gsub(/"/, "", a); print a}')
+    accounts=$(_gamecredits_rpc listaccounts | awk '/".*"/ { a=$1; gsub(/"/, "", a); print a}')
     COMPREPLY=( "${COMPREPLY[@]}" $( compgen -W "$accounts" -- "$cur" ) )
 }
 
@@ -49,7 +49,7 @@ _gamecreditsd() {
     if ((cword > 3)); then
         case ${words[cword-3]} in
             addmultisigaddress)
-                _bitmark_accounts
+                _gamecredits_accounts
                 return 0
                 ;;
             gettxout|importprivkey)
@@ -70,7 +70,7 @@ _gamecreditsd() {
                 return 0
                 ;;
             move|setaccount)
-                _bitmark_accounts
+                _gamecredits_accounts
                 return 0
                 ;;
         esac
@@ -86,7 +86,7 @@ _gamecreditsd() {
             return 0
             ;;
         getaccountaddress|getaddressesbyaccount|getbalance|getnewaddress|getreceivedbyaccount|listtransactions|move|sendfrom|sendmany)
-            _bitmark_accounts
+            _gamecredits_accounts
             return 0
             ;;
     esac
@@ -115,7 +115,7 @@ _gamecreditsd() {
 
             # only parse help if senseful
             if [[ -z "$cur" || "$cur" =~ ^[a-z] ]]; then
-                commands=$(_bitmark_rpc help 2>/dev/null | awk '{ print $1; }')
+                commands=$(_gamecredits_rpc help 2>/dev/null | awk '{ print $1; }')
             fi
 
             COMPREPLY=( $( compgen -W "$helpopts $commands" -- "$cur" ) )

@@ -25,7 +25,7 @@ if cmd == "backupwallet":
 
 elif cmd == "getaccount":
     try:
-        addr = raw_input("Enter a Bitmark address: ")
+        addr = raw_input("Enter a Gamecredits address: ")
         print access.getaccount(addr)
     except:
         print "\n---An error occurred---\n"
@@ -127,7 +127,7 @@ elif cmd == "getreceivedbyaccount":
 
 elif cmd == "getreceivedbyaddress":
     try:
-        addr = raw_input("Enter a Bitmark address (optional): ")
+        addr = raw_input("Enter a Gamecredits address (optional): ")
         mc = raw_input("Minimum confirmations (optional): ")
         try:
             print access.getreceivedbyaddress(addr, mc)

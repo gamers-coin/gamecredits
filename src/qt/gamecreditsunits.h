@@ -9,7 +9,7 @@
 #include <QAbstractListModel>
 #include <QString>
 
-/** Bitmark unit definitions. Encapsulates parsing and formatting
+/** Gamecredits unit definitions. Encapsulates parsing and formatting
    and serves as list model for drop-down selection boxes.
 */
 class BitmarkUnits: public QAbstractListModel
@@ -19,8 +19,8 @@ class BitmarkUnits: public QAbstractListModel
 public:
     explicit BitmarkUnits(QObject *parent);
 
-    /** Bitmark units.
-      @note Source: https://github.com/coinsolidation/bitmark/wiki/Currency . Please add only sensible ones
+    /** Gamecredits units.
+      @note Source: https://github.com/coinsolidation/gamecredits/wiki/Currency . Please add only sensible ones
      */
     enum Unit
     {

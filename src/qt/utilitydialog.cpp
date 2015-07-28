@@ -8,7 +8,7 @@
 #include "ui_aboutdialog.h"
 #include "ui_helpmessagedialog.h"
 
-#include "bitmarkgui.h"
+#include "gamecreditsgui.h"
 #include "clientmodel.h"
 #include "guiutil.h"
 
@@ -80,7 +80,7 @@ HelpMessageDialog::HelpMessageDialog(QWidget *parent) :
         "  -rootcertificates=<file>  " + tr("Set SSL root certificates for payment request (default: -system-)") + "\n" +
         "  -splash                   " + tr("Show splash screen on startup (default: 1)");
 
-    ui->helpMessageLabel->setFont(GUIUtil::bitmarkAddressFont());
+    ui->helpMessageLabel->setFont(GUIUtil::gamecreditsAddressFont());
 
     // Set help message text
     ui->helpMessageLabel->setText(header + "\n" + coreOptions + "\n" + uiOptions);

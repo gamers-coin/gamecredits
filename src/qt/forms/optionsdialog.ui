@@ -28,7 +28,7 @@
       </attribute>
       <layout class="QVBoxLayout" name="verticalLayout_Main">
        <item>
-        <widget class="QCheckBox" name="bitmarkAtStartup">
+        <widget class="QCheckBox" name="gamecreditsAtStartup">
          <property name="toolTip">
           <string>Automatically start GameCredits after logging in to the system.</string>
          </property>
@@ -649,7 +649,7 @@
   <customwidget>
    <class>BitmarkAmountField</class>
    <extends>QLineEdit</extends>
-   <header>bitmarkamountfield.h</header>
+   <header>gamecreditsamountfield.h</header>
    <container>1</container>
   </customwidget>
   <customwidget>

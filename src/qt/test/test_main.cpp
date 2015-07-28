@@ -1,6 +1,6 @@
-#include "bitmark-config.h"
+#include "gamecredits-config.h"
 #if defined(HAVE_CONFIG_H)
-#include "bitmark-config.h"
+#include "gamecredits-config.h"
 #endif
 
 #ifdef ENABLE_WALLET

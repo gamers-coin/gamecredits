@@ -5,7 +5,7 @@
 
 #include "transactiondesc.h"
 
-#include "bitmarkunits.h"
+#include "gamecreditsunits.h"
 #include "guiutil.h"
 
 #include "base58.h"
@@ -227,7 +227,7 @@ QString TransactionDesc::toHTML(CWallet *wallet, CWalletTx &wtx, int vout, int u
 
     strHTML += "<b>" + tr("Transaction ID") + ":</b> " + TransactionRecord::formatSubTxId(wtx.GetHash(), vout) + "<br>";
 
-    // Message from normal bitmark:URI (bitmark:123...?message=example)
+    // Message from normal gamecredits:URI (gamecredits:123...?message=example)
     foreach (const PAIRTYPE(string, string)& r, wtx.vOrderForm)
         if (r.first == "Message")
             strHTML += "<br><b>" + tr("Message") + ":</b><br>" + GUIUtil::HtmlEscape(r.second, true) + "<br>";

@@ -1,4 +1,4 @@
-#include "bitmark-config.h"
+#include "gamecredits-config.h"
 #include <cstddef>
 #include <sys/select.h>
 

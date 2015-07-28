@@ -28,7 +28,7 @@ using namespace std;
 using namespace boost;
 
 #if defined(NDEBUG)
-# error "Bitmark cannot be compiled without assertions."
+# error "Gamecredits cannot be compiled without assertions."
 #endif
 
 //
@@ -1875,7 +1875,7 @@ bool FindUndoPos(CValidationState &state, int nFile, CDiskBlockPos &pos, unsigne
 static CCheckQueue<CScriptCheck> scriptcheckqueue(128);
 
 void ThreadScriptCheck() {
-    RenameThread("bitmark-scriptch");
+    RenameThread("gamecredits-scriptch");
     scriptcheckqueue.Thread();
 }
 
@@ -3101,7 +3101,7 @@ void static BitmarkGenesisMiner(CBlock block, int start, int threads)
 {
     LogPrintf("BitmarkMiner started\n");
     SetThreadPriority(THREAD_PRIORITY_LOWEST);
-    RenameThread("bitmark-miner");
+    RenameThread("gamecredits-miner");
     block.nTime += start;
     try { while (true) {
         printf("Searching for genesis block...\n");

@@ -4,14 +4,14 @@
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #if defined(HAVE_CONFIG_H)
-#include "bitmark-config.h"
+#include "gamecredits-config.h"
 #endif
 
 #include "addressbookpage.h"
 #include "ui_addressbookpage.h"
 
 #include "addresstablemodel.h"
-#include "bitmarkgui.h"
+#include "gamecreditsgui.h"
 #include "csvmodelwriter.h"
 #include "editaddressdialog.h"
 #include "guiutil.h"

@@ -7,7 +7,7 @@
 #define BITMARKGUI_H
 
 #if defined(HAVE_CONFIG_H)
-#include "bitmark-config.h"
+#include "gamecredits-config.h"
 #endif
 
 #include <QMainWindow>
@@ -30,7 +30,7 @@ class QProgressBar;
 QT_END_NAMESPACE
 
 /**
-  Bitmark GUI main class. This class represents the main window of the Bitmark UI. It communicates with both the client and
+  Gamecredits GUI main class. This class represents the main window of the Gamecredits UI. It communicates with both the client and
   wallet models to give the user an up-to-date view of the current core state.
 */
 class BitmarkGUI : public QMainWindow
@@ -50,7 +50,7 @@ public:
 
 #ifdef ENABLE_WALLET
     /** Set the wallet model.
-        The wallet model represents a bitmark wallet, and offers access to the list of transactions, address book and sending
+        The wallet model represents a gamecredits wallet, and offers access to the list of transactions, address book and sending
         functionality.
     */
     bool addWallet(const QString& name, WalletModel *walletModel);

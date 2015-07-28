@@ -4,11 +4,11 @@
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 #
 # Helper script for pull-tester.
-#Param 1: path to bitmark srcroot
+#Param 1: path to gamecredits srcroot
 #Param ...: arguments for build-test.sh
 
 if [ $# -lt 1 ]; then
-  echo "usage: $0 [bitmark srcroot] build-test arguments..."
+  echo "usage: $0 [gamecredits srcroot] build-test arguments..."
 fi
 
 killall -q gamecredits-cli

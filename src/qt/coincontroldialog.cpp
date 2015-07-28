@@ -7,7 +7,7 @@
 #include "ui_coincontroldialog.h"
 
 #include "addresstablemodel.h"
-#include "bitmarkunits.h"
+#include "gamecreditsunits.h"
 #include "guiutil.h"
 #include "init.h"
 #include "optionsmodel.h"
@@ -705,7 +705,7 @@ void CoinControlDialog::updateView()
             {
                 sAddress = CBitmarkAddress(outputAddress).ToString().c_str();
 
-                // if listMode or change => show bitmark address. In tree mode, address is not shown again for direct wallet address outputs
+                // if listMode or change => show gamecredits address. In tree mode, address is not shown again for direct wallet address outputs
                 if (!treeMode || (!(sAddress == sWalletAddress)))
                     itemOutput->setText(COLUMN_ADDRESS, sAddress);
 

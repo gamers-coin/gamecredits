@@ -21,7 +21,7 @@ public:
     State validate(QString &input, int &pos) const;
 };
 
-/** Bitmark address widget validator, checks for a valid bitmark address.
+/** Gamecredits address widget validator, checks for a valid gamecredits address.
  */
 class BitmarkAddressCheckValidator : public QValidator
 {

@@ -5,10 +5,10 @@
 # Helpful routines for regression testing
 #
 
-# Add python-bitmarkrpc to module search path:
+# Add python-gamecreditsrpc to module search path:
 import os
 import sys
-sys.path.append(os.path.join(os.path.dirname(os.path.abspath(__file__)), "python-bitmarkrpc"))
+sys.path.append(os.path.join(os.path.dirname(os.path.abspath(__file__)), "python-gamecreditsrpc"))
 
 from decimal import Decimal
 import json
@@ -16,7 +16,7 @@ import shutil
 import subprocess
 import time
 
-from bitmarkrpc.authproxy import AuthServiceProxy, JSONRPCException
+from gamecreditsrpc.authproxy import AuthServiceProxy, JSONRPCException
 from util import *
 
 START_P2P_PORT=11000

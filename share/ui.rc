@@ -1,4 +1,4 @@
-bitmark               ICON    "pixmaps/bitmark.ico"
+gamecredits               ICON    "pixmaps/gamecredits.ico"
 
 #include "wx/msw/wx.rc"
 

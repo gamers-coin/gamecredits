@@ -17,7 +17,7 @@ namespace Ui {
 }
 
 /**
- * A single entry in the dialog for sending bitmarks.
+ * A single entry in the dialog for sending gamecredits.
  * Stacked widget, with different UIs for payment requests
  * with a strong payee identity.
  */

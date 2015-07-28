@@ -6,7 +6,7 @@
 #ifndef PAYMENTSERVER_H
 #define PAYMENTSERVER_H
 // This class handles payment requests from clicking on
-// bitmark: URIs
+// gamecredits: URIs
 //
 // This is somewhat tricky, because we have to deal with
 // the situation where the user clicks on a link during

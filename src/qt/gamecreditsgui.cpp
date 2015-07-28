@@ -3,9 +3,9 @@
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "bitmarkgui.h"
+#include "gamecreditsgui.h"
 
-#include "bitmarkunits.h"
+#include "gamecreditsunits.h"
 #include "clientmodel.h"
 #include "guiconstants.h"
 #include "guiutil.h"
@@ -90,20 +90,20 @@ BitmarkGUI::BitmarkGUI(bool fIsTestnet, QWidget *parent) :
     if (!fIsTestnet)
     {
 #ifndef Q_OS_MAC
-        QApplication::setWindowIcon(QIcon(":icons/bitmark"));
-        setWindowIcon(QIcon(":icons/bitmark"));
+        QApplication::setWindowIcon(QIcon(":icons/gamecredits"));
+        setWindowIcon(QIcon(":icons/gamecredits"));
 #else
-        MacDockIconHandler::instance()->setIcon(QIcon(":icons/bitmark"));
+        MacDockIconHandler::instance()->setIcon(QIcon(":icons/gamecredits"));
 #endif
     }
     else
     {
         windowTitle += " " + tr("[testnet]");
 #ifndef Q_OS_MAC
-        QApplication::setWindowIcon(QIcon(":icons/bitmark_testnet"));
-        setWindowIcon(QIcon(":icons/bitmark_testnet"));
+        QApplication::setWindowIcon(QIcon(":icons/gamecredits_testnet"));
+        setWindowIcon(QIcon(":icons/gamecredits_testnet"));
 #else
-        MacDockIconHandler::instance()->setIcon(QIcon(":icons/bitmark_testnet"));
+        MacDockIconHandler::instance()->setIcon(QIcon(":icons/gamecredits_testnet"));
 #endif
     }
     setWindowTitle(windowTitle);
@@ -235,7 +235,7 @@ void BitmarkGUI::createActions(bool fIsTestnet)
     tabGroup->addAction(sendCoinsAction);
 
     receiveCoinsAction = new QAction(QIcon(":/icons/receiving_addresses"), tr("&Receive"), this);
-    receiveCoinsAction->setStatusTip(tr("Request payments (generates QR codes and bitmark: URIs)"));
+    receiveCoinsAction->setStatusTip(tr("Request payments (generates QR codes and gamecredits: URIs)"));
     receiveCoinsAction->setToolTip(receiveCoinsAction->statusTip());
     receiveCoinsAction->setCheckable(true);
     receiveCoinsAction->setShortcut(QKeySequence(Qt::ALT + Qt::Key_3));
@@ -264,9 +264,9 @@ void BitmarkGUI::createActions(bool fIsTestnet)
     quitAction->setShortcut(QKeySequence(Qt::CTRL + Qt::Key_Q));
     quitAction->setMenuRole(QAction::QuitRole);
     if (!fIsTestnet)
-        aboutAction = new QAction(QIcon(":/icons/bitmark"), tr("&About GameCredits Core"), this);
+        aboutAction = new QAction(QIcon(":/icons/gamecredits"), tr("&About GameCredits Core"), this);
     else
-        aboutAction = new QAction(QIcon(":/icons/bitmark_testnet"), tr("&About GameCredits Core"), this);
+        aboutAction = new QAction(QIcon(":/icons/gamecredits_testnet"), tr("&About GameCredits Core"), this);
     aboutAction->setStatusTip(tr("Show information about GameCredits"));
     aboutAction->setMenuRole(QAction::AboutRole);
 #if QT_VERSION < 0x050000
@@ -280,9 +280,9 @@ void BitmarkGUI::createActions(bool fIsTestnet)
     optionsAction->setStatusTip(tr("Modify configuration options for GameCredits"));
     optionsAction->setMenuRole(QAction::PreferencesRole);
     if (!fIsTestnet)
-        toggleHideAction = new QAction(QIcon(":/icons/bitmark"), tr("&Show / Hide"), this);
+        toggleHideAction = new QAction(QIcon(":/icons/gamecredits"), tr("&Show / Hide"), this);
     else
-        toggleHideAction = new QAction(QIcon(":/icons/bitmark_testnet"), tr("&Show / Hide"), this);
+        toggleHideAction = new QAction(QIcon(":/icons/gamecredits_testnet"), tr("&Show / Hide"), this);
     toggleHideAction->setStatusTip(tr("Show or hide the main Window"));
 
     encryptWalletAction = new QAction(QIcon(":/icons/lock_closed"), tr("&Encrypt Wallet..."), this);
@@ -306,10 +306,10 @@ void BitmarkGUI::createActions(bool fIsTestnet)
     usedReceivingAddressesAction->setStatusTip(tr("Show the list of used receiving addresses and labels"));
 
     openAction = new QAction(QApplication::style()->standardIcon(QStyle::SP_FileIcon), tr("Open &URI..."), this);
-    openAction->setStatusTip(tr("Open a bitmark: URI or payment request"));
+    openAction->setStatusTip(tr("Open a gamecredits: URI or payment request"));
 
     showHelpMessageAction = new QAction(QApplication::style()->standardIcon(QStyle::SP_MessageBoxInformation), tr("&Command-line options"), this);
-    showHelpMessageAction->setStatusTip(tr("Show the GameCredits Core help message to get a list with possible Bitmark command-line options"));
+    showHelpMessageAction->setStatusTip(tr("Show the GameCredits Core help message to get a list with possible Gamecredits command-line options"));
 
     connect(quitAction, SIGNAL(triggered()), qApp, SLOT(quit()));
     connect(aboutAction, SIGNAL(triggered()), this, SLOT(aboutClicked()));

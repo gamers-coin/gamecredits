@@ -6,83 +6,83 @@ AM_CPPFLAGS += -I$(top_srcdir)/src \
   $(PROTOBUF_CFLAGS) \
   $(QR_CFLAGS)
 bin_PROGRAMS = gamecredits-qt
-noinst_LIBRARIES = libbitmarkqt.a
+noinst_LIBRARIES = libgamecreditsqt.a
 SUBDIRS = . $(BUILD_TEST_QT)
 DIST_SUBDIRS = . test
 
-# bitmark qt core #
+# gamecredits qt core #
 QT_TS = \
-  locale/bitmark_ach.ts \
-  locale/bitmark_af_ZA.ts \
-  locale/bitmark_ar.ts \
-  locale/bitmark_be_BY.ts \
-  locale/bitmark_bg.ts \
-  locale/bitmark_bs.ts \
-  locale/bitmark_ca_ES.ts \
-  locale/bitmark_ca.ts \
-  locale/bitmark_ca@valencia.ts \
-  locale/bitmark_cmn.ts \
-  locale/bitmark_cs.ts \
-  locale/bitmark_cy.ts \
-  locale/bitmark_da.ts \
-  locale/bitmark_de.ts \
-  locale/bitmark_el_GR.ts \
-  locale/bitmark_en.ts \
-  locale/bitmark_eo.ts \
-  locale/bitmark_es_CL.ts \
-  locale/bitmark_es_DO.ts \
-  locale/bitmark_es_MX.ts \
-  locale/bitmark_es.ts \
-  locale/bitmark_es_UY.ts \
-  locale/bitmark_et.ts \
-  locale/bitmark_eu_ES.ts \
-  locale/bitmark_fa_IR.ts \
-  locale/bitmark_fa.ts \
-  locale/bitmark_fi.ts \
-  locale/bitmark_fr_CA.ts \
-  locale/bitmark_fr.ts \
-  locale/bitmark_gl.ts \
-  locale/bitmark_gu_IN.ts \
-  locale/bitmark_he.ts \
-  locale/bitmark_hi_IN.ts \
-  locale/bitmark_hr.ts \
-  locale/bitmark_hu.ts \
-  locale/bitmark_id_ID.ts \
-  locale/bitmark_it.ts \
-  locale/bitmark_ja.ts \
-  locale/bitmark_ka.ts \
-  locale/bitmark_kk_KZ.ts \
-  locale/bitmark_ko_KR.ts \
-  locale/bitmark_ky.ts \
-  locale/bitmark_la.ts \
-  locale/bitmark_lt.ts \
-  locale/bitmark_lv_LV.ts \
-  locale/bitmark_mn.ts \
-  locale/bitmark_ms_MY.ts \
-  locale/bitmark_nb.ts \
-  locale/bitmark_nl.ts \
-  locale/bitmark_pam.ts \
-  locale/bitmark_pl.ts \
-  locale/bitmark_pt_BR.ts \
-  locale/bitmark_pt_PT.ts \
-  locale/bitmark_ro_RO.ts \
-  locale/bitmark_ru.ts \
-  locale/bitmark_sah.ts \
-  locale/bitmark_sk.ts \
-  locale/bitmark_sl_SI.ts \
-  locale/bitmark_sq.ts \
-  locale/bitmark_sr.ts \
-  locale/bitmark_sv.ts \
-  locale/bitmark_th_TH.ts \
-  locale/bitmark_tr.ts \
-  locale/bitmark_uk.ts \
-  locale/bitmark_ur_PK.ts \
-  locale/bitmark_uz@Cyrl.ts \
-  locale/bitmark_vi.ts \
-  locale/bitmark_vi_VN.ts \
-  locale/bitmark_zh_CN.ts \
-  locale/bitmark_zh_HK.ts \
-  locale/bitmark_zh_TW.ts
+  locale/gamecredits_ach.ts \
+  locale/gamecredits_af_ZA.ts \
+  locale/gamecredits_ar.ts \
+  locale/gamecredits_be_BY.ts \
+  locale/gamecredits_bg.ts \
+  locale/gamecredits_bs.ts \
+  locale/gamecredits_ca_ES.ts \
+  locale/gamecredits_ca.ts \
+  locale/gamecredits_ca@valencia.ts \
+  locale/gamecredits_cmn.ts \
+  locale/gamecredits_cs.ts \
+  locale/gamecredits_cy.ts \
+  locale/gamecredits_da.ts \
+  locale/gamecredits_de.ts \
+  locale/gamecredits_el_GR.ts \
+  locale/gamecredits_en.ts \
+  locale/gamecredits_eo.ts \
+  locale/gamecredits_es_CL.ts \
+  locale/gamecredits_es_DO.ts \
+  locale/gamecredits_es_MX.ts \
+  locale/gamecredits_es.ts \
+  locale/gamecredits_es_UY.ts \
+  locale/gamecredits_et.ts \
+  locale/gamecredits_eu_ES.ts \
+  locale/gamecredits_fa_IR.ts \
+  locale/gamecredits_fa.ts \
+  locale/gamecredits_fi.ts \
+  locale/gamecredits_fr_CA.ts \
+  locale/gamecredits_fr.ts \
+  locale/gamecredits_gl.ts \
+  locale/gamecredits_gu_IN.ts \
+  locale/gamecredits_he.ts \
+  locale/gamecredits_hi_IN.ts \
+  locale/gamecredits_hr.ts \
+  locale/gamecredits_hu.ts \
+  locale/gamecredits_id_ID.ts \
+  locale/gamecredits_it.ts \
+  locale/gamecredits_ja.ts \
+  locale/gamecredits_ka.ts \
+  locale/gamecredits_kk_KZ.ts \
+  locale/gamecredits_ko_KR.ts \
+  locale/gamecredits_ky.ts \
+  locale/gamecredits_la.ts \
+  locale/gamecredits_lt.ts \
+  locale/gamecredits_lv_LV.ts \
+  locale/gamecredits_mn.ts \
+  locale/gamecredits_ms_MY.ts \
+  locale/gamecredits_nb.ts \
+  locale/gamecredits_nl.ts \
+  locale/gamecredits_pam.ts \
+  locale/gamecredits_pl.ts \
+  locale/gamecredits_pt_BR.ts \
+  locale/gamecredits_pt_PT.ts \
+  locale/gamecredits_ro_RO.ts \
+  locale/gamecredits_ru.ts \
+  locale/gamecredits_sah.ts \
+  locale/gamecredits_sk.ts \
+  locale/gamecredits_sl_SI.ts \
+  locale/gamecredits_sq.ts \
+  locale/gamecredits_sr.ts \
+  locale/gamecredits_sv.ts \
+  locale/gamecredits_th_TH.ts \
+  locale/gamecredits_tr.ts \
+  locale/gamecredits_uk.ts \
+  locale/gamecredits_ur_PK.ts \
+  locale/gamecredits_uz@Cyrl.ts \
+  locale/gamecredits_vi.ts \
+  locale/gamecredits_vi_VN.ts \
+  locale/gamecredits_zh_CN.ts \
+  locale/gamecredits_zh_HK.ts \
+  locale/gamecredits_zh_TW.ts
 
 QT_FORMS_UI = \
   forms/aboutdialog.ui \
@@ -107,10 +107,10 @@ QT_MOC_CPP = \
   moc_addressbookpage.cpp \
   moc_addresstablemodel.cpp \
   moc_askpassphrasedialog.cpp \
-  moc_bitmarkaddressvalidator.cpp \
-  moc_bitmarkamountfield.cpp \
-  moc_bitmarkgui.cpp \
-  moc_bitmarkunits.cpp \
+  moc_gamecreditsaddressvalidator.cpp \
+  moc_gamecreditsamountfield.cpp \
+  moc_gamecreditsgui.cpp \
+  moc_gamecreditsunits.cpp \
   moc_clientmodel.cpp \
   moc_coincontroldialog.cpp \
   moc_coincontroltreewidget.cpp \
@@ -153,13 +153,13 @@ BITMARK_MM = \
   macnotificationhandler.mm
 
 QT_MOC = \
-  bitmark.moc \
+  gamecredits.moc \
   intro.moc \
   overviewpage.moc \
   rpcconsole.moc
 
-QT_QRC_CPP = qrc_bitmark.cpp
-QT_QRC = bitmark.qrc
+QT_QRC_CPP = qrc_gamecredits.cpp
+QT_QRC = gamecredits.qrc
 
 PROTOBUF_CC = paymentrequest.pb.cc
 PROTOBUF_H = paymentrequest.pb.h
@@ -169,10 +169,10 @@ BITMARK_QT_H = \
   addressbookpage.h \
   addresstablemodel.h \
   askpassphrasedialog.h \
-  bitmarkaddressvalidator.h \
-  bitmarkamountfield.h \
-  bitmarkgui.h \
-  bitmarkunits.h \
+  gamecreditsaddressvalidator.h \
+  gamecreditsamountfield.h \
+  gamecreditsgui.h \
+  gamecreditsunits.h \
   clientmodel.h \
   coincontroldialog.h \
   coincontroltreewidget.h \
@@ -218,10 +218,10 @@ BITMARK_QT_H = \
 RES_ICONS = \
   res/icons/add.png \
   res/icons/address-book.png \
-  res/icons/bitmark.ico \
-  res/icons/bitmark.png \
-  res/icons/bitmark_testnet.ico \
-  res/icons/bitmark_testnet.png \
+  res/icons/gamecredits.ico \
+  res/icons/gamecredits.png \
+  res/icons/gamecredits_testnet.ico \
+  res/icons/gamecredits_testnet.png \
   res/icons/clock1.png \
   res/icons/clock2.png \
   res/icons/clock3.png \
@@ -261,11 +261,11 @@ RES_ICONS = \
   res/icons/tx_mined.png
 
 BITMARK_QT_CPP = \
-  bitmark.cpp \
-  bitmarkaddressvalidator.cpp \
-  bitmarkamountfield.cpp \
-  bitmarkgui.cpp \
-  bitmarkunits.cpp \
+  gamecredits.cpp \
+  gamecreditsaddressvalidator.cpp \
+  gamecreditsamountfield.cpp \
+  gamecreditsgui.cpp \
+  gamecreditsunits.cpp \
   clientmodel.cpp \
   csvmodelwriter.cpp \
   guiutil.cpp \
@@ -319,17 +319,17 @@ RES_IMAGES = \
 
 RES_MOVIES = $(wildcard res/movies/spinner-*.png)
 
-BITMARK_RC = res/bitmark-qt-res.rc
+BITMARK_RC = res/gamecredits-qt-res.rc
 
-libbitmarkqt_a_CPPFLAGS = $(AM_CPPFLAGS) $(QT_INCLUDES) \
+libgamecreditsqt_a_CPPFLAGS = $(AM_CPPFLAGS) $(QT_INCLUDES) \
   -I$(top_srcdir)/src/qt/forms $(QT_DBUS_INCLUDES)
-libbitmarkqt_a_SOURCES = $(BITMARK_QT_CPP) $(BITMARK_QT_H) $(QT_FORMS_UI) \
+libgamecreditsqt_a_SOURCES = $(BITMARK_QT_CPP) $(BITMARK_QT_H) $(QT_FORMS_UI) \
   $(QT_QRC) $(QT_TS) $(PROTOBUF_PROTO) $(RES_ICONS) $(RES_IMAGES) $(RES_MOVIES)
 
-nodist_libbitmarkqt_a_SOURCES = $(QT_MOC_CPP) $(QT_MOC) $(PROTOBUF_CC) \
+nodist_libgamecreditsqt_a_SOURCES = $(QT_MOC_CPP) $(QT_MOC) $(PROTOBUF_CC) \
   $(PROTOBUF_H) $(QT_QRC_CPP)
 
-BUILT_SOURCES = $(nodist_libbitmarkqt_a_SOURCES)
+BUILT_SOURCES = $(nodist_libgamecreditsqt_a_SOURCES)
 
 #Generating these with a half-written protobuf header leads to wacky results.
 #This makes sure it's done.
@@ -339,14 +339,14 @@ $(QT_MOC_CPP): $(PROTOBUF_H)
 # gamecredits-qt binary #
 gamecredits_qt_CPPFLAGS = $(AM_CPPFLAGS) $(QT_INCLUDES) \
   -I$(top_srcdir)/src/qt/forms
-gamecredits_qt_SOURCES = bitmark.cpp
+gamecredits_qt_SOURCES = gamecredits.cpp
 if TARGET_DARWIN
   gamecredits_qt_SOURCES += $(BITMARK_MM)
 endif
 if TARGET_WINDOWS
   gamecredits_qt_SOURCES += $(BITMARK_RC)
 endif
-gamecredits_qt_LDADD = libbitmarkqt.a $(LIBBITMARK_SERVER)
+gamecredits_qt_LDADD = libgamecreditsqt.a $(LIBBITMARK_SERVER)
 if ENABLE_WALLET
 gamecredits_qt_LDADD += $(LIBBITMARK_WALLET)
 endif
@@ -363,15 +363,15 @@ QT_QM=$(QT_TS:.ts=.qm)
 .PHONY: FORCE
 .SECONDARY: $(QT_QM)
 
-bitmarkstrings.cpp: FORCE
-	$(MAKE) -C $(top_srcdir)/src qt/bitmarkstrings.cpp
+gamecreditstrings.cpp: FORCE
+	$(MAKE) -C $(top_srcdir)/src qt/gamecreditstrings.cpp
 
-translate: bitmarkstrings.cpp $(QT_FORMS_UI) $(QT_FORMS_UI) $(BITMARK_QT_CPP) $(BITMARK_QT_H) $(BITMARK_MM)
+translate: gamecreditstrings.cpp $(QT_FORMS_UI) $(QT_FORMS_UI) $(BITMARK_QT_CPP) $(BITMARK_QT_H) $(BITMARK_MM)
 	@test -n $(LUPDATE) || echo "lupdate is required for updating translations"
-	@QT_SELECT=$(QT_SELECT) $(LUPDATE) $^ -locations relative -no-obsolete -ts locale/bitmark_en.ts
+	@QT_SELECT=$(QT_SELECT) $(LUPDATE) $^ -locations relative -no-obsolete -ts locale/gamecredits_en.ts
 
 $(QT_QRC_CPP): $(QT_QRC) $(QT_QM) $(QT_FORMS_H) $(RES_ICONS) $(RES_IMAGES) $(RES_MOVIES) $(PROTOBUF_H)
-	@cd $(abs_srcdir); test -f $(RCC) && QT_SELECT=$(QT_SELECT) $(RCC) -name bitmark -o $(abs_builddir)/$@ $< || \
+	@cd $(abs_srcdir); test -f $(RCC) && QT_SELECT=$(QT_SELECT) $(RCC) -name gamecredits -o $(abs_builddir)/$@ $< || \
 	  echo error: could not build $@
 	$(SED) -e '/^\*\*.*Created:/d' $@ > $@.n && mv $@{.n,}
 	$(SED) -e '/^\*\*.*by:/d' $@  > $@.n && mv $@{.n,}

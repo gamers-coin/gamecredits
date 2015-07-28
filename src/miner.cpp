@@ -468,7 +468,7 @@ void static BitmarkMiner(CWallet *pwallet)
 {
     LogPrintf("BitmarkMiner started\n");
     SetThreadPriority(THREAD_PRIORITY_LOWEST);
-    RenameThread("bitmark-miner");
+    RenameThread("gamecredits-miner");
 
     // Each thread has its own key and counter
     CReserveKey reservekey(pwallet);

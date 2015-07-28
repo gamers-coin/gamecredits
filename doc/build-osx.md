@@ -56,8 +56,8 @@ Optional: install Qt4
 
 1. Clone the github tree to get the source code and go into the directory.
 
-        git clone git@github.com:project-bitmark/bitmark.git bitmark
-        cd bitmark
+        git clone git@github.com:project-gamecredits/gamecredits.git gamecredits
+        cd gamecredits
 
 2.  Build gamecreditsd (and GameCredits-Qt, if configured):
 
@@ -94,8 +94,8 @@ PATH.
 
 1. Clone the github tree to get the source code and go into the directory.
 
-        git clone https://github.com/project-bitmark/bitmark.git
-        cd bitmark
+        git clone https://github.com/project-gamecredits/gamecredits.git
+        cd gamecredits
 
 2.  Build gamecreditsd:
 
@@ -131,7 +131,7 @@ For MacPorts, that means editing your macports.conf and setting
 ... and then uninstalling and re-installing, or simply rebuilding, all ports.
 
 As of December 2012, the `boost` port does not obey `macosx_deployment_target`.
-Download `http://gavinandresen-bitmark.s3.amazonaws.com/boost_macports_fix.zip`
+Download `http://gavinandresen-gamecredits.s3.amazonaws.com/boost_macports_fix.zip`
 for a fix.
 
 Once dependencies are compiled, see release-process.md for how the GameCredits-Qt.app
@@ -146,17 +146,17 @@ directory. We have to first create the RPC configuration file, though.
 Run `./gamecreditsd` to get the filename where it should be put, or just try these
 commands:
 
-    echo -e "rpcuser=bitmarkrpc\nrpcpassword=$(xxd -l 16 -p /dev/urandom)" > "/Users/${USER}/Library/Application Support/Bitmark/gamecredits.conf"
-    chmod 600 "/Users/${USER}/Library/Application Support/Bitmark/gamecredits.conf"
+    echo -e "rpcuser=gamecreditsrpc\nrpcpassword=$(xxd -l 16 -p /dev/urandom)" > "/Users/${USER}/Library/Application Support/Gamecredits/gamecredits.conf"
+    chmod 600 "/Users/${USER}/Library/Application Support/Gamecredits/gamecredits.conf"
 
 When next you run it, it will start downloading the blockchain, but it won't
 output anything while it's doing this. This process may take several hours;
 you can monitor its process by looking at the debug.log file, like this:
 
-    tail -f $HOME/Library/Application\ Support/Bitmark/debug.log
+    tail -f $HOME/Library/Application\ Support/Gamecredits/debug.log
 
 Other commands:
 
-    ./gamecreditsd -daemon # to start the bitmark daemon.
+    ./gamecreditsd -daemon # to start the gamecredits daemon.
     ./gamecredits-cli --help  # for a list of command-line options.
     ./gamecredits-cli help    # When the daemon is running, to get a list of RPC commands

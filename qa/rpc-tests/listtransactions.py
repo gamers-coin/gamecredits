@@ -5,10 +5,10 @@
 
 # Exercise the listtransactions API
 
-# Add python-bitmarkrpc to module search path:
+# Add python-gamecreditsrpc to module search path:
 import os
 import sys
-sys.path.append(os.path.join(os.path.dirname(os.path.abspath(__file__)), "python-bitmarkrpc"))
+sys.path.append(os.path.join(os.path.dirname(os.path.abspath(__file__)), "python-gamecreditsrpc"))
 
 import json
 import shutil
@@ -16,7 +16,7 @@ import subprocess
 import tempfile
 import traceback
 
-from bitmarkrpc.authproxy import AuthServiceProxy, JSONRPCException
+from gamecreditsrpc.authproxy import AuthServiceProxy, JSONRPCException
 from util import *
 
 

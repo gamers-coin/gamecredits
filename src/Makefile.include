@@ -12,11 +12,11 @@ AM_CPPFLAGS =  $(INCLUDES) \
 AM_CPPFLAGS += $(LEVELDB_CPPFLAGS)
 AM_LDFLAGS = $(PTHREAD_CFLAGS)
 
-LIBBITMARK_SERVER=$(top_builddir)/src/libbitmark_server.a
-LIBBITMARK_WALLET=$(top_builddir)/src/libbitmark_wallet.a
-LIBBITMARK_COMMON=$(top_builddir)/src/libbitmark_common.a
-LIBBITMARK_CLI=$(top_builddir)/src/libbitmark_cli.a
-LIBBITMARKQT=$(top_builddir)/src/qt/libbitmarkqt.a
+LIBBITMARK_SERVER=$(top_builddir)/src/libgamecredits_server.a
+LIBBITMARK_WALLET=$(top_builddir)/src/libgamecredits_wallet.a
+LIBBITMARK_COMMON=$(top_builddir)/src/libgamecredits_common.a
+LIBBITMARK_CLI=$(top_builddir)/src/libgamecredits_cli.a
+LIBBITMARKQT=$(top_builddir)/src/qt/libgamecreditsqt.a
 
 $(LIBBITMARK):
 	$(MAKE) -C $(top_builddir)/src $(@F)

@@ -915,7 +915,7 @@ static std::string FormatException(std::exception* pex, const char* pszThread)
     char pszModule[MAX_PATH] = "";
     GetModuleFileNameA(NULL, pszModule, sizeof(pszModule));
 #else
-    const char* pszModule = "bitmark";
+    const char* pszModule = "gamecredits";
 #endif
     if (pex)
         return strprintf(
@@ -942,10 +942,10 @@ void PrintExceptionContinue(std::exception* pex, const char* pszThread)
 boost::filesystem::path GetDefaultDataDir()
 {
     namespace fs = boost::filesystem;
-    // Windows < Vista: C:\Documents and Settings\Username\Application Data\Bitmark
-    // Windows >= Vista: C:\Users\Username\AppData\Roaming\Bitmark
-    // Mac: ~/Library/Application Support/Bitmark
-    // Unix: ~/.bitmark
+    // Windows < Vista: C:\Documents and Settings\Username\Application Data\Gamecredits
+    // Windows >= Vista: C:\Users\Username\AppData\Roaming\Gamecredits
+    // Mac: ~/Library/Application Support/Gamecredits
+    // Unix: ~/.gamecredits
 #ifdef WIN32
     // Windows
     return GetSpecialFolderPath(CSIDL_APPDATA) / "GameCredits";

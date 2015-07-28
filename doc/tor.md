@@ -1,16 +1,16 @@
 TOR SUPPORT IN BITMARK
 ======================
 
-It is possible to run Bitmark as a Tor hidden service, and connect to such services.
+It is possible to run Gamecredits as a Tor hidden service, and connect to such services.
 
 The following directions assume you have a Tor proxy running on port 9050. Many distributions default to having a SOCKS proxy listening on port 9050, but others may not. In particular, the Tor Browser Bundle defaults to listening on a random port. See [Tor Project FAQ:TBBSocksPort](https://www.torproject.org/docs/faq.html.en#TBBSocksPort) for how to properly
 configure Tor.
 
 
-1. Run bitmark behind a Tor proxy
+1. Run gamecredits behind a Tor proxy
 ---------------------------------
 
-The first step is running Bitmark behind a Tor proxy. This will already make all
+The first step is running Gamecredits behind a Tor proxy. This will already make all
 outgoing connections be anonymized, but more is possible.
 
 	-socks=5        SOCKS5 supports connecting-to-hostname, which can be used instead
@@ -36,27 +36,27 @@ outgoing connections be anonymized, but more is possible.
 
 In a typical situation, this suffices to run behind a Tor proxy:
 
-	./bitmark -proxy=127.0.0.1:9050
+	./gamecredits -proxy=127.0.0.1:9050
 
 
-2. Run a bitmark hidden server
+2. Run a gamecredits hidden server
 ------------------------------
 
 If you configure your Tor system accordingly, it is possible to make your node also
 reachable from the Tor network. Add these lines to your /etc/tor/torrc (or equivalent
 config file):
 
-	HiddenServiceDir /var/lib/tor/bitmark-service/
+	HiddenServiceDir /var/lib/tor/gamecredits-service/
 	HiddenServicePort 40002 127.0.0.1:40002
 	HiddenServicePort 50001 127.0.0.1:50001
 
 The directory can be different of course, but (both) port numbers should be equal to
 your gamecreditsd's P2P listen port (40002 by default).
 
-	-externalip=X   You can tell bitmark about its publicly reachable address using
+	-externalip=X   You can tell gamecredits about its publicly reachable address using
 	                this option, and this can be a .onion address. Given the above
 	                configuration, you can find your onion address in
-	                /var/lib/tor/bitmark-service/hostname. Onion addresses are given
+	                /var/lib/tor/gamecredits-service/hostname. Onion addresses are given
 	                preference for your node to advertize itself with, for connections
 	                coming from unroutable addresses (such as 127.0.0.1, where the
 	                Tor proxy typically runs).
@@ -86,5 +86,5 @@ and open port 40002 on your firewall (or use -upnp).
 If you only want to use Tor to reach onion addresses, but not use it as a proxy
 for normal IPv4/IPv6 communication, use:
 
-	./bitmark -onion=127.0.0.1:9050 -externalip=57qr3yd1nyntf5k.onion -discover
+	./gamecredits -onion=127.0.0.1:9050 -externalip=57qr3yd1nyntf5k.onion -discover
 
