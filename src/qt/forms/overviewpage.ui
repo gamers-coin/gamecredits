@@ -64,7 +64,10 @@
              <pixmap resource="../gamecredits.qrc">:/icons/gamecredits_foundation</pixmap>
             </property>
             <property name="scaledContents">
-             <bool>true</bool>
+             <bool>false</bool>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
             </property>
             <property name="wordWrap">
              <bool>false</bool>
@@ -389,6 +392,8 @@
    </item>
   </layout>
  </widget>
- <resources/>
+ <resources>
+  <include location="../gamecredits.qrc"/>
+ </resources>
  <connections/>
 </ui>
