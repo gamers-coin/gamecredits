@@ -6,83 +6,83 @@ AM_CPPFLAGS += -I$(top_srcdir)/src \
   $(PROTOBUF_CFLAGS) \
   $(QR_CFLAGS)
 bin_PROGRAMS = gamecredits-qt
-noinst_LIBRARIES = libgamecreditsqt.a
+noinst_LIBRARIES = libbitcoinqt.a
 SUBDIRS = . $(BUILD_TEST_QT)
 DIST_SUBDIRS = . test
 
 # gamecredits qt core #
 QT_TS = \
-  locale/gamecredits_ach.ts \
-  locale/gamecredits_af_ZA.ts \
-  locale/gamecredits_ar.ts \
-  locale/gamecredits_be_BY.ts \
-  locale/gamecredits_bg.ts \
-  locale/gamecredits_bs.ts \
-  locale/gamecredits_ca_ES.ts \
-  locale/gamecredits_ca.ts \
-  locale/gamecredits_ca@valencia.ts \
-  locale/gamecredits_cmn.ts \
-  locale/gamecredits_cs.ts \
-  locale/gamecredits_cy.ts \
-  locale/gamecredits_da.ts \
-  locale/gamecredits_de.ts \
-  locale/gamecredits_el_GR.ts \
-  locale/gamecredits_en.ts \
-  locale/gamecredits_eo.ts \
-  locale/gamecredits_es_CL.ts \
-  locale/gamecredits_es_DO.ts \
-  locale/gamecredits_es_MX.ts \
-  locale/gamecredits_es.ts \
-  locale/gamecredits_es_UY.ts \
-  locale/gamecredits_et.ts \
-  locale/gamecredits_eu_ES.ts \
-  locale/gamecredits_fa_IR.ts \
-  locale/gamecredits_fa.ts \
-  locale/gamecredits_fi.ts \
-  locale/gamecredits_fr_CA.ts \
-  locale/gamecredits_fr.ts \
-  locale/gamecredits_gl.ts \
-  locale/gamecredits_gu_IN.ts \
-  locale/gamecredits_he.ts \
-  locale/gamecredits_hi_IN.ts \
-  locale/gamecredits_hr.ts \
-  locale/gamecredits_hu.ts \
-  locale/gamecredits_id_ID.ts \
-  locale/gamecredits_it.ts \
-  locale/gamecredits_ja.ts \
-  locale/gamecredits_ka.ts \
-  locale/gamecredits_kk_KZ.ts \
-  locale/gamecredits_ko_KR.ts \
-  locale/gamecredits_ky.ts \
-  locale/gamecredits_la.ts \
-  locale/gamecredits_lt.ts \
-  locale/gamecredits_lv_LV.ts \
-  locale/gamecredits_mn.ts \
-  locale/gamecredits_ms_MY.ts \
-  locale/gamecredits_nb.ts \
-  locale/gamecredits_nl.ts \
-  locale/gamecredits_pam.ts \
-  locale/gamecredits_pl.ts \
-  locale/gamecredits_pt_BR.ts \
-  locale/gamecredits_pt_PT.ts \
-  locale/gamecredits_ro_RO.ts \
-  locale/gamecredits_ru.ts \
-  locale/gamecredits_sah.ts \
-  locale/gamecredits_sk.ts \
-  locale/gamecredits_sl_SI.ts \
-  locale/gamecredits_sq.ts \
-  locale/gamecredits_sr.ts \
-  locale/gamecredits_sv.ts \
-  locale/gamecredits_th_TH.ts \
-  locale/gamecredits_tr.ts \
-  locale/gamecredits_uk.ts \
-  locale/gamecredits_ur_PK.ts \
-  locale/gamecredits_uz@Cyrl.ts \
-  locale/gamecredits_vi.ts \
-  locale/gamecredits_vi_VN.ts \
-  locale/gamecredits_zh_CN.ts \
-  locale/gamecredits_zh_HK.ts \
-  locale/gamecredits_zh_TW.ts
+  locale/bitcoin_ach.ts \
+  locale/bitcoin_af_ZA.ts \
+  locale/bitcoin_ar.ts \
+  locale/bitcoin_be_BY.ts \
+  locale/bitcoin_bg.ts \
+  locale/bitcoin_bs.ts \
+  locale/bitcoin_ca_ES.ts \
+  locale/bitcoin_ca.ts \
+  locale/bitcoin_ca@valencia.ts \
+  locale/bitcoin_cmn.ts \
+  locale/bitcoin_cs.ts \
+  locale/bitcoin_cy.ts \
+  locale/bitcoin_da.ts \
+  locale/bitcoin_de.ts \
+  locale/bitcoin_el_GR.ts \
+  locale/bitcoin_en.ts \
+  locale/bitcoin_eo.ts \
+  locale/bitcoin_es_CL.ts \
+  locale/bitcoin_es_DO.ts \
+  locale/bitcoin_es_MX.ts \
+  locale/bitcoin_es.ts \
+  locale/bitcoin_es_UY.ts \
+  locale/bitcoin_et.ts \
+  locale/bitcoin_eu_ES.ts \
+  locale/bitcoin_fa_IR.ts \
+  locale/bitcoin_fa.ts \
+  locale/bitcoin_fi.ts \
+  locale/bitcoin_fr_CA.ts \
+  locale/bitcoin_fr.ts \
+  locale/bitcoin_gl.ts \
+  locale/bitcoin_gu_IN.ts \
+  locale/bitcoin_he.ts \
+  locale/bitcoin_hi_IN.ts \
+  locale/bitcoin_hr.ts \
+  locale/bitcoin_hu.ts \
+  locale/bitcoin_id_ID.ts \
+  locale/bitcoin_it.ts \
+  locale/bitcoin_ja.ts \
+  locale/bitcoin_ka.ts \
+  locale/bitcoin_kk_KZ.ts \
+  locale/bitcoin_ko_KR.ts \
+  locale/bitcoin_ky.ts \
+  locale/bitcoin_la.ts \
+  locale/bitcoin_lt.ts \
+  locale/bitcoin_lv_LV.ts \
+  locale/bitcoin_mn.ts \
+  locale/bitcoin_ms_MY.ts \
+  locale/bitcoin_nb.ts \
+  locale/bitcoin_nl.ts \
+  locale/bitcoin_pam.ts \
+  locale/bitcoin_pl.ts \
+  locale/bitcoin_pt_BR.ts \
+  locale/bitcoin_pt_PT.ts \
+  locale/bitcoin_ro_RO.ts \
+  locale/bitcoin_ru.ts \
+  locale/bitcoin_sah.ts \
+  locale/bitcoin_sk.ts \
+  locale/bitcoin_sl_SI.ts \
+  locale/bitcoin_sq.ts \
+  locale/bitcoin_sr.ts \
+  locale/bitcoin_sv.ts \
+  locale/bitcoin_th_TH.ts \
+  locale/bitcoin_tr.ts \
+  locale/bitcoin_uk.ts \
+  locale/bitcoin_ur_PK.ts \
+  locale/bitcoin_uz@Cyrl.ts \
+  locale/bitcoin_vi.ts \
+  locale/bitcoin_vi_VN.ts \
+  locale/bitcoin_zh_CN.ts \
+  locale/bitcoin_zh_HK.ts \
+  locale/bitcoin_zh_TW.ts
 
 QT_FORMS_UI = \
   forms/aboutdialog.ui \
@@ -107,10 +107,10 @@ QT_MOC_CPP = \
   moc_addressbookpage.cpp \
   moc_addresstablemodel.cpp \
   moc_askpassphrasedialog.cpp \
-  moc_gamecreditsaddressvalidator.cpp \
-  moc_gamecreditsamountfield.cpp \
-  moc_gamecreditsgui.cpp \
-  moc_gamecreditsunits.cpp \
+  moc_bitcoinaddressvalidator.cpp \
+  moc_bitcoinamountfield.cpp \
+  moc_bitcoingui.cpp \
+  moc_bitcoinunits.cpp \
   moc_clientmodel.cpp \
   moc_coincontroldialog.cpp \
   moc_coincontroltreewidget.cpp \
@@ -148,31 +148,31 @@ QT_MOC_CPP = \
   moc_walletmodel.cpp \
   moc_walletview.cpp
 
-GAMECREDITS_MM = \
+BITCOIN_MM = \
   macdockiconhandler.mm \
   macnotificationhandler.mm
 
 QT_MOC = \
-  gamecredits.moc \
+  bitcoin.moc \
   intro.moc \
   overviewpage.moc \
   rpcconsole.moc
 
-QT_QRC_CPP = qrc_gamecredits.cpp
-QT_QRC = gamecredits.qrc
+QT_QRC_CPP = qrc_bitcoin.cpp
+QT_QRC = bitcoin.qrc
 
 PROTOBUF_CC = paymentrequest.pb.cc
 PROTOBUF_H = paymentrequest.pb.h
 PROTOBUF_PROTO = paymentrequest.proto
 
-GAMECREDITS_QT_H = \
+BITCOIN_QT_H = \
   addressbookpage.h \
   addresstablemodel.h \
   askpassphrasedialog.h \
-  gamecreditsaddressvalidator.h \
-  gamecreditsamountfield.h \
-  gamecreditsgui.h \
-  gamecreditsunits.h \
+  bitcoinaddressvalidator.h \
+  bitcoinamountfield.h \
+  bitcoingui.h \
+  bitcoinunits.h \
   clientmodel.h \
   coincontroldialog.h \
   coincontroltreewidget.h \
@@ -260,12 +260,12 @@ RES_ICONS = \
   res/icons/tx_output.png \
   res/icons/tx_mined.png
 
-GAMECREDITS_QT_CPP = \
-  gamecredits.cpp \
-  gamecreditsaddressvalidator.cpp \
-  gamecreditsamountfield.cpp \
-  gamecreditsgui.cpp \
-  gamecreditsunits.cpp \
+BITCOIN_QT_CPP = \
+  bitcoin.cpp \
+  bitcoinaddressvalidator.cpp \
+  bitcoinamountfield.cpp \
+  bitcoingui.cpp \
+  bitcoinunits.cpp \
   clientmodel.cpp \
   csvmodelwriter.cpp \
   guiutil.cpp \
@@ -283,7 +283,7 @@ GAMECREDITS_QT_CPP = \
   winshutdownmonitor.cpp
 
 if ENABLE_WALLET
-GAMECREDITS_QT_CPP += \
+BITCOIN_QT_CPP += \
   addressbookpage.cpp \
   addresstablemodel.cpp \
   askpassphrasedialog.cpp \
@@ -319,17 +319,17 @@ RES_IMAGES = \
 
 RES_MOVIES = $(wildcard res/movies/spinner-*.png)
 
-GAMECREDITS_RC = res/gamecredits-qt-res.rc
+BITCOIN_RC = res/bitcoin-qt-res.rc
 
-libgamecreditsqt_a_CPPFLAGS = $(AM_CPPFLAGS) $(QT_INCLUDES) \
+libbitcoinqt_a_CPPFLAGS = $(AM_CPPFLAGS) $(QT_INCLUDES) \
   -I$(top_srcdir)/src/qt/forms $(QT_DBUS_INCLUDES)
-libgamecreditsqt_a_SOURCES = $(GAMECREDITS_QT_CPP) $(GAMECREDITS_QT_H) $(QT_FORMS_UI) \
+libbitcoinqt_a_SOURCES = $(BITCOIN_QT_CPP) $(BITCOIN_QT_H) $(QT_FORMS_UI) \
   $(QT_QRC) $(QT_TS) $(PROTOBUF_PROTO) $(RES_ICONS) $(RES_IMAGES) $(RES_MOVIES)
 
-nodist_libgamecreditsqt_a_SOURCES = $(QT_MOC_CPP) $(QT_MOC) $(PROTOBUF_CC) \
+nodist_libbitcoinqt_a_SOURCES = $(QT_MOC_CPP) $(QT_MOC) $(PROTOBUF_CC) \
   $(PROTOBUF_H) $(QT_QRC_CPP)
 
-BUILT_SOURCES = $(nodist_libgamecreditsqt_a_SOURCES)
+BUILT_SOURCES = $(nodist_libbitcoinqt_a_SOURCES)
 
 #Generating these with a half-written protobuf header leads to wacky results.
 #This makes sure it's done.
@@ -339,18 +339,18 @@ $(QT_MOC_CPP): $(PROTOBUF_H)
 # gamecredits-qt binary #
 gamecredits_qt_CPPFLAGS = $(AM_CPPFLAGS) $(QT_INCLUDES) \
   -I$(top_srcdir)/src/qt/forms
-gamecredits_qt_SOURCES = gamecredits.cpp
+gamecredits_qt_SOURCES = bitcoin.cpp
 if TARGET_DARWIN
-  gamecredits_qt_SOURCES += $(GAMECREDITS_MM)
+  gamecredits_qt_SOURCES += $(BITCOIN_MM)
 endif
 if TARGET_WINDOWS
-  gamecredits_qt_SOURCES += $(GAMECREDITS_RC)
+  gamecredits_qt_SOURCES += $(BITCOIN_RC)
 endif
-gamecredits_qt_LDADD = libgamecreditsqt.a $(LIBGAMECREDITS_SERVER)
+gamecredits_qt_LDADD = libbitcoinqt.a $(LIBBITCOIN_SERVER)
 if ENABLE_WALLET
-gamecredits_qt_LDADD += $(LIBGAMECREDITS_WALLET)
+gamecredits_qt_LDADD += $(LIBBITCOIN_WALLET)
 endif
-gamecredits_qt_LDADD += $(LIBGAMECREDITS_CLI) $(LIBGAMECREDITS_COMMON) $(LIBLEVELDB) $(LIBMEMENV) \
+gamecredits_qt_LDADD += $(LIBBITCOIN_CLI) $(LIBBITCOIN_COMMON) $(LIBLEVELDB) $(LIBMEMENV) \
   $(BOOST_LIBS) $(QT_LIBS) $(QT_DBUS_LIBS) $(QR_LIBS) $(PROTOBUF_LIBS) $(BDB_LIBS)
 gamecredits_qt_LDFLAGS = $(QT_LDFLAGS)
 
@@ -363,15 +363,15 @@ QT_QM=$(QT_TS:.ts=.qm)
 .PHONY: FORCE
 .SECONDARY: $(QT_QM)
 
-gamecreditstrings.cpp: FORCE
-	$(MAKE) -C $(top_srcdir)/src qt/gamecreditstrings.cpp
+bitcoinstrings.cpp: FORCE
+	$(MAKE) -C $(top_srcdir)/src qt/bitcoinstrings.cpp
 
-translate: gamecreditstrings.cpp $(QT_FORMS_UI) $(QT_FORMS_UI) $(GAMECREDITS_QT_CPP) $(GAMECREDITS_QT_H) $(GAMECREDITS_MM)
+translate: bitcoinstrings.cpp $(QT_FORMS_UI) $(QT_FORMS_UI) $(BITCOIN_QT_CPP) $(BITCOIN_QT_H) $(BITCOIN_MM)
 	@test -n $(LUPDATE) || echo "lupdate is required for updating translations"
-	@QT_SELECT=$(QT_SELECT) $(LUPDATE) $^ -locations relative -no-obsolete -ts locale/gamecredits_en.ts
+	@QT_SELECT=$(QT_SELECT) $(LUPDATE) $^ -locations relative -no-obsolete -ts locale/bitcoin_en.ts
 
 $(QT_QRC_CPP): $(QT_QRC) $(QT_QM) $(QT_FORMS_H) $(RES_ICONS) $(RES_IMAGES) $(RES_MOVIES) $(PROTOBUF_H)
-	@cd $(abs_srcdir); test -f $(RCC) && QT_SELECT=$(QT_SELECT) $(RCC) -name gamecredits -o $(abs_builddir)/$@ $< || \
+	@cd $(abs_srcdir); test -f $(RCC) && QT_SELECT=$(QT_SELECT) $(RCC) -name bitcoin -o $(abs_builddir)/$@ $< || \
 	  echo error: could not build $@
 	$(SED) -e '/^\*\*.*Created:/d' $@ > $@.n && mv $@{.n,}
 	$(SED) -e '/^\*\*.*by:/d' $@  > $@.n && mv $@{.n,}

@@ -14,6 +14,8 @@
 
 #include <boost/filesystem.hpp>
 
+extern bool fUseGamecreditsTheme;
+
 class QValidatedLineEdit;
 class SendCoinsRecipient;
 
@@ -35,16 +37,16 @@ namespace GUIUtil
     QString dateTimeStr(qint64 nTime);
 
     // Render Gamecredits addresses in monospace font
-    QFont gamecreditsAddressFont();
+    QFont bitcoinAddressFont();
 
     // Set up widgets for address and amounts
     void setupAddressWidget(QValidatedLineEdit *widget, QWidget *parent);
     void setupAmountWidget(QLineEdit *widget, QWidget *parent);
 
     // Parse "gamecredits:" URI into recipient object, return true on successful parsing
-    bool parseGamecreditsURI(const QUrl &uri, SendCoinsRecipient *out);
-    bool parseGamecreditsURI(QString uri, SendCoinsRecipient *out);
-    QString formatGamecreditsURI(const SendCoinsRecipient &info);
+    bool parseBitcoinURI(const QUrl &uri, SendCoinsRecipient *out);
+    bool parseBitcoinURI(QString uri, SendCoinsRecipient *out);
+    QString formatBitcoinURI(const SendCoinsRecipient &info);
 
     // Returns true if given address+amount meets "dust" definition
     bool isDust(const QString& address, qint64 amount);

@@ -34,7 +34,7 @@ SendCoinsEntry::SendCoinsEntry(QWidget *parent) :
     // normal gamecredits address field
     GUIUtil::setupAddressWidget(ui->payTo, this);
     // just a label for displaying gamecredits address(es)
-    ui->payTo_is->setFont(GUIUtil::gamecreditsAddressFont());
+    ui->payTo_is->setFont(GUIUtil::bitcoinAddressFont());
 }
 
 SendCoinsEntry::~SendCoinsEntry()

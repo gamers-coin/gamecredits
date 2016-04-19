@@ -4,8 +4,8 @@
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef GAMECREDITS_HASH_H
-#define GAMECREDITS_HASH_H
+#ifndef BITCOIN_HASH_H
+#define BITCOIN_HASH_H
 
 #include "serialize.h"
 #include "uint256.h"

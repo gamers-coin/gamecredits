@@ -387,7 +387,7 @@
             <string/>
            </property>
            <property name="icon">
-            <iconset resource="../gamecredits.qrc">
+            <iconset resource="../bitcoin.qrc">
              <normaloff>:/icons/remove</normaloff>:/icons/remove</iconset>
            </property>
            <property name="shortcut">
@@ -668,7 +668,7 @@
   </customwidget>
  </customwidgets>
  <resources>
-  <include location="../gamecredits.qrc"/>
+  <include location="../bitcoin.qrc"/>
  </resources>
  <connections/>
 </ui>

@@ -3,11 +3,11 @@
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef GAMECREDITS_NETBASE_H
-#define GAMECREDITS_NETBASE_H
+#ifndef BITCOIN_NETBASE_H
+#define BITCOIN_NETBASE_H
 
 #if defined(HAVE_CONFIG_H)
-#include "gamecredits-config.h"
+#include "bitcoin-config.h"
 #endif
 
 #include "compat.h"

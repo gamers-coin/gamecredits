@@ -1,6 +1,6 @@
-Gamecredits 0.9.4 BETA
+Gamecredits 
 
-Copyright (c) 2009-2015 Gamecredits Core Developers
+Copyright (c) 2009-2016 Gamecredits Core Developers
 
 Distributed under the MIT/X11 software license, see the accompanying
 file COPYING or http://www.opensource.org/licenses/mit-license.php.
@@ -26,6 +26,3 @@ However, it downloads and stores the entire history of Gamecredits transactions;
 depending on the speed of your computer and network connection, the synchronization
 process can take anywhere from a few hours to a day or more.
 
-See the gamecredits wiki at:
-  https://en.gamecredits.it/wiki/Main_Page
-for more help and information.

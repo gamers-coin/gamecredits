@@ -4,11 +4,11 @@
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef GAMECREDITS_UTIL_H
-#define GAMECREDITS_UTIL_H
+#ifndef BITCOIN_UTIL_H
+#define BITCOIN_UTIL_H
 
 #if defined(HAVE_CONFIG_H)
-#include "gamecredits-config.h"
+#include "bitcoin-config.h"
 #endif
 
 #include "compat.h"

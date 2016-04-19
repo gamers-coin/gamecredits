@@ -1,7 +1,7 @@
-Gamecredits 0.9.4 BETA
+Gamecredits
 =====================
 
-Copyright (c) 2009-2015 Gamecredits Developers
+Copyright (c) 2009-2016 Gamecredits Developers
 
 
 Setup

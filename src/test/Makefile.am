@@ -24,10 +24,10 @@ BUILT_SOURCES = $(JSON_TEST_FILES:.json=.json.h) $(RAW_TEST_FILES:.raw=.raw.h)
 
 # test_gamecredits binary #
 test_gamecredits_CPPFLAGS = $(AM_CPPFLAGS) $(TESTDEFS)
-test_gamecredits_LDADD = $(LIBGAMECREDITS_SERVER) $(LIBGAMECREDITS_CLI) $(LIBGAMECREDITS_COMMON) $(LIBLEVELDB) $(LIBMEMENV) \
+test_gamecredits_LDADD = $(LIBBITCOIN_SERVER) $(LIBBITCOIN_CLI) $(LIBBITCOIN_COMMON) $(LIBLEVELDB) $(LIBMEMENV) \
   $(BOOST_LIBS) $(BOOST_UNIT_TEST_FRAMEWORK_LIB)
 if ENABLE_WALLET
-test_gamecredits_LDADD += $(LIBGAMECREDITS_WALLET)
+test_gamecredits_LDADD += $(LIBBITCOIN_WALLET)
 endif
 test_gamecredits_LDADD += $(BDB_LIBS)
 
@@ -56,7 +56,7 @@ test_gamecredits_SOURCES = \
   script_tests.cpp \
   serialize_tests.cpp \
   sigopcount_tests.cpp \
-  test_gamecredits.cpp \
+  test_bitcoin.cpp \
   transaction_tests.cpp \
   uint256_tests.cpp \
   util_tests.cpp \

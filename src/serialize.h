@@ -4,8 +4,8 @@
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef GAMECREDITS_SERIALIZE_H
-#define GAMECREDITS_SERIALIZE_H
+#ifndef BITCOIN_SERIALIZE_H
+#define BITCOIN_SERIALIZE_H
 
 #include "allocators.h"
 

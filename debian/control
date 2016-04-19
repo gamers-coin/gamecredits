@@ -1,0 +1,20 @@
+Source: gamecredits
+Section: unknown
+Priority: optional
+Maintainer: Michel Daggelinckx <michel@unknown>
+Build-Depends: debhelper (>= 9)
+Standards-Version: 3.9.5
+Homepage: <insert the upstream URL, if relevant>
+#Vcs-Git: git://anonscm.debian.org/collab-maint/gamecredits.git
+#Vcs-Browser: http://anonscm.debian.org/?p=collab-maint/gamecredits.git;a=summary
+
+Package: gamecredits
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: <insert up to 60 chars description>
+ <insert long description, indented with spaces>
+
+Package: gamecredits-doc
+Architecture: all
+Description: documentation for gamecredits
+ <insert long description, indented with spaces>

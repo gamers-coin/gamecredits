@@ -21,10 +21,10 @@ static const string strSecret1     ("3T8LfmmT4UE526vZ5zfDYeca69GV5iBio8M6udc8wHQ
 static const string strSecret2     ("3UYjmH8Ye2jvDbwyDUWJx3LjmhL5sfeXg5ty7PjwUgMUg3tW66X");
 static const string strSecret1C    ("BpKPp8bC2KAgjs9Nd3VgNh213hVLwnnKUbRj5Ja62bSoyEuTVvsN");
 static const string strSecret2C    ("Bvb5kSCJeSgRtdFd84QNDwL7nH1EWdaePWcNfDNXTAhP8z8SLQYr");
-static const CGamecreditsAddress addr1 ("bVkSsJU8pi7PvEWN4jgHkLAd6jo4ZWYd16");
-static const CGamecreditsAddress addr2 ("bWRDtv3FPPAii7SSJ6zR3dMnDEAXFk1koe");
-static const CGamecreditsAddress addr1C("bQ3Gyigyd12kJDkhwi9M9QSZ9qu6M4NZzR");
-static const CGamecreditsAddress addr2C("bGvwzZoFyDvxGDjPGQmzA9hgeWRHXDsZQo");
+static const CBitcoinAddress addr1 ("bVkSsJU8pi7PvEWN4jgHkLAd6jo4ZWYd16");
+static const CBitcoinAddress addr2 ("bWRDtv3FPPAii7SSJ6zR3dMnDEAXFk1koe");
+static const CBitcoinAddress addr1C("bQ3Gyigyd12kJDkhwi9M9QSZ9qu6M4NZzR");
+static const CBitcoinAddress addr2C("bGvwzZoFyDvxGDjPGQmzA9hgeWRHXDsZQo");
 
 
 static const string strAddressBad("bHV9Lc3sNHZxwj4Zk6fB38tEmBryq2cBiF");
@@ -33,7 +33,7 @@ BOOST_AUTO_TEST_SUITE(key_tests)
 
 BOOST_AUTO_TEST_CASE(key_test1)
 {
-    CGamecreditsSecret bsecret1, bsecret2, bsecret1C, bsecret2C, baddress1;
+    CBitcoinSecret bsecret1, bsecret2, bsecret1C, bsecret2C, baddress1;
     BOOST_CHECK( bsecret1.SetString (strSecret1));
     BOOST_CHECK( bsecret2.SetString (strSecret2));
     BOOST_CHECK( bsecret1C.SetString(strSecret1C));

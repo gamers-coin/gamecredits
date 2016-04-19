@@ -56,7 +56,7 @@ Optional: install Qt4
 
 1. Clone the github tree to get the source code and go into the directory.
 
-        git clone git@github.com:project-gamecredits/gamecredits.git gamecredits
+        git clone git@github.com:gamecredits-project/GameCredits.git gamecredits
         cd gamecredits
 
 2.  Build gamecreditsd (and GameCredits-Qt, if configured):
@@ -94,7 +94,7 @@ PATH.
 
 1. Clone the github tree to get the source code and go into the directory.
 
-        git clone https://github.com/project-gamecredits/gamecredits.git
+        git clone https://github.com/gamecredits-project/GameCredits gamecredits
         cd gamecredits
 
 2.  Build gamecreditsd:
@@ -131,7 +131,7 @@ For MacPorts, that means editing your macports.conf and setting
 ... and then uninstalling and re-installing, or simply rebuilding, all ports.
 
 As of December 2012, the `boost` port does not obey `macosx_deployment_target`.
-Download `http://gavinandresen-gamecredits.s3.amazonaws.com/boost_macports_fix.zip`
+Download `http://gavinandresen-bitcoin.s3.amazonaws.com/boost_macports_fix.zip`
 for a fix.
 
 Once dependencies are compiled, see release-process.md for how the GameCredits-Qt.app

@@ -464,7 +464,7 @@ bool CheckWork(CBlock* pblock, CWallet& wallet, CReserveKey& reservekey)
     return true;
 }
 
-void static GamecreditsMiner(CWallet *pwallet)
+void static BitcoinMiner(CWallet *pwallet)
 {
     LogPrintf("GamecreditsMiner started\n");
     SetThreadPriority(THREAD_PRIORITY_LOWEST);
@@ -599,7 +599,7 @@ void static GamecreditsMiner(CWallet *pwallet)
     }
 }
 
-void GenerateGamecreditss(bool fGenerate, CWallet* pwallet, int nThreads)
+void GenerateBitcoins(bool fGenerate, CWallet* pwallet, int nThreads)
 {
     static boost::thread_group* minerThreads = NULL;
 
@@ -622,7 +622,7 @@ void GenerateGamecreditss(bool fGenerate, CWallet* pwallet, int nThreads)
 
     minerThreads = new boost::thread_group();
     for (int i = 0; i < nThreads; i++)
-        minerThreads->create_thread(boost::bind(&GamecreditsMiner, pwallet));
+        minerThreads->create_thread(boost::bind(&BitcoinMiner, pwallet));
 }
 
 #endif

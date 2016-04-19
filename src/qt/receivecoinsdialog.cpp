@@ -8,7 +8,7 @@
 
 #include "addressbookpage.h"
 #include "addresstablemodel.h"
-#include "gamecreditsunits.h"
+#include "bitcoinunits.h"
 #include "guiutil.h"
 #include "optionsmodel.h"
 #include "receiverequestdialog.h"

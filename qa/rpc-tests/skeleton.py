@@ -18,7 +18,7 @@ import subprocess
 import tempfile
 import traceback
 
-from gamecreditsrpc.authproxy import AuthServiceProxy, JSONRPCException
+from bitcoinrpc.authproxy import AuthServiceProxy, JSONRPCException
 from util import *
 
 

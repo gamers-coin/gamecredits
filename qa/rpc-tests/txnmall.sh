@@ -13,7 +13,7 @@ fi
 
 set -f
 
-GAMECREDITSD=${1}/gamecreditsd
+BITCOIND=${1}/gamecreditsd
 CLI=${1}/gamecredits-cli
 
 DIR="${BASH_SOURCE%/*}"
@@ -29,13 +29,13 @@ D=$(mktemp -d test.XXXXX)
 D1=${D}/node1
 CreateDataDir $D1 port=11000 rpcport=11001
 B1ARGS="-datadir=$D1"
-$GAMECREDITSD $B1ARGS &
+$BITCOIND $B1ARGS &
 B1PID=$!
 
 D2=${D}/node2
 CreateDataDir $D2 port=11010 rpcport=11011
 B2ARGS="-datadir=$D2"
-$GAMECREDITSD $B2ARGS &
+$BITCOIND $B2ARGS &
 B2PID=$!
 
 # Wait until both nodes are at the same block number
@@ -85,7 +85,7 @@ CheckBalance "$B2ARGS" 0
 # restart B2 with no connection
 $CLI $B2ARGS stop > /dev/null 2>&1
 wait $B2PID
-$GAMECREDITSD $B2ARGS &
+$BITCOIND $B2ARGS &
 B2PID=$!
 
 B2ADDRESS=$( $CLI $B2ARGS getaccountaddress "from1" )
@@ -129,7 +129,7 @@ $CLI $B2ARGS addnode 127.0.0.1:11000 onetry
 $CLI $B2ARGS setgenerate true 1
 WaitBlocks
 
-# B1 should have 49 BTM; the 2 BTM send is
+# B1 should have 49 GMC; the 2 GMC send is
 # conflicted, and should not count in
 # balances.
 CheckBalance "$B1ARGS" 49
@@ -137,7 +137,7 @@ CheckBalance "$B1ARGS" 49 "*"
 CheckBalance "$B1ARGS" 9 "foo"
 CheckBalance "$B1ARGS" 10 "bar"
 
-# B2 should have 51 BTM
+# B2 should have 51 GMC
 CheckBalance "$B2ARGS" 51
 CheckBalance "$B2ARGS" 1 "from1"
 

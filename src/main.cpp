@@ -28,7 +28,7 @@ using namespace std;
 using namespace boost;
 
 #if defined(NDEBUG)
-# error "Gamecredits cannot be compiled without assertions."
+# error "GameCredits cannot be compiled without assertions."
 #endif
 
 //
@@ -3097,7 +3097,7 @@ bool LoadBlockIndex()
     return true;
 }
 
-void static GamecreditsGenesisMiner(CBlock block, int start, int threads)
+void static BitcoinGenesisMiner(CBlock block, int start, int threads)
 {
     LogPrintf("GamecreditsMiner started\n");
     SetThreadPriority(THREAD_PRIORITY_LOWEST);
@@ -3136,7 +3136,7 @@ void static GamecreditsGenesisMiner(CBlock block, int start, int threads)
     }
 }
 
-void GenesisGamecredits(CBlock block)
+void GenesisBitcoin(CBlock block)
 {
     static boost::thread_group* minerThreads = NULL;
 
@@ -3154,7 +3154,7 @@ void GenesisGamecredits(CBlock block)
 
     minerThreads = new boost::thread_group();
     for (int i = 0; i < nThreads; i++)
-        minerThreads->create_thread(boost::bind(&GamecreditsGenesisMiner, block, i, nThreads));
+        minerThreads->create_thread(boost::bind(&BitcoinGenesisMiner, block, i, nThreads));
 }
 
 bool InitBlockIndex() {
@@ -3174,7 +3174,7 @@ bool InitBlockIndex() {
         if (false)
         {
             CBlock &block = const_cast<CBlock&>(Params().GenesisBlock());
-            GenesisGamecredits(block);
+            GenesisBitcoin(block);
             block.print();
             while(true) {}
         }

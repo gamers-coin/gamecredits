@@ -13,7 +13,7 @@ fi
 
 set -f
 
-GAMECREDITSD=${1}/gamecreditsd
+BITCOIND=${1}/gamecreditsd
 CLI=${1}/gamecredits-cli
 
 DIR="${BASH_SOURCE%/*}"
@@ -26,19 +26,19 @@ D=$(mktemp -d test.XXXXX)
 D1=${D}/node1
 CreateDataDir "$D1" port=11000 rpcport=11001
 B1ARGS="-datadir=$D1"
-$GAMECREDITSD $B1ARGS &
+$BITCOIND $B1ARGS &
 B1PID=$!
 
 D2=${D}/node2
 CreateDataDir "$D2" port=11010 rpcport=11011 connect=127.0.0.1:11000
 B2ARGS="-datadir=$D2"
-$GAMECREDITSD $B2ARGS &
+$BITCOIND $B2ARGS &
 B2PID=$!
 
 D3=${D}/node3
 CreateDataDir "$D3" port=11020 rpcport=11021 connect=127.0.0.1:11000
 B3ARGS="-datadir=$D3"
-$GAMECREDITSD $GAMECREDITSDARGS $B3ARGS &
+$BITCOIND $BITCOINDARGS $B3ARGS &
 B3PID=$!
 
 # Wait until all three nodes are at the same block number

@@ -3,20 +3,20 @@ include Makefile.include
 AM_CPPFLAGS += -I$(builddir)
 
 noinst_LIBRARIES = \
-  libgamecredits_server.a \
-  libgamecredits_common.a \
-  libgamecredits_cli.a
+  libbitcoin_server.a \
+  libbitcoin_common.a \
+  libbitcoin_cli.a
 if ENABLE_WALLET
-noinst_LIBRARIES += libgamecredits_wallet.a
+noinst_LIBRARIES += libbitcoin_wallet.a
 endif
 
 bin_PROGRAMS =
 
-if BUILD_GAMECREDITSD
+if BUILD_BITCOIND
   bin_PROGRAMS += gamecreditsd
 endif
 
-if BUILD_GAMECREDITS_CLI
+if BUILD_BITCOIN_CLI
   bin_PROGRAMS += gamecredits-cli
 endif
 
@@ -24,7 +24,7 @@ SUBDIRS = . $(BUILD_QT) $(BUILD_TEST)
 DIST_SUBDIRS = . qt test
 .PHONY: FORCE
 # gamecredits core #
-GAMECREDITS_CORE_H = \
+BITCOIN_CORE_H = \
   addrman.h \
   alert.h \
   allocators.h \
@@ -88,7 +88,7 @@ obj/build.h: FORCE
 	  $(abs_top_srcdir)
 version.o: obj/build.h
 
-libgamecredits_server_a_SOURCES = \
+libbitcoin_server_a_SOURCES = \
   addrman.cpp \
   alert.cpp \
   bloom.cpp \
@@ -110,18 +110,18 @@ libgamecredits_server_a_SOURCES = \
   txdb.cpp \
   txmempool.cpp \
   $(JSON_H) \
-  $(GAMECREDITS_CORE_H)
+  $(BITCOIN_CORE_H)
 
-libgamecredits_wallet_a_SOURCES = \
+libbitcoin_wallet_a_SOURCES = \
   db.cpp \
   crypter.cpp \
   rpcdump.cpp \
   rpcwallet.cpp \
   wallet.cpp \
   walletdb.cpp \
-  $(GAMECREDITS_CORE_H)
+  $(BITCOIN_CORE_H)
 
-libgamecredits_common_a_SOURCES = \
+libbitcoin_common_a_SOURCES = \
   base58.cpp \
   allocators.cpp \
   chainparams.cpp \
@@ -136,35 +136,35 @@ libgamecredits_common_a_SOURCES = \
   sync.cpp \
   util.cpp \
   version.cpp \
-  $(GAMECREDITS_CORE_H)
+  $(BITCOIN_CORE_H)
 
 if GLIBC_BACK_COMPAT
-libgamecredits_common_a_SOURCES += compat/glibc_compat.cpp
-libgamecredits_common_a_SOURCES += compat/glibcxx_compat.cpp
+libbitcoin_common_a_SOURCES += compat/glibc_compat.cpp
+libbitcoin_common_a_SOURCES += compat/glibcxx_compat.cpp
 endif
 
-libgamecredits_cli_a_SOURCES = \
+libbitcoin_cli_a_SOURCES = \
   rpcclient.cpp \
-  $(GAMECREDITS_CORE_H)
+  $(BITCOIN_CORE_H)
 
-nodist_libgamecredits_common_a_SOURCES = $(top_srcdir)/src/obj/build.h
+nodist_libbitcoin_common_a_SOURCES = $(top_srcdir)/src/obj/build.h
 #
 
 # gamecreditsd binary #
 gamecreditsd_LDADD = \
-  libgamecredits_server.a \
-  libgamecredits_cli.a \
-  libgamecredits_common.a \
+  libbitcoin_server.a \
+  libbitcoin_cli.a \
+  libbitcoin_common.a \
   $(LIBLEVELDB) \
   $(LIBMEMENV)
 if ENABLE_WALLET
-gamecreditsd_LDADD += libgamecredits_wallet.a
+gamecreditsd_LDADD += libbitcoin_wallet.a
 endif
-gamecreditsd_SOURCES = gamecreditsd.cpp
+gamecreditsd_SOURCES = bitcoind.cpp
 #
 
 if TARGET_WINDOWS
-gamecreditsd_SOURCES += gamecreditsd-res.rc
+gamecreditsd_SOURCES += bitcoind-res.rc
 endif
 
 AM_CPPFLAGS += $(BDB_CPPFLAGS)
@@ -172,14 +172,14 @@ gamecreditsd_LDADD += $(BOOST_LIBS) $(BDB_LIBS)
 
 # gamecredits-cli binary #
 gamecredits_cli_LDADD = \
-  libgamecredits_cli.a \
-  libgamecredits_common.a \
+  libbitcoin_cli.a \
+  libbitcoin_common.a \
   $(BOOST_LIBS)
-gamecredits_cli_SOURCES = gamecredits-cli.cpp
+gamecredits_cli_SOURCES = bitcoin-cli.cpp
 #
 
 if TARGET_WINDOWS
-gamecredits_cli_SOURCES += gamecredits-cli-res.rc
+gamecredits_cli_SOURCES += bitcoin-cli-res.rc
 endif
 
 # NOTE: This dependency is not strictly necessary, but without it make may try to build both in parallel, which breaks the LevelDB build system in a race
@@ -190,7 +190,7 @@ leveldb/%.a:
 	  CC="$(CC)" PLATFORM=$(TARGET_OS) AR="$(AR)" $(LEVELDB_TARGET_FLAGS) \
 	  OPT="$(CXXFLAGS) $(CPPFLAGS)"
 
-qt/gamecreditstrings.cpp: $(libgamecredits_server_a_SOURCES) $(libgamecredits_common_a_SOURCES) $(libgamecredits_cli_a_SOURCES)
+qt/bitcoinstrings.cpp: $(libbitcoin_server_a_SOURCES) $(libbitcoin_common_a_SOURCES) $(libbitcoin_cli_a_SOURCES)
 	@test -n $(XGETTEXT) || echo "xgettext is required for updating translations"
 	@cd $(top_srcdir); XGETTEXT=$(XGETTEXT) share/qt/extract_strings_qt.py
 

@@ -35,11 +35,12 @@ public:
         ProxyPort,              // int
         ProxySocksVersion,      // int
         Fee,                    // qint64
-        DisplayUnit,            // GamecreditsUnits::Unit
+        DisplayUnit,            // BitcoinUnits::Unit
         DisplayAddresses,       // bool
         ThirdPartyTxUrls,       // QString
         Language,               // QString
         CoinControlFeatures,    // bool
+        UseGamecreditsTheme,  // bool
         ThreadsScriptVerif,     // int
         DatabaseCache,          // int
         SpendZeroConfChange,    // bool

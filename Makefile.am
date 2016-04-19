@@ -4,10 +4,10 @@ SUBDIRS = src
 
 GZIP_ENV="-9n"
 
-GAMECREDITSD_BIN=$(top_builddir)/src/gamecreditsd$(EXEEXT)
-GAMECREDITS_QT_BIN=$(top_builddir)/src/qt/gamecredits-qt$(EXEEXT)
-GAMECREDITS_CLI_BIN=$(top_builddir)/src/gamecredits-cli$(EXEEXT)
-GAMECREDITS_WIN_INSTALLER=$(PACKAGE)-$(PACKAGE_VERSION)-win$(WINDOWS_BITS)-setup$(EXEEXT)
+BITCOIND_BIN=$(top_builddir)/src/gamecreditsd$(EXEEXT)
+BITCOIN_QT_BIN=$(top_builddir)/src/qt/gamecredits-qt$(EXEEXT)
+BITCOIN_CLI_BIN=$(top_builddir)/src/gamecredits-cli$(EXEEXT)
+BITCOIN_WIN_INSTALLER=$(PACKAGE)-$(PACKAGE_VERSION)-win$(WINDOWS_BITS)-setup$(EXEEXT)
 
 OSX_APP=GameCredits-Qt.app
 OSX_DMG=GameCredits-Qt.dmg
@@ -45,15 +45,15 @@ distcheck-hook:
 distcleancheck:
 	@:
 
-$(GAMECREDITS_WIN_INSTALLER): $(GAMECREDITSD_BIN) $(GAMECREDITS_QT_BIN) $(GAMECREDITS_CLI_BIN)
+$(BITCOIN_WIN_INSTALLER): $(BITCOIND_BIN) $(BITCOIN_QT_BIN) $(BITCOIN_CLI_BIN)
 	$(MKDIR_P) $(top_builddir)/release
-	STRIPPROG="$(STRIP)" $(INSTALL_STRIP_PROGRAM) $(GAMECREDITSD_BIN) $(top_builddir)/release
-	STRIPPROG="$(STRIP)" $(INSTALL_STRIP_PROGRAM) $(GAMECREDITS_QT_BIN) $(top_builddir)/release
-	STRIPPROG="$(STRIP)" $(INSTALL_STRIP_PROGRAM) $(GAMECREDITS_CLI_BIN) $(top_builddir)/release
+	STRIPPROG="$(STRIP)" $(INSTALL_STRIP_PROGRAM) $(BITCOIND_BIN) $(top_builddir)/release
+	STRIPPROG="$(STRIP)" $(INSTALL_STRIP_PROGRAM) $(BITCOIN_QT_BIN) $(top_builddir)/release
+	STRIPPROG="$(STRIP)" $(INSTALL_STRIP_PROGRAM) $(BITCOIN_CLI_BIN) $(top_builddir)/release
 	@test -f $(MAKENSIS) && $(MAKENSIS) $(top_builddir)/share/setup.nsi || \
 	  echo error: could not build $@
 
-$(GAMECREDITSD_BIN) $(GAMECREDITS_QT_BIN) $(GAMECREDITS_CLI_BIN):
+$(BITCOIND_BIN) $(BITCOIN_QT_BIN) $(BITCOIN_CLI_BIN):
 	make -C $(dir $@) $(notdir $@)
 
 $(OSX_APP)/Contents/PkgInfo:
@@ -72,7 +72,7 @@ $(OSX_APP)/Contents/Resources/gamecredits.icns: $(OSX_INSTALLER_ICONS)
 	$(MKDIR_P) $(@D)
 	$(INSTALL_DATA) $< $@
 
-$(OSX_APP)/Contents/MacOS/GameCredits-Qt: $(GAMECREDITS_QT_BIN)
+$(OSX_APP)/Contents/MacOS/GameCredits-Qt: $(BITCOIN_QT_BIN)
 	$(MKDIR_P) $(@D)
 	STRIPPROG="$(STRIP)" $(INSTALL_STRIP_PROGRAM)  $< $@
 
@@ -99,7 +99,7 @@ appbundle: $(OSX_APP_BUILT)
 deploy: $(OSX_DMG)
 endif
 if TARGET_WINDOWS
-deploy: $(GAMECREDITS_WIN_INSTALLER)
+deploy: $(BITCOIN_WIN_INSTALLER)
 endif
 
 if USE_LCOV
@@ -164,7 +164,7 @@ endif
 
 EXTRA_DIST = $(top_srcdir)/share/genbuild.sh qa/pull-tester/pull-tester.sh qa/rpc-tests $(DIST_DOCS) $(WINDOWS_PACKAGING) $(OSX_PACKAGING)
 
-CLEANFILES = $(OSX_DMG) $(GAMECREDITS_WIN_INSTALLER)
+CLEANFILES = $(OSX_DMG) $(BITCOIN_WIN_INSTALLER)
 
 .INTERMEDIATE: $(COVERAGE_INFO)
 

@@ -4,13 +4,16 @@
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #if defined(HAVE_CONFIG_H)
-#include "gamecredits-config.h"
+#include "bitcoin-config.h"
 #endif
 
 #include "optionsmodel.h"
 
-#include "gamecreditsunits.h"
+#include "bitcoinunits.h"
 #include "guiutil.h"
+
+// shared UI settings in guiutil.h
+bool fUseGamecreditsTheme;
 
 #include "init.h"
 #include "main.h"
@@ -57,7 +60,7 @@ void OptionsModel::Init()
 
     // Display
     if (!settings.contains("nDisplayUnit"))
-        settings.setValue("nDisplayUnit", GamecreditsUnits::GMC);
+        settings.setValue("nDisplayUnit", BitcoinUnits::GMC);
     nDisplayUnit = settings.value("nDisplayUnit").toInt();
 
     if (!settings.contains("bDisplayAddresses"))
@@ -71,6 +74,10 @@ void OptionsModel::Init()
     if (!settings.contains("fCoinControlFeatures"))
         settings.setValue("fCoinControlFeatures", false);
     fCoinControlFeatures = settings.value("fCoinControlFeatures", false).toBool();
+	
+    if (!settings.contains("fUseGamecreditsTheme"))
+        settings.setValue("fUseGamecreditsTheme", true);
+    fUseGamecreditsTheme = settings.value("fUseGamecreditsTheme", true).toBool();
 
     // These are shared with the core or have a command-line parameter
     // and we want command-line parameters to overwrite the GUI settings.
@@ -214,6 +221,8 @@ QVariant OptionsModel::data(const QModelIndex & index, int role) const
             return settings.value("language");
         case CoinControlFeatures:
             return fCoinControlFeatures;
+        case UseGamecreditsTheme:
+            return fUseGamecreditsTheme;
         case DatabaseCache:
             return settings.value("nDatabaseCache");
         case ThreadsScriptVerif:
@@ -328,6 +337,10 @@ bool OptionsModel::setData(const QModelIndex & index, const QVariant & value, in
             fCoinControlFeatures = value.toBool();
             settings.setValue("fCoinControlFeatures", fCoinControlFeatures);
             emit coinControlFeaturesChanged(fCoinControlFeatures);
+            break;
+        case UseGamecreditsTheme:
+            fUseGamecreditsTheme = value.toBool();
+            settings.setValue("fUseGamecreditsTheme", fUseGamecreditsTheme);
             break;
         case DatabaseCache:
             if (settings.value("nDatabaseCache") != value) {

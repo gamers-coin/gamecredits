@@ -3,8 +3,8 @@
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef GAMECREDITS_LEVELDBWRAPPER_H
-#define GAMECREDITS_LEVELDBWRAPPER_H
+#ifndef BITCOIN_LEVELDBWRAPPER_H
+#define BITCOIN_LEVELDBWRAPPER_H
 
 #include "serialize.h"
 #include "util.h"
@@ -153,4 +153,4 @@ public:
     }
 };
 
-#endif // GAMECREDITS_LEVELDBWRAPPER_H
+#endif // BITCOIN_LEVELDBWRAPPER_H

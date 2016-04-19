@@ -56,10 +56,10 @@ bool static TestSplitHost(string test, string host, int port)
 
 BOOST_AUTO_TEST_CASE(netbase_splithost)
 {
-    BOOST_CHECK(TestSplitHost("www.gamecredits.org", "www.gamecredits.org", -1));
-    BOOST_CHECK(TestSplitHost("[www.gamecredits.org]", "www.gamecredits.org", -1));
-    BOOST_CHECK(TestSplitHost("www.gamecredits.org:80", "www.gamecredits.org", 80));
-    BOOST_CHECK(TestSplitHost("[www.gamecredits.org]:80", "www.gamecredits.org", 80));
+    BOOST_CHECK(TestSplitHost("www.gamecredits.net", "www.gamecredits.net", -1));
+    BOOST_CHECK(TestSplitHost("[www.gamecredits.net]", "www.gamecredits.net", -1));
+    BOOST_CHECK(TestSplitHost("www.gamecredits.net:80", "www.gamecredits.net", 80));
+    BOOST_CHECK(TestSplitHost("[www.gamecredits.net]:80", "www.gamecredits.net", 80));
     BOOST_CHECK(TestSplitHost("127.0.0.1", "127.0.0.1", -1));
     BOOST_CHECK(TestSplitHost("127.0.0.1:40002", "127.0.0.1", 40002));
     BOOST_CHECK(TestSplitHost("[127.0.0.1]", "127.0.0.1", -1));

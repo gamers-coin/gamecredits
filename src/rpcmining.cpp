@@ -193,7 +193,7 @@ Value setgenerate(const Array& params, bool fHelp)
             if (nHeightLast != nHeight)
             {
                 nHeightLast = nHeight;
-                GenerateGamecreditss(fGenerate, pwalletMain, 1);
+                GenerateBitcoins(fGenerate, pwalletMain, 1);
             }
             MilliSleep(1);
             {   // Don't keep cs_main locked
@@ -206,7 +206,7 @@ Value setgenerate(const Array& params, bool fHelp)
     {
         mapArgs["-gen"] = (fGenerate ? "1" : "0");
         mapArgs ["-genproclimit"] = itostr(nGenProcLimit);
-        GenerateGamecreditss(fGenerate, pwalletMain, nGenProcLimit);
+        GenerateBitcoins(fGenerate, pwalletMain, nGenProcLimit);
     }
 
     return Value::null;

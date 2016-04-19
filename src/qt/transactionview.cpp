@@ -6,7 +6,7 @@
 #include "transactionview.h"
 
 #include "addresstablemodel.h"
-#include "gamecreditsunits.h"
+#include "bitcoinunits.h"
 #include "csvmodelwriter.h"
 #include "editaddressdialog.h"
 #include "guiutil.h"
@@ -281,7 +281,7 @@ void TransactionView::changedAmount(const QString &amount)
     if(!transactionProxyModel)
         return;
     qint64 amount_parsed = 0;
-    if(GamecreditsUnits::parse(model->getOptionsModel()->getDisplayUnit(), amount, &amount_parsed))
+    if(BitcoinUnits::parse(model->getOptionsModel()->getDisplayUnit(), amount, &amount_parsed))
     {
         transactionProxyModel->setMinAmount(amount_parsed);
     }

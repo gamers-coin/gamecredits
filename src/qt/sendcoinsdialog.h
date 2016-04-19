@@ -23,7 +23,7 @@ namespace Ui {
     class SendCoinsDialog;
 }
 
-/** Dialog for sending gamecredits */
+/** Dialog for sending Gamecredits */
 class SendCoinsDialog : public QDialog
 {
     Q_OBJECT

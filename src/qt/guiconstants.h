@@ -12,7 +12,7 @@ static const int MODEL_UPDATE_DELAY = 250;
 /* AskPassphraseDialog -- Maximum passphrase length */
 static const int MAX_PASSPHRASE_SIZE = 1024;
 
-/* GamecreditsGUI -- Size of icons in status bar */
+/* BitcoinGUI -- Size of icons in status bar */
 static const int STATUSBAR_ICONSIZE = 16;
 
 /* Invalid field background style */
@@ -43,7 +43,7 @@ static const int MAX_PAYMENT_REQUEST_SIZE = 50000; // bytes
 #define SPINNER_FRAMES 35
 
 #define QAPP_ORG_NAME "GameCredits"
-#define QAPP_ORG_DOMAIN "gamecredits.org"
+#define QAPP_ORG_DOMAIN "gamecredits.net"
 #define QAPP_APP_NAME_DEFAULT "GameCredits-Qt"
 #define QAPP_APP_NAME_TESTNET "GameCredits-Qt-testnet"
 

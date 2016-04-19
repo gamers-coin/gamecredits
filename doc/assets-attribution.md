@@ -93,12 +93,11 @@ Jonas Schnelli
 -----------------------
 
 ### Info
-* Designer: Jonas Schnelli (based on the original gamecredits logo from Bitboy)
 * License: MIT
 
 ### Assets Used
 	src/qt/res/icons/gamecredits.icns, src/qt/res/src/gamecredits.svg,
 	src/qt/res/src/gamecredits.ico, src/qt/res/src/gamecredits.png,
-	src/qt/res/src/gamecredits_testnet.png, docs/gamecredits_logo_doxygen.png,
+	src/qt/res/src/gamecredits_testnet.png, docs/bitcoin_logo_doxygen.png,
 	src/qt/res/icons/toolbar.png, src/qt/res/icons/toolbar_testnet.png,
 	src/qt/res/images/splash.png, src/qt/res/images/splash_testnet.png

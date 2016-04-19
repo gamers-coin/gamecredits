@@ -5,7 +5,7 @@
 
 #include "walletframe.h"
 
-#include "gamecreditsgui.h"
+#include "bitcoingui.h"
 #include "walletview.h"
 
 #include <cstdio>
@@ -13,7 +13,7 @@
 #include <QHBoxLayout>
 #include <QLabel>
 
-WalletFrame::WalletFrame(GamecreditsGUI *_gui) :
+WalletFrame::WalletFrame(BitcoinGUI *_gui) :
     QFrame(_gui),
     gui(_gui)
 {
@@ -44,7 +44,7 @@ bool WalletFrame::addWallet(const QString& name, WalletModel *walletModel)
         return false;
 
     WalletView *walletView = new WalletView(this);
-    walletView->setGamecreditsGUI(gui);
+    walletView->setBitcoinGUI(gui);
     walletView->setClientModel(clientModel);
     walletView->setWalletModel(walletModel);
     walletView->showOutOfSyncWarning(bOutOfSync);

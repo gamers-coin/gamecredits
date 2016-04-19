@@ -6,7 +6,7 @@
 #include "overviewpage.h"
 #include "ui_overviewpage.h"
 
-#include "gamecreditsunits.h"
+#include "bitcoinunits.h"
 #include "clientmodel.h"
 #include "guiconstants.h"
 #include "guiutil.h"
@@ -19,13 +19,13 @@
 #include <QPainter>
 
 #define DECORATION_SIZE 64
-#define NUM_ITEMS 3
+#define NUM_ITEMS 6
 
 class TxViewDelegate : public QAbstractItemDelegate
 {
     Q_OBJECT
 public:
-    TxViewDelegate(): QAbstractItemDelegate(), unit(GamecreditsUnits::GMC)
+    TxViewDelegate(): QAbstractItemDelegate(), unit(BitcoinUnits::GMC)
     {
 
     }
@@ -73,7 +73,7 @@ public:
             foreground = option.palette.color(QPalette::Text);
         }
         painter->setPen(foreground);
-        QString amountText = GamecreditsUnits::formatWithUnit(unit, amount, true);
+        QString amountText = BitcoinUnits::formatWithUnit(unit, amount, true);
         if(!confirmed)
         {
             amountText = QString("[") + amountText + QString("]");
@@ -110,6 +110,7 @@ OverviewPage::OverviewPage(QWidget *parent) :
     ui->setupUi(this);
 
     // Recent transactions
+    ui->listTransactions->setStyleSheet("QListView { background:transparent }");
     ui->listTransactions->setItemDelegate(txdelegate);
     ui->listTransactions->setIconSize(QSize(DECORATION_SIZE, DECORATION_SIZE));
     ui->listTransactions->setMinimumHeight(NUM_ITEMS * (DECORATION_SIZE + 2));
@@ -142,10 +143,10 @@ void OverviewPage::setBalance(qint64 balance, qint64 unconfirmedBalance, qint64 
     currentBalance = balance;
     currentUnconfirmedBalance = unconfirmedBalance;
     currentImmatureBalance = immatureBalance;
-    ui->labelBalance->setText(GamecreditsUnits::formatWithUnit(unit, balance));
-    ui->labelUnconfirmed->setText(GamecreditsUnits::formatWithUnit(unit, unconfirmedBalance));
-    ui->labelImmature->setText(GamecreditsUnits::formatWithUnit(unit, immatureBalance));
-    ui->labelTotal->setText(GamecreditsUnits::formatWithUnit(unit, balance + unconfirmedBalance + immatureBalance));
+    ui->labelBalance->setText(BitcoinUnits::formatWithUnit(unit, balance));
+    ui->labelUnconfirmed->setText(BitcoinUnits::formatWithUnit(unit, unconfirmedBalance));
+    ui->labelImmature->setText(BitcoinUnits::formatWithUnit(unit, immatureBalance));
+    ui->labelTotal->setText(BitcoinUnits::formatWithUnit(unit, balance + unconfirmedBalance + immatureBalance));
 
     // only show immature (newly mined) balance if it's non-zero, so as not to complicate things
     // for the non-mining users

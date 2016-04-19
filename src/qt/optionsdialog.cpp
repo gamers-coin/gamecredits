@@ -4,13 +4,13 @@
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #if defined(HAVE_CONFIG_H)
-#include "gamecredits-config.h"
+#include "bitcoin-config.h"
 #endif
 
 #include "optionsdialog.h"
 #include "ui_optionsdialog.h"
 
-#include "gamecreditsunits.h"
+#include "bitcoinunits.h"
 #include "guiutil.h"
 #include "monitoreddatamapper.h"
 #include "optionsmodel.h"
@@ -101,7 +101,7 @@ OptionsDialog::OptionsDialog(QWidget *parent) :
     ui->thirdPartyTxUrls->setPlaceholderText("https://example.com/tx/%s");
 #endif
 
-    ui->unit->setModel(new GamecreditsUnits(this));
+    ui->unit->setModel(new BitcoinUnits(this));
     ui->transactionFee->setSingleStep(CTransaction::nMinTxFee);
 
     /* Widget-to-option mapper */
@@ -161,7 +161,7 @@ void OptionsDialog::setModel(OptionsModel *model)
 void OptionsDialog::setMapper()
 {
     /* Main */
-    mapper->addMapping(ui->gamecreditsAtStartup, OptionsModel::StartAtStartup);
+    mapper->addMapping(ui->bitcoinAtStartup, OptionsModel::StartAtStartup);
     mapper->addMapping(ui->threadsScriptVerif, OptionsModel::ThreadsScriptVerif);
     mapper->addMapping(ui->databaseCache, OptionsModel::DatabaseCache);
 
@@ -188,6 +188,7 @@ void OptionsDialog::setMapper()
     mapper->addMapping(ui->lang, OptionsModel::Language);
     mapper->addMapping(ui->unit, OptionsModel::DisplayUnit);
     mapper->addMapping(ui->displayAddresses, OptionsModel::DisplayAddresses);
+    mapper->addMapping(ui->useGamecreditsTheme, OptionsModel::UseGamecreditsTheme);
     mapper->addMapping(ui->thirdPartyTxUrls, OptionsModel::ThirdPartyTxUrls);
 }
 
