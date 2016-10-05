@@ -1,47 +1,9 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS language="fi" version="2.1">
-<context>
-    <name>AboutDialog</name>
-    <message>
-        <source>About GameCredits Core</source>
-        <translation>Tietoja GameCredits Core</translation>
-    </message>
-    <message>
-        <source>&lt;b&gt;GameCredits Core&lt;/b&gt; version</source>
-        <translation>&lt;b&gt;GameCredits Core&lt;/b&gt; versio</translation>
-    </message>
-    <message>
-        <source>
-This is experimental software.
-
-Distributed under the MIT/X11 software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php.
-
-This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit (http://www.openssl.org/) and cryptographic software written by Eric Young (eay@cryptsoft.com) and UPnP software written by Thomas Bernard.</source>
-        <translation>
-Tämä on kokeellinen ohjelmisto.
-
-Levitetään MIT/X11 ohjelmistolisenssin alaisuudessa. Tarkemmat tiedot löytyvät tiedostosta COPYING tai osoitteesta http://www.opensource.org/licenses/mit-license.php.
-
-Tämä ohjelma sisältää OpenSSL projektin OpenSSL työkalupakin (http://www.openssl.org/), Eric Youngin (eay@cryptsoft.com) kehittämän salausohjelmiston sekä Thomas Bernardin UPnP ohjelmiston.
-</translation>
-    </message>
-    <message>
-        <source>Copyright</source>
-        <translation>Tekijänoikeus</translation>
-    </message>
-    <message>
-        <source>The Bitcoin Core Developers</source>
-        <translation>GameCredits Core kehittäjät</translation>
-    </message>
-    <message>
-        <source>(%1-bit)</source>
-        <translation>(%1-bit)</translation>
-    </message>
-</context>
+<TS language="fi" version="2.0">
 <context>
     <name>AddressBookPage</name>
     <message>
-        <source>Double-click to edit address or label</source>
-        <translation>Kaksoisnapauta muokataksesi osoitetta tai nimeä</translation>
+        <source>Right-click to edit address or label</source>
+        <translation>Klikkaa hiiren oikealla painikkeella muokataksesi osoitetta tai nimikettä</translation>
     </message>
     <message>
         <source>Create a new address</source>
@@ -61,7 +23,7 @@ Tämä ohjelma sisältää OpenSSL projektin OpenSSL työkalupakin (http://www.o
     </message>
     <message>
         <source>C&amp;lose</source>
-        <translation>&amp;Sulje</translation>
+        <translation>S&amp;ulje</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -77,7 +39,7 @@ Tämä ohjelma sisältää OpenSSL projektin OpenSSL työkalupakin (http://www.o
     </message>
     <message>
         <source>&amp;Export</source>
-        <translation>&amp;Vie...</translation>
+        <translation>&amp;Vie</translation>
     </message>
     <message>
         <source>&amp;Delete</source>
@@ -85,15 +47,15 @@ Tämä ohjelma sisältää OpenSSL projektin OpenSSL työkalupakin (http://www.o
     </message>
     <message>
         <source>Choose the address to send coins to</source>
-        <translation>Valitse osoite johon lähetetään kolikoita</translation>
+        <translation>Valitse osoite johon kolikot lähetetään</translation>
     </message>
     <message>
         <source>Choose the address to receive coins with</source>
-        <translation>Valitse osoite jolla vastaanotetaan kolikoita</translation>
+        <translation>Valitse osoite johon vastaanotetaan kolikoita</translation>
     </message>
     <message>
         <source>C&amp;hoose</source>
-        <translation>&amp;Valitse</translation>
+        <translation>V&amp;alitse</translation>
     </message>
     <message>
         <source>Sending addresses</source>
@@ -105,15 +67,15 @@ Tämä ohjelma sisältää OpenSSL projektin OpenSSL työkalupakin (http://www.o
     </message>
     <message>
         <source>These are your GameCredits addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Nämä ovat sinun GameCredits osoitteita maksujen lähetykseen. Tarkista aina rahan määrä ja vastaanottajan osoite ennenkuin lähetät kolikkoja.</translation>
+        <translation>Nämä ovat sinun GameCredits osoitteita maksujen lähetykseen. Tarkista aina summa ja vastaanottajan osoite ennenkuin lähetät kolikkoja.</translation>
     </message>
     <message>
         <source>These are your GameCredits addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Nämä ovat sinun GameCredits-osoitteesi suoritusten vastaanottamiseen. Suositellaan että annat uuden osoitteen kullekin rahansiirrolle</translation>
+        <translation>Nämä ovat sinun GameCredits-osoitteesi suoritusten vastaanottamiseen. Suositellaan että annat uuden osoitteen kullekin transaktiolle.</translation>
     </message>
     <message>
         <source>Copy &amp;Label</source>
-        <translation>Kopioi &amp;Nimi</translation>
+        <translation>Kopioi &amp;nimike</translation>
     </message>
     <message>
         <source>&amp;Edit</source>
@@ -132,8 +94,8 @@ Tämä ohjelma sisältää OpenSSL projektin OpenSSL työkalupakin (http://www.o
         <translation>Vienti epäonnistui</translation>
     </message>
     <message>
-        <source>There was an error trying to save the address list to %1.</source>
-        <translation>Osoitelistan tallennuksessa tapahtui virhe tiedostoon %1.</translation>
+        <source>There was an error trying to save the address list to %1. Please try again.</source>
+        <translation>Virhe tallentaessa osoitelistaa %1. Yritä uudelleen.</translation>
     </message>
 </context>
 <context>
@@ -148,14 +110,14 @@ Tämä ohjelma sisältää OpenSSL projektin OpenSSL työkalupakin (http://www.o
     </message>
     <message>
         <source>(no label)</source>
-        <translation>(ei nimeä)</translation>
+        <translation>(ei nimikettä)</translation>
     </message>
 </context>
 <context>
     <name>AskPassphraseDialog</name>
     <message>
         <source>Passphrase Dialog</source>
-        <translation>Tunnuslauseen Dialogi</translation>
+        <translation>Tunnuslauseen tekstinsyöttökenttä</translation>
     </message>
     <message>
         <source>Enter passphrase</source>
@@ -167,11 +129,7 @@ Tämä ohjelma sisältää OpenSSL projektin OpenSSL työkalupakin (http://www.o
     </message>
     <message>
         <source>Repeat new passphrase</source>
-        <translation>Kirjoita uusi tunnuslause uudelleen</translation>
-    </message>
-    <message>
-        <source>Enter the new passphrase to the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;10 or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
-        <translation>Anna lompakolle uusi tunnuslause.&lt;br/&gt;Käytä tunnuslausetta, jossa on ainakin  &lt;b&gt;10 satunnaista mekkiä&lt;/b&gt; tai &lt;b&gt;kahdeksan sanaa&lt;/b&gt;.</translation>
+        <translation>Toista uusi tunnuslause</translation>
     </message>
     <message>
         <source>Encrypt wallet</source>
@@ -198,16 +156,12 @@ Tämä ohjelma sisältää OpenSSL projektin OpenSSL työkalupakin (http://www.o
         <translation>Vaihda tunnuslause</translation>
     </message>
     <message>
-        <source>Enter the old and new passphrase to the wallet.</source>
-        <translation>Anna vanha ja uusi tunnuslause.</translation>
-    </message>
-    <message>
         <source>Confirm wallet encryption</source>
         <translation>Vahvista lompakon salaus</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR GameCreditsS&lt;/b&gt;!</source>
-        <translation>Varoitus: Jos salaat lompakkosi ja menetät tunnuslauseesi, &lt;b&gt;MENETÄT KAIKKI GameCreditsISI&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR GAMECREDITS&lt;/b&gt;!</source>
+        <translation>Varoitus: Jos salaat lompakkosi ja menetät tunnuslauseesi, &lt;b&gt;MENETÄT KAIKKI GAMECREDITS&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -226,8 +180,8 @@ Tämä ohjelma sisältää OpenSSL projektin OpenSSL työkalupakin (http://www.o
         <translation>Lompakko salattu</translation>
     </message>
     <message>
-        <source>GameCredits will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your gamecreditss from being stolen by malware infecting your computer.</source>
-        <translation>GameCredits sulkeutuu lopettaakseen salausprosessin. Muista, että salattukaan lompakko ei täysin suojaa sitä haittaohjelmien aiheuttamilta varkauksilta.</translation>
+        <source>Enter the new passphrase to the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;ten or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
+        <translation>Anna salauslause lompakkoon. &lt;br/&gt;Ole hyvä ja käytä lausetta jossa on &lt;b&gt;kymmenen tai enemmän satunnaista merkkiä&lt;/b&gt; tai &lt;b&gt;kahdeksan tai useampi sanaa&lt;/b&gt;.</translation>
     </message>
     <message>
         <source>Wallet encryption failed</source>
@@ -259,7 +213,7 @@ Tämä ohjelma sisältää OpenSSL projektin OpenSSL työkalupakin (http://www.o
     </message>
 </context>
 <context>
-    <name>GameCreditsGUI</name>
+    <name>BitcoinGUI</name>
     <message>
         <source>Sign &amp;message...</source>
         <translation>&amp;Allekirjoita viesti...</translation>
@@ -295,10 +249,6 @@ Tämä ohjelma sisältää OpenSSL projektin OpenSSL työkalupakin (http://www.o
     <message>
         <source>Quit application</source>
         <translation>Sulje ohjelma</translation>
-    </message>
-    <message>
-        <source>Show information about GameCredits</source>
-        <translation>Näytä tietoa GameCredits-projektista</translation>
     </message>
     <message>
         <source>About &amp;Qt</source>
@@ -337,6 +287,10 @@ Tämä ohjelma sisältää OpenSSL projektin OpenSSL työkalupakin (http://www.o
         <translation>Avaa &amp;URI...</translation>
     </message>
     <message>
+        <source>GameCredits Core client</source>
+        <translation>GameCredits Core ohjelma</translation>
+    </message>
+    <message>
         <source>Importing blocks from disk...</source>
         <translation>Tuodaan lohkoja levyltä</translation>
     </message>
@@ -347,10 +301,6 @@ Tämä ohjelma sisältää OpenSSL projektin OpenSSL työkalupakin (http://www.o
     <message>
         <source>Send coins to a GameCredits address</source>
         <translation>Lähetä kolikoita GameCredits-osoitteeseen</translation>
-    </message>
-    <message>
-        <source>Modify configuration options for GameCredits</source>
-        <translation>Muuta GameCreditsin konfiguraatioasetuksia</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -389,6 +339,10 @@ Tämä ohjelma sisältää OpenSSL projektin OpenSSL työkalupakin (http://www.o
         <translation>&amp;Vastaanota</translation>
     </message>
     <message>
+        <source>Show information about GameCredits Core</source>
+        <translation>Näytä tietoja GameCredits Core:sta</translation>
+    </message>
+    <message>
         <source>&amp;Show / Hide</source>
         <translation>&amp;Näytä / Piilota</translation>
     </message>
@@ -425,10 +379,6 @@ Tämä ohjelma sisältää OpenSSL projektin OpenSSL työkalupakin (http://www.o
         <translation>Välilehtipalkki</translation>
     </message>
     <message>
-        <source>[testnet]</source>
-        <translation>[testnet]</translation>
-    </message>
-    <message>
         <source>GameCredits Core</source>
         <translation>GameCredits-ydin</translation>
     </message>
@@ -458,11 +408,7 @@ Tämä ohjelma sisältää OpenSSL projektin OpenSSL työkalupakin (http://www.o
     </message>
     <message>
         <source>Show the GameCredits Core help message to get a list with possible GameCredits command-line options</source>
-        <translation>Näytä GameCredits Core ohjeet saadaksesi listan mahdollisista GameCreditsin komentorivivalinnoista</translation>
-    </message>
-    <message>
-        <source>GameCredits client</source>
-        <translation>GameCredits-asiakas</translation>
+        <translation>Näytä GameCredits Core ohjeet saadaksesi listan mahdollisista GameCredits komentorivivalinnoista</translation>
     </message>
     <message numerus="yes">
         <source>%n active connection(s) to GameCredits network</source>
@@ -471,14 +417,6 @@ Tämä ohjelma sisältää OpenSSL projektin OpenSSL työkalupakin (http://www.o
     <message>
         <source>No block source available...</source>
         <translation>Lohkojen lähdettä ei saatavilla...</translation>
-    </message>
-    <message>
-        <source>Processed %1 of %2 (estimated) blocks of transaction history.</source>
-        <translation>Käsitelty %1 of %2 (arviolta) rahansiirtohistorian lohkoa.</translation>
-    </message>
-    <message>
-        <source>Processed %1 blocks of transaction history.</source>
-        <translation>Käsitelty %1 lohkoa rahansiirtohistoriasta</translation>
     </message>
     <message numerus="yes">
         <source>%n hour(s)</source>
@@ -541,27 +479,12 @@ Tämä ohjelma sisältää OpenSSL projektin OpenSSL työkalupakin (http://www.o
         <translation>Saapuva rahansiirto</translation>
     </message>
     <message>
-        <source>Date: %1
-Amount: %2
-Type: %3
-Address: %4
-</source>
-        <translation>Päivä: %1
-Määrä: %2
-Tyyppi: %3
-Osoite: %4</translation>
-    </message>
-    <message>
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt;</source>
         <translation>Lompakko on &lt;b&gt;salattu&lt;/b&gt; ja tällä hetkellä &lt;b&gt;avoinna&lt;/b&gt;</translation>
     </message>
     <message>
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</source>
         <translation>Lompakko on &lt;b&gt;salattu&lt;/b&gt; ja tällä hetkellä &lt;b&gt;lukittuna&lt;/b&gt;</translation>
-    </message>
-    <message>
-        <source>A fatal error occurred. GameCredits can no longer continue safely and will quit.</source>
-        <translation>Peruuttamaton virhe on tapahtunut. GameCredits ei voi enää jatkaa turvallisesti ja sammutetaan.</translation>
     </message>
 </context>
 <context>
@@ -574,8 +497,8 @@ Osoite: %4</translation>
 <context>
     <name>CoinControlDialog</name>
     <message>
-        <source>Coin Control Address Selection</source>
-        <translation>Kolikkokontrollin osoitteen valinta</translation>
+        <source>Coin Selection</source>
+        <translation>Kolikoiden valinta</translation>
     </message>
     <message>
         <source>Quantity:</source>
@@ -598,8 +521,8 @@ Osoite: %4</translation>
         <translation>Palkkio:</translation>
     </message>
     <message>
-        <source>Low Output:</source>
-        <translation>Pieni Tuotos</translation>
+        <source>Dust:</source>
+        <translation>Tomu:</translation>
     </message>
     <message>
         <source>After Fee:</source>
@@ -626,8 +549,12 @@ Osoite: %4</translation>
         <translation>Määrä</translation>
     </message>
     <message>
-        <source>Address</source>
-        <translation>Osoite</translation>
+        <source>Received with label</source>
+        <translation>Vastaanotettu nimikkeellä</translation>
+    </message>
+    <message>
+        <source>Received with address</source>
+        <translation>Vastaanotettu osoitteella</translation>
     </message>
     <message>
         <source>Date</source>
@@ -690,8 +617,8 @@ Osoite: %4</translation>
         <translation>Kopioi prioriteetti</translation>
     </message>
     <message>
-        <source>Copy low output</source>
-        <translation>Kopioi pieni tuotos</translation>
+        <source>Copy dust</source>
+        <translation>Kopioi tomu</translation>
     </message>
     <message>
         <source>Copy change</source>
@@ -742,8 +669,8 @@ Osoite: %4</translation>
         <translation>ei mitään</translation>
     </message>
     <message>
-        <source>Dust</source>
-        <translation>Tomu</translation>
+        <source>Can vary +/- %1 satoshi(s) per input.</source>
+        <translation>Saattaa vaihdella +/- %1 satoshia per syöte.</translation>
     </message>
     <message>
         <source>yes</source>
@@ -752,10 +679,6 @@ Osoite: %4</translation>
     <message>
         <source>no</source>
         <translation>ei</translation>
-    </message>
-    <message>
-        <source>This label turns red, if the transaction size is greater than 1000 bytes.</source>
-        <translation>Tämä nimi muuttuu punaiseksi jos rahansiirron koko on suurempi kuin 1000 tavua</translation>
     </message>
     <message>
         <source>This means a fee of at least %1 per kB is required.</source>
@@ -768,26 +691,6 @@ Osoite: %4</translation>
     <message>
         <source>Transactions with higher priority are more likely to get included into a block.</source>
         <translation>Rahansiirrot korkeammalla prioriteetilla sisällytetään varmemmin lohkoon.</translation>
-    </message>
-    <message>
-        <source>This label turns red, if the priority is smaller than &quot;medium&quot;.</source>
-        <translation>Tämä nimi muuttuu punaiseksi jos prioriteetti on pienempi kuin &quot;keskisuuri&quot;.</translation>
-    </message>
-    <message>
-        <source>This label turns red, if any recipient receives an amount smaller than %1.</source>
-        <translation>Tämä nimi muuttuu punaiseksi jos vastaanottaja saa pienemmän määrän kuin %1</translation>
-    </message>
-    <message>
-        <source>This means a fee of at least %1 is required.</source>
-        <translation>Tämä tarkoittaa että vähintään %1 palkkio on pakollinen.</translation>
-    </message>
-    <message>
-        <source>Amounts below 0.546 times the minimum relay fee are shown as dust.</source>
-        <translation>Maksumäärät alle 0.546 kertaa vähimmäispalkkion näytetään tomuna.</translation>
-    </message>
-    <message>
-        <source>This label turns red, if the change is smaller than %1.</source>
-        <translation>Tämä nimi muuttuu punaiseksi jos vaihtoraha on alle %1.</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -841,12 +744,12 @@ Osoite: %4</translation>
         <translation>Muokkaa lähtevää osoitetta</translation>
     </message>
     <message>
-        <source>The entered address &quot;%1&quot; is already in the address book.</source>
-        <translation>Osoite &quot;%1&quot; on jo osoitekirjassa.</translation>
+        <source>The entered address "%1" is already in the address book.</source>
+        <translation>Osoite "%1" on jo osoitekirjassa.</translation>
     </message>
     <message>
-        <source>The entered address &quot;%1&quot; is not a valid GameCredits address.</source>
-        <translation>Antamasi osoite &quot;%1&quot; ei ole validi GameCredits-osoite.</translation>
+        <source>The entered address "%1" is not a valid GameCredits address.</source>
+        <translation>Antamasi osoite "%1" ei ole validi GameCredits-osoite.</translation>
     </message>
     <message>
         <source>Could not unlock wallet.</source>
@@ -883,10 +786,6 @@ Osoite: %4</translation>
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>GameCredits Core - Command-line options</source>
-        <translation>GameCredits Core - Kometorivivalinnat</translation>
-    </message>
-    <message>
         <source>GameCredits Core</source>
         <translation>GameCredits-ydin</translation>
     </message>
@@ -895,36 +794,24 @@ Osoite: %4</translation>
         <translation>versio</translation>
     </message>
     <message>
+        <source>(%1-bit)</source>
+        <translation>(%1-bit)</translation>
+    </message>
+    <message>
+        <source>About GameCredits Core</source>
+        <translation>Tietoja GameCredits Core</translation>
+    </message>
+    <message>
+        <source>Command-line options</source>
+        <translation>Komentorivi parametrit</translation>
+    </message>
+    <message>
         <source>Usage:</source>
         <translation>Käyttö:</translation>
     </message>
     <message>
         <source>command-line options</source>
         <translation>komentorivi parametrit</translation>
-    </message>
-    <message>
-        <source>UI options</source>
-        <translation>Käyttöliittymäasetukset</translation>
-    </message>
-    <message>
-        <source>Set language, for example &quot;de_DE&quot; (default: system locale)</source>
-        <translation>Set language, for example &quot;de_DE&quot; (default: system locale)</translation>
-    </message>
-    <message>
-        <source>Start minimized</source>
-        <translation>Käynnistä pienennettynä</translation>
-    </message>
-    <message>
-        <source>Set SSL root certificates for payment request (default: -system-)</source>
-        <translation>Aseta SSL root varmenne maksupyynnöille (oletus: -system-)</translation>
-    </message>
-    <message>
-        <source>Show splash screen on startup (default: 1)</source>
-        <translation>Näytä aloitusruutu käynnistettäessä (oletus: 1)</translation>
-    </message>
-    <message>
-        <source>Choose data directory on startup (default: 0)</source>
-        <translation>Valitse data-hakemisto käynnistyksessä (oletus: 0)</translation>
     </message>
 </context>
 <context>
@@ -943,7 +830,7 @@ Osoite: %4</translation>
     </message>
     <message>
         <source>GameCredits Core will download and store a copy of the GameCredits block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>GameCredits Core lataa ja tallentaa kopion GameCreditsin lohkoketjusta. Vähintään %1GB dataa tullaan tallentamaan tähän hakemistoon ja tarve kasvaa ajan myötä. Lomakko tullaan myös tallentamaan tähän hakemistoon.</translation>
+        <translation>GameCredits Core lataa ja tallentaa kopion GameCredits lohkoketjusta. Vähintään %1GB dataa tullaan tallentamaan tähän hakemistoon ja tarve kasvaa ajan myötä. Lomakko tullaan myös tallentamaan tähän hakemistoon.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -954,24 +841,24 @@ Osoite: %4</translation>
         <translation>Määritä oma kansio:</translation>
     </message>
     <message>
-        <source>GameCredits</source>
-        <translation>GameCredits</translation>
+        <source>GameCredits Core</source>
+        <translation>GameCredits-ydin</translation>
     </message>
     <message>
-        <source>Error: Specified data directory &quot;%1&quot; can not be created.</source>
-        <translation>Virhe: Annettua data-hakemistoa &quot;%1&quot; ei voida luoda.</translation>
+        <source>Error: Specified data directory "%1" cannot be created.</source>
+        <translation>Virhe: Annettu datahakemistoa "%1" ei voida luoda.</translation>
     </message>
     <message>
         <source>Error</source>
         <translation>Virhe</translation>
     </message>
-    <message>
-        <source>GB of free space available</source>
-        <translation>GB vapaata tilaa</translation>
+    <message numerus="yes">
+        <source>%n GB of free space available</source>
+        <translation><numerusform>%n Gt vapaata tilaa käytettävissä</numerusform><numerusform>%n Gt vapaata tilaa käytettävissä</numerusform></translation>
     </message>
-    <message>
-        <source>(of %1GB needed)</source>
-        <translation>(tarvitaan %1GB)</translation>
+    <message numerus="yes">
+        <source>(of %n GB needed)</source>
+        <translation><numerusform>(%n Gt tarvittavasta tilasta)</numerusform><numerusform>(%n Gt tarvittavasta tilasta)</numerusform></translation>
     </message>
 </context>
 <context>
@@ -1008,22 +895,6 @@ Osoite: %4</translation>
         <translation>&amp;Yleiset</translation>
     </message>
     <message>
-        <source>Optional transaction fee per kB that helps make sure your transactions are processed quickly. Most transactions are 1 kB.</source>
-        <translation>Valinnainen rahansiirtopalkkio per kB auttaa varmistamaan että rahansiirtosi prosessoidaan nopeasti. Useimmat rahansiirrot ovat alle 1 kB.</translation>
-    </message>
-    <message>
-        <source>Pay transaction &amp;fee</source>
-        <translation>Maksa rahansiirtopalkkio</translation>
-    </message>
-    <message>
-        <source>Automatically start GameCredits after logging in to the system.</source>
-        <translation>Käynnistä GameCredits kirjautumisen yhteydessä.</translation>
-    </message>
-    <message>
-        <source>&amp;Start GameCredits on system login</source>
-        <translation>&amp;Käynnistä GameCredits kirjautumisen yhteydessä</translation>
-    </message>
-    <message>
         <source>Size of &amp;database cache</source>
         <translation>&amp;Tietokannan välimuistin koko</translation>
     </message>
@@ -1036,12 +907,12 @@ Osoite: %4</translation>
         <translation>Script &amp;varmistuksen threadien määrä</translation>
     </message>
     <message>
-        <source>Connect to the GameCredits network through a SOCKS proxy.</source>
-        <translation>Yhdistä GameCredits-verkkoon SOCKS proxyn kautta.</translation>
+        <source>Accept connections from outside</source>
+        <translation>Hyväksy yhteysiä ulkopuolelta</translation>
     </message>
     <message>
-        <source>&amp;Connect through SOCKS proxy (default proxy):</source>
-        <translation>&amp;Yhdistä SOCKS proxyn kautta (oletus proxy):</translation>
+        <source>Allow incoming connections</source>
+        <translation>Hyväksy sisääntulevia yhteyksiä</translation>
     </message>
     <message>
         <source>IP address of the proxy (e.g. IPv4: 127.0.0.1 / IPv6: ::1)</source>
@@ -1104,6 +975,14 @@ Osoite: %4</translation>
         <translation>Portin uudelleenohjaus &amp;UPnP:llä</translation>
     </message>
     <message>
+        <source>Connect to the GameCredits network through a SOCKS5 proxy.</source>
+        <translation>Yhdistä GameCredits-verkkoon SOCKS5-välityspalvelimen kautta.</translation>
+    </message>
+    <message>
+        <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
+        <translation>&amp;Yhdistä SOCKS5-välityspalvelimen kautta (oletus välityspalvelin):</translation>
+    </message>
+    <message>
         <source>Proxy &amp;IP:</source>
         <translation>Proxyn &amp;IP:</translation>
     </message>
@@ -1114,14 +993,6 @@ Osoite: %4</translation>
     <message>
         <source>Port of the proxy (e.g. 9050)</source>
         <translation>Proxyn Portti (esim. 9050)</translation>
-    </message>
-    <message>
-        <source>SOCKS &amp;Version:</source>
-        <translation>SOCKS &amp;Versio:</translation>
-    </message>
-    <message>
-        <source>SOCKS version of the proxy (e.g. 5)</source>
-        <translation>Proxyn SOCKS-versio (esim. 5)</translation>
     </message>
     <message>
         <source>&amp;Window</source>
@@ -1136,10 +1007,6 @@ Osoite: %4</translation>
         <translation>&amp;Pienennä ilmaisinalueelle työkalurivin sijasta</translation>
     </message>
     <message>
-        <source>Minimize instead of exit the application when the window is closed. When this option is enabled, the application will be closed only after selecting Quit in the menu.</source>
-        <translation>Ikkunaa suljettaessa vain pienentää GameCredits-ohjelman ikkunan lopettamatta itse ohjelmaa. Kun tämä asetus on valittuna, ohjelman voi sulkea vain valitsemalla Lopeta ohjelman valikosta.</translation>
-    </message>
-    <message>
         <source>M&amp;inimize on close</source>
         <translation>P&amp;ienennä suljettaessa</translation>
     </message>
@@ -1152,24 +1019,12 @@ Osoite: %4</translation>
         <translation>&amp;Käyttöliittymän kieli</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting GameCredits.</source>
-        <translation>Tässä voit määritellä käyttöliittymän kielen. Muutokset astuvat voimaan seuraavan kerran, kun GameCredits käynnistetään.</translation>
-    </message>
-    <message>
         <source>&amp;Unit to show amounts in:</source>
         <translation>Yksikkö jona gamecredits-määrät näytetään</translation>
     </message>
     <message>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
         <translation>Valitse mitä yksikköä käytetään ensisijaisesti gamecredits-määrien näyttämiseen.</translation>
-    </message>
-    <message>
-        <source>Whether to show GameCredits addresses in the transaction list or not.</source>
-        <translation>Näytetäänkö GameCredits-osoitteet rahansiirrot listassa vai ei.</translation>
-    </message>
-    <message>
-        <source>&amp;Display addresses in transaction list</source>
-        <translation>&amp;Näytä osoitteet rahansiirrot listassa</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1200,10 +1055,6 @@ Osoite: %4</translation>
         <translation>Ohjelman uudelleenkäynnistys aktivoi muutokset.</translation>
     </message>
     <message>
-        <source>Client will be shutdown, do you want to proceed?</source>
-        <translation>Ohjelma lopetetaan. Haluatko jatkaa?</translation>
-    </message>
-    <message>
         <source>This change would require a client restart.</source>
         <translation>Tämä muutos vaatii ohjelman uudelleenkäynnistyksen.</translation>
     </message>
@@ -1223,8 +1074,8 @@ Osoite: %4</translation>
         <translation>Näytetyt tiedot eivät välttämättä ole ajantasalla. Lompakkosi synkronoituu GameCredits-verkon kanssa automaattisesti yhteyden muodostamisen jälkeen, mutta synkronointi on vielä meneillään.</translation>
     </message>
     <message>
-        <source>Wallet</source>
-        <translation>Lompakko</translation>
+        <source>Watch-only:</source>
+        <translation>Seuranta:</translation>
     </message>
     <message>
         <source>Available:</source>
@@ -1251,20 +1102,40 @@ Osoite: %4</translation>
         <translation>Louhittu saldo, joka ei ole vielä kypsynyt</translation>
     </message>
     <message>
+        <source>Balances</source>
+        <translation>Saldot</translation>
+    </message>
+    <message>
         <source>Total:</source>
         <translation>Yhteensä:</translation>
     </message>
     <message>
         <source>Your current total balance</source>
-        <translation>Tililläsi tällä hetkellä olevien GameCreditsien määrä</translation>
+        <translation>Tililläsi tällä hetkellä olevien GameCredits määrä</translation>
     </message>
     <message>
-        <source>&lt;b&gt;Recent transactions&lt;/b&gt;</source>
-        <translation>&lt;b&gt;Viimeisimmät rahansiirrot&lt;/b&gt;</translation>
+        <source>Your current balance in watch-only addresses</source>
+        <translation>Nykyinen tase seurantaosoitetteissa</translation>
     </message>
     <message>
-        <source>out of sync</source>
-        <translation>Ei ajan tasalla</translation>
+        <source>Spendable:</source>
+        <translation>Käytettävissä:</translation>
+    </message>
+    <message>
+        <source>Recent transactions</source>
+        <translation>Viimeisimmät rahansiirrot</translation>
+    </message>
+    <message>
+        <source>Unconfirmed transactions to watch-only addresses</source>
+        <translation>Vahvistamattomat rahansiirrot vain katseltaviin osoitteisiin</translation>
+    </message>
+    <message>
+        <source>Mined balance in watch-only addresses that has not yet matured</source>
+        <translation>Louhittu, ei vielä kypsynyt saldo vain katseltavissa osoitteissa</translation>
+    </message>
+    <message>
+        <source>Current total balance in watch-only addresses</source>
+        <translation>Nykyinen tase seurantaosoitetteissa</translation>
     </message>
 </context>
 <context>
@@ -1274,8 +1145,20 @@ Osoite: %4</translation>
         <translation>URI käsittely</translation>
     </message>
     <message>
-        <source>URI can not be parsed! This can be caused by an invalid GameCredits address or malformed URI parameters.</source>
-        <translation>URIa ei voitu jäsentää! Tämä voi johtua kelvottomasta GameCredits-osoitteesta tai virheellisistä URI parametreista.</translation>
+        <source>Invalid payment address %1</source>
+        <translation>Virheellinen maksuosoite %1</translation>
+    </message>
+    <message>
+        <source>Payment request rejected</source>
+        <translation>Maksupyyntö hylätty</translation>
+    </message>
+    <message>
+        <source>Payment request network doesn't match client network.</source>
+        <translation>Maksypyyntö verkossa ei täsmää asiakasohjelman verkkoon.</translation>
+    </message>
+    <message>
+        <source>Payment request is not initialized.</source>
+        <translation>Maksupyyntöä ei ole alustettu.</translation>
     </message>
     <message>
         <source>Requested payment amount of %1 is too small (considered dust).</source>
@@ -1290,24 +1173,16 @@ Osoite: %4</translation>
         <translation>Ei voida käynnistää gamecredits: klikkaa-maksu käsittelijää</translation>
     </message>
     <message>
-        <source>Net manager warning</source>
-        <translation>Verkkohallinnan varoitus</translation>
-    </message>
-    <message>
-        <source>Your active proxy doesn&apos;t support SOCKS5, which is required for payment requests via proxy.</source>
-        <translation>Aktiivinen proxy ei tue SOCKS5, joka on pakollinen maksupyynnöissä proxyn kautta.</translation>
-    </message>
-    <message>
         <source>Payment request fetch URL is invalid: %1</source>
         <translation>Maksupyynnön haku URL on virheellinen: %1</translation>
     </message>
     <message>
-        <source>Payment request file handling</source>
-        <translation>Maksupyynnön tiedoston käsittely</translation>
+        <source>URI cannot be parsed! This can be caused by an invalid GameCredits address or malformed URI parameters.</source>
+        <translation>URIa ei voitu jäsentää! Tämä voi johtua kelvottomasta GameCredits-osoitteesta tai virheellisistä URI parametreista.</translation>
     </message>
     <message>
-        <source>Payment request file can not be read or processed! This can be caused by an invalid payment request file.</source>
-        <translation>Maksupyynnön tiedostoa ei voida lukea tai prosessoida! Tämä voi johtua virheellisestä maksupyyntötiedostosta.</translation>
+        <source>Payment request file handling</source>
+        <translation>Maksupyynnön tiedoston käsittely</translation>
     </message>
     <message>
         <source>Unverified payment requests to custom payment scripts are unsupported.</source>
@@ -1318,12 +1193,12 @@ Osoite: %4</translation>
         <translation>Maksupalautus %1:sta</translation>
     </message>
     <message>
-        <source>Error communicating with %1: %2</source>
-        <translation>Virhe kommunikoidessa %1n kanssa: %2</translation>
+        <source>Payment request DoS protection</source>
+        <translation>Maksupyynnön DoS-suojaus</translation>
     </message>
     <message>
-        <source>Payment request can not be parsed or processed!</source>
-        <translation>Maksupyyntöä ei voida jäsentää tai prosessoida!</translation>
+        <source>Error communicating with %1: %2</source>
+        <translation>Virhe kommunikoidessa %1n kanssa: %2</translation>
     </message>
     <message>
         <source>Bad response from server %1</source>
@@ -1339,30 +1214,53 @@ Osoite: %4</translation>
     </message>
 </context>
 <context>
+    <name>PeerTableModel</name>
+    <message>
+        <source>User Agent</source>
+        <translation>Käyttöliittymä</translation>
+    </message>
+    <message>
+        <source>Ping Time</source>
+        <translation>Vasteaika</translation>
+    </message>
+</context>
+<context>
     <name>QObject</name>
     <message>
-        <source>GameCredits</source>
-        <translation>GameCredits</translation>
+        <source>Amount</source>
+        <translation>Määrä</translation>
     </message>
     <message>
-        <source>Error: Specified data directory &quot;%1&quot; does not exist.</source>
-        <translation>Virhe: Annettu data-hakemisto &quot;%1&quot; ei ole olemassa.</translation>
+        <source>Enter a GameCredits address (e.g. %1)</source>
+        <translation>Syötä GameCredits-osoite (esim. %1)</translation>
     </message>
     <message>
-        <source>Error: Cannot parse configuration file: %1. Only use key=value syntax.</source>
-        <translation>Virhe: Ei voida jäsentää asetustiedostoa: %1. Käytä vain avain=arvo syntaksia.</translation>
+        <source>%1 d</source>
+        <translation>%1 d</translation>
     </message>
     <message>
-        <source>Error: Invalid combination of -regtest and -testnet.</source>
-        <translation>Virhe: Virheellinen yhdistelmä -regtest ja -testnet.</translation>
+        <source>%1 h</source>
+        <translation>%1 h</translation>
     </message>
     <message>
-        <source>GameCredits Core didn&apos;t yet exit safely...</source>
-        <translation>GameCredits Core ei ole vielä sulkeutunut turvallisesti...</translation>
+        <source>%1 m</source>
+        <translation>%1 m</translation>
     </message>
     <message>
-        <source>Enter a GameCredits address (e.g. bQ3Gyigyd12kJDkhwi9M9QSZ9qu6M4NZzR)</source>
-        <translation>Anna GameCredits-osoite (esim. bQ3Gyigyd12kJDkhwi9M9QSZ9qu6M4NZzR)</translation>
+        <source>%1 s</source>
+        <translation>%1 s</translation>
+    </message>
+    <message>
+        <source>None</source>
+        <translation>Ei yhtään</translation>
+    </message>
+    <message>
+        <source>N/A</source>
+        <translation>Ei saatavilla</translation>
+    </message>
+    <message>
+        <source>%1 ms</source>
+        <translation>%1 ms</translation>
     </message>
 </context>
 <context>
@@ -1415,6 +1313,10 @@ Osoite: %4</translation>
         <translation>Käytössä oleva OpenSSL-versio</translation>
     </message>
     <message>
+        <source>Using BerkeleyDB version</source>
+        <translation>Käyttää BerkeleyDB-versiota</translation>
+    </message>
+    <message>
         <source>Startup time</source>
         <translation>Käynnistysaika</translation>
     </message>
@@ -1439,8 +1341,72 @@ Osoite: %4</translation>
         <translation>Nykyinen Lohkojen määrä</translation>
     </message>
     <message>
-        <source>Estimated total blocks</source>
-        <translation>Arvioitu lohkojen kokonaismäärä</translation>
+        <source>Received</source>
+        <translation>Vastaanotetut</translation>
+    </message>
+    <message>
+        <source>Sent</source>
+        <translation>Lähetetyt</translation>
+    </message>
+    <message>
+        <source>&amp;Peers</source>
+        <translation>&amp;Vertaiset</translation>
+    </message>
+    <message>
+        <source>Select a peer to view detailed information.</source>
+        <translation>Valitse vertainen eriteltyjä tietoja varten.</translation>
+    </message>
+    <message>
+        <source>Direction</source>
+        <translation>Suunta</translation>
+    </message>
+    <message>
+        <source>Version</source>
+        <translation>Versio</translation>
+    </message>
+    <message>
+        <source>User Agent</source>
+        <translation>Käyttöliittymä</translation>
+    </message>
+    <message>
+        <source>Services</source>
+        <translation>Palvelut</translation>
+    </message>
+    <message>
+        <source>Starting Height</source>
+        <translation>Aloituskorkeus</translation>
+    </message>
+    <message>
+        <source>Sync Height</source>
+        <translation>Synkronointikorkeus</translation>
+    </message>
+    <message>
+        <source>Ban Score</source>
+        <translation>Panna-pisteytys</translation>
+    </message>
+    <message>
+        <source>Connection Time</source>
+        <translation>Yhteysaika</translation>
+    </message>
+    <message>
+        <source>Last Send</source>
+        <translation>Viimeisin lähetetty</translation>
+    </message>
+    <message>
+        <source>Last Receive</source>
+        <translation>Viimeisin vastaanotettu</translation>
+    </message>
+    <message>
+        <source>Bytes Sent</source>
+        <translation>Tavua lähetetty</translation>
+    </message>
+    <message>
+        <source>Bytes Received</source>
+        <translation>Tavua vastaanotettu</translation>
+    </message>
+    <message>
+        <source>Ping Time</source>
+        <translation>Vasteaika</translation>
     </message>
     <message>
         <source>Last block time</source>
@@ -1483,16 +1449,8 @@ Osoite: %4</translation>
         <translation>Debug lokitiedosto</translation>
     </message>
     <message>
-        <source>Open the GameCredits debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Avaa lokitiedosto nykyisestä data-kansiosta. Tämä voi viedä useamman sekunnin, jos lokitiedosto on iso.</translation>
-    </message>
-    <message>
         <source>Clear console</source>
         <translation>Tyhjennä konsoli</translation>
-    </message>
-    <message>
-        <source>Welcome to the GameCredits RPC console.</source>
-        <translation>Tervetuloa GameCredits RPC konsoliin.</translation>
     </message>
     <message>
         <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
@@ -1519,16 +1477,28 @@ Osoite: %4</translation>
         <translation>%1 GB</translation>
     </message>
     <message>
-        <source>%1 m</source>
-        <translation>%1 m</translation>
+        <source>via %1</source>
+        <translation>%1 kautta</translation>
     </message>
     <message>
-        <source>%1 h</source>
-        <translation>%1 h</translation>
+        <source>never</source>
+        <translation>ei koskaan</translation>
     </message>
     <message>
-        <source>%1 h %2 m</source>
-        <translation>%1 h %2 m</translation>
+        <source>Inbound</source>
+        <translation>Sisääntuleva</translation>
+    </message>
+    <message>
+        <source>Outbound</source>
+        <translation>Ulosmenevä</translation>
+    </message>
+    <message>
+        <source>Unknown</source>
+        <translation>Tuntematon</translation>
+    </message>
+    <message>
+        <source>Fetching...</source>
+        <translation>Hankitaan...</translation>
     </message>
 </context>
 <context>
@@ -1704,7 +1674,7 @@ Osoite: %4</translation>
     <name>SendCoinsDialog</name>
     <message>
         <source>Send Coins</source>
-        <translation>Lähetä GameCreditseja</translation>
+        <translation>Lähetä GameCredits</translation>
     </message>
     <message>
         <source>Coin Control Features</source>
@@ -1743,10 +1713,6 @@ Osoite: %4</translation>
         <translation>Palkkio:</translation>
     </message>
     <message>
-        <source>Low Output:</source>
-        <translation>Pieni Tuotos</translation>
-    </message>
-    <message>
         <source>After Fee:</source>
         <translation>Palkkion jälkeen:</translation>
     </message>
@@ -1763,6 +1729,58 @@ Osoite: %4</translation>
         <translation>Kustomoitu vaihtorahan osoite</translation>
     </message>
     <message>
+        <source>Transaction Fee:</source>
+        <translation>Rahansiirtokulu:</translation>
+    </message>
+    <message>
+        <source>Choose...</source>
+        <translation>Valitse...</translation>
+    </message>
+    <message>
+        <source>collapse fee-settings</source>
+        <translation>pudota kulujen asetukset</translation>
+    </message>
+    <message>
+        <source>per kilobyte</source>
+        <translation>per kilotavu</translation>
+    </message>
+    <message>
+        <source>total at least</source>
+        <translation>yhteensä ainakin</translation>
+    </message>
+    <message>
+        <source>(read the tooltip)</source>
+        <translation>(lue työkaluvinkki)</translation>
+    </message>
+    <message>
+        <source>Recommended:</source>
+        <translation>Suositeltu:</translation>
+    </message>
+    <message>
+        <source>Custom:</source>
+        <translation>Muokattu:</translation>
+    </message>
+    <message>
+        <source>Confirmation time:</source>
+        <translation>Vahvistusaika:</translation>
+    </message>
+    <message>
+        <source>normal</source>
+        <translation>normaali</translation>
+    </message>
+    <message>
+        <source>fast</source>
+        <translation>nopea</translation>
+    </message>
+    <message>
+        <source>Send as zero-fee transaction if possible</source>
+        <translation>Lähetä siirtokuluttomana jos mahdollista</translation>
+    </message>
+    <message>
+        <source>(confirmation may take longer)</source>
+        <translation>(vahvistaminen voi viedä kauemmin)</translation>
+    </message>
+    <message>
         <source>Send to multiple recipients at once</source>
         <translation>Lähetä usealla vastaanottajalle samanaikaisesti</translation>
     </message>
@@ -1773,6 +1791,10 @@ Osoite: %4</translation>
     <message>
         <source>Clear all fields of the form.</source>
         <translation>Tyhjennä lomakkeen kaikki kentät</translation>
+    </message>
+    <message>
+        <source>Dust:</source>
+        <translation>Tomu:</translation>
     </message>
     <message>
         <source>Clear &amp;All</source>
@@ -1792,7 +1814,7 @@ Osoite: %4</translation>
     </message>
     <message>
         <source>Confirm send coins</source>
-        <translation>Hyväksy GameCreditsien lähettäminen</translation>
+        <translation>Hyväksy GameCredits lähettäminen</translation>
     </message>
     <message>
         <source>%1 to %2</source>
@@ -1823,10 +1845,6 @@ Osoite: %4</translation>
         <translation>Kopioi prioriteetti</translation>
     </message>
     <message>
-        <source>Copy low output</source>
-        <translation>Kopioi pieni tuotos</translation>
-    </message>
-    <message>
         <source>Copy change</source>
         <translation>Kopioi vaihtoraha</translation>
     </message>
@@ -1839,12 +1857,8 @@ Osoite: %4</translation>
         <translation>tai</translation>
     </message>
     <message>
-        <source>The recipient address is not valid, please recheck.</source>
-        <translation>Vastaanottajan osoite on virheellinen. Tarkista osoite.</translation>
-    </message>
-    <message>
         <source>The amount to pay must be larger than 0.</source>
-        <translation>Maksettavan summan tulee olla suurempi kuin 0 GameCreditsia.</translation>
+        <translation>Maksettavan summan tulee olla suurempi kuin 0 GameCredits.</translation>
     </message>
     <message>
         <source>The amount exceeds your balance.</source>
@@ -1855,16 +1869,16 @@ Osoite: %4</translation>
         <translation>Kokonaismäärä ylittää saldosi kun %1 maksukulu lisätään summaan.</translation>
     </message>
     <message>
-        <source>Duplicate address found, can only send to each address once per send operation.</source>
-        <translation>Sama osoite toistuu useamman kerran. Samaan osoitteeseen voi lähettää vain kerran per maksu.</translation>
-    </message>
-    <message>
         <source>Transaction creation failed!</source>
         <translation>Rahansiirron luonti epäonnistui!</translation>
     </message>
     <message>
         <source>The transaction was rejected! This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
         <translation>Rahansiirto hylättiin! Tämä saattaa tapahtua jos lompakossa olevat kolikot on jo kulutettu, kuten jos käytät kopioita wallet.dat tiedostosta ja kolikot oli jos käytetty mutta ei merkattu täällä.</translation>
+    </message>
+    <message>
+        <source>Pay only the minimum fee of %1</source>
+        <translation>Maksa vain vähimmäiskulu %1</translation>
     </message>
     <message>
         <source>Warning: Invalid GameCredits address</source>
@@ -1879,20 +1893,16 @@ Osoite: %4</translation>
         <translation>Varoitus: Tuntematon vaihtorahan osoite</translation>
     </message>
     <message>
+        <source>Copy dust</source>
+        <translation>Kopioi tomu</translation>
+    </message>
+    <message>
         <source>Are you sure you want to send?</source>
         <translation>Haluatko varmasti lähettää?</translation>
     </message>
     <message>
         <source>added as transaction fee</source>
         <translation>lisätty rahansiirtomaksuna</translation>
-    </message>
-    <message>
-        <source>Payment request expired</source>
-        <translation>Maksupyyntö vanhentui</translation>
-    </message>
-    <message>
-        <source>Invalid payment address %1</source>
-        <translation>Virheellinen maksuosoite %1</translation>
     </message>
 </context>
 <context>
@@ -1904,10 +1914,6 @@ Osoite: %4</translation>
     <message>
         <source>Pay &amp;To:</source>
         <translation>Maksun saaja:</translation>
-    </message>
-    <message>
-        <source>The address to send the payment to (e.g. bQ3Gyigyd12kJDkhwi9M9QSZ9qu6M4NZzR)</source>
-        <translation>Osoite, johon GameCreditsit lähetetään  (esim. bQ3Gyigyd12kJDkhwi9M9QSZ9qu6M4NZzR)</translation>
     </message>
     <message>
         <source>Enter a label for this address to add it to your address book</source>
@@ -1924,6 +1930,10 @@ Osoite: %4</translation>
     <message>
         <source>This is a normal payment.</source>
         <translation>Tämä on normaali maksu.</translation>
+    </message>
+    <message>
+        <source>The GameCredits address to send the payment to</source>
+        <translation>GameCredits-osoite johon maksu lähetetään</translation>
     </message>
     <message>
         <source>Alt+A</source>
@@ -1946,20 +1956,12 @@ Osoite: %4</translation>
         <translation>Viesti:</translation>
     </message>
     <message>
-        <source>This is a verified payment request.</source>
-        <translation>Tämä on varmistettu maksupyyntö.</translation>
-    </message>
-    <message>
         <source>Enter a label for this address to add it to the list of used addresses</source>
         <translation>Aseta nimi tälle osoitteelle lisätäksesi sen käytettyjen osoitteiden listalle.</translation>
     </message>
     <message>
         <source>A message that was attached to the gamecredits: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the GameCredits network.</source>
         <translation>Viesti joka liitettiin gamecredits: URI:iin tallennetaan rahansiirtoon viitteeksi. Tätä viestiä ei lähetetä GameCredits-verkkoon.</translation>
-    </message>
-    <message>
-        <source>This is an unverified payment request.</source>
-        <translation>Tämä on varmistamaton maksupyyntö</translation>
     </message>
     <message>
         <source>Pay To:</source>
@@ -1992,12 +1994,8 @@ Osoite: %4</translation>
         <translation>&amp;Allekirjoita viesti</translation>
     </message>
     <message>
-        <source>You can sign messages with your addresses to prove you own them. Be careful not to sign anything vague, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
-        <translation>Voit allekirjoittaa viestit omalla osoitteellasi todistaaksesi että omistat ne. Ole huolellinen, että et allekirjoita mitään epämääräistä, phishing-hyökkääjät voivat huijata sinua allekirjoittamaan luovuttamalla henkilöllisyytesi. Allekirjoita selvitys täysin yksityiskohtaisesti mihin olet sitoutunut.</translation>
-    </message>
-    <message>
-        <source>The address to sign the message with (e.g. bQ3Gyigyd12kJDkhwi9M9QSZ9qu6M4NZzR)</source>
-        <translation>Osoite, jolla viesti allekirjoitetaan (esimerkiksi bQ3Gyigyd12kJDkhwi9M9QSZ9qu6M4NZzR)</translation>
+        <source>The GameCredits address to sign the message with</source>
+        <translation>GameCredits-osoite jolla viesti allekirjoitetaan</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2048,12 +2046,8 @@ Osoite: %4</translation>
         <translation>&amp;Varmista viesti</translation>
     </message>
     <message>
-        <source>Enter the signing address, message (ensure you copy line breaks, spaces, tabs, etc. exactly) and signature below to verify the message. Be careful not to read more into the signature than what is in the signed message itself, to avoid being tricked by a man-in-the-middle attack.</source>
-        <translation>Syötä allekirjoittava osoite, viesti ja allekirjoitus alla oleviin kenttiin varmistaaksesi allekirjoituksen aitouden. Varmista että kopioit kaikki kentät täsmälleen oikein, myös rivinvaihdot, välilyönnit, tabulaattorit, jne.</translation>
-    </message>
-    <message>
-        <source>The address the message was signed with (e.g. bQ3Gyigyd12kJDkhwi9M9QSZ9qu6M4NZzR)</source>
-        <translation>Osoite, jolla viesti allekirjoitettiin (esimerkiksi bQ3Gyigyd12kJDkhwi9M9QSZ9qu6M4NZzR)</translation>
+        <source>The GameCredits address the message was signed with</source>
+        <translation>GameCredits-osoite jolla viesti on allekirjoitettu</translation>
     </message>
     <message>
         <source>Verify the message to ensure it was signed with the specified GameCredits address</source>
@@ -2068,12 +2062,8 @@ Osoite: %4</translation>
         <translation>Tyhjennä kaikki varmista-viesti-kentät</translation>
     </message>
     <message>
-        <source>Enter a GameCredits address (e.g. bQ3Gyigyd12kJDkhwi9M9QSZ9qu6M4NZzR)</source>
-        <translation>Anna GameCredits-osoite (esim. bQ3Gyigyd12kJDkhwi9M9QSZ9qu6M4NZzR)</translation>
-    </message>
-    <message>
-        <source>Click &quot;Sign Message&quot; to generate signature</source>
-        <translation>Klikkaa &quot;Allekirjoita Viesti luodaksesi allekirjoituksen </translation>
+        <source>Click "Sign Message" to generate signature</source>
+        <translation>Klikkaa "Allekirjoita Viesti luodaksesi allekirjoituksen </translation>
     </message>
     <message>
         <source>The entered address is invalid.</source>
@@ -2131,7 +2121,7 @@ Osoite: %4</translation>
         <translation>GameCredits-ydin</translation>
     </message>
     <message>
-        <source>The Bitcoin Core Developers</source>
+        <source>The GameCredits Core developers</source>
         <translation>GameCredits Core kehittäjät</translation>
     </message>
     <message>
@@ -2201,6 +2191,10 @@ Osoite: %4</translation>
         <translation>oma osoite</translation>
     </message>
     <message>
+        <source>watch-only</source>
+        <translation>vain katseltava</translation>
+    </message>
+    <message>
         <source>label</source>
         <translation>nimi</translation>
     </message>
@@ -2219,6 +2213,14 @@ Osoite: %4</translation>
     <message>
         <source>Debit</source>
         <translation>Debit</translation>
+    </message>
+    <message>
+        <source>Total debit</source>
+        <translation>Yhteensä debit</translation>
+    </message>
+    <message>
+        <source>Total credit</source>
+        <translation>Yhteensä credit</translation>
     </message>
     <message>
         <source>Transaction fee</source>
@@ -2245,8 +2247,8 @@ Osoite: %4</translation>
         <translation>Kauppias</translation>
     </message>
     <message>
-        <source>Generated coins must mature %1 blocks before they can be spent. When you generated this block, it was broadcast to the network to be added to the block chain. If it fails to get into the chain, its state will change to &quot;not accepted&quot; and it won&apos;t be spendable. This may occasionally happen if another node generates a block within a few seconds of yours.</source>
-        <translation>Luodut kolikot täytyy kypsyttää %1 lohkoa kunnes ne voidaan käyttää. Kun loit tämän lohkon, se lähetettiin verkkoon lisänä lohkoketjuun. Jos se epäonnistuu pääsemään ketjuun sen tila tulee muuttumaan &quot;ei hyväksytty&quot; ja sitä ei voida käyttää. Tämä voi ajoittain tapahtua kun toisen solmun lohko luodaan samanaikaisesti omasi kanssa.</translation>
+        <source>Generated coins must mature %1 blocks before they can be spent. When you generated this block, it was broadcast to the network to be added to the block chain. If it fails to get into the chain, its state will change to "not accepted" and it won't be spendable. This may occasionally happen if another node generates a block within a few seconds of yours.</source>
+        <translation>Luodut kolikot täytyy kypsyttää %1 lohkoa kunnes ne voidaan käyttää. Kun loit tämän lohkon, se lähetettiin verkkoon lisänä lohkoketjuun. Jos se epäonnistuu pääsemään ketjuun sen tila tulee muuttumaan "ei hyväksytty" ja sitä ei voida käyttää. Tämä voi ajoittain tapahtua kun toisen solmun lohko luodaan samanaikaisesti omasi kanssa.</translation>
     </message>
     <message>
         <source>Debug information</source>
@@ -2307,14 +2309,6 @@ Osoite: %4</translation>
         <translation>Laatu</translation>
     </message>
     <message>
-        <source>Address</source>
-        <translation>Osoite</translation>
-    </message>
-    <message>
-        <source>Amount</source>
-        <translation>Määrä</translation>
-    </message>
-    <message>
         <source>Immature (%1 confirmations, will be available after %2)</source>
         <translation>Epäkypsä (%1 varmistusta, saatavilla %2 jälkeen)</translation>
     </message>
@@ -2341,6 +2335,10 @@ Osoite: %4</translation>
     <message>
         <source>Offline</source>
         <translation>Offline</translation>
+    </message>
+    <message>
+        <source>Label</source>
+        <translation>Nimi</translation>
     </message>
     <message>
         <source>Unconfirmed</source>
@@ -2375,6 +2373,10 @@ Osoite: %4</translation>
         <translation>Louhittu</translation>
     </message>
     <message>
+        <source>watch-only</source>
+        <translation>vain katseltava</translation>
+    </message>
+    <message>
         <source>(n/a)</source>
         <translation>(ei saatavilla)</translation>
     </message>
@@ -2389,10 +2391,6 @@ Osoite: %4</translation>
     <message>
         <source>Type of transaction.</source>
         <translation>Rahansiirron laatu.</translation>
-    </message>
-    <message>
-        <source>Destination address of transaction.</source>
-        <translation>Rahansiirron kohteen GameCredits-osoite</translation>
     </message>
     <message>
         <source>Amount removed from or added to balance.</source>
@@ -2486,6 +2484,10 @@ Osoite: %4</translation>
         <translation>Vie rahansiirtohistoria</translation>
     </message>
     <message>
+        <source>Watch-only</source>
+        <translation>Vain katseltava</translation>
+    </message>
+    <message>
         <source>Exporting Failed</source>
         <translation>Vienti epäonnistui</translation>
     </message>
@@ -2526,10 +2528,6 @@ Osoite: %4</translation>
         <translation>Osoite</translation>
     </message>
     <message>
-        <source>Amount</source>
-        <translation>Määrä</translation>
-    </message>
-    <message>
         <source>ID</source>
         <translation>ID</translation>
     </message>
@@ -2543,6 +2541,13 @@ Osoite: %4</translation>
     </message>
 </context>
 <context>
+    <name>UnitDisplayStatusBarControl</name>
+    <message>
+        <source>Unit to show amounts in. Click to select another unit.</source>
+        <translation>Yksikkö jossa määrät näytetään. Klikkaa valitaksesi toisen yksikön.</translation>
+    </message>
+</context>
+<context>
     <name>WalletFrame</name>
     <message>
         <source>No wallet has been loaded.</source>
@@ -2553,7 +2558,7 @@ Osoite: %4</translation>
     <name>WalletModel</name>
     <message>
         <source>Send Coins</source>
-        <translation>Lähetä GameCreditseja</translation>
+        <translation>Lähetä GameCredits</translation>
     </message>
 </context>
 <context>
@@ -2594,40 +2599,12 @@ Osoite: %4</translation>
 <context>
     <name>gamecredits-core</name>
     <message>
-        <source>Usage:</source>
-        <translation>Käyttö:</translation>
-    </message>
-    <message>
-        <source>List commands</source>
-        <translation>Lista komennoista</translation>
-    </message>
-    <message>
-        <source>Get help for a command</source>
-        <translation>Hanki apua käskyyn</translation>
-    </message>
-    <message>
         <source>Options:</source>
         <translation>Asetukset:</translation>
     </message>
     <message>
-        <source>Specify configuration file (default: gamecredits.conf)</source>
-        <translation>Määritä asetustiedosto (oletus: gamecredits.conf)</translation>
-    </message>
-    <message>
-        <source>Specify pid file (default: gamecreditsd.pid)</source>
-        <translation>Määritä pid-tiedosto (oletus: gamecredits.pid)</translation>
-    </message>
-    <message>
         <source>Specify data directory</source>
         <translation>Määritä data-hakemisto</translation>
-    </message>
-    <message>
-        <source>Listen for connections on &lt;port&gt; (default: 40002 or testnet: 50001)</source>
-        <translation>Kuuntele yhteyksiä portista &lt;port&gt; (oletus: 40002 tai testnet: 50001)</translation>
-    </message>
-    <message>
-        <source>Maintain at most &lt;n&gt; connections to peers (default: 125)</source>
-        <translation>Pidä enintään &lt;n&gt; yhteyttä verkkoihin (oletus: 125)</translation>
     </message>
     <message>
         <source>Connect to a node to retrieve peer addresses, and disconnect</source>
@@ -2638,28 +2615,8 @@ Osoite: %4</translation>
         <translation>Määritä julkinen osoitteesi</translation>
     </message>
     <message>
-        <source>Threshold for disconnecting misbehaving peers (default: 100)</source>
-        <translation>Kynnysarvo aikakatkaisulle heikosti toimiville verkoille (oletus: 100)</translation>
-    </message>
-    <message>
-        <source>Number of seconds to keep misbehaving peers from reconnecting (default: 86400)</source>
-        <translation>Sekuntien määrä, kuinka kauan uudelleenkytkeydytään verkkoihin (oletus: 86400)</translation>
-    </message>
-    <message>
-        <source>An error occurred while setting up the RPC port %u for listening on IPv4: %s</source>
-        <translation>Virhe valmisteltaessa RPC-portin %u avaamista kuunneltavaksi: %s</translation>
-    </message>
-    <message>
-        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: 40001 or testnet: 50000)</source>
-        <translation>Kuuntele JSON-RPC -yhteyksiä portista &lt;port&gt; (oletus: 40001 or testnet: 50000)</translation>
-    </message>
-    <message>
         <source>Accept command line and JSON-RPC commands</source>
         <translation>Hyväksy merkkipohjaiset- ja JSON-RPC-käskyt</translation>
-    </message>
-    <message>
-        <source>GameCredits Core RPC client version</source>
-        <translation>GameCredits Core RPC asiakasversio</translation>
     </message>
     <message>
         <source>Run in the background as a daemon and accept commands</source>
@@ -2674,92 +2631,16 @@ Osoite: %4</translation>
         <translation>Hyväksy yhteyksiä ulkopuolelta (vakioasetus: 1 jos -proxy tai -connect ei määritelty)</translation>
     </message>
     <message>
-        <source>%s, you must set a rpcpassword in the configuration file:
-%s
-It is recommended you use the following random password:
-rpcuser=gamecreditsrpc
-rpcpassword=%s
-(you do not need to remember this password)
-The username and password MUST NOT be the same.
-If the file does not exist, create it with owner-readable-only file permissions.
-It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;GameCredits Alert&quot; admin@foo.com
-</source>
-        <translation>%s, sinun tulee asettaa rpcpassword asetustietostossa:
-%s
-Suositellaan että käytät allaolevaa satunnaista salasanaa:
-rpcuser=gamecreditsrpc
-rpcpassword=%s
-(sinun ei tarvitse muistaa tätä salasanaa)
-Tämän tunnuksen ja salasanan TULEE OLLA sama.
-Jos tiedostoa ei ole, luo se vain omistajan-luku-oikeudella.
-Suositellaan asettaa alertnotify jotta saat tietoa ongelmista;
-esimerkiksi: alertnotify=echo %%s | mail -s &quot;GameCredits Alert&quot; admin@foo.com
-</translation>
-    </message>
-    <message>
-        <source>Acceptable ciphers (default: TLSv1.2+HIGH:TLSv1+HIGH:!SSLv2:!aNULL:!eNULL:!3DES:@STRENGTH)</source>
-        <translation>Hyväksytyt koodit (oletus: TLSv1.2+HIGH:TLSv1+HIGH:!SSLv2:!aNULL:!eNULL:!3DES:@STRENGTH)</translation>
-    </message>
-    <message>
-        <source>An error occurred while setting up the RPC port %u for listening on IPv6, falling back to IPv4: %s</source>
-        <translation>Virhe ilmennyt asetettaessa RPC-porttia %u IPv6:n kuuntelemiseksi, palataan takaisin IPv4:ään %s</translation>
-    </message>
-    <message>
         <source>Bind to given address and always listen on it. Use [host]:port notation for IPv6</source>
         <translation>Kytkeydy annettuun osoitteeseen ja pidä linja aina auki. Käytä [host]:portin merkintätapaa IPv6:lle.</translation>
-    </message>
-    <message>
-        <source>Continuously rate-limit free transactions to &lt;n&gt;*1000 bytes per minute (default:15)</source>
-        <translation>Yhtäaikaisesti rajaa vapaat rahansiirrot &lt;n&gt;*1000 tavua per minuutti (oletus: 15)</translation>
-    </message>
-    <message>
-        <source>Enter regression test mode, which uses a special chain in which blocks can be solved instantly. This is intended for regression testing tools and app development.</source>
-        <translation>Aloita regressio testimoodi joka käyttää erikoisketjua missä lohkot voidaan ratkaista välittömästi. Tämä on tarkoitettu regressiotestien työkaluksi ja ohjelman kehittämiseen.</translation>
-    </message>
-    <message>
-        <source>Enter regression test mode, which uses a special chain in which blocks can be solved instantly.</source>
-        <translation>Aloita regression testimoodi joka käyttää erikoisketjua jossa lohkoja voidaan ratkaista välittömästi.</translation>
-    </message>
-    <message>
-        <source>Error: Listening for incoming connections failed (listen returned error %d)</source>
-        <translation>Virhe: Odottaessa sisääntulevia yhteyksiä epäonnistui (listen palautti virheen %d)</translation>
-    </message>
-    <message>
-        <source>Error: The transaction was rejected! This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
-        <translation>Virhe: Rahansiirto hylättiin! Tämä saattaa tapahtua jos jotkut kolikot lompakossa on jo käytetty. Esimerkiksi jos kopioit wallet.dat tiedoston ja kolikot on käytetty mutta ei merkattu täällä.</translation>
-    </message>
-    <message>
-        <source>Error: This transaction requires a transaction fee of at least %s because of its amount, complexity, or use of recently received funds!</source>
-        <translation>Virhe: Tämä rahansiirto vaatii rahansiirtopalkkion vähintään %s johtuen sen määrästä, monimutkaisuudesta tai hiljattain vastaanotettujen summien käytöstä</translation>
     </message>
     <message>
         <source>Execute command when a wallet transaction changes (%s in cmd is replaced by TxID)</source>
         <translation>Suorita käsky kun lompakossa rahansiirto muuttuu (%s cmd on vaihdettu TxID kanssa)</translation>
     </message>
     <message>
-        <source>Fees smaller than this are considered zero fee (for transaction creation) (default:</source>
-        <translation>Tätä pienemmät palkkiot huomioidaan tyhjäksi (rahansiirron luonnissa) (oletus:</translation>
-    </message>
-    <message>
-        <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: 100)</source>
-        <translation>Aja tietokannan toimet muistivarannosta kovalevylogiin joka &lt;n&gt; megatavu (oletus: 100)</translation>
-    </message>
-    <message>
-        <source>How thorough the block verification of -checkblocks is (0-4, default: 3)</source>
-        <translation>Kuinka vaativa lohkonvarmistus -checkblocks on (0-4, oletus:  3)</translation>
-    </message>
-    <message>
-        <source>In this mode -genproclimit controls how many blocks are generated immediately.</source>
-        <translation>Tässä moodissa -genproclimit ohjaa kuinka monta lohkoa luodaan välittömästi.</translation>
-    </message>
-    <message>
         <source>Set the number of script verification threads (%u to %d, 0 = auto, &lt;0 = leave that many cores free, default: %d)</source>
         <translation>Aseta script varmistuksen threadien lukumäärä (%u - %d, 0= auto, &lt;0 = jätä näin monta ydintä vapaaksi, oletus: %d)</translation>
-    </message>
-    <message>
-        <source>Set the processor limit for when generation is on (-1 = unlimited, default: -1)</source>
-        <translation>Aseta prosessorin raja kun luonti on päällä (-1 = rajoittamaton, oletus: -1)</translation>
     </message>
     <message>
         <source>This is a pre-release test build - use at your own risk - do not use for mining or merchant applications</source>
@@ -2770,16 +2651,8 @@ esimerkiksi: alertnotify=echo %%s | mail -s &quot;GameCredits Alert&quot; admin@
         <translation>Ei voida yhdistää %s tässä tietokoneessa. GameCredits Core on luultavasti jo käynnissä.</translation>
     </message>
     <message>
-        <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: -proxy)</source>
-        <translation>Käytä erillistä SOCKS5 proxya tavoittaaksesi vertaiset Tor palvelun kautta (oletus: -proxy)</translation>
-    </message>
-    <message>
         <source>Warning: -paytxfee is set very high! This is the transaction fee you will pay if you send a transaction.</source>
         <translation>Varoitus: -paytxfee on asetettu erittäin korkeaksi! Tämä on maksukulu jonka tulet maksamaan kun lähetät siirron.</translation>
-    </message>
-    <message>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong GameCredits will not work properly.</source>
-        <translation>Varoitus: Tarkista että tietokoneesi kellonaika ja päivämäärä ovat paikkansapitäviä! GameCredits ei toimi oikein väärällä päivämäärällä ja/tai kellonajalla.</translation>
     </message>
     <message>
         <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
@@ -2802,10 +2675,6 @@ esimerkiksi: alertnotify=echo %%s | mail -s &quot;GameCredits Alert&quot; admin@
         <translation>(oletus: 1)</translation>
     </message>
     <message>
-        <source>(default: wallet.dat)</source>
-        <translation>(oletus: wallet.dat)</translation>
-    </message>
-    <message>
         <source>&lt;category&gt; can be:</source>
         <translation>&lt;category&gt; voi olla:</translation>
     </message>
@@ -2814,28 +2683,12 @@ esimerkiksi: alertnotify=echo %%s | mail -s &quot;GameCredits Alert&quot; admin@
         <translation>Yritetään palauttaa privaattiavaimia korruptoituneesta wallet.dat -lompakkotiedostosta</translation>
     </message>
     <message>
-        <source>GameCredits Core Daemon</source>
-        <translation>GameCredits Core taustapalvelin</translation>
-    </message>
-    <message>
         <source>Block creation options:</source>
         <translation>Lohkon luonnin asetukset:</translation>
     </message>
     <message>
-        <source>Clear list of wallet transactions (diagnostic tool; implies -rescan)</source>
-        <translation>Tyhjennä lompakon rahansiirtojen lista (diagnostiikka työkalu; olettaa -rescan)</translation>
-    </message>
-    <message>
         <source>Connect only to the specified node(s)</source>
         <translation>Yhidstä ainoastaan määrättyihin noodeihin</translation>
-    </message>
-    <message>
-        <source>Connect through SOCKS proxy</source>
-        <translation>Yhdistä SOCKS proxin kautta</translation>
-    </message>
-    <message>
-        <source>Connect to JSON-RPC on &lt;port&gt; (default: 40001 or testnet: 50000)</source>
-        <translation>Yhdistä JSON-RPC portissa &lt;port&gt; (oletus: 40001 tai testnet: 50000)</translation>
     </message>
     <message>
         <source>Connection options:</source>
@@ -2848,14 +2701,6 @@ esimerkiksi: alertnotify=echo %%s | mail -s &quot;GameCredits Alert&quot; admin@
     <message>
         <source>Debugging/Testing options:</source>
         <translation>Debuggaus/Testauksen valinnat:</translation>
-    </message>
-    <message>
-        <source>Disable safemode, override a real safe mode event (default: 0)</source>
-        <translation>Poista safemode, ohita oikea turvallinen mooditapahtuma (oletus: 0)</translation>
-    </message>
-    <message>
-        <source>Discover own IP address (default: 1 when listening and no -externalip)</source>
-        <translation>Hae oma IP osoite (vakioasetus: 1 kun kuuntelemassa ja ei -externalip)</translation>
     </message>
     <message>
         <source>Do not load the wallet and disable wallet RPC calls</source>
@@ -2886,80 +2731,8 @@ esimerkiksi: alertnotify=echo %%s | mail -s &quot;GameCredits Alert&quot; admin@
         <translation>Varoitus: Levytila on vähissä!</translation>
     </message>
     <message>
-        <source>Error: Wallet locked, unable to create transaction!</source>
-        <translation>Virhe: Lompakko on lukittu, rahansiirtoa ei voida luoda</translation>
-    </message>
-    <message>
-        <source>Error: system error: </source>
-        <translation>Virhe: Järjestelmävirhe</translation>
-    </message>
-    <message>
         <source>Failed to listen on any port. Use -listen=0 if you want this.</source>
         <translation>Ei onnistuttu kuuntelemaan missään portissa. Käytä -listen=0 jos haluat tätä.</translation>
-    </message>
-    <message>
-        <source>Failed to read block info</source>
-        <translation>Lohkotietojen luku epäonnistui</translation>
-    </message>
-    <message>
-        <source>Failed to read block</source>
-        <translation>Lohkon luku epäonnistui</translation>
-    </message>
-    <message>
-        <source>Failed to sync block index</source>
-        <translation>Lohkoindeksin synkronointi epäonnistui</translation>
-    </message>
-    <message>
-        <source>Failed to write block index</source>
-        <translation>Lohkoindeksin kirjoitus epäonnistui</translation>
-    </message>
-    <message>
-        <source>Failed to write block info</source>
-        <translation>Lohkotiedon kirjoitus epäonnistui</translation>
-    </message>
-    <message>
-        <source>Failed to write block</source>
-        <translation>Lohkon kirjoitus epäonnistui</translation>
-    </message>
-    <message>
-        <source>Failed to write file info</source>
-        <translation>Tiedoston tietojen kirjoitus epäonnistui</translation>
-    </message>
-    <message>
-        <source>Failed to write to coin database</source>
-        <translation>Kolikkotietokannan kirjoitus epäonnistui</translation>
-    </message>
-    <message>
-        <source>Failed to write transaction index</source>
-        <translation>Rahasiirtojen indeksin kirjoitus epäonnistui</translation>
-    </message>
-    <message>
-        <source>Failed to write undo data</source>
-        <translation>Palautustiedon kirjoitus epäonnistui</translation>
-    </message>
-    <message>
-        <source>Fee per kB to add to transactions you send</source>
-        <translation>palkkio per kB lisätty lähettämiisi rahansiirtoihin</translation>
-    </message>
-    <message>
-        <source>Fees smaller than this are considered zero fee (for relaying) (default:</source>
-        <translation>Tätä pienemmät palkkiot huomioidaan tyhjäksi (välittämisessä) (oletus:</translation>
-    </message>
-    <message>
-        <source>Find peers using DNS lookup (default: 1 unless -connect)</source>
-        <translation>Hae naapureita DNS hauilla (vakioasetus: 1 paitsi jos -connect)</translation>
-    </message>
-    <message>
-        <source>Force safe mode (default: 0)</source>
-        <translation>Pakota safe moodi (oletus: 0)</translation>
-    </message>
-    <message>
-        <source>Generate coins (default: 0)</source>
-        <translation>Generoi kolikoita (vakio: 0)</translation>
-    </message>
-    <message>
-        <source>How many blocks to check at startup (default: 288, 0 = all)</source>
-        <translation>Kuinka monta lohkoa tarkistetaan käynnistettäessä (oletus: 288, 0 = kaikki)</translation>
     </message>
     <message>
         <source>If &lt;category&gt; is not supplied, output all debugging information.</source>
@@ -2974,28 +2747,12 @@ esimerkiksi: alertnotify=echo %%s | mail -s &quot;GameCredits Alert&quot; admin@
         <translation>Virheellinen tai olematon alkulohko löydetty. Väärä data-hakemisto verkolle?</translation>
     </message>
     <message>
-        <source>Invalid -onion address: &apos;%s&apos;</source>
-        <translation>Virheellinen -onion osoite: &apos;%s&apos;</translation>
+        <source>Invalid -onion address: '%s'</source>
+        <translation>Virheellinen -onion osoite: '%s'</translation>
     </message>
     <message>
         <source>Not enough file descriptors available.</source>
         <translation>Ei tarpeeksi tiedostomerkintöjä vapaana.</translation>
-    </message>
-    <message>
-        <source>Prepend debug output with timestamp (default: 1)</source>
-        <translation>Lisää aikamerkki debug tulosteen eteen (oletus: 1)</translation>
-    </message>
-    <message>
-        <source>RPC client options:</source>
-        <translation>RPC asiakas valinnat:</translation>
-    </message>
-    <message>
-        <source>Rebuild block chain index from current blk000??.dat files</source>
-        <translation>Uudelleenrakenna lohkoketjuindeksi nykyisistä blk000??.dat tiedostoista</translation>
-    </message>
-    <message>
-        <source>Select SOCKS version for -proxy (4 or 5, default: 5)</source>
-        <translation>Valitse SOCKS versio -proxy:lle (4 tai 5, oletus: 5)</translation>
     </message>
     <message>
         <source>Set database cache size in megabytes (%d to %d, default: %d)</source>
@@ -3006,24 +2763,12 @@ esimerkiksi: alertnotify=echo %%s | mail -s &quot;GameCredits Alert&quot; admin@
         <translation>Aseta lohkon maksimikoko tavuissa (oletus: %d)</translation>
     </message>
     <message>
-        <source>Set the number of threads to service RPC calls (default: 4)</source>
-        <translation>Aseta threadien lukumäärä RPC kutsuille (oletus: 4)</translation>
-    </message>
-    <message>
         <source>Specify wallet file (within data directory)</source>
         <translation>Aseta lompakkotiedosto (data-hakemiston sisällä)</translation>
     </message>
     <message>
-        <source>Spend unconfirmed change when sending transactions (default: 1)</source>
-        <translation>Käytä varmistamattomia vaihtorahoja lähetettäessä rahansiirtoja (oletus: 1)</translation>
-    </message>
-    <message>
-        <source>This is intended for regression testing tools and app development.</source>
-        <translation>Tämä on tarkoitettu regression testityökaluille ja ohjelman kehittämiseen.</translation>
-    </message>
-    <message>
-        <source>Usage (deprecated, use gamecredits-cli):</source>
-        <translation>Käyttö (vanhentunut, käytä gamecredits-cli):</translation>
+        <source>Use UPnP to map the listening port (default: %u)</source>
+        <translation>Käytä UPnP:ta kuuntelevan portin kartoittamiseen (oletus: %u)</translation>
     </message>
     <message>
         <source>Verifying blocks...</source>
@@ -3034,20 +2779,12 @@ esimerkiksi: alertnotify=echo %%s | mail -s &quot;GameCredits Alert&quot; admin@
         <translation>Varmistetaan lompakko...</translation>
     </message>
     <message>
-        <source>Wait for RPC server to start</source>
-        <translation>Odota RPC palvelimen käynnistystä</translation>
-    </message>
-    <message>
         <source>Wallet %s resides outside data directory %s</source>
         <translation>Lompakko %s sijaitsee data-hakemiston ulkopuolella %s</translation>
     </message>
     <message>
         <source>Wallet options:</source>
         <translation>Lompakon valinnat:</translation>
-    </message>
-    <message>
-        <source>Warning: Deprecated argument -debugnet ignored, use -debug=net</source>
-        <translation>Varoitus: Vanhentunut argumentti -debugnet sivutettu, käytä debug=net</translation>
     </message>
     <message>
         <source>You need to rebuild the database using -reindex to change -txindex</source>
@@ -3066,108 +2803,72 @@ esimerkiksi: alertnotify=echo %%s | mail -s &quot;GameCredits Alert&quot; admin@
         <translation>Aja komento kun olennainen hälytys vastaanotetaan tai nähdään todella pitkä haara (%s komennossa korvataan viestillä)</translation>
     </message>
     <message>
-        <source>Output debugging information (default: 0, supplying &lt;category&gt; is optional)</source>
-        <translation>Tulosta debuggaustieto (oletus: 0, annettu &lt;kategoria&gt; valinnainen)</translation>
-    </message>
-    <message>
         <source>Set maximum size of high-priority/low-fee transactions in bytes (default: %d)</source>
         <translation>Aseta maksimikoko korkea prioriteetti/pieni palkkio rahansiirtoihin tavuissa (oletus: %d)</translation>
+    </message>
+    <message>
+        <source>Set the number of threads for coin generation if enabled (-1 = all cores, default: %d)</source>
+        <translation>Aseta kolikoiden luomiseen tarkoitettujen säikeiden lukumäärä (-1 = kaikki ytimet, oletus: %d)</translation>
+    </message>
+    <message>
+        <source>Choose data directory on startup (default: 0)</source>
+        <translation>Valitse data-hakemisto käynnistyksessä (oletus: 0)</translation>
+    </message>
+    <message>
+        <source>Connect through SOCKS5 proxy</source>
+        <translation>Yhdistä SOCKS5 proxin kautta</translation>
+    </message>
+    <message>
+        <source>Copyright (C) 2009-%i The Bitcoin and GameCredits Core Developers</source>
+        <translation>Copyright (C) 2009-%i  GameCredits kehittäjät</translation>
+    </message>
+    <message>
+        <source>Error loading wallet.dat: Wallet requires newer version of GameCredits Core</source>
+        <translation>Virhe ladattaessa wallet.dat-tiedostoa: Tarvitset uudemman version GameCredits</translation>
     </message>
     <message>
         <source>Information</source>
         <translation>Tietoa</translation>
     </message>
     <message>
-        <source>Invalid amount for -minrelaytxfee=&lt;amount&gt;: &apos;%s&apos;</source>
-        <translation>Virheellinen määrä -minrelaytxfee=&lt;amount&gt;: &apos;%s&apos;</translation>
+        <source>Invalid amount for -minrelaytxfee=&lt;amount&gt;: '%s'</source>
+        <translation>Virheellinen määrä -minrelaytxfee=&lt;amount&gt;: '%s'</translation>
     </message>
     <message>
-        <source>Invalid amount for -mintxfee=&lt;amount&gt;: &apos;%s&apos;</source>
-        <translation>Virheellinen määrä -mintxfee=&lt;amount&gt;: &apos;%s&apos;</translation>
+        <source>Invalid amount for -mintxfee=&lt;amount&gt;: '%s'</source>
+        <translation>Virheellinen määrä -mintxfee=&lt;amount&gt;: '%s'</translation>
     </message>
     <message>
-        <source>Limit size of signature cache to &lt;n&gt; entries (default: 50000)</source>
-        <translation>Rajaa allekirjoituksen välimuistin koko &lt;n&gt; alkioon (oletus: 50000)</translation>
+        <source>Node relay options:</source>
+        <translation>Välityssolmukohdan asetukset:</translation>
     </message>
     <message>
-        <source>Log transaction priority and fee per kB when mining blocks (default: 0)</source>
-        <translation>Kirjaa rahansiirron prioriteetti ja palkkio per kB kun louhitaan lohkoja (oletus: 0)</translation>
-    </message>
-    <message>
-        <source>Maintain a full transaction index (default: 0)</source>
-        <translation>Ylläpidä täydellistä rahasiirtojen indeksiä (oletus: 0)</translation>
-    </message>
-    <message>
-        <source>Maximum per-connection receive buffer, &lt;n&gt;*1000 bytes (default: 5000)</source>
-        <translation>Suurin vastaanottopuskuri yksittäiselle yhteydelle, &lt;n&gt;*1000 tavua (vakioasetus: 5000)</translation>
-    </message>
-    <message>
-        <source>Maximum per-connection send buffer, &lt;n&gt;*1000 bytes (default: 1000)</source>
-        <translation>Suurin lähetyspuskuri yksittäiselle yhteydelle, &lt;n&gt;*1000 tavua (vakioasetus: 1000)</translation>
-    </message>
-    <message>
-        <source>Only accept block chain matching built-in checkpoints (default: 1)</source>
-        <translation>Hyväksy vain lohkoketjua vastaavat sisäänrakennetut varmistuspisteet (Oletus: 1)</translation>
-    </message>
-    <message>
-        <source>Only connect to nodes in network &lt;net&gt; (IPv4, IPv6 or Tor)</source>
-        <translation>Yhdistä vain noodeihin verkossa &lt;net&gt; (IPv4, IPv6 tai Tor)</translation>
-    </message>
-    <message>
-        <source>Print block on startup, if found in block index</source>
-        <translation>Tulosta lohko käynnistyksessä jos löydetään lohkoindeksistä</translation>
-    </message>
-    <message>
-        <source>Print block tree on startup (default: 0)</source>
-        <translation>Tulosta lohkopuu käynnistyksessä (oletus: 0)</translation>
-    </message>
-    <message>
-        <source>RPC SSL options: (see the GameCredits Wiki for SSL setup instructions)</source>
-        <translation>RPC SSL valinnat: (katso GameCredits Wikistä SSL-asennuksen ohjeet)</translation>
+        <source>RPC SSL options: (see the Bitcoin Wiki for SSL setup instructions)</source>
+        <translation>RPC SSL valinnat: (katso Bitcoin Wikistä SSL-asennuksen ohjeet)</translation>
     </message>
     <message>
         <source>RPC server options:</source>
         <translation>RPC-palvelimen valinnat:</translation>
     </message>
     <message>
-        <source>Randomly drop 1 of every &lt;n&gt; network messages</source>
-        <translation>Satunnaisesti pudota 1 joka &lt;n&gt; verkkoviestistä</translation>
-    </message>
-    <message>
-        <source>Randomly fuzz 1 of every &lt;n&gt; network messages</source>
-        <translation>Satunnaisesti sekoita 1 joka &lt;n&gt; verkkoviestistä</translation>
-    </message>
-    <message>
-        <source>Run a thread to flush wallet periodically (default: 1)</source>
-        <translation>Aja threadi jossa tallennetaan lompakko ajoittain (oletus: 1)</translation>
-    </message>
-    <message>
-        <source>SSL options: (see the GameCredits Wiki for SSL setup instructions)</source>
-        <translation>SSL asetukset (katso GameCredits Wikistä tarkemmat SSL ohjeet)</translation>
-    </message>
-    <message>
-        <source>Send command to GameCredits Core</source>
-        <translation>Lähetä komento GameCredits Coreen</translation>
-    </message>
-    <message>
         <source>Send trace/debug info to console instead of debug.log file</source>
         <translation>Lähetä jäljitys/debug-tieto konsoliin, debug.log-tiedoston sijaan</translation>
     </message>
     <message>
-        <source>Set minimum block size in bytes (default: 0)</source>
-        <translation>Asetan pienin lohkon koko tavuissa (vakioasetus: 0)</translation>
+        <source>Set SSL root certificates for payment request (default: -system-)</source>
+        <translation>Aseta SSL root varmenne maksupyynnöille (oletus: -system-)</translation>
     </message>
     <message>
-        <source>Sets the DB_PRIVATE flag in the wallet db environment (default: 1)</source>
-        <translation>Asettaa DB_PRIVATE lipun lompakon tietokantaympäristössä (oletus: 1)</translation>
+        <source>Set language, for example "de_DE" (default: system locale)</source>
+        <translation>Set language, for example "de_DE" (default: system locale)</translation>
     </message>
     <message>
         <source>Show all debugging options (usage: --help -help-debug)</source>
         <translation>Näytä kaikki debuggaus valinnat: (käyttö: --help -help-debug)</translation>
     </message>
     <message>
-        <source>Show benchmark information (default: 0)</source>
-        <translation>Näytä suorituskykytietoja (oletus: 0)</translation>
+        <source>Show splash screen on startup (default: 1)</source>
+        <translation>Näytä aloitusruutu käynnistettäessä (oletus: 1)</translation>
     </message>
     <message>
         <source>Shrink debug.log file on client startup (default: 1 when no -debug)</source>
@@ -3178,16 +2879,12 @@ esimerkiksi: alertnotify=echo %%s | mail -s &quot;GameCredits Alert&quot; admin@
         <translation>Siirron vahvistus epäonnistui</translation>
     </message>
     <message>
-        <source>Specify connection timeout in milliseconds (default: 5000)</source>
-        <translation>Määritä yhteyden aikakataisu millisekunneissa (vakioasetus: 5000)</translation>
+        <source>Start minimized</source>
+        <translation>Käynnistä pienennettynä</translation>
     </message>
     <message>
-        <source>Start GameCredits Core Daemon</source>
-        <translation>Käynnistä GameCredits Core taustapalvelin</translation>
-    </message>
-    <message>
-        <source>System error: </source>
-        <translation>Järjestelmävirhe:</translation>
+        <source>This is experimental software.</source>
+        <translation>Tämä on ohjelmistoa kokeelliseen käyttöön.</translation>
     </message>
     <message>
         <source>Transaction amount too small</source>
@@ -3202,10 +2899,6 @@ esimerkiksi: alertnotify=echo %%s | mail -s &quot;GameCredits Alert&quot; admin@
         <translation>Siirtosumma liian iso</translation>
     </message>
     <message>
-        <source>Use UPnP to map the listening port (default: 0)</source>
-        <translation>Käytä UPnP:tä kuunneltavan portin avaamiseen (vakioasetus: 0)</translation>
-    </message>
-    <message>
         <source>Use UPnP to map the listening port (default: 1 when listening)</source>
         <translation>Käytä UPnP:tä kuunneltavan portin avaamiseen (vakioasetus: 1 kun kuuntelemassa)</translation>
     </message>
@@ -3214,12 +2907,12 @@ esimerkiksi: alertnotify=echo %%s | mail -s &quot;GameCredits Alert&quot; admin@
         <translation>Käyttäjätunnus JSON-RPC-yhteyksille</translation>
     </message>
     <message>
-        <source>Warning</source>
-        <translation>Varoitus</translation>
+        <source>Wallet needed to be rewritten: restart GameCredits Core to complete</source>
+        <translation>Lompakko tarvitsee uudelleenkirjoittaa: käynnistä GameCredits uudelleen</translation>
     </message>
     <message>
-        <source>Warning: This version is obsolete, upgrade required!</source>
-        <translation>Varoitus: Tämä versio on vanhentunut, päivitys tarpeen!</translation>
+        <source>Warning</source>
+        <translation>Varoitus</translation>
     </message>
     <message>
         <source>Zapping all transactions from wallet...</source>
@@ -3230,24 +2923,12 @@ esimerkiksi: alertnotify=echo %%s | mail -s &quot;GameCredits Alert&quot; admin@
         <translation>käynnistyksessä</translation>
     </message>
     <message>
-        <source>version</source>
-        <translation>versio</translation>
-    </message>
-    <message>
         <source>wallet.dat corrupt, salvage failed</source>
         <translation>wallet.dat -lompakkotiedosto korruptoitunut, korjaaminen epäonnistui</translation>
     </message>
     <message>
         <source>Password for JSON-RPC connections</source>
         <translation>Salasana JSON-RPC-yhteyksille</translation>
-    </message>
-    <message>
-        <source>Allow JSON-RPC connections from specified IP address</source>
-        <translation>Salli JSON-RPC yhteydet tietystä ip-osoitteesta</translation>
-    </message>
-    <message>
-        <source>Send commands to node running on &lt;ip&gt; (default: 127.0.0.1)</source>
-        <translation>Lähetä käskyjä solmuun osoitteessa &lt;ip&gt; (oletus: 127.0.0.1)</translation>
     </message>
     <message>
         <source>Execute command when the best block changes (%s in cmd is replaced by block hash)</source>
@@ -3258,10 +2939,6 @@ esimerkiksi: alertnotify=echo %%s | mail -s &quot;GameCredits Alert&quot; admin@
         <translation>Päivitä lompakko uusimpaan formaattiin</translation>
     </message>
     <message>
-        <source>Set key pool size to &lt;n&gt; (default: 100)</source>
-        <translation>Aseta avainpoolin koko arvoon &lt;n&gt; (oletus: 100)</translation>
-    </message>
-    <message>
         <source>Rescan the block chain for missing wallet transactions</source>
         <translation>Skannaa uudelleen lohkoketju lompakon puuttuvien rahasiirtojen vuoksi</translation>
     </message>
@@ -3270,20 +2947,8 @@ esimerkiksi: alertnotify=echo %%s | mail -s &quot;GameCredits Alert&quot; admin@
         <translation>Käytä OpenSSL:ää (https) JSON-RPC-yhteyksille</translation>
     </message>
     <message>
-        <source>Server certificate file (default: server.cert)</source>
-        <translation>Palvelimen sertifikaatti-tiedosto (oletus: server.cert)</translation>
-    </message>
-    <message>
-        <source>Server private key (default: server.pem)</source>
-        <translation>Palvelimen yksityisavain (oletus: server.pem)</translation>
-    </message>
-    <message>
         <source>This help message</source>
         <translation>Tämä ohjeviesti</translation>
-    </message>
-    <message>
-        <source>Unable to bind to %s on this computer (bind returned error %d, %s)</source>
-        <translation>Kytkeytyminen %s tällä tietokonella ei onnistu (kytkeytyminen palautti virheen %d, %s)</translation>
     </message>
     <message>
         <source>Allow DNS lookups for -addnode, -seednode and -connect</source>
@@ -3298,44 +2963,80 @@ esimerkiksi: alertnotify=echo %%s | mail -s &quot;GameCredits Alert&quot; admin@
         <translation>Virhe ladattaessa wallet.dat-tiedostoa: Lompakko vioittunut</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of GameCredits</source>
-        <translation>Virhe ladattaessa wallet.dat-tiedostoa: Tarvitset uudemman version GameCreditsista</translation>
+        <source>(default: %s)</source>
+        <translation>(oletus: %s)</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart GameCredits to complete</source>
-        <translation>Lompakko tarvitsee uudelleenkirjoittaa: käynnistä GameCredits uudelleen</translation>
+        <source>Acceptable ciphers (default: %s)</source>
+        <translation>Hyväksyttävät salaukset (oletus: %s)</translation>
     </message>
     <message>
         <source>Error loading wallet.dat</source>
         <translation>Virhe ladattaessa wallet.dat-tiedostoa</translation>
     </message>
     <message>
-        <source>Invalid -proxy address: &apos;%s&apos;</source>
-        <translation>Virheellinen proxy-osoite &apos;%s&apos;</translation>
+        <source>Generate coins (default: %u)</source>
+        <translation>Luo kolikoita (oletus: %u)</translation>
     </message>
     <message>
-        <source>Unknown network specified in -onlynet: &apos;%s&apos;</source>
-        <translation>Tuntematon verkko -onlynet parametrina: &apos;%s&apos;</translation>
+        <source>How many blocks to check at startup (default: %u, 0 = all)</source>
+        <translation>Kuinka monta lohkoa tarkistetaan käynnistyksessä (oletus: %u, 0 = kaikki)</translation>
     </message>
     <message>
-        <source>Unknown -socks proxy version requested: %i</source>
-        <translation>Tuntematon -socks proxy versio pyydetty: %i</translation>
+        <source>Include IP addresses in debug output (default: %u)</source>
+        <translation>Sisällytä IP-osoitteet virheenkorjauslokissa (oletus: %u)</translation>
     </message>
     <message>
-        <source>Cannot resolve -bind address: &apos;%s&apos;</source>
-        <translation>-bind osoitteen &apos;%s&apos; selvittäminen epäonnistui</translation>
+        <source>Invalid -proxy address: '%s'</source>
+        <translation>Virheellinen proxy-osoite '%s'</translation>
     </message>
     <message>
-        <source>Cannot resolve -externalip address: &apos;%s&apos;</source>
-        <translation>-externalip osoitteen &apos;%s&apos; selvittäminen epäonnistui</translation>
+        <source>Relay non-P2SH multisig (default: %u)</source>
+        <translation>Välitä ei-P2SH-multisig (oletus: %u)</translation>
     </message>
     <message>
-        <source>Invalid amount for -paytxfee=&lt;amount&gt;: &apos;%s&apos;</source>
-        <translation>-paytxfee=&lt;amount&gt;: &apos;%s&apos; on virheellinen</translation>
+        <source>Server certificate file (default: %s)</source>
+        <translation>Palvelimen sertifikaattitiedosto (oletus: %s)</translation>
     </message>
     <message>
-        <source>Invalid amount</source>
-        <translation>Virheellinen määrä</translation>
+        <source>Server private key (default: %s)</source>
+        <translation>Palvelimen private key (oletus: %s)</translation>
+    </message>
+    <message>
+        <source>Set key pool size to &lt;n&gt; (default: %u)</source>
+        <translation>Aseta avainaltaan kooksi &lt;n&gt; (oletus: %u)</translation>
+    </message>
+    <message>
+        <source>Set minimum block size in bytes (default: %u)</source>
+        <translation>Aseta pienin mahdollinen lohkokoko tavuina (oletus: %u)</translation>
+    </message>
+    <message>
+        <source>Set the number of threads to service RPC calls (default: %d)</source>
+        <translation>Aseta RPC-kutsujen palvelemiseen tarkoitettujen säikeiden lukumäärä (oletus: %d)</translation>
+    </message>
+    <message>
+        <source>Specify configuration file (default: %s)</source>
+        <translation>Määritä asetustiedosto (oletus: %s)</translation>
+    </message>
+    <message>
+        <source>Specify pid file (default: %s)</source>
+        <translation>Määritä pid-tiedosto (oletus: %s)</translation>
+    </message>
+    <message>
+        <source>Unknown network specified in -onlynet: '%s'</source>
+        <translation>Tuntematon verkko -onlynet parametrina: '%s'</translation>
+    </message>
+    <message>
+        <source>Cannot resolve -bind address: '%s'</source>
+        <translation>-bind osoitteen '%s' selvittäminen epäonnistui</translation>
+    </message>
+    <message>
+        <source>Cannot resolve -externalip address: '%s'</source>
+        <translation>-externalip osoitteen '%s' selvittäminen epäonnistui</translation>
+    </message>
+    <message>
+        <source>Invalid amount for -paytxfee=&lt;amount&gt;: '%s'</source>
+        <translation>-paytxfee=&lt;amount&gt;: '%s' on virheellinen</translation>
     </message>
     <message>
         <source>Insufficient funds</source>
@@ -3370,20 +3071,8 @@ esimerkiksi: alertnotify=echo %%s | mail -s &quot;GameCredits Alert&quot; admin@
         <translation>Lataus on valmis</translation>
     </message>
     <message>
-        <source>To use the %s option</source>
-        <translation>Käytä %s optiota</translation>
-    </message>
-    <message>
         <source>Error</source>
         <translation>Virhe</translation>
-    </message>
-    <message>
-        <source>You must set rpcpassword=&lt;password&gt; in the configuration file:
-%s
-If the file does not exist, create it with owner-readable-only file permissions.</source>
-        <translation>Sinun täytyy asettaa rpcpassword=&lt;password&gt; asetustiedostoon:
-%s
-Jos tiedostoa ei ole, niin luo se ainoastaan omistajan kirjoitusoikeuksin.</translation>
     </message>
 </context>
 </TS>

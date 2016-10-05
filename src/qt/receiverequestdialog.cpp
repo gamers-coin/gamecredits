@@ -1,6 +1,5 @@
-// Original Code: Copyright (c) 2011-2014 The Bitcoin Core Developers
-// Modified Code: Copyright (c) 2015 Gamecredits Foundation
-// Distributed under the MIT/X11 software license, see the accompanying
+// Copyright (c) 2011-2013 The Bitcoin Core developers
+// Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #include "receiverequestdialog.h"
@@ -14,16 +13,16 @@
 
 #include <QClipboard>
 #include <QDrag>
+#include <QMenu>
 #include <QMimeData>
 #include <QMouseEvent>
 #include <QPixmap>
-#include <QMenu>
 #if QT_VERSION < 0x050000
 #include <QUrl>
 #endif
 
 #if defined(HAVE_CONFIG_H)
-#include "bitcoin-config.h" /* for USE_QRCODE */
+#include "config/bitcoin-config.h" /* for USE_QRCODE */
 #endif
 
 #ifdef USE_QRCODE
@@ -140,9 +139,7 @@ void ReceiveRequestDialog::update()
     ui->btnSaveAs->setEnabled(false);
     QString html;
     html += "<html><font face='verdana, arial, helvetica, sans-serif'>";
-    html += "<b>"+tr("Payment information")+"</b><br>";
-    html += "<b>"+tr("URI")+"</b>: ";
-    html += "<a href=\""+uri+"\">" + GUIUtil::HtmlEscape(uri) + "</a><br>";
+    html += "<b>"+tr("Payment information")+"</b><br>";    
     html += "<b>"+tr("Address")+"</b>: " + GUIUtil::HtmlEscape(info.address) + "<br>";
     if(info.amount)
         html += "<b>"+tr("Amount")+"</b>: " + BitcoinUnits::formatWithUnit(model->getDisplayUnit(), info.amount) + "<br>";

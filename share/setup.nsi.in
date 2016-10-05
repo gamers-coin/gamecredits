@@ -6,7 +6,7 @@ SetCompressor /SOLID lzma
 # General Symbol Definitions
 !define REGKEY "SOFTWARE\$(^Name)"
 !define VERSION @CLIENT_VERSION_MAJOR@.@CLIENT_VERSION_MINOR@.@CLIENT_VERSION_REVISION@
-!define COMPANY "Gamecredits Foundation"
+!define COMPANY "Gamecredits Inc."
 !define URL https://github.com/gamecredits-project/GameCredits/
 
 # MUI Symbol Definitions

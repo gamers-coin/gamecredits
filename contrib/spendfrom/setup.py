@@ -1,9 +1,9 @@
 from distutils.core import setup
-setup(name='gmcspendfrom',
+setup(name='gamespendfrom',
       version='1.0',
       description='Command-line utility for Gamecredits "coin control"',
-      author='Gavin Andresen',
-      author_email='gavin@bitcoinfoundation.org',
+      author='Gamecredits Developer',
+      author_email='info@gamecredits.net',
       requires=['jsonrpc'],
       scripts=['spendfrom.py'],
       )

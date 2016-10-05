@@ -1,20 +1,21 @@
-// Original Code: Copyright (c) 2011-2014 The Bitcoin Core Developers
-// Modified Code: Copyright (c) 2015 Gamecredits Foundation
-// Distributed under the MIT/X11 software license, see the accompanying
+// Copyright (c) 2011-2013 The Bitcoin Core developers
+// Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef GUIUTIL_H
-#define GUIUTIL_H
+#ifndef BITCOIN_QT_GUIUTIL_H
+#define BITCOIN_QT_GUIUTIL_H
 
+#include "amount.h"
+
+#include <QEvent>
 #include <QHeaderView>
 #include <QMessageBox>
 #include <QObject>
+#include <QProgressBar>
 #include <QString>
 #include <QTableView>
 
 #include <boost/filesystem.hpp>
-
-extern bool fUseGamecreditsTheme;
 
 class QValidatedLineEdit;
 class SendCoinsRecipient;
@@ -28,7 +29,7 @@ class QUrl;
 class QWidget;
 QT_END_NAMESPACE
 
-/** Utility functions used by the Gamecredits Qt UI.
+/** Utility functions used by the GameCredits Qt UI.
  */
 namespace GUIUtil
 {
@@ -36,7 +37,7 @@ namespace GUIUtil
     QString dateTimeStr(const QDateTime &datetime);
     QString dateTimeStr(qint64 nTime);
 
-    // Render Gamecredits addresses in monospace font
+    // Render GameCredits addresses in monospace font
     QFont bitcoinAddressFont();
 
     // Set up widgets for address and amounts
@@ -49,7 +50,7 @@ namespace GUIUtil
     QString formatBitcoinURI(const SendCoinsRecipient &info);
 
     // Returns true if given address+amount meets "dust" definition
-    bool isDust(const QString& address, qint64 amount);
+    bool isDust(const QString& address, const CAmount& amount);
 
     // HTML escaping for rich text controls
     QString HtmlEscape(const QString& str, bool fMultiLine=false);
@@ -106,7 +107,7 @@ namespace GUIUtil
     void openDebugLogfile();
 
     // Replace invalid default fonts with known good ones
-    void SubstituteFonts();
+    void SubstituteFonts(const QString& language);
 
     /** Qt event filter that intercepts ToolTipChange events, and replaces the tooltip with a rich text
       representation if needed. This assures that Qt can word-wrap long tooltip messages.
@@ -179,6 +180,32 @@ namespace GUIUtil
     /* Convert OS specific boost path to QString through UTF-8 */
     QString boostPathToQString(const boost::filesystem::path &path);
 
+    /* Convert seconds into a QString with days, hours, mins, secs */
+    QString formatDurationStr(int secs);
+
+    /* Format CNodeStats.nServices bitmask into a user-readable string */
+    QString formatServicesStr(quint64 mask);
+
+    /* Format a CNodeCombinedStats.dPingTime into a user-readable string or display N/A, if 0*/
+    QString formatPingTime(double dPingTime);
+
+    /* Format a CNodeCombinedStats.nTimeOffset into a user-readable string. */
+    QString formatTimeOffset(int64_t nTimeOffset);
+
+#if defined(Q_OS_MAC) && QT_VERSION >= 0x050000
+    // workaround for Qt OSX Bug:
+    // https://bugreports.qt-project.org/browse/QTBUG-15631
+    // QProgressBar uses around 10% CPU even when app is in background
+    class ProgressBar : public QProgressBar
+    {
+        bool event(QEvent *e) {
+            return (e->type() != QEvent::StyleAnimationUpdate) ? QProgressBar::event(e) : false;
+        }
+    };
+#else
+    typedef QProgressBar ProgressBar;
+#endif
+
 } // namespace GUIUtil
 
-#endif // GUIUTIL_H
+#endif // BITCOIN_QT_GUIUTIL_H

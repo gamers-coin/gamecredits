@@ -154,7 +154,7 @@ Run gamecreditsd once more to start the daemon!
 ###Optional Download GameCredits bootstrap
 ```
 cd /home/gamecredits/.gamecredits/
-wget http://gmc.cryptocloudhosting.org/bootstrap/bootstrap.zip
+wget http://138.68.11.78/bootstrap.zip
 unzip bootstrap.zip
 ```
 
@@ -172,3 +172,5 @@ Testing and code review is the bottleneck for development; we get more pull
 requests than we can review and test. Please be patient and help out, and
 remember this is a security-critical project where any mistake might cost people
 lots of money.
+
+Support Development by Donation: GKCUHrcg7yoXhx4yiYFRiPjqV8UD8jCp9m

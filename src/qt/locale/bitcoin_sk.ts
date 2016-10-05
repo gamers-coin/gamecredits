@@ -1,46 +1,9 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS language="sk" version="2.1">
-<context>
-    <name>AboutDialog</name>
-    <message>
-        <source>About GameCredits Core</source>
-        <translation>O jadre GameCredits</translation>
-    </message>
-    <message>
-        <source>&lt;b&gt;GameCredits Core&lt;/b&gt; version</source>
-        <translation>Verzia &lt;b&gt;GameCredits jadra&lt;/b&gt;</translation>
-    </message>
-    <message>
-        <source>
-This is experimental software.
-
-Distributed under the MIT/X11 software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php.
-
-This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit (http://www.openssl.org/) and cryptographic software written by Eric Young (eay@cryptsoft.com) and UPnP software written by Thomas Bernard.</source>
-        <translation>
-Toto je experimentálny softvér.
-
-Distribuovaný pod MIT/X11 softvérovou licenciou, viď sprevádzajúci súbor COPYING alebo http://www.opensource.org/licenses/mit-license.php.
-
-Tento výrobok obsahuje sofvér, ktorý vyvynul OpenSSL Project pre použitie v OpenSSL Toolkit (http://www.openssl.org/) a kryptografický softvér napísaný Ericom Youngom (eay@cryptsoft.com) a UPnP softvér napísaný Thomasom Bernardom.</translation>
-    </message>
-    <message>
-        <source>Copyright</source>
-        <translation>Autorské práva</translation>
-    </message>
-    <message>
-        <source>The Bitcoin Core Developers</source>
-        <translation>Vývojári jadra GameCredits</translation>
-    </message>
-    <message>
-        <source>(%1-bit)</source>
-        <translation>(%1-bit)</translation>
-    </message>
-</context>
+<TS language="sk" version="2.0">
 <context>
     <name>AddressBookPage</name>
     <message>
-        <source>Double-click to edit address or label</source>
-        <translation>Dvojklikom editovať adresu alebo popis</translation>
+        <source>Right-click to edit address or label</source>
+        <translation>Kliknutím pravým tlačidlom upravte adresu alebo popis</translation>
     </message>
     <message>
         <source>Create a new address</source>
@@ -124,15 +87,15 @@ Tento výrobok obsahuje sofvér, ktorý vyvynul OpenSSL Project pre použitie v 
     </message>
     <message>
         <source>Comma separated file (*.csv)</source>
-        <translation>Čiarkou oddelený súbor (*.csv)</translation>
+        <translation>Čiarkou oddelovaný súbor (*.csv)</translation>
     </message>
     <message>
         <source>Exporting Failed</source>
         <translation>Export zlyhal</translation>
     </message>
     <message>
-        <source>There was an error trying to save the address list to %1.</source>
-        <translation>Nastala chyba pri pokuse uložiť zoznam adries do %1.</translation>
+        <source>There was an error trying to save the address list to %1. Please try again.</source>
+        <translation>Nastala chyba pri pokuse uložiť zoznam adries do %1. Skúste znovu.</translation>
     </message>
 </context>
 <context>
@@ -169,10 +132,6 @@ Tento výrobok obsahuje sofvér, ktorý vyvynul OpenSSL Project pre použitie v 
         <translation>Zopakujte nové heslo</translation>
     </message>
     <message>
-        <source>Enter the new passphrase to the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;10 or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
-        <translation>Zadajte nové heslo k peňaženke.&lt;br/&gt;Prosím použite heslo s dĺžkou aspon &lt;b&gt;10 alebo viac náhodných znakov&lt;/b&gt;, alebo &lt;b&gt;8 alebo viac slov&lt;/b&gt;.</translation>
-    </message>
-    <message>
         <source>Encrypt wallet</source>
         <translation>Zašifrovať peňaženku</translation>
     </message>
@@ -197,16 +156,12 @@ Tento výrobok obsahuje sofvér, ktorý vyvynul OpenSSL Project pre použitie v 
         <translation>Zmena hesla</translation>
     </message>
     <message>
-        <source>Enter the old and new passphrase to the wallet.</source>
-        <translation>Zadajte staré a nové heslo k peňaženke.</translation>
-    </message>
-    <message>
         <source>Confirm wallet encryption</source>
         <translation>Potvrďte šifrovanie peňaženky</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR GameCreditsS&lt;/b&gt;!</source>
-        <translation>Varovanie: Ak zašifrujete peňaženku a stratíte heslo, &lt;b&gt;STRATÍTE VŠETKY VAŠE GameCreditsY&lt;/b&gt;!⏎</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR GAMECREDITS&lt;/b&gt;!</source>
+        <translation>Varovanie: Ak zašifrujete peňaženku a stratíte heslo, &lt;b&gt;STRATÍTE VŠETKY VAŠE GAMECREDITS&lt;/b&gt;!⏎</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -225,8 +180,8 @@ Tento výrobok obsahuje sofvér, ktorý vyvynul OpenSSL Project pre použitie v 
         <translation>Peňaženka zašifrovaná</translation>
     </message>
     <message>
-        <source>GameCredits will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your gamecreditss from being stolen by malware infecting your computer.</source>
-        <translation>GameCredits sa teraz ukončí pre dokončenie procesu šifrovania. Pamätaj že šifrovanie peňaženky Ťa nemôže úplne ochrániť pred kráďežou gamecreditsov pomocou škodlivého software.</translation>
+        <source>Enter the new passphrase to the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;ten or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
+        <translation>Zadajte nové heslo k peňaženke.&lt;br/&gt;Prosím použite heslo s dĺžkou aspoň &lt;b&gt;10 alebo viac náhodných znakov&lt;/b&gt;, alebo &lt;b&gt;8 alebo viac slov&lt;/b&gt;.</translation>
     </message>
     <message>
         <source>Wallet encryption failed</source>
@@ -258,7 +213,7 @@ Tento výrobok obsahuje sofvér, ktorý vyvynul OpenSSL Project pre použitie v 
     </message>
 </context>
 <context>
-    <name>GameCreditsGUI</name>
+    <name>BitcoinGUI</name>
     <message>
         <source>Sign &amp;message...</source>
         <translation>Podpísať &amp;správu...</translation>
@@ -296,10 +251,6 @@ Tento výrobok obsahuje sofvér, ktorý vyvynul OpenSSL Project pre použitie v 
         <translation>Ukončiť program</translation>
     </message>
     <message>
-        <source>Show information about GameCredits</source>
-        <translation>Zobraziť informácie o GameCredits</translation>
-    </message>
-    <message>
         <source>About &amp;Qt</source>
         <translation>O &amp;Qt</translation>
     </message>
@@ -325,15 +276,19 @@ Tento výrobok obsahuje sofvér, ktorý vyvynul OpenSSL Project pre použitie v 
     </message>
     <message>
         <source>&amp;Sending addresses...</source>
-        <translation>Posielajúca adresa ...</translation>
+        <translation>&amp;Odosielajúce adresy ...</translation>
     </message>
     <message>
         <source>&amp;Receiving addresses...</source>
-        <translation>Prijímajúca adresa...</translation>
+        <translation>&amp;Prijímajúce adresy...</translation>
     </message>
     <message>
         <source>Open &amp;URI...</source>
         <translation>Otvoriť &amp;URI...</translation>
+    </message>
+    <message>
+        <source>GameCredits Core client</source>
+        <translation>GameCredits Core klient</translation>
     </message>
     <message>
         <source>Importing blocks from disk...</source>
@@ -345,11 +300,7 @@ Tento výrobok obsahuje sofvér, ktorý vyvynul OpenSSL Project pre použitie v 
     </message>
     <message>
         <source>Send coins to a GameCredits address</source>
-        <translation>Poslať gamecreditss na adresu</translation>
-    </message>
-    <message>
-        <source>Modify configuration options for GameCredits</source>
-        <translation>Upraviť možnosti nastavenia pre gamecredits</translation>
+        <translation>Poslať gamecredits na adresu</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -388,6 +339,10 @@ Tento výrobok obsahuje sofvér, ktorý vyvynul OpenSSL Project pre použitie v 
         <translation>&amp;Prijať</translation>
     </message>
     <message>
+        <source>Show information about GameCredits Core</source>
+        <translation>Zobraziť informácie o GameCredits Core</translation>
+    </message>
+    <message>
         <source>&amp;Show / Hide</source>
         <translation>Zobraziť / skryť</translation>
     </message>
@@ -424,10 +379,6 @@ Tento výrobok obsahuje sofvér, ktorý vyvynul OpenSSL Project pre použitie v 
         <translation>Lišta záložiek</translation>
     </message>
     <message>
-        <source>[testnet]</source>
-        <translation>[testovacia sieť]</translation>
-    </message>
-    <message>
         <source>GameCredits Core</source>
         <translation>Jadro GameCredits</translation>
     </message>
@@ -460,44 +411,12 @@ Tento výrobok obsahuje sofvér, ktorý vyvynul OpenSSL Project pre použitie v 
         <translation>Zobraziť pomocnú správu od GameCredits Jadra pre získanie zoznamu dostupných možností príkazového riadku</translation>
     </message>
     <message>
-        <source>GameCredits client</source>
-        <translation>GameCredits klient</translation>
-    </message>
-    <message numerus="yes">
-        <source>%n active connection(s) to GameCredits network</source>
-        <translation><numerusform>%n aktívne spojenie v GameCredits sieti</numerusform><numerusform>%n aktívne spojenia v GameCredits sieti</numerusform><numerusform>%n aktívnych spojení v Bitconi sieti</numerusform></translation>
-    </message>
-    <message>
         <source>No block source available...</source>
         <translation>Nedostupný zdroj blokov...</translation>
     </message>
     <message>
-        <source>Processed %1 of %2 (estimated) blocks of transaction history.</source>
-        <translation>Spracovaných %1 z %2 (odhadovaných) blokov transakčnej histórie.</translation>
-    </message>
-    <message>
-        <source>Processed %1 blocks of transaction history.</source>
-        <translation>Spracovaných %1 blokov transakčnej histórie.</translation>
-    </message>
-    <message numerus="yes">
-        <source>%n hour(s)</source>
-        <translation><numerusform>%n hodina</numerusform><numerusform>%n hodiny</numerusform><numerusform>%n hodín</numerusform></translation>
-    </message>
-    <message numerus="yes">
-        <source>%n day(s)</source>
-        <translation><numerusform>%n deň</numerusform><numerusform>%n dni</numerusform><numerusform>%n dní</numerusform></translation>
-    </message>
-    <message numerus="yes">
-        <source>%n week(s)</source>
-        <translation><numerusform>%n týždeň</numerusform><numerusform>%n týždne</numerusform><numerusform>%n týždňov</numerusform></translation>
-    </message>
-    <message>
         <source>%1 and %2</source>
         <translation> %1 a  %2</translation>
-    </message>
-    <message numerus="yes">
-        <source>%n year(s)</source>
-        <translation><numerusform>%</numerusform><numerusform>%d)</numerusform><numerusform>%n rokov</numerusform></translation>
     </message>
     <message>
         <source>%1 behind</source>
@@ -509,7 +428,7 @@ Tento výrobok obsahuje sofvér, ktorý vyvynul OpenSSL Project pre použitie v 
     </message>
     <message>
         <source>Transactions after this will not yet be visible.</source>
-        <translation>Transakcie potom nebudú ešte viditeľné.</translation>
+        <translation>Transakcie po tomto čase ešte nebudú viditeľné.</translation>
     </message>
     <message>
         <source>Error</source>
@@ -540,27 +459,12 @@ Tento výrobok obsahuje sofvér, ktorý vyvynul OpenSSL Project pre použitie v 
         <translation>Prijaté transakcie</translation>
     </message>
     <message>
-        <source>Date: %1
-Amount: %2
-Type: %3
-Address: %4
-</source>
-        <translation>Dátum: %1
-Suma: %2
-Typ: %3
-Adresa: %4</translation>
-    </message>
-    <message>
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt;</source>
         <translation>Peňaženka je &lt;b&gt;zašifrovaná&lt;/b&gt; a momentálne &lt;b&gt;odomknutá&lt;/b&gt;</translation>
     </message>
     <message>
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</source>
         <translation>Peňaženka je &lt;b&gt;zašifrovaná&lt;/b&gt; a momentálne &lt;b&gt;zamknutá&lt;/b&gt;</translation>
-    </message>
-    <message>
-        <source>A fatal error occurred. GameCredits can no longer continue safely and will quit.</source>
-        <translation>Vyskytla sa neblahá chyba. GameCredits nemôže daľej bezpečne pokračovať a vypne sa.</translation>
     </message>
 </context>
 <context>
@@ -573,8 +477,8 @@ Adresa: %4</translation>
 <context>
     <name>CoinControlDialog</name>
     <message>
-        <source>Coin Control Address Selection</source>
-        <translation>Coin Control výber adresy</translation>
+        <source>Coin Selection</source>
+        <translation>Výber mince</translation>
     </message>
     <message>
         <source>Quantity:</source>
@@ -597,8 +501,8 @@ Adresa: %4</translation>
         <translation>Poplatok:</translation>
     </message>
     <message>
-        <source>Low Output:</source>
-        <translation>Malá hodnota na výstupe:</translation>
+        <source>Dust:</source>
+        <translation>Prach:</translation>
     </message>
     <message>
         <source>After Fee:</source>
@@ -625,8 +529,12 @@ Adresa: %4</translation>
         <translation>Suma</translation>
     </message>
     <message>
-        <source>Address</source>
-        <translation>Adresa</translation>
+        <source>Received with label</source>
+        <translation>Prijaté s označením</translation>
+    </message>
+    <message>
+        <source>Received with address</source>
+        <translation>Prijaté s adresou</translation>
     </message>
     <message>
         <source>Date</source>
@@ -689,8 +597,8 @@ Adresa: %4</translation>
         <translation>Kopírovať prioritu</translation>
     </message>
     <message>
-        <source>Copy low output</source>
-        <translation>Kopírovať malý výstup.</translation>
+        <source>Copy dust</source>
+        <translation>Kopírovať prach</translation>
     </message>
     <message>
         <source>Copy change</source>
@@ -741,8 +649,8 @@ Adresa: %4</translation>
         <translation>žiadne</translation>
     </message>
     <message>
-        <source>Dust</source>
-        <translation>Prach</translation>
+        <source>Can vary +/- %1 satoshi(s) per input.</source>
+        <translation>Môže sa líšiť o +/- %1 satoshi pre každý vstup</translation>
     </message>
     <message>
         <source>yes</source>
@@ -751,10 +659,6 @@ Adresa: %4</translation>
     <message>
         <source>no</source>
         <translation>nie</translation>
-    </message>
-    <message>
-        <source>This label turns red, if the transaction size is greater than 1000 bytes.</source>
-        <translation>Tento popis zčervená ak veľkosť transakcie presiahne 1000 bytov.</translation>
     </message>
     <message>
         <source>This means a fee of at least %1 per kB is required.</source>
@@ -767,26 +671,6 @@ Adresa: %4</translation>
     <message>
         <source>Transactions with higher priority are more likely to get included into a block.</source>
         <translation>Transakcie s vysokou prioritou sa pravdepodobnejsie dostanú do bloku.</translation>
-    </message>
-    <message>
-        <source>This label turns red, if the priority is smaller than &quot;medium&quot;.</source>
-        <translation>Tento popis zčervenie ak je priorita nižčia ako &quot;medium&quot;.</translation>
-    </message>
-    <message>
-        <source>This label turns red, if any recipient receives an amount smaller than %1.</source>
-        <translation>Tento popis zčervenie ak ktorýkoľvek príjemca dostane sumu menšiu ako %1.</translation>
-    </message>
-    <message>
-        <source>This means a fee of at least %1 is required.</source>
-        <translation>To znamená že je požadovaný poplatok aspoň %1.</translation>
-    </message>
-    <message>
-        <source>Amounts below 0.546 times the minimum relay fee are shown as dust.</source>
-        <translation>Sumy pod 0.546 násobkom minimálneho poplatku pre prenos sú považované za prach.</translation>
-    </message>
-    <message>
-        <source>This label turns red, if the change is smaller than %1.</source>
-        <translation>Tento popis zžervenie ak výdavok je menší než %1.</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -840,12 +724,12 @@ Adresa: %4</translation>
         <translation>Upraviť odosielaciu adresu</translation>
     </message>
     <message>
-        <source>The entered address &quot;%1&quot; is already in the address book.</source>
-        <translation>Vložená adresa &quot;%1&quot; sa už nachádza v adresári.</translation>
+        <source>The entered address "%1" is already in the address book.</source>
+        <translation>Vložená adresa "%1" sa už nachádza v adresári.</translation>
     </message>
     <message>
-        <source>The entered address &quot;%1&quot; is not a valid GameCredits address.</source>
-        <translation>Vložená adresa &quot;%1&quot; nieje platnou adresou gamecredits.</translation>
+        <source>The entered address "%1" is not a valid GameCredits address.</source>
+        <translation>Vložená adresa "%1" nieje platnou adresou gamecredits.</translation>
     </message>
     <message>
         <source>Could not unlock wallet.</source>
@@ -868,7 +752,7 @@ Adresa: %4</translation>
     </message>
     <message>
         <source>Directory already exists. Add %1 if you intend to create a new directory here.</source>
-        <translation>Priečinok už existuje. Pridajte &quot;%1&quot; ak chcete vytvoriť nový priečinok tu.</translation>
+        <translation>Priečinok už existuje. Pridajte "%1" ak chcete vytvoriť nový priečinok tu.</translation>
     </message>
     <message>
         <source>Path already exists, and is not a directory.</source>
@@ -882,10 +766,6 @@ Adresa: %4</translation>
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>GameCredits Core - Command-line options</source>
-        <translation>Jadro GameCredits - možnosti príkazového riadku</translation>
-    </message>
-    <message>
         <source>GameCredits Core</source>
         <translation>Jadro GameCredits</translation>
     </message>
@@ -894,36 +774,24 @@ Adresa: %4</translation>
         <translation>verzia</translation>
     </message>
     <message>
+        <source>(%1-bit)</source>
+        <translation>(%1-bit)</translation>
+    </message>
+    <message>
+        <source>About GameCredits Core</source>
+        <translation>O jadre GameCredits</translation>
+    </message>
+    <message>
+        <source>Command-line options</source>
+        <translation>Voľby príkazového riadku</translation>
+    </message>
+    <message>
         <source>Usage:</source>
         <translation>Použitie:</translation>
     </message>
     <message>
         <source>command-line options</source>
         <translation>voľby príkazového riadku</translation>
-    </message>
-    <message>
-        <source>UI options</source>
-        <translation>UI možnosti</translation>
-    </message>
-    <message>
-        <source>Set language, for example &quot;de_DE&quot; (default: system locale)</source>
-        <translation>Nastaviť jazyk, napríklad &quot;sk_SK&quot; (predvolené: systémový)</translation>
-    </message>
-    <message>
-        <source>Start minimized</source>
-        <translation>Spustiť minimalizované</translation>
-    </message>
-    <message>
-        <source>Set SSL root certificates for payment request (default: -system-)</source>
-        <translation>Nastaviť koreňový certifikát pre výzvy na platbu (prednastavené: -system-)</translation>
-    </message>
-    <message>
-        <source>Show splash screen on startup (default: 1)</source>
-        <translation>Zobraziť splash screen pri spustení (predvolené: 1)</translation>
-    </message>
-    <message>
-        <source>Choose data directory on startup (default: 0)</source>
-        <translation>Zvoľte dátový priečinok pri štarte (prednastavené: 0)</translation>
     </message>
 </context>
 <context>
@@ -953,26 +821,14 @@ Adresa: %4</translation>
         <translation>Použiť vlastný dátový adresár:</translation>
     </message>
     <message>
-        <source>GameCredits</source>
-        <translation>GameCredits</translation>
-    </message>
-    <message>
-        <source>Error: Specified data directory &quot;%1&quot; can not be created.</source>
-        <translation>Chyba: Predpísaný priečinok pre dáta &quot;%1&quot; nemôže byt vytvorený.</translation>
+        <source>GameCredits Core</source>
+        <translation>Jadro GameCredits</translation>
     </message>
     <message>
         <source>Error</source>
         <translation>Chyba</translation>
     </message>
-    <message>
-        <source>GB of free space available</source>
-        <translation>GB dostupného voľného miesta</translation>
-    </message>
-    <message>
-        <source>(of %1GB needed)</source>
-        <translation>(z %1GB potrebných)</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>OpenURIDialog</name>
     <message>
@@ -1007,24 +863,8 @@ Adresa: %4</translation>
         <translation>&amp;Hlavné</translation>
     </message>
     <message>
-        <source>Optional transaction fee per kB that helps make sure your transactions are processed quickly. Most transactions are 1 kB.</source>
-        <translation>Voliteľný transakčný poplatok za kB ktorý pomôže rýchlemu spracovaniu transakcie. Väčšina transakcií má 1 kB. Poplatok 0.01 je odporúčaný.</translation>
-    </message>
-    <message>
-        <source>Pay transaction &amp;fee</source>
-        <translation>Zaplatiť transakčné &amp;poplatky</translation>
-    </message>
-    <message>
-        <source>Automatically start GameCredits after logging in to the system.</source>
-        <translation>Automaticky spustiť GameCredits po zapnutí počítača</translation>
-    </message>
-    <message>
-        <source>&amp;Start GameCredits on system login</source>
-        <translation>&amp;Spustiť GameCredits pri spustení systému správy okien</translation>
-    </message>
-    <message>
         <source>Size of &amp;database cache</source>
-        <translation>Veľkosť vyrovnávacej pamäti databázy</translation>
+        <translation>Veľkosť vyrovnávacej pamäti &amp;databázy</translation>
     </message>
     <message>
         <source>MB</source>
@@ -1032,15 +872,15 @@ Adresa: %4</translation>
     </message>
     <message>
         <source>Number of script &amp;verification threads</source>
-        <translation>Počet skript overujucich vlákien</translation>
+        <translation>Počet &amp;vlákien overujúcich skript</translation>
     </message>
     <message>
-        <source>Connect to the GameCredits network through a SOCKS proxy.</source>
-        <translation>Pripojiť k GameCredits sieti cez SOCKS proxy.</translation>
+        <source>Accept connections from outside</source>
+        <translation>Prijať spojenia zvonku</translation>
     </message>
     <message>
-        <source>&amp;Connect through SOCKS proxy (default proxy):</source>
-        <translation>Pripojiť sa cez SOCKS proxy (predvolené proxy)</translation>
+        <source>Allow incoming connections</source>
+        <translation>Povoliť prichádzajúce spojenia</translation>
     </message>
     <message>
         <source>IP address of the proxy (e.g. IPv4: 127.0.0.1 / IPv6: ::1)</source>
@@ -1084,7 +924,7 @@ Adresa: %4</translation>
     </message>
     <message>
         <source>Enable coin &amp;control features</source>
-        <translation>Povoliť možnosti coin control</translation>
+        <translation>Povoliť možnosti "&amp;coin control"</translation>
     </message>
     <message>
         <source>If you disable the spending of unconfirmed change, the change from a transaction cannot be used until that transaction has at least one confirmation. This also affects how your balance is computed.</source>
@@ -1103,6 +943,14 @@ Adresa: %4</translation>
         <translation>Mapovať port pomocou &amp;UPnP</translation>
     </message>
     <message>
+        <source>Connect to the GameCredits network through a SOCKS5 proxy.</source>
+        <translation>Pripojiť do siete GameCredits cez proxy server SOCKS5.</translation>
+    </message>
+    <message>
+        <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
+        <translation>&amp;Pripojiť cez proxy server SOCKS5 (predvolený proxy).</translation>
+    </message>
+    <message>
         <source>Proxy &amp;IP:</source>
         <translation>Proxy &amp;IP:</translation>
     </message>
@@ -1113,14 +961,6 @@ Adresa: %4</translation>
     <message>
         <source>Port of the proxy (e.g. 9050)</source>
         <translation>Port proxy (napr. 9050)</translation>
-    </message>
-    <message>
-        <source>SOCKS &amp;Version:</source>
-        <translation>Verzia SOCKS:</translation>
-    </message>
-    <message>
-        <source>SOCKS version of the proxy (e.g. 5)</source>
-        <translation>SOCKS verzia proxy (napr. 5)</translation>
     </message>
     <message>
         <source>&amp;Window</source>
@@ -1135,10 +975,6 @@ Adresa: %4</translation>
         <translation>Zobraziť len ikonu na lište po minimalizovaní okna.</translation>
     </message>
     <message>
-        <source>Minimize instead of exit the application when the window is closed. When this option is enabled, the application will be closed only after selecting Quit in the menu.</source>
-        <translation>Minimalizovat namiesto ukončenia aplikácie keď sa okno zavrie. Keď je zvolená táto možnosť, aplikácia sa zavrie len po zvolení Ukončiť v menu.</translation>
-    </message>
-    <message>
         <source>M&amp;inimize on close</source>
         <translation>M&amp;inimalizovať pri zavretí</translation>
     </message>
@@ -1151,10 +987,6 @@ Adresa: %4</translation>
         <translation>Jazyk užívateľského rozhrania:</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting GameCredits.</source>
-        <translation>Tu sa dá nastaviť jazyk užívateľského rozhrania. Toto nastavenie bude účinné po reštartovaní GameCredits.</translation>
-    </message>
-    <message>
         <source>&amp;Unit to show amounts in:</source>
         <translation>&amp;Zobrazovať hodnoty v jednotkách:</translation>
     </message>
@@ -1163,16 +995,8 @@ Adresa: %4</translation>
         <translation>Zvoľte ako deliť gamecredits pri zobrazovaní pri platbách a užívateľskom rozhraní.</translation>
     </message>
     <message>
-        <source>Whether to show GameCredits addresses in the transaction list or not.</source>
-        <translation>Či ukazovať GameCredits adresy v zozname transakcií alebo nie.</translation>
-    </message>
-    <message>
-        <source>&amp;Display addresses in transaction list</source>
-        <translation>&amp;Zobraziť adresy zo zoznamu transakcií</translation>
-    </message>
-    <message>
         <source>Whether to show coin control features or not.</source>
-        <translation>Či zobrazovať možnosti &quot;Coin control&quot; alebo nie.</translation>
+        <translation>Či zobrazovať možnosti "Coin control" alebo nie.</translation>
     </message>
     <message>
         <source>&amp;OK</source>
@@ -1199,10 +1023,6 @@ Adresa: %4</translation>
         <translation>Reštart klienta potrebný pre aktivovanie zmien.</translation>
     </message>
     <message>
-        <source>Client will be shutdown, do you want to proceed?</source>
-        <translation>Klient bude vypnutý, chcete pokračovať?</translation>
-    </message>
-    <message>
         <source>This change would require a client restart.</source>
         <translation>Táto zmena by vyžadovala reštart klienta.</translation>
     </message>
@@ -1219,11 +1039,7 @@ Adresa: %4</translation>
     </message>
     <message>
         <source>The displayed information may be out of date. Your wallet automatically synchronizes with the GameCredits network after a connection is established, but this process has not completed yet.</source>
-        <translation>Zobrazené informácie môžu byť neaktuápne. Vaša peňaženka sa automaticky synchronizuje so sieťou GameCredits po nadviazaní spojenia ale tento proces ešte nieje ukončený.</translation>
-    </message>
-    <message>
-        <source>Wallet</source>
-        <translation>Peňaženka</translation>
+        <translation>Zobrazené informácie môžu byť neaktuálne. Vaša peňaženka sa automaticky synchronizuje so sieťou GameCredits po nadviazaní spojenia, ale tento proces ešte nie je ukončený.</translation>
     </message>
     <message>
         <source>Available:</source>
@@ -1235,7 +1051,7 @@ Adresa: %4</translation>
     </message>
     <message>
         <source>Pending:</source>
-        <translation>Čakajúce potvrdenie</translation>
+        <translation>Čakajúce potvrdenie:</translation>
     </message>
     <message>
         <source>Total of transactions that have yet to be confirmed, and do not yet count toward the spendable balance</source>
@@ -1250,6 +1066,10 @@ Adresa: %4</translation>
         <translation>Vytvorený zostatok ktorý ešte nedosiahol zrelosť</translation>
     </message>
     <message>
+        <source>Balances</source>
+        <translation>Stav účtu</translation>
+    </message>
+    <message>
         <source>Total:</source>
         <translation>Celkovo:</translation>
     </message>
@@ -1258,14 +1078,10 @@ Adresa: %4</translation>
         <translation>Váš súčasný celkový zostatok</translation>
     </message>
     <message>
-        <source>&lt;b&gt;Recent transactions&lt;/b&gt;</source>
-        <translation>&lt;b&gt;Nedávne transakcie&lt;/b&gt;</translation>
+        <source>Recent transactions</source>
+        <translation>Nedávne transakcie</translation>
     </message>
-    <message>
-        <source>out of sync</source>
-        <translation>nesynchronizované</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>PaymentServer</name>
     <message>
@@ -1273,8 +1089,8 @@ Adresa: %4</translation>
         <translation>Spracovanie URI</translation>
     </message>
     <message>
-        <source>URI can not be parsed! This can be caused by an invalid GameCredits address or malformed URI parameters.</source>
-        <translation>URI sa nedá rozložiť! To môže byť spôsobené neplatou GameCredits adresou alebo zle upravenými vlastnosťami URI.</translation>
+        <source>Invalid payment address %1</source>
+        <translation>Neplatná adresa platby %1</translation>
     </message>
     <message>
         <source>Requested payment amount of %1 is too small (considered dust).</source>
@@ -1289,24 +1105,12 @@ Adresa: %4</translation>
         <translation>Nedá sa spustiť obslužný program gamecredits: click-to-pay zaplatiť kliknutím</translation>
     </message>
     <message>
-        <source>Net manager warning</source>
-        <translation>Varovanie správcu siete</translation>
-    </message>
-    <message>
-        <source>Your active proxy doesn&apos;t support SOCKS5, which is required for payment requests via proxy.</source>
-        <translation>Vaše aktívne proxy nepodporuje SOCKS5, ktoré je potrebné pre vyzvu na zaplatenie cez proxy.</translation>
-    </message>
-    <message>
         <source>Payment request fetch URL is invalid: %1</source>
         <translation>URL pre stiahnutie výzvy na zaplatenie je neplatné: %1</translation>
     </message>
     <message>
         <source>Payment request file handling</source>
         <translation>Obsluha súboru s požiadavkou na platbu</translation>
-    </message>
-    <message>
-        <source>Payment request file can not be read or processed! This can be caused by an invalid payment request file.</source>
-        <translation>Súbor s výzvou na zaplatenie sa nedá čítať alebo spracovať! To môže byť spôsobené aj neplatným súborom s výzvou.</translation>
     </message>
     <message>
         <source>Unverified payment requests to custom payment scripts are unsupported.</source>
@@ -1319,10 +1123,6 @@ Adresa: %4</translation>
     <message>
         <source>Error communicating with %1: %2</source>
         <translation>Chyba komunikácie s %1: %2 </translation>
-    </message>
-    <message>
-        <source>Payment request can not be parsed or processed!</source>
-        <translation>Požiadavka na platbu nemôže byť analyzovaná alebo spracovaná!</translation>
     </message>
     <message>
         <source>Bad response from server %1</source>
@@ -1338,30 +1138,41 @@ Adresa: %4</translation>
     </message>
 </context>
 <context>
+    <name>PeerTableModel</name>
+    <message>
+        <source>User Agent</source>
+        <translation>Aplikácia</translation>
+    </message>
+    <message>
+        <source>Ping Time</source>
+        <translation>Čas odozvy</translation>
+    </message>
+</context>
+<context>
     <name>QObject</name>
     <message>
-        <source>GameCredits</source>
-        <translation>GameCredits</translation>
+        <source>Amount</source>
+        <translation>Suma</translation>
     </message>
     <message>
-        <source>Error: Specified data directory &quot;%1&quot; does not exist.</source>
-        <translation>Chyba: Uvedený priečinok s dátami &quot;%1&quot; neexistuje.</translation>
+        <source>Enter a GameCredits address (e.g. %1)</source>
+        <translation>Zadajte gamecredits adresu (napr. %1)</translation>
     </message>
     <message>
-        <source>Error: Cannot parse configuration file: %1. Only use key=value syntax.</source>
-        <translation>Chyba: Nedá sa rozlúštit súbor s nastaveniami: %1. Používajte výlučne kľúč=hodnota syntax.</translation>
+        <source>%1 h</source>
+        <translation>%1 h</translation>
     </message>
     <message>
-        <source>Error: Invalid combination of -regtest and -testnet.</source>
-        <translation>Chyba: Nesprávna kombinácia -regtest a -testnet.</translation>
+        <source>%1 m</source>
+        <translation>%1 m</translation>
     </message>
     <message>
-        <source>GameCredits Core didn&apos;t yet exit safely...</source>
-        <translation>Jadro GameCredits sa ešte úspešne nevyplo ...</translation>
+        <source>N/A</source>
+        <translation>nie je k dispozícii</translation>
     </message>
     <message>
-        <source>Enter a GameCredits address (e.g. bQ3Gyigyd12kJDkhwi9M9QSZ9qu6M4NZzR)</source>
-        <translation>Zadajte GameCredits adresu (napr. bQ3Gyigyd12kJDkhwi9M9QSZ9qu6M4NZzR)</translation>
+        <source>%1 ms</source>
+        <translation>%1 ms</translation>
     </message>
 </context>
 <context>
@@ -1414,6 +1225,10 @@ Adresa: %4</translation>
         <translation>Používa OpenSSL verziu</translation>
     </message>
     <message>
+        <source>Using BerkeleyDB version</source>
+        <translation>Používa BerkeleyDB verziu</translation>
+    </message>
+    <message>
         <source>Startup time</source>
         <translation>Čas spustenia</translation>
     </message>
@@ -1438,8 +1253,52 @@ Adresa: %4</translation>
         <translation>Aktuálny počet blokov</translation>
     </message>
     <message>
-        <source>Estimated total blocks</source>
-        <translation>Očakávaných blokov celkovo</translation>
+        <source>Received</source>
+        <translation>Prijaté</translation>
+    </message>
+    <message>
+        <source>Sent</source>
+        <translation>Odoslané</translation>
+    </message>
+    <message>
+        <source>Select a peer to view detailed information.</source>
+        <translation>Vyberte počítač pre zobrazenie podrobností.</translation>
+    </message>
+    <message>
+        <source>Direction</source>
+        <translation>Smer</translation>
+    </message>
+    <message>
+        <source>Version</source>
+        <translation>Verzia</translation>
+    </message>
+    <message>
+        <source>User Agent</source>
+        <translation>Aplikácia</translation>
+    </message>
+    <message>
+        <source>Services</source>
+        <translation>Služby</translation>
+    </message>
+    <message>
+        <source>Starting Height</source>
+        <translation>Počiatočná výška</translation>
+    </message>
+    <message>
+        <source>Connection Time</source>
+        <translation>Dĺžka spojenia</translation>
+    </message>
+    <message>
+        <source>Bytes Sent</source>
+        <translation>Odoslaných bajtov</translation>
+    </message>
+    <message>
+        <source>Bytes Received</source>
+        <translation>Prijatých bajtov</translation>
+    </message>
+    <message>
+        <source>Ping Time</source>
+        <translation>Čas odozvy</translation>
     </message>
     <message>
         <source>Last block time</source>
@@ -1455,7 +1314,7 @@ Adresa: %4</translation>
     </message>
     <message>
         <source>&amp;Network Traffic</source>
-        <translation>Sieťová prevádzka</translation>
+        <translation>&amp;Sieťová prevádzka</translation>
     </message>
     <message>
         <source>&amp;Clear</source>
@@ -1463,7 +1322,7 @@ Adresa: %4</translation>
     </message>
     <message>
         <source>Totals</source>
-        <translation>Celkovo</translation>
+        <translation>Celkovo:</translation>
     </message>
     <message>
         <source>In:</source>
@@ -1482,20 +1341,12 @@ Adresa: %4</translation>
         <translation>Súbor záznamu ladenia</translation>
     </message>
     <message>
-        <source>Open the GameCredits debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Otvoriť GameCredits log súbor pre ladenie z aktuálneho dátového adresára. Toto môže trvať niekoľko sekúnd pre veľké súbory.</translation>
-    </message>
-    <message>
         <source>Clear console</source>
         <translation>Vymazať konzolu</translation>
     </message>
     <message>
-        <source>Welcome to the GameCredits RPC console.</source>
-        <translation>Vitajte v GameCredits RPC konzole. Baník, pyčo!</translation>
-    </message>
-    <message>
         <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
-        <translation>Použi šipky hore a dolu pre navigáciu históriou a &lt;b&gt;Ctrl-L&lt;/b&gt; pre vyčistenie obrazovky.</translation>
+        <translation>Použi šípky hore a dolu pre navigáciu históriou a &lt;b&gt;Ctrl-L&lt;/b&gt; pre vyčistenie obrazovky.</translation>
     </message>
     <message>
         <source>Type &lt;b&gt;help&lt;/b&gt; for an overview of available commands.</source>
@@ -1518,16 +1369,16 @@ Adresa: %4</translation>
         <translation>%1 GB</translation>
     </message>
     <message>
-        <source>%1 m</source>
-        <translation>%1 m</translation>
+        <source>Inbound</source>
+        <translation>Prichádzajúce</translation>
     </message>
     <message>
-        <source>%1 h</source>
-        <translation>%1 h</translation>
+        <source>Outbound</source>
+        <translation>Odchádzajúce</translation>
     </message>
     <message>
-        <source>%1 h %2 m</source>
-        <translation>%1 h %2 m</translation>
+        <source>Fetching...</source>
+        <translation>Získava sa...</translation>
     </message>
 </context>
 <context>
@@ -1703,11 +1554,11 @@ Adresa: %4</translation>
     <name>SendCoinsDialog</name>
     <message>
         <source>Send Coins</source>
-        <translation>Poslať GameCreditss</translation>
+        <translation>Poslať GameCredits</translation>
     </message>
     <message>
         <source>Coin Control Features</source>
-        <translation>Možnosti &quot;Coin Control&quot;</translation>
+        <translation>Možnosti "Coin Control"</translation>
     </message>
     <message>
         <source>Inputs...</source>
@@ -1742,10 +1593,6 @@ Adresa: %4</translation>
         <translation>Poplatok:</translation>
     </message>
     <message>
-        <source>Low Output:</source>
-        <translation>Malá hodnota na výstupe:</translation>
-    </message>
-    <message>
         <source>After Fee:</source>
         <translation>Po poplatku:</translation>
     </message>
@@ -1762,6 +1609,66 @@ Adresa: %4</translation>
         <translation>Vlastná adresa zmeny</translation>
     </message>
     <message>
+        <source>Transaction Fee:</source>
+        <translation>Poplatok za transakciu:</translation>
+    </message>
+    <message>
+        <source>collapse fee-settings</source>
+        <translation>zbaliť nastavenia poplatkov</translation>
+    </message>
+    <message>
+        <source>per kilobyte</source>
+        <translation>za kilobajt</translation>
+    </message>
+    <message>
+        <source>If the custom fee is set to 1000 satoshis and the transaction is only 250 bytes, then "per kilobyte" only pays 250 satoshis in fee, while "total at least" pays 1000 satoshis. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Ak je poplatok nastavený na 1000 satoshi a transakcia je veľká len 250 bajtov, potom "za kilobajt" zaplatí poplatok 250 satoshi, ale "spolu aspoň" zaplatí 1000 satoshi. Pre transakcie väčšie ako kilobajt platia oba spôsoby za každý kilobajt.</translation>
+    </message>
+    <message>
+        <source>total at least</source>
+        <translation>spolu aspoň</translation>
+    </message>
+    <message>
+        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks. But be aware that this can end up in a never confirming transaction once there is more demand for gamecredits transactions than the network can process.</source>
+        <translation>Zaplatenie len minimálneho poplatku je v poriadku, pokiaľ existuje menej transakcií ako miesta v blokoch. Uvedomte si však, že ak bude vyšší dopyt po transakciách ako dokáže sieť spracovať, môže byť vaša transakcia odsúvaná a nepotvrdená donekonečna.</translation>
+    </message>
+    <message>
+        <source>(read the tooltip)</source>
+        <translation>(prečítajte si nápovedu pod kurzorom)</translation>
+    </message>
+    <message>
+        <source>Recommended:</source>
+        <translation>Odporúčaný:</translation>
+    </message>
+    <message>
+        <source>Custom:</source>
+        <translation>Vlastný:</translation>
+    </message>
+    <message>
+        <source>(Smart fee not initialized yet. This usually takes a few blocks...)</source>
+        <translation>(Automatický poplatok ešte nebol aktivovaný. Toto zvyčajne trvá niekoľko blokov...)</translation>
+    </message>
+    <message>
+        <source>Confirmation time:</source>
+        <translation>Čas potvrdenia:</translation>
+    </message>
+    <message>
+        <source>normal</source>
+        <translation>normálne</translation>
+    </message>
+    <message>
+        <source>fast</source>
+        <translation>rýchle</translation>
+    </message>
+    <message>
+        <source>Send as zero-fee transaction if possible</source>
+        <translation>Poslať ako transakciu bez poplatku, ak je to možné</translation>
+    </message>
+    <message>
+        <source>(confirmation may take longer)</source>
+        <translation>(potvrdenie môže trvať dlhšie)</translation>
+    </message>
+    <message>
         <source>Send to multiple recipients at once</source>
         <translation>Poslať viacerým príjemcom naraz</translation>
     </message>
@@ -1772,6 +1679,10 @@ Adresa: %4</translation>
     <message>
         <source>Clear all fields of the form.</source>
         <translation>Vyčistiť všetky polia formulára.</translation>
+    </message>
+    <message>
+        <source>Dust:</source>
+        <translation>Prach:</translation>
     </message>
     <message>
         <source>Clear &amp;All</source>
@@ -1791,7 +1702,7 @@ Adresa: %4</translation>
     </message>
     <message>
         <source>Confirm send coins</source>
-        <translation>Potvrdiť odoslanie gamecreditss</translation>
+        <translation>Potvrdiť odoslanie gamecredits</translation>
     </message>
     <message>
         <source>%1 to %2</source>
@@ -1822,10 +1733,6 @@ Adresa: %4</translation>
         <translation>Kopírovať prioritu</translation>
     </message>
     <message>
-        <source>Copy low output</source>
-        <translation>Kopírovať nízky výstup</translation>
-    </message>
-    <message>
         <source>Copy change</source>
         <translation>Kopírovať zmenu</translation>
     </message>
@@ -1836,10 +1743,6 @@ Adresa: %4</translation>
     <message>
         <source>or</source>
         <translation>alebo</translation>
-    </message>
-    <message>
-        <source>The recipient address is not valid, please recheck.</source>
-        <translation>Adresa príjemcu je neplatná, prosím, overte ju.</translation>
     </message>
     <message>
         <source>The amount to pay must be larger than 0.</source>
@@ -1854,16 +1757,16 @@ Adresa: %4</translation>
         <translation>Suma celkom prevyšuje Váš zostatok ak sú započítané %1 transakčné poplatky.</translation>
     </message>
     <message>
-        <source>Duplicate address found, can only send to each address once per send operation.</source>
-        <translation>Duplikát adresy objavený, je možné poslať na každú adresu len raz v jednej odchádzajúcej transakcii.</translation>
-    </message>
-    <message>
         <source>Transaction creation failed!</source>
         <translation>Vytvorenie transakcie zlyhalo!</translation>
     </message>
     <message>
         <source>The transaction was rejected! This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
         <translation>Transakcia bola zamietnutá! Toto sa môže stať ak niektoré coins vo vašej peňaženke už boli minuté, ako keď použijete kópiu wallet.dat a coins boli minuté z kópie ale neoznačené ako minuté tu.</translation>
+    </message>
+    <message>
+        <source>Pay only the minimum fee of %1</source>
+        <translation>Zaplatiť minimálny poplatok %1</translation>
     </message>
     <message>
         <source>Warning: Invalid GameCredits address</source>
@@ -1878,20 +1781,16 @@ Adresa: %4</translation>
         <translation>Varovanie: Neznáma adresa pre výdavok</translation>
     </message>
     <message>
+        <source>Copy dust</source>
+        <translation>Kopírovať prach</translation>
+    </message>
+    <message>
         <source>Are you sure you want to send?</source>
         <translation>Určite to chcete odoslať?</translation>
     </message>
     <message>
         <source>added as transaction fee</source>
         <translation>pridané ako transakčný poplatok</translation>
-    </message>
-    <message>
-        <source>Payment request expired</source>
-        <translation>Vypršala platnosť požiadavky na platbu</translation>
-    </message>
-    <message>
-        <source>Invalid payment address %1</source>
-        <translation>Neplatná adresa platby %1</translation>
     </message>
 </context>
 <context>
@@ -1903,10 +1802,6 @@ Adresa: %4</translation>
     <message>
         <source>Pay &amp;To:</source>
         <translation>Zapla&amp;tiť:</translation>
-    </message>
-    <message>
-        <source>The address to send the payment to (e.g. bQ3Gyigyd12kJDkhwi9M9QSZ9qu6M4NZzR)</source>
-        <translation>Adresa na odoslanie platby (napr. bQ3Gyigyd12kJDkhwi9M9QSZ9qu6M4NZzR)</translation>
     </message>
     <message>
         <source>Enter a label for this address to add it to your address book</source>
@@ -1930,7 +1825,7 @@ Adresa: %4</translation>
     </message>
     <message>
         <source>Paste address from clipboard</source>
-        <translation>Vložiť adresu z klipbordu</translation>
+        <translation>Vložte adresu z klipbordu</translation>
     </message>
     <message>
         <source>Alt+P</source>
@@ -1945,20 +1840,12 @@ Adresa: %4</translation>
         <translation>Správa:</translation>
     </message>
     <message>
-        <source>This is a verified payment request.</source>
-        <translation>Toto je overená výzva k platbe.</translation>
-    </message>
-    <message>
         <source>Enter a label for this address to add it to the list of used addresses</source>
         <translation>Vložte popis pre túto adresu aby sa uložila do zoznamu použitých adries</translation>
     </message>
     <message>
-        <source>A message that was attached to the gamecredits: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the GameCredits network.</source>
-        <translation>Správa ktorá bola pripojená k gamecredits: URI a ktorá bude uložená s transakcou pre Vaše potreby. Poznámka: Táto správa nebude poslaná cez sieť GameCredits.</translation>
-    </message>
-    <message>
-        <source>This is an unverified payment request.</source>
-        <translation>Toto je neoverená výzva k platbe.</translation>
+        <source>A message that was attached to the GameCredits: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the GameCredits network.</source>
+        <translation>Správa ktorá bola pripojená k GameCredits: URI a ktorá bude uložená s transakcou pre Vaše potreby. Poznámka: Táto správa nebude poslaná cez sieť GameCredits.</translation>
     </message>
     <message>
         <source>Pay To:</source>
@@ -1989,14 +1876,6 @@ Adresa: %4</translation>
     <message>
         <source>&amp;Sign Message</source>
         <translation>&amp;Podpísať Správu</translation>
-    </message>
-    <message>
-        <source>You can sign messages with your addresses to prove you own them. Be careful not to sign anything vague, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
-        <translation>Môžete podpísať správy svojou adresou a dokázať, že ju vlastníte. Buďte opatrní a podpíšte len prehlásenia s ktorými plne súhlasíte, nakoľko útoky typu &quot;phishing&quot; Vás môžu lákať k ich podpísaniu.</translation>
-    </message>
-    <message>
-        <source>The address to sign the message with (e.g. bQ3Gyigyd12kJDkhwi9M9QSZ9qu6M4NZzR)</source>
-        <translation>Zadajte GameCredits adresu (napr. bQ3Gyigyd12kJDkhwi9M9QSZ9qu6M4NZzR)</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2047,14 +1926,6 @@ Adresa: %4</translation>
         <translation>Overiť správu...</translation>
     </message>
     <message>
-        <source>Enter the signing address, message (ensure you copy line breaks, spaces, tabs, etc. exactly) and signature below to verify the message. Be careful not to read more into the signature than what is in the signed message itself, to avoid being tricked by a man-in-the-middle attack.</source>
-        <translation>Vložte podpisovaciu adresu, správu (uistite sa, že kopírujete ukončenia riadkov, medzery, odrážky, atď. presne) a podpis pod to na overenie adresy. Buďte opatrní a nečítajte ako podpísané viac než je v samotnej podpísanej správe a môžete sa tak vyhnúť podvodu mitm útokom.</translation>
-    </message>
-    <message>
-        <source>The address the message was signed with (e.g. bQ3Gyigyd12kJDkhwi9M9QSZ9qu6M4NZzR)</source>
-        <translation>Zadajte GameCredits adresu (napr. bQ3Gyigyd12kJDkhwi9M9QSZ9qu6M4NZzR)</translation>
-    </message>
-    <message>
         <source>Verify the message to ensure it was signed with the specified GameCredits address</source>
         <translation>Overím správy sa uistiť že bola podpísaná označenou GameCredits adresou</translation>
     </message>
@@ -2067,12 +1938,8 @@ Adresa: %4</translation>
         <translation>Obnoviť všetky polia v overiť správu</translation>
     </message>
     <message>
-        <source>Enter a GameCredits address (e.g. bQ3Gyigyd12kJDkhwi9M9QSZ9qu6M4NZzR)</source>
-        <translation>Zadajte GameCredits adresu (napr. bQ3Gyigyd12kJDkhwi9M9QSZ9qu6M4NZzR)</translation>
-    </message>
-    <message>
-        <source>Click &quot;Sign Message&quot; to generate signature</source>
-        <translation>Kliknite &quot;Podpísať Správu&quot; na získanie podpisu</translation>
+        <source>Click "Sign Message" to generate signature</source>
+        <translation>Kliknite "Podpísať Správu" na získanie podpisu</translation>
     </message>
     <message>
         <source>The entered address is invalid.</source>
@@ -2130,7 +1997,7 @@ Adresa: %4</translation>
         <translation>Jadro GameCredits</translation>
     </message>
     <message>
-        <source>The Bitcoin Core Developers</source>
+        <source>The GameCredits Core developers</source>
         <translation>Vývojári jadra GameCredits</translation>
     </message>
     <message>
@@ -2171,10 +2038,6 @@ Adresa: %4</translation>
         <source>Status</source>
         <translation>Stav</translation>
     </message>
-    <message numerus="yes">
-        <source>, broadcast through %n node(s)</source>
-        <translation><numerusform>,</numerusform><numerusform>,</numerusform><numerusform>, vysielať cez %n nód</numerusform></translation>
-    </message>
     <message>
         <source>Date</source>
         <translation>Dátum</translation>
@@ -2206,10 +2069,6 @@ Adresa: %4</translation>
     <message>
         <source>Credit</source>
         <translation>Kredit</translation>
-    </message>
-    <message numerus="yes">
-        <source>matures in %n more block(s)</source>
-        <translation><numerusform>Dospeje o %n blokov</numerusform><numerusform>Dospeje o %n blokov</numerusform><numerusform>dospeje o %n blokov</numerusform></translation>
     </message>
     <message>
         <source>not accepted</source>
@@ -2244,8 +2103,8 @@ Adresa: %4</translation>
         <translation>Kupec</translation>
     </message>
     <message>
-        <source>Generated coins must mature %1 blocks before they can be spent. When you generated this block, it was broadcast to the network to be added to the block chain. If it fails to get into the chain, its state will change to &quot;not accepted&quot; and it won&apos;t be spendable. This may occasionally happen if another node generates a block within a few seconds of yours.</source>
-        <translation>Vytvorené coins musia dospieť %1 blokov kým môžu byť minuté. Keď vytvoríte tento blok, bude rozoslaný do siete aby bol akceptovaný do reťaze blokov. Ak sa nedostane reťaze, jeho stav sa zmení na &quot;zamietnutý&quot; a nebude sa dať minúť. Toto sa môže občas stať ak iná nóda vytvorí blok približne v tom istom čase.</translation>
+        <source>Generated coins must mature %1 blocks before they can be spent. When you generated this block, it was broadcast to the network to be added to the block chain. If it fails to get into the chain, its state will change to "not accepted" and it won't be spendable. This may occasionally happen if another node generates a block within a few seconds of yours.</source>
+        <translation>Vytvorené coins musia dospieť %1 blokov kým môžu byť minuté. Keď vytvoríte tento blok, bude rozoslaný do siete aby bol akceptovaný do reťaze blokov. Ak sa nedostane reťaze, jeho stav sa zmení na "zamietnutý" a nebude sa dať minúť. Toto sa môže občas stať ak iná nóda vytvorí blok približne v tom istom čase.</translation>
     </message>
     <message>
         <source>Debug information</source>
@@ -2275,10 +2134,6 @@ Adresa: %4</translation>
         <source>, has not been successfully broadcast yet</source>
         <translation>, ešte nebola úspešne odoslaná</translation>
     </message>
-    <message numerus="yes">
-        <source>Open for %n more block(s)</source>
-        <translation><numerusform>Otvoriť pre %n viac blok</numerusform><numerusform>Otvoriť pre %n viac blokov </numerusform><numerusform>Otvoriť pre %n viac blokov </numerusform></translation>
-    </message>
     <message>
         <source>unknown</source>
         <translation>neznámy</translation>
@@ -2306,20 +2161,8 @@ Adresa: %4</translation>
         <translation>Typ</translation>
     </message>
     <message>
-        <source>Address</source>
-        <translation>Adresa</translation>
-    </message>
-    <message>
-        <source>Amount</source>
-        <translation>Hodnota</translation>
-    </message>
-    <message>
         <source>Immature (%1 confirmations, will be available after %2)</source>
         <translation>Nezrelé (%1 potvrdení, bude k dispozícii po %2)</translation>
-    </message>
-    <message numerus="yes">
-        <source>Open for %n more block(s)</source>
-        <translation><numerusform>Otvorené pre ešte %1 blok</numerusform><numerusform>Otvorené pre %n viac blokov </numerusform><numerusform>Otvorené pre %n blokov</numerusform></translation>
     </message>
     <message>
         <source>Open until %1</source>
@@ -2340,6 +2183,10 @@ Adresa: %4</translation>
     <message>
         <source>Offline</source>
         <translation>Offline</translation>
+    </message>
+    <message>
+        <source>Label</source>
+        <translation>Popis</translation>
     </message>
     <message>
         <source>Unconfirmed</source>
@@ -2388,10 +2235,6 @@ Adresa: %4</translation>
     <message>
         <source>Type of transaction.</source>
         <translation>Typ transakcie.</translation>
-    </message>
-    <message>
-        <source>Destination address of transaction.</source>
-        <translation>Cieľová adresa transakcie.</translation>
     </message>
     <message>
         <source>Amount removed from or added to balance.</source>
@@ -2525,10 +2368,6 @@ Adresa: %4</translation>
         <translation>Adresa</translation>
     </message>
     <message>
-        <source>Amount</source>
-        <translation>Suma</translation>
-    </message>
-    <message>
         <source>ID</source>
         <translation>ID</translation>
     </message>
@@ -2542,6 +2381,9 @@ Adresa: %4</translation>
     </message>
 </context>
 <context>
+    <name>UnitDisplayStatusBarControl</name>
+    </context>
+<context>
     <name>WalletFrame</name>
     <message>
         <source>No wallet has been loaded.</source>
@@ -2552,7 +2394,7 @@ Adresa: %4</translation>
     <name>WalletModel</name>
     <message>
         <source>Send Coins</source>
-        <translation>Poslať GameCreditss</translation>
+        <translation>Poslať GameCredits</translation>
     </message>
 </context>
 <context>
@@ -2593,72 +2435,24 @@ Adresa: %4</translation>
 <context>
     <name>gamecredits-core</name>
     <message>
-        <source>Usage:</source>
-        <translation>Použitie:</translation>
-    </message>
-    <message>
-        <source>List commands</source>
-        <translation>Zoznam príkazov</translation>
-    </message>
-    <message>
-        <source>Get help for a command</source>
-        <translation>Dostať pomoc pre príkaz</translation>
-    </message>
-    <message>
         <source>Options:</source>
         <translation>Možnosti:</translation>
-    </message>
-    <message>
-        <source>Specify configuration file (default: gamecredits.conf)</source>
-        <translation>Určiť súbor s nastaveniami (predvolené: gamecredits.conf)</translation>
-    </message>
-    <message>
-        <source>Specify pid file (default: gamecreditsd.pid)</source>
-        <translation>Určiť súbor pid (predvolené: gamecreditsd.pid)</translation>
     </message>
     <message>
         <source>Specify data directory</source>
         <translation>Určiť priečinok s dátami</translation>
     </message>
     <message>
-        <source>Listen for connections on &lt;port&gt; (default: 40002 or testnet: 50001)</source>
-        <translation>Načúvať spojeniam na &lt;port&gt; (prednastavené: 40002 alebo testovacia sieť: 50001)</translation>
-    </message>
-    <message>
-        <source>Maintain at most &lt;n&gt; connections to peers (default: 125)</source>
-        <translation>Udržiavať maximálne &lt;n&gt; spojení (predvolené: 125)</translation>
-    </message>
-    <message>
         <source>Connect to a node to retrieve peer addresses, and disconnect</source>
-        <translation>Pripojiť sa k nóde, získať adresy ďaľších počítačov v sieti a odpojit sa.</translation>
+        <translation>Pripojiť sa k uzlu, získať adresy ďalších počítačov v sieti a odpojiť sa</translation>
     </message>
     <message>
         <source>Specify your own public address</source>
         <translation>Určite vašu vlastnú verejnú adresu</translation>
     </message>
     <message>
-        <source>Threshold for disconnecting misbehaving peers (default: 100)</source>
-        <translation>Hranica pre odpojenie zle sa správajúcich peerov (predvolené: 100)</translation>
-    </message>
-    <message>
-        <source>Number of seconds to keep misbehaving peers from reconnecting (default: 86400)</source>
-        <translation>Počet sekúnd kedy sa zabráni zle sa správajúcim peerom znovupripojenie (predvolené: 86400)</translation>
-    </message>
-    <message>
-        <source>An error occurred while setting up the RPC port %u for listening on IPv4: %s</source>
-        <translation>Vyskytla sa chyba pri nastavovaní RPC portu %u pre počúvanie na IPv4: %s</translation>
-    </message>
-    <message>
-        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: 40001 or testnet: 50000)</source>
-        <translation>Počúvať JSON-RPC spojeniam na &lt;port&gt; (predvolené: 40001 or testnet: 50000)</translation>
-    </message>
-    <message>
         <source>Accept command line and JSON-RPC commands</source>
         <translation>Prijímať príkazy z príkazového riadku a JSON-RPC</translation>
-    </message>
-    <message>
-        <source>GameCredits Core RPC client version</source>
-        <translation>Verzia RPC klienta Jadra GameCredits</translation>
     </message>
     <message>
         <source>Run in the background as a daemon and accept commands</source>
@@ -2673,92 +2467,16 @@ Adresa: %4</translation>
         <translation>Prijať spojenia zvonku (predvolené: 1 ak žiadne -proxy alebo -connect)</translation>
     </message>
     <message>
-        <source>%s, you must set a rpcpassword in the configuration file:
-%s
-It is recommended you use the following random password:
-rpcuser=gamecreditsrpc
-rpcpassword=%s
-(you do not need to remember this password)
-The username and password MUST NOT be the same.
-If the file does not exist, create it with owner-readable-only file permissions.
-It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;GameCredits Alert&quot; admin@foo.com
-</source>
-        <translation>%s, musíte nastaviť rpcpassword heslo v súbore nastavení:
-%s
-Odporúča sa používať nasledujúce náhodné heslo:
-rpcuser=gamecreditsrpc
-rpcpassword=%s
-(nemusíte si pamätať toto heslo)
-Užívateľské meno a heslo NESMÚ byť rovnaké.
-Ak súbor neexistuje, vytvorte ho s prístupovým právom owner-readable-only čitateľné len pre majiteľa.
-Tiež sa odporúča nastaviť alertnotify aby ste boli upozorňovaní na problémy;
-napríklad: alertnotify=echo %%s | mail -s &quot;GameCredits Výstraha&quot; admin@foo.com
-</translation>
-    </message>
-    <message>
-        <source>Acceptable ciphers (default: TLSv1.2+HIGH:TLSv1+HIGH:!SSLv2:!aNULL:!eNULL:!3DES:@STRENGTH)</source>
-        <translation>Prijateľlné šifry (prednastavené: TLSv1.2+HIGH:TLSv1+HIGH:!SSLv2:!aNULL:!eNULL:!3DES:@STRENGTH)</translation>
-    </message>
-    <message>
-        <source>An error occurred while setting up the RPC port %u for listening on IPv6, falling back to IPv4: %s</source>
-        <translation>Vyskytla sa chyba pri nastavovaní RPC portu %u pre počúvanie na IPv6, vraciam sa späť ku IPv4: %s</translation>
-    </message>
-    <message>
         <source>Bind to given address and always listen on it. Use [host]:port notation for IPv6</source>
         <translation>Spojiť s danou adresou a vždy na nej počúvať. Použite zápis [host]:port pre IPv6</translation>
-    </message>
-    <message>
-        <source>Continuously rate-limit free transactions to &lt;n&gt;*1000 bytes per minute (default:15)</source>
-        <translation>Priebežne obmedzuj transakcie bez poplatku na &lt;n&gt;*1000 bajtov za minútu (prednastavené: 15)</translation>
-    </message>
-    <message>
-        <source>Enter regression test mode, which uses a special chain in which blocks can be solved instantly. This is intended for regression testing tools and app development.</source>
-        <translation>Vstúpiť do regresného testovacieho módu, ktorý používa špeciálnu reťaz v ktorej môžu byť bloky v okamihu vyriešené. Pre účely regresného testovania a vývoja aplikácie.</translation>
-    </message>
-    <message>
-        <source>Enter regression test mode, which uses a special chain in which blocks can be solved instantly.</source>
-        <translation>Vojsť do režimu regresného testovania, ktorý používa špeciálnu reťaz v ktorej môžu byť bloky v okamihu vyriešené.</translation>
-    </message>
-    <message>
-        <source>Error: Listening for incoming connections failed (listen returned error %d)</source>
-        <translation>Chyba: Zlyhalo počúvanie prichádzajúcich spojení (listen vrátil chybu %d)</translation>
-    </message>
-    <message>
-        <source>Error: The transaction was rejected! This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
-        <translation>Transakcia bola zamietnutá! Toto sa môže stať ak niektoré coins vo vašej peňaženke už boli minuté, ako keď použijete kópiu wallet.dat a coins boli minuté z kópie ale neoznačené ako minuté tu.</translation>
-    </message>
-    <message>
-        <source>Error: This transaction requires a transaction fee of at least %s because of its amount, complexity, or use of recently received funds!</source>
-        <translation>Chyba: Táto transakcia vyžaduje transakčný poplatok aspoň %s kvôli svojej sume, komplexite alebo použitiu nedávno prijatých prostriedkov.</translation>
     </message>
     <message>
         <source>Execute command when a wallet transaction changes (%s in cmd is replaced by TxID)</source>
         <translation>Vykonaj príkaz keď sa zmení transakcia peňaženky (%s v príkaze je nahradená TxID)</translation>
     </message>
     <message>
-        <source>Fees smaller than this are considered zero fee (for transaction creation) (default:</source>
-        <translation>Poplatky menšie než toto sa považujú za nulové (pre vytvorenie transakcie) (prednastavené:</translation>
-    </message>
-    <message>
-        <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: 100)</source>
-        <translation>Odložiť aktivitu databázy spoločnej pamäti do logu na disku každých &lt;n&gt; megabajtov (prednastavené: 100)</translation>
-    </message>
-    <message>
-        <source>How thorough the block verification of -checkblocks is (0-4, default: 3)</source>
-        <translation>Ako dôkladne sú overované bloky -checkblocks (0-4, prednastavené: 3)</translation>
-    </message>
-    <message>
-        <source>In this mode -genproclimit controls how many blocks are generated immediately.</source>
-        <translation>V tomto režime -getproclimit kontroluje koľko blokov sa vytvorí okamžite.</translation>
-    </message>
-    <message>
         <source>Set the number of script verification threads (%u to %d, 0 = auto, &lt;0 = leave that many cores free, default: %d)</source>
         <translation>Nastaviť počeť vlákien overujúcich skripty (%u až %d, 0 = auto, &lt;0 = nechať toľkoto jadier voľných, prednastavené: %d)</translation>
-    </message>
-    <message>
-        <source>Set the processor limit for when generation is on (-1 = unlimited, default: -1)</source>
-        <translation>Nastaviť obmedzenie pre procesor keď je zapnuté generovanie (-1 = bez obmedzenia, prednastavené: -1)</translation>
     </message>
     <message>
         <source>This is a pre-release test build - use at your own risk - do not use for mining or merchant applications</source>
@@ -2769,16 +2487,8 @@ napríklad: alertnotify=echo %%s | mail -s &quot;GameCredits Výstraha&quot; adm
         <translation>Nepodarilo sa pripojiť na %s na tomto počítači. GameCredits Jadro je už pravdepodobne spustené.</translation>
     </message>
     <message>
-        <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: -proxy)</source>
-        <translation>Použite rozdielne SOCKS5 proxy pre dosiahnutie peer-ov cez Tor skryté služby (prednastavené: -proxy)</translation>
-    </message>
-    <message>
         <source>Warning: -paytxfee is set very high! This is the transaction fee you will pay if you send a transaction.</source>
         <translation>Varovanie: -paytxfee je nastavené veľmi vysoko. Toto sú transakčné poplatky ktoré zaplatíte ak odošlete transakciu.</translation>
-    </message>
-    <message>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong GameCredits will not work properly.</source>
-        <translation>Varovanie: Skontroluj či je na počítači nastavený správny čas a dátum. Ak sú hodiny nastavené nesprávne, GameCredits nebude správne pracovať.</translation>
     </message>
     <message>
         <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
@@ -2788,7 +2498,7 @@ The network does not appear to fully agree! Some miners appear to be experiencin
     </message>
     <message>
         <source>Warning: We do not appear to fully agree with our peers! You may need to upgrade, or other nodes may need to upgrade.</source>
-        <translation>Varovanie: Zjavne sa úplne nezhodujeme s našimi peer-mi! Možno potrebujete prejsť na novšiu verziu alebo ostatné nódy potrebujú vyššiu verziu.</translation>
+        <translation>Varovanie: Zjavne sa úplne nezhodujeme s našimi peer-mi! Možno potrebujete prejsť na novšiu verziu alebo ostatné uzly potrebujú vyššiu verziu.</translation>
     </message>
     <message>
         <source>Warning: error reading wallet.dat! All keys read correctly, but transaction data or address book entries might be missing or incorrect.</source>
@@ -2803,10 +2513,6 @@ The network does not appear to fully agree! Some miners appear to be experiencin
         <translation>(predvolené: 1)</translation>
     </message>
     <message>
-        <source>(default: wallet.dat)</source>
-        <translation>(predvolené: wallet.dat)</translation>
-    </message>
-    <message>
         <source>&lt;category&gt; can be:</source>
         <translation>&lt;category&gt; môže byť:</translation>
     </message>
@@ -2815,28 +2521,12 @@ The network does not appear to fully agree! Some miners appear to be experiencin
         <translation>Pokus zachrániť súkromné kľúče z poškodeného wallet.dat</translation>
     </message>
     <message>
-        <source>GameCredits Core Daemon</source>
-        <translation>Démon Jadro GameCredits</translation>
-    </message>
-    <message>
         <source>Block creation options:</source>
         <translation>Voľby vytvorenia bloku:</translation>
     </message>
     <message>
-        <source>Clear list of wallet transactions (diagnostic tool; implies -rescan)</source>
-        <translation>Vyčistiť zoznam transakcií peňaženky (diagnostický nástroj; zahŕňa -rescan)</translation>
-    </message>
-    <message>
         <source>Connect only to the specified node(s)</source>
         <translation>Pripojiť sa len k určenej nóde</translation>
-    </message>
-    <message>
-        <source>Connect through SOCKS proxy</source>
-        <translation>Pripojiť cez SOCKS proxy</translation>
-    </message>
-    <message>
-        <source>Connect to JSON-RPC on &lt;port&gt; (default: 40001 or testnet: 50000)</source>
-        <translation>Pripojiť ku JSON-RPC na &lt;port&gt; (prednastavené: 40001 alebo testnet: 50000)</translation>
     </message>
     <message>
         <source>Connection options:</source>
@@ -2849,14 +2539,6 @@ The network does not appear to fully agree! Some miners appear to be experiencin
     <message>
         <source>Debugging/Testing options:</source>
         <translation>Možnosti ladenia/testovania:</translation>
-    </message>
-    <message>
-        <source>Disable safemode, override a real safe mode event (default: 0)</source>
-        <translation>Vypnúť bezpečný režim, vypnúť udalosť skutočný bezpečný režim (prednastavené: 0)</translation>
-    </message>
-    <message>
-        <source>Discover own IP address (default: 1 when listening and no -externalip)</source>
-        <translation>Zisti vlastnú IP adresu (predvolené: 1 pri počúvaní/listening a žiadnej -externalip)</translation>
     </message>
     <message>
         <source>Do not load the wallet and disable wallet RPC calls</source>
@@ -2887,80 +2569,8 @@ The network does not appear to fully agree! Some miners appear to be experiencin
         <translation>Chyba: Málo miesta na disku!</translation>
     </message>
     <message>
-        <source>Error: Wallet locked, unable to create transaction!</source>
-        <translation>Chyba: Peňaženka je zamknutá, nemôžem vytvoriť transakciu!</translation>
-    </message>
-    <message>
-        <source>Error: system error: </source>
-        <translation>Chyba: systémová chyba:</translation>
-    </message>
-    <message>
         <source>Failed to listen on any port. Use -listen=0 if you want this.</source>
         <translation>Chyba počúvania na ktoromkoľvek porte. Použi -listen=0 ak toto chcete.</translation>
-    </message>
-    <message>
-        <source>Failed to read block info</source>
-        <translation>Zlyhalo čítanie info o bloku</translation>
-    </message>
-    <message>
-        <source>Failed to read block</source>
-        <translation>Zlyhalo čítanie bloku</translation>
-    </message>
-    <message>
-        <source>Failed to sync block index</source>
-        <translation>Zlyhalo synchronizovanie zoznamu blokov</translation>
-    </message>
-    <message>
-        <source>Failed to write block index</source>
-        <translation>Zlyhalo zapisovanie do zoznamu blokov</translation>
-    </message>
-    <message>
-        <source>Failed to write block info</source>
-        <translation>Zlyhal zápis info o bloku</translation>
-    </message>
-    <message>
-        <source>Failed to write block</source>
-        <translation>Zlyhal zápis bloku</translation>
-    </message>
-    <message>
-        <source>Failed to write file info</source>
-        <translation>Zlyhalo zapisovanie informácié o súbore</translation>
-    </message>
-    <message>
-        <source>Failed to write to coin database</source>
-        <translation>Zlyhalo zapisovanie do databázy coins</translation>
-    </message>
-    <message>
-        <source>Failed to write transaction index</source>
-        <translation>Zlyhal zápis zoznamu transakcií</translation>
-    </message>
-    <message>
-        <source>Failed to write undo data</source>
-        <translation>Zlyhalo zapisovanie </translation>
-    </message>
-    <message>
-        <source>Fee per kB to add to transactions you send</source>
-        <translation>Poplatok za kB ktorý treba pridať k odoslanej transakcii</translation>
-    </message>
-    <message>
-        <source>Fees smaller than this are considered zero fee (for relaying) (default:</source>
-        <translation>Poplatky menšie než toto sa považujú za nulové (pre preposielanie) (prednastavené:</translation>
-    </message>
-    <message>
-        <source>Find peers using DNS lookup (default: 1 unless -connect)</source>
-        <translation>Nájsť počítače v gamecredits sieti použitím DNS vyhľadávania (predvolené: 1 okrem -connect)</translation>
-    </message>
-    <message>
-        <source>Force safe mode (default: 0)</source>
-        <translation>Vnútiť bezpečný režim (prenastavené: 0)</translation>
-    </message>
-    <message>
-        <source>Generate coins (default: 0)</source>
-        <translation>Vytvárať mince (predvolené: 0)</translation>
-    </message>
-    <message>
-        <source>How many blocks to check at startup (default: 288, 0 = all)</source>
-        <translation>Koľko blokov skontrolovať pri spustení (predvolené: 288, 0 = všetky)</translation>
     </message>
     <message>
         <source>If &lt;category&gt; is not supplied, output all debugging information.</source>
@@ -2975,56 +2585,24 @@ The network does not appear to fully agree! Some miners appear to be experiencin
         <translation>Nesprávny alebo žiadny genesis blok nájdený. Nesprávny dátový priečinok alebo sieť?</translation>
     </message>
     <message>
-        <source>Invalid -onion address: &apos;%s&apos;</source>
-        <translation>Neplatná -onion adresa:  &apos;%s&apos;</translation>
+        <source>Invalid -onion address: '%s'</source>
+        <translation>Neplatná -onion adresa:  '%s'</translation>
     </message>
     <message>
         <source>Not enough file descriptors available.</source>
         <translation>Nedostatok kľúčových slov súboru.</translation>
     </message>
     <message>
-        <source>Prepend debug output with timestamp (default: 1)</source>
-        <translation>Na začiatok logu pre ladenie vlož dátum a čas (prednastavené: 1)</translation>
-    </message>
-    <message>
-        <source>RPC client options:</source>
-        <translation>Možnosti klienta RPC baník pyčo:</translation>
-    </message>
-    <message>
-        <source>Rebuild block chain index from current blk000??.dat files</source>
-        <translation>Znovu vytvoriť zoznam blokov zo súčasných blk000??.dat súborov</translation>
-    </message>
-    <message>
-        <source>Select SOCKS version for -proxy (4 or 5, default: 5)</source>
-        <translation>Zvoľte SOCKS verziu -proxy (4 alebo 5, predvolené 5)</translation>
-    </message>
-    <message>
         <source>Set database cache size in megabytes (%d to %d, default: %d)</source>
-        <translation>Nastaviť veľkosť pomocnej pamäti databázy v megabajtoch (%d na %d, prednatavené: %d)</translation>
+        <translation>Nastaviť veľkosť pomocnej pamäti databázy v megabajtoch (%d do %d, prednastavené: %d)</translation>
     </message>
     <message>
         <source>Set maximum block size in bytes (default: %d)</source>
         <translation>Nastaviť najväčšiu veľkosť bloku v bytoch (predvolené: %d)</translation>
     </message>
     <message>
-        <source>Set the number of threads to service RPC calls (default: 4)</source>
-        <translation>Nastaviť množstvo vlákien na obsluhu RPC volaní (predvolené: 4)</translation>
-    </message>
-    <message>
         <source>Specify wallet file (within data directory)</source>
         <translation>Označ súbor peňaženky (v priečinku s dátami)</translation>
-    </message>
-    <message>
-        <source>Spend unconfirmed change when sending transactions (default: 1)</source>
-        <translation>Míňať nepotvrdený výdavok pri odosielaní (prednastavené: 1)</translation>
-    </message>
-    <message>
-        <source>This is intended for regression testing tools and app development.</source>
-        <translation>Toto je mienené nástrojom pre regresné testovania a vývoj programu.</translation>
-    </message>
-    <message>
-        <source>Usage (deprecated, use gamecredits-cli):</source>
-        <translation>Použitie (neodporúča sa, použite gamecredits-cli):</translation>
     </message>
     <message>
         <source>Verifying blocks...</source>
@@ -3035,20 +2613,12 @@ The network does not appear to fully agree! Some miners appear to be experiencin
         <translation>Overujem peňaženku...</translation>
     </message>
     <message>
-        <source>Wait for RPC server to start</source>
-        <translation>Čakanie na štart RPC servra</translation>
-    </message>
-    <message>
         <source>Wallet %s resides outside data directory %s</source>
         <translation>Peňaženka %s sa nachádza mimo dátového priečinka %s </translation>
     </message>
     <message>
         <source>Wallet options:</source>
         <translation>Voľby peňaženky:</translation>
-    </message>
-    <message>
-        <source>Warning: Deprecated argument -debugnet ignored, use -debug=net</source>
-        <translation>Varovanie: Zastaralý parameter -debugnet bol ignorovaný, použite -debug=net</translation>
     </message>
     <message>
         <source>You need to rebuild the database using -reindex to change -txindex</source>
@@ -3063,112 +2633,80 @@ The network does not appear to fully agree! Some miners appear to be experiencin
         <translation>Neviem uzamknúť data adresár %s. Jadro GameCredits je pravdepodobne už spustené.</translation>
     </message>
     <message>
-        <source>Execute command when a relevant alert is received or we see a really long fork (%s in cmd is replaced by message)</source>
-        <translation>Vykonať príkaz keď po prijatí patričné varovanie alebo vidíme veľmi dlhé rozdvojenie siete (%s v cmd je nahradené správou)</translation>
+        <source>Error: Listening for incoming connections failed (listen returned error %s)</source>
+        <translation>Chyba: Počúvanie prichádzajúcich spojení zlyhalo (vrátená chyba je %s)</translation>
     </message>
     <message>
-        <source>Output debugging information (default: 0, supplying &lt;category&gt; is optional)</source>
-        <translation>Výstup informácií pre ladenie (prednastavené: 0, uvádzanie &lt;category&gt; je voliteľné)</translation>
+        <source>Execute command when a relevant alert is received or we see a really long fork (%s in cmd is replaced by message)</source>
+        <translation>Vykonať príkaz po prijatí patričného varovania alebo uvidíme veľmi dlhé rozdvojenie siete (%s v cmd je nahradené správou)</translation>
+    </message>
+    <message>
+        <source>Fees (in GAME/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>Poplatky (v GAME/Kb) nižšie ako toľkoto sa považujú za nulové pri postupovaní transakcií (predvolené: %s)</translation>
     </message>
     <message>
         <source>Set maximum size of high-priority/low-fee transactions in bytes (default: %d)</source>
         <translation>Nastaviť najväčšiu veľkosť vysoká-dôležitosť/nízke-poplatky transakcií v bajtoch (prednastavené: %d)</translation>
     </message>
     <message>
+        <source>Choose data directory on startup (default: 0)</source>
+        <translation>Zvoľte dátový priečinok pri štarte (prednastavené: 0)</translation>
+    </message>
+    <message>
+        <source>Connect through SOCKS5 proxy</source>
+        <translation>Pripojiť cez proxy server SOCKS5</translation>
+    </message>
+    <message>
+        <source>Error loading wallet.dat: Wallet requires newer version of GameCredits Core</source>
+        <translation>Chyba pri čítaní wallet.dat: Peňaženka vyžaduje vyššiu verziu Jadra GameCredits</translation>
+    </message>
+    <message>
+        <source>Fee (in GAME/kB) to add to transactions you send (default: %s)</source>
+        <translation>Poplatok (v GAME/kB), ktorý sa pridá k transakciám, ktoré odosielate (predvolený: %s)</translation>
+    </message>
+    <message>
         <source>Information</source>
         <translation>Informácia</translation>
     </message>
     <message>
-        <source>Invalid amount for -minrelaytxfee=&lt;amount&gt;: &apos;%s&apos;</source>
-        <translation>Neplatná suma pre -minrelaytxfee=&lt;amount&gt;: &apos;%s&apos;</translation>
+        <source>Invalid amount for -minrelaytxfee=&lt;amount&gt;: '%s'</source>
+        <translation>Neplatná suma pre -minrelaytxfee=&lt;amount&gt;: '%s'</translation>
     </message>
     <message>
-        <source>Invalid amount for -mintxfee=&lt;amount&gt;: &apos;%s&apos;</source>
-        <translation>Neplatná suma pre -mintxfee=&lt;amount&gt;: &apos;%s&apos;</translation>
+        <source>Invalid amount for -mintxfee=&lt;amount&gt;: '%s'</source>
+        <translation>Neplatná suma pre -mintxfee=&lt;amount&gt;: '%s'</translation>
     </message>
     <message>
-        <source>Limit size of signature cache to &lt;n&gt; entries (default: 50000)</source>
-        <translation>Obmedziť veľkosť pomocnej pamäti pre podpisy na &lt;n&gt; vstupov (prednastavené: 50000)</translation>
-    </message>
-    <message>
-        <source>Log transaction priority and fee per kB when mining blocks (default: 0)</source>
-        <translation>Zaznamenávať dôležitosť transakcií a poplatky za kB ak hľadáme bloky (prednastavené: 0)</translation>
-    </message>
-    <message>
-        <source>Maintain a full transaction index (default: 0)</source>
-        <translation>Udržiavaj úplný zoznam transakcií (prednastavené: 0)</translation>
-    </message>
-    <message>
-        <source>Maximum per-connection receive buffer, &lt;n&gt;*1000 bytes (default: 5000)</source>
-        <translation>Maximálna veľkosť prijímacieho zásobníka pre jedno spojenie, &lt;n&gt;*1000 bytov (predvolené: 5000)</translation>
-    </message>
-    <message>
-        <source>Maximum per-connection send buffer, &lt;n&gt;*1000 bytes (default: 1000)</source>
-        <translation>Maximálna veľkosť vysielacieho zásobníka pre jedno spojenie, &lt;n&gt;*1000 bytov (predvolené: 1000)</translation>
-    </message>
-    <message>
-        <source>Only accept block chain matching built-in checkpoints (default: 1)</source>
-        <translation>Akceptuj iba kontrolné body zhodné s blockchain (prednastavené: 1)</translation>
-    </message>
-    <message>
-        <source>Only connect to nodes in network &lt;net&gt; (IPv4, IPv6 or Tor)</source>
-        <translation>Pripájať sa len k nódam v sieti &lt;net&gt; (IPv4, IPv6 alebo Tor)</translation>
-    </message>
-    <message>
-        <source>Print block on startup, if found in block index</source>
-        <translation>Vytlač blok pri spustení, ak nájdený v zozname blokov</translation>
-    </message>
-    <message>
-        <source>Print block tree on startup (default: 0)</source>
-        <translation>Vytlačiť strom blokov pri spustení (prednastavené: 0)</translation>
-    </message>
-    <message>
-        <source>RPC SSL options: (see the GameCredits Wiki for SSL setup instructions)</source>
-        <translation>Možnosti RPC SSL: (Pozri v GameCredits Wiki pokyny pre SSL nastavenie)</translation>
+        <source>RPC SSL options: (see the Bitcoin Wiki for SSL setup instructions)</source>
+        <translation>Možnosti RPC SSL: (Pozri v Bitcoin Wiki pokyny pre SSL nastavenie)</translation>
     </message>
     <message>
         <source>RPC server options:</source>
         <translation>Možnosti servra RPC:</translation>
     </message>
     <message>
-        <source>Randomly drop 1 of every &lt;n&gt; network messages</source>
-        <translation>Náhodne zahadzuj 1 z každých &lt;n&gt; sieťových správ</translation>
-    </message>
-    <message>
-        <source>Randomly fuzz 1 of every &lt;n&gt; network messages</source>
-        <translation>Náhodne premiešaj 1 z každých &lt;n&gt; sieťových správ</translation>
-    </message>
-    <message>
-        <source>Run a thread to flush wallet periodically (default: 1)</source>
-        <translation>Mať spustené vlákno pravidelného čístenia peňaženky (predvolené: 1)</translation>
-    </message>
-    <message>
-        <source>SSL options: (see the GameCredits Wiki for SSL setup instructions)</source>
-        <translation>SSL možnosť: (pozrite GameCredits Wiki pre návod na nastavenie SSL)</translation>
-    </message>
-    <message>
-        <source>Send command to GameCredits Core</source>
-        <translation>Poslať príkaz Jadru GameCredits</translation>
-    </message>
-    <message>
         <source>Send trace/debug info to console instead of debug.log file</source>
         <translation>Odoslať trace/debug informácie na konzolu namiesto debug.info žurnálu</translation>
     </message>
     <message>
-        <source>Set minimum block size in bytes (default: 0)</source>
-        <translation>Nastaviť minimálnu veľkosť bloku v bytoch (predvolené: 0)</translation>
+        <source>Send transactions as zero-fee transactions if possible (default: %u)</source>
+        <translation>Poslať ako transakcie bez poplatku, ak je to možné (predvolené: %u)</translation>
     </message>
     <message>
-        <source>Sets the DB_PRIVATE flag in the wallet db environment (default: 1)</source>
-        <translation>Nastaví DB_PRIVATE možnosť v db prostredí peňaženky (prednastavené: 1)</translation>
+        <source>Set SSL root certificates for payment request (default: -system-)</source>
+        <translation>Nastaviť koreňový certifikát pre výzvy na platbu (prednastavené: -system-)</translation>
+    </message>
+    <message>
+        <source>Set language, for example "de_DE" (default: system locale)</source>
+        <translation>Nastaviť jazyk, napríklad "sk_SK" (predvolené: systémový)</translation>
     </message>
     <message>
         <source>Show all debugging options (usage: --help -help-debug)</source>
         <translation>Zobraziť všetky možnosti ladenia (použitie: --help --help-debug)</translation>
     </message>
     <message>
-        <source>Show benchmark information (default: 0)</source>
-        <translation>Zobraziť porovnávacie informácie (prednastavené: 0)</translation>
+        <source>Show splash screen on startup (default: 1)</source>
+        <translation>Zobraziť splash screen pri spustení (predvolené: 1)</translation>
     </message>
     <message>
         <source>Shrink debug.log file on client startup (default: 1 when no -debug)</source>
@@ -3179,16 +2717,12 @@ The network does not appear to fully agree! Some miners appear to be experiencin
         <translation>Podpísanie správy zlyhalo</translation>
     </message>
     <message>
-        <source>Specify connection timeout in milliseconds (default: 5000)</source>
-        <translation>Určiť aut spojenia v milisekundách (predvolené: 5000)</translation>
+        <source>Start minimized</source>
+        <translation>Spustiť minimalizované</translation>
     </message>
     <message>
-        <source>Start GameCredits Core Daemon</source>
-        <translation>Štart služby Jadro GameCredits</translation>
-    </message>
-    <message>
-        <source>System error: </source>
-        <translation>Systémová chyba:</translation>
+        <source>This is experimental software.</source>
+        <translation>Toto je experimentálny softvér.</translation>
     </message>
     <message>
         <source>Transaction amount too small</source>
@@ -3199,12 +2733,12 @@ The network does not appear to fully agree! Some miners appear to be experiencin
         <translation>Hodnoty transakcie musia byť väčšie ako nula (pozitívne)</translation>
     </message>
     <message>
-        <source>Transaction too large</source>
-        <translation>Transakcia príliš veľká</translation>
+        <source>Transaction too large for fee policy</source>
+        <translation>Transakcia je príliš veľká pre aktuálne podmienky poplatkov</translation>
     </message>
     <message>
-        <source>Use UPnP to map the listening port (default: 0)</source>
-        <translation>Skúsiť použiť UPnP pre mapovanie počúvajúceho portu (default: 0)</translation>
+        <source>Transaction too large</source>
+        <translation>Transakcia príliš veľká</translation>
     </message>
     <message>
         <source>Use UPnP to map the listening port (default: 1 when listening)</source>
@@ -3219,20 +2753,12 @@ The network does not appear to fully agree! Some miners appear to be experiencin
         <translation>Upozornenie</translation>
     </message>
     <message>
-        <source>Warning: This version is obsolete, upgrade required!</source>
-        <translation>Upozornenie: Táto verzia je zastaraná, vyžaduje sa aktualizácia!</translation>
-    </message>
-    <message>
         <source>Zapping all transactions from wallet...</source>
         <translation>Zmazať všetky transakcie z peňaženky...</translation>
     </message>
     <message>
         <source>on startup</source>
         <translation>pri štarte</translation>
-    </message>
-    <message>
-        <source>version</source>
-        <translation>verzia</translation>
     </message>
     <message>
         <source>wallet.dat corrupt, salvage failed</source>
@@ -3243,24 +2769,12 @@ The network does not appear to fully agree! Some miners appear to be experiencin
         <translation>Heslo pre JSON-rPC spojenia</translation>
     </message>
     <message>
-        <source>Allow JSON-RPC connections from specified IP address</source>
-        <translation>Povoliť JSON-RPC spojenia z určenej IP adresy.</translation>
-    </message>
-    <message>
-        <source>Send commands to node running on &lt;ip&gt; (default: 127.0.0.1)</source>
-        <translation>Poslať príkaz nóde bežiacej na &lt;ip&gt; (predvolené: 127.0.0.1)</translation>
-    </message>
-    <message>
         <source>Execute command when the best block changes (%s in cmd is replaced by block hash)</source>
         <translation>Vykonaj príkaz, ak zmeny v najlepšom bloku (%s v príkaze nahradí blok hash)</translation>
     </message>
     <message>
         <source>Upgrade wallet to latest format</source>
         <translation>Aktualizuj peňaženku na najnovší formát.</translation>
-    </message>
-    <message>
-        <source>Set key pool size to &lt;n&gt; (default: 100)</source>
-        <translation>Nastaviť zásobu adries na &lt;n&gt; (predvolené: 100)</translation>
     </message>
     <message>
         <source>Rescan the block chain for missing wallet transactions</source>
@@ -3271,20 +2785,8 @@ The network does not appear to fully agree! Some miners appear to be experiencin
         <translation>Použiť OpenSSL (https) pre JSON-RPC spojenia</translation>
     </message>
     <message>
-        <source>Server certificate file (default: server.cert)</source>
-        <translation>Súbor s certifikátom servra (predvolené: server.cert)</translation>
-    </message>
-    <message>
-        <source>Server private key (default: server.pem)</source>
-        <translation>Súkromný kľúč servra (predvolené: server.pem)</translation>
-    </message>
-    <message>
         <source>This help message</source>
         <translation>Táto pomocná správa</translation>
-    </message>
-    <message>
-        <source>Unable to bind to %s on this computer (bind returned error %d, %s)</source>
-        <translation>Nepodarilo sa spojiť s %s na tomto počítači (bind vrátil chybu %d, %s)</translation>
     </message>
     <message>
         <source>Allow DNS lookups for -addnode, -seednode and -connect</source>
@@ -3299,44 +2801,36 @@ The network does not appear to fully agree! Some miners appear to be experiencin
         <translation>Chyba načítania wallet.dat: Peňaženka je poškodená</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of GameCredits</source>
-        <translation>Chyba načítania wallet.dat: Peňaženka vyžaduje novšiu verziu GameCredits</translation>
-    </message>
-    <message>
-        <source>Wallet needed to be rewritten: restart GameCredits to complete</source>
-        <translation>Bolo potrebné prepísať peňaženku: dokončite reštartovaním GameCredits</translation>
+        <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
+        <translation>Použiť samostatný SOCKS5 proxy server na dosiahnutie počítačov cez skryté služby Tor (predvolené: %s)</translation>
     </message>
     <message>
         <source>Error loading wallet.dat</source>
         <translation>Chyba načítania wallet.dat</translation>
     </message>
     <message>
-        <source>Invalid -proxy address: &apos;%s&apos;</source>
-        <translation>Neplatná adresa proxy: &apos;%s&apos;</translation>
+        <source>Invalid -proxy address: '%s'</source>
+        <translation>Neplatná adresa proxy: '%s'</translation>
     </message>
     <message>
-        <source>Unknown network specified in -onlynet: &apos;%s&apos;</source>
-        <translation>Neznáma sieť upresnená v -onlynet: &apos;%s&apos;</translation>
+        <source>Maintain at most &lt;n&gt; connections to peers (default: %u)</source>
+        <translation>Udržiavať najviac &lt;n&gt; spojení s inými počítačmi (predvolené: %u)</translation>
     </message>
     <message>
-        <source>Unknown -socks proxy version requested: %i</source>
-        <translation>Neznáma verzia -socks proxy požadovaná: %i</translation>
+        <source>Unknown network specified in -onlynet: '%s'</source>
+        <translation>Neznáma sieť upresnená v -onlynet: '%s'</translation>
     </message>
     <message>
-        <source>Cannot resolve -bind address: &apos;%s&apos;</source>
-        <translation>Nemožno rozriešiť -bind adress: &apos;%s&apos;</translation>
+        <source>Cannot resolve -bind address: '%s'</source>
+        <translation>Nemožno rozriešiť -bind adress: '%s'</translation>
     </message>
     <message>
-        <source>Cannot resolve -externalip address: &apos;%s&apos;</source>
-        <translation>Nemožno rozriešiť -externalip address: &apos;%s&apos;</translation>
+        <source>Cannot resolve -externalip address: '%s'</source>
+        <translation>Nemožno rozriešiť -externalip address: '%s'</translation>
     </message>
     <message>
-        <source>Invalid amount for -paytxfee=&lt;amount&gt;: &apos;%s&apos;</source>
-        <translation>Neplatná suma pre -paytxfee=&lt;amount&gt;: &apos;%s&apos;</translation>
-    </message>
-    <message>
-        <source>Invalid amount</source>
-        <translation>Neplatná suma</translation>
+        <source>Invalid amount for -paytxfee=&lt;amount&gt;: '%s'</source>
+        <translation>Neplatná suma pre -paytxfee=&lt;amount&gt;: '%s'</translation>
     </message>
     <message>
         <source>Insufficient funds</source>
@@ -3371,20 +2865,8 @@ The network does not appear to fully agree! Some miners appear to be experiencin
         <translation>Dokončené načítavanie</translation>
     </message>
     <message>
-        <source>To use the %s option</source>
-        <translation>Použiť %s možnosť.</translation>
-    </message>
-    <message>
         <source>Error</source>
         <translation>Chyba</translation>
-    </message>
-    <message>
-        <source>You must set rpcpassword=&lt;password&gt; in the configuration file:
-%s
-If the file does not exist, create it with owner-readable-only file permissions.</source>
-        <translation>Musíš nastaviť rpcpassword=&lt;heslo&gt; v konfiguračnom súbore:
-%s
-Ak súbor neexistuje, vytvor ho s oprávnením pre čítanie len vlastníkom (owner-readable-only)</translation>
     </message>
 </context>
 </TS>

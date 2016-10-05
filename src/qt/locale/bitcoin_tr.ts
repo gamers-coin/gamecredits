@@ -1,46 +1,9 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS language="tr" version="2.1">
-<context>
-    <name>AboutDialog</name>
-    <message>
-        <source>About GameCredits Core</source>
-        <translation>GameCredits Çekirdeği hakkında</translation>
-    </message>
-    <message>
-        <source>&lt;b&gt;GameCredits Core&lt;/b&gt; version</source>
-        <translation>&lt;b&gt;GameCredits Çekirdek&lt;/b&gt; sürümü</translation>
-    </message>
-    <message>
-        <source>
-This is experimental software.
-
-Distributed under the MIT/X11 software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php.
-
-This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit (http://www.openssl.org/) and cryptographic software written by Eric Young (eay@cryptsoft.com) and UPnP software written by Thomas Bernard.</source>
-        <translation>
- Bu yazılım deneme safhasındadır.
-
- MIT/X11 yazılım lisansı kapsamında yayınlanmıştır, COPYING dosyasına ya da http://www.opensource.org/licenses/mit-license.php sayfasına bakınız.
-
- Bu ürün OpenSSL projesi tarafından OpenSSL araç takımı (http://www.openssl.org/) için geliştirilen yazılımlar, Eric Young (eay@cryptsoft.com) tarafından hazırlanmış şifreleme yazılımları ve Thomas Bernard tarafından programlanmış UPnP yazılımı içerir.</translation>
-    </message>
-    <message>
-        <source>Copyright</source>
-        <translation>Telif hakkı</translation>
-    </message>
-    <message>
-        <source>The Bitcoin Core Developers</source>
-        <translation>GameCredits Çekirdeği geliştiricileri</translation>
-    </message>
-    <message>
-        <source>(%1-bit)</source>
-        <translation>(%1-bit)</translation>
-    </message>
-</context>
+<TS language="tr" version="2.0">
 <context>
     <name>AddressBookPage</name>
     <message>
-        <source>Double-click to edit address or label</source>
-        <translation>Adresi ya da etiketi düzenlemek için çift tıklayınız</translation>
+        <source>Right-click to edit address or label</source>
+        <translation>Adresi ya da etiketi düzenlemek için sağ düğme ile tıklayınız.</translation>
     </message>
     <message>
         <source>Create a new address</source>
@@ -64,7 +27,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <source>&amp;Copy Address</source>
-        <translation>Adresi &amp;kopyala</translation>
+        <translation>&amp;Adresi Kopyala</translation>
     </message>
     <message>
         <source>Delete the currently selected address from the list</source>
@@ -96,7 +59,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <source>Sending addresses</source>
-        <translation>Yollama adresleri</translation>
+        <translation>&amp;Gönderme adresleri...</translation>
     </message>
     <message>
         <source>Receiving addresses</source>
@@ -131,8 +94,8 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>Dışa aktarım başarısız oldu</translation>
     </message>
     <message>
-        <source>There was an error trying to save the address list to %1.</source>
-        <translation>Adres listesinin %1 konumuna kaydedilmesi sırasında bir hata meydana geldi.</translation>
+        <source>There was an error trying to save the address list to %1. Please try again.</source>
+        <translation>Adres listesinin %1 konumuna kaydedilmesi sırasında bir hata meydana geldi. Lütfen tekrar deneyin.</translation>
     </message>
 </context>
 <context>
@@ -169,10 +132,6 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>Yeni parolayı tekrarlayınız</translation>
     </message>
     <message>
-        <source>Enter the new passphrase to the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;10 or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
-        <translation>Cüzdanınız için yeni parolayı giriniz.&lt;br/&gt;Lütfen &lt;b&gt;10 ya da daha fazla rastgele karakter&lt;/b&gt; veya &lt;b&gt;sekiz ya da daha fazla kelime&lt;/b&gt; içeren bir parola seçiniz.</translation>
-    </message>
-    <message>
         <source>Encrypt wallet</source>
         <translation>Cüzdanı şifrele</translation>
     </message>
@@ -197,20 +156,20 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>Parolayı değiştir</translation>
     </message>
     <message>
-        <source>Enter the old and new passphrase to the wallet.</source>
-        <translation>Cüzdan için eski ve yeni parolaları giriniz.</translation>
-    </message>
-    <message>
         <source>Confirm wallet encryption</source>
         <translation>Cüzdan şifrelenmesini teyit eder</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR GameCreditsS&lt;/b&gt;!</source>
-        <translation>Uyarı: Eğer cüzdanınızı şifrelerseniz ve parolanızı kaybederseniz, &lt;b&gt;TÜM BİTMARKLERİNİZİ KAYBEDERSİNİZ&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR GAMECREDITS&lt;/b&gt;!</source>
+        <translation>Uyarı: Eğer cüzdanınızı şifrelerseniz ve parolanızı kaybederseniz, &lt;b&gt;TÜM GAMECREDITS KAYBEDERSİNİZ&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Cüzdanınızı şifrelemek istediğinizden emin misiniz?</translation>
+    </message>
+    <message>
+        <source>GameCredits Core will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your gamecredits from being stolen by malware infecting your computer.</source>
+        <translation>Şifreleme işlemini tamamlamak için GameCredits Çekirdeği şimdi kapanacaktır. Cüzdanınızı şifrelemenin, GameCredits bilgisayara bulaşan kötücül bir yazılım tarafından çalınmaya karşı tamamen koruyamayacağını unutmayınız.</translation>
     </message>
     <message>
         <source>IMPORTANT: Any previous backups you have made of your wallet file should be replaced with the newly generated, encrypted wallet file. For security reasons, previous backups of the unencrypted wallet file will become useless as soon as you start using the new, encrypted wallet.</source>
@@ -225,8 +184,12 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>Cüzdan şifrelendi</translation>
     </message>
     <message>
-        <source>GameCredits will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your gamecreditss from being stolen by malware infecting your computer.</source>
-        <translation>Şifreleme işlemini tamamlamak için GameCredits şimdi kapanacaktır. Cüzdanınızı şifrelemenin, GameCreditslerinizin bilgisayara bulaşan kötücül bir yazılım tarafından çalınmaya karşı tamamen koruyamayacağını unutmayınız.</translation>
+        <source>Enter the new passphrase to the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;ten or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
+        <translation>Cüzdan için yeni parolayı giriniz.&lt;br/&gt;Lütfen &lt;b&gt;on ya da daha fazla rastgele karakter&lt;/b&gt; veya &lt;b&gt;sekiz ya da daha fazla kelime&lt;/b&gt; içeren bir parola kullanınız.</translation>
+    </message>
+    <message>
+        <source>Enter the old passphrase and new passphrase to the wallet.</source>
+        <translation>Cüzdan için eski parolayı ve yeni parolayı giriniz.</translation>
     </message>
     <message>
         <source>Wallet encryption failed</source>
@@ -258,7 +221,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
 </context>
 <context>
-    <name>GameCreditsGUI</name>
+    <name>BitcoinGUI</name>
     <message>
         <source>Sign &amp;message...</source>
         <translation>&amp;Mesaj imzala...</translation>
@@ -294,10 +257,6 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <source>Quit application</source>
         <translation>Uygulamadan çık</translation>
-    </message>
-    <message>
-        <source>Show information about GameCredits</source>
-        <translation>GameCredits hakkında bilgi göster</translation>
     </message>
     <message>
         <source>About &amp;Qt</source>
@@ -336,6 +295,10 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>&amp;URI aç...</translation>
     </message>
     <message>
+        <source>GameCredits Core client</source>
+        <translation>GameCredits Çekirdeği istemcisi</translation>
+    </message>
+    <message>
         <source>Importing blocks from disk...</source>
         <translation>Bloklar diskten içe aktarılıyor...</translation>
     </message>
@@ -346,10 +309,6 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <source>Send coins to a GameCredits address</source>
         <translation>Bir GameCredits adresine GameCredits yolla</translation>
-    </message>
-    <message>
-        <source>Modify configuration options for GameCredits</source>
-        <translation>GameCredits seçeneklerinin yapılandırmasını değiştir</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -388,6 +347,10 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>&amp;Al</translation>
     </message>
     <message>
+        <source>Show information about GameCredits Core</source>
+        <translation>GameCredits Çekirdeği hakkında bilgi göster</translation>
+    </message>
+    <message>
         <source>&amp;Show / Hide</source>
         <translation>&amp;Göster / Sakla</translation>
     </message>
@@ -424,20 +387,20 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>Sekme araç çubuğu</translation>
     </message>
     <message>
-        <source>[testnet]</source>
-        <translation>[testnet]</translation>
-    </message>
-    <message>
         <source>GameCredits Core</source>
         <translation>GameCredits Çekirdeği</translation>
     </message>
     <message>
         <source>Request payments (generates QR codes and gamecredits: URIs)</source>
-        <translation>Ödeme talep et (QR kodu ve gamecredits URI&apos;si oluşturur)</translation>
+        <translation>Ödeme talep et (QR kodu ve gamecredits URI'si oluşturur)</translation>
     </message>
     <message>
         <source>&amp;About GameCredits Core</source>
         <translation>GameCredits Çekirdeği &amp;hakkında</translation>
+    </message>
+    <message>
+        <source>Modify configuration options for GameCredits Core</source>
+        <translation>GameCredits Çekirdeği yapılandırma seçeneklerini değiştir</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -459,10 +422,6 @@ This product includes software developed by the OpenSSL Project for use in the O
         <source>Show the GameCredits Core help message to get a list with possible GameCredits command-line options</source>
         <translation>GameCredits komut satırı seçeneklerinin listesini elde etmek için GameCredits Çekirdeği yardım mesajını göster</translation>
     </message>
-    <message>
-        <source>GameCredits client</source>
-        <translation>GameCredits istemcisi</translation>
-    </message>
     <message numerus="yes">
         <source>%n active connection(s) to GameCredits network</source>
         <translation><numerusform>GameCredits şebekesine %n faal bağlantı</numerusform><numerusform>GameCredits şebekesine %n faal bağlantı</numerusform></translation>
@@ -471,13 +430,9 @@ This product includes software developed by the OpenSSL Project for use in the O
         <source>No block source available...</source>
         <translation>Hiçbir blok kaynağı mevcut değil...</translation>
     </message>
-    <message>
-        <source>Processed %1 of %2 (estimated) blocks of transaction history.</source>
-        <translation>Muamele tarihçesinin toplam (tahmini) %2 blokundan %1 blok işlendi.</translation>
-    </message>
-    <message>
-        <source>Processed %1 blocks of transaction history.</source>
-        <translation>Muamele tarihçesinde %1 blok işlendi.</translation>
+    <message numerus="yes">
+        <source>Processed %n block(s) of transaction history.</source>
+        <translation><numerusform>Muamele tarihçesinden %n blok işlendi.</numerusform><numerusform>Muamele tarihçesinden %n blok işlendi</numerusform></translation>
     </message>
     <message numerus="yes">
         <source>%n hour(s)</source>
@@ -532,6 +487,36 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>Aralık kapatılıyor...</translation>
     </message>
     <message>
+        <source>Date: %1
+</source>
+        <translation>Tarih: %1
+</translation>
+    </message>
+    <message>
+        <source>Amount: %1
+</source>
+        <translation>Meblağ: %1
+</translation>
+    </message>
+    <message>
+        <source>Type: %1
+</source>
+        <translation>Tür: %1
+</translation>
+    </message>
+    <message>
+        <source>Label: %1
+</source>
+        <translation>Etiket: %1
+</translation>
+    </message>
+    <message>
+        <source>Address: %1
+</source>
+        <translation>Adres: %1
+</translation>
+    </message>
+    <message>
         <source>Sent transaction</source>
         <translation>Muamele yollandı</translation>
     </message>
@@ -540,28 +525,12 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>Gelen muamele</translation>
     </message>
     <message>
-        <source>Date: %1
-Amount: %2
-Type: %3
-Address: %4
-</source>
-        <translation>Tarih: %1
-Meblağ: %2
-Tür: %3
-Adres: %4
-</translation>
-    </message>
-    <message>
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt;</source>
         <translation>Cüzdan &lt;b&gt;şifrelenmiştir&lt;/b&gt; ve şu anda &lt;b&gt;kilidi açıktır&lt;/b&gt;</translation>
     </message>
     <message>
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</source>
         <translation>Cüzdan &lt;b&gt;şifrelenmiştir&lt;/b&gt; ve şu anda &lt;b&gt;kilitlidir&lt;/b&gt;</translation>
-    </message>
-    <message>
-        <source>A fatal error occurred. GameCredits can no longer continue safely and will quit.</source>
-        <translation>Ciddi bir hata oluştu. GameCredits artık güvenli bir şekilde işlemeye devam edemez ve kapanacaktır.</translation>
     </message>
 </context>
 <context>
@@ -574,8 +543,8 @@ Adres: %4
 <context>
     <name>CoinControlDialog</name>
     <message>
-        <source>Coin Control Address Selection</source>
-        <translation>Para kontrolü adres seçimi</translation>
+        <source>Coin Selection</source>
+        <translation>GameCredits Seçimi</translation>
     </message>
     <message>
         <source>Quantity:</source>
@@ -598,8 +567,8 @@ Adres: %4
         <translation>Ücret:</translation>
     </message>
     <message>
-        <source>Low Output:</source>
-        <translation>Düşük çıktı:</translation>
+        <source>Dust:</source>
+        <translation>Toz:</translation>
     </message>
     <message>
         <source>After Fee:</source>
@@ -626,8 +595,12 @@ Adres: %4
         <translation>Meblağ</translation>
     </message>
     <message>
-        <source>Address</source>
-        <translation>Adres</translation>
+        <source>Received with label</source>
+        <translation>Şu etiketle alındı</translation>
+    </message>
+    <message>
+        <source>Received with address</source>
+        <translation>Şu adresle alındı</translation>
     </message>
     <message>
         <source>Date</source>
@@ -690,8 +663,8 @@ Adres: %4
         <translation>Önceliği kopyala</translation>
     </message>
     <message>
-        <source>Copy low output</source>
-        <translation>Düşük çıktıyı kopyala</translation>
+        <source>Copy dust</source>
+        <translation>Tozu kopyala</translation>
     </message>
     <message>
         <source>Copy change</source>
@@ -742,8 +715,20 @@ Adres: %4
         <translation>boş</translation>
     </message>
     <message>
-        <source>Dust</source>
-        <translation>Toz</translation>
+        <source>This label turns red if the transaction size is greater than 1000 bytes.</source>
+        <translation>Eğer muamele boyutu 1000 bayttan yüksek ise bu etiket kırmızı hale gelir.</translation>
+    </message>
+    <message>
+        <source>This label turns red if the priority is smaller than "medium".</source>
+        <translation>Eğer öncelik "ortadan" düşükse bu etiket kırmızı olur.</translation>
+    </message>
+    <message>
+        <source>This label turns red if any recipient receives an amount smaller than %1.</source>
+        <translation>Eğer herhangi bir alıcı %1'den düşük bir meblağ alırsa bu etiket kırmızı olur.</translation>
+    </message>
+    <message>
+        <source>Can vary +/- %1 satoshi(s) per input.</source>
+        <translation>Giriş başına +/- %1 satoshi olarak değişebilir.</translation>
     </message>
     <message>
         <source>yes</source>
@@ -752,10 +737,6 @@ Adres: %4
     <message>
         <source>no</source>
         <translation>hayır</translation>
-    </message>
-    <message>
-        <source>This label turns red, if the transaction size is greater than 1000 bytes.</source>
-        <translation>Eğer muamele boyutu 1000 bayttan büyükse bu etkiket kırmızı olur.</translation>
     </message>
     <message>
         <source>This means a fee of at least %1 per kB is required.</source>
@@ -768,26 +749,6 @@ Adres: %4
     <message>
         <source>Transactions with higher priority are more likely to get included into a block.</source>
         <translation>Yüksek öncelikli muamelelerin bir bloğa dahil olmaları daha olasıdır.</translation>
-    </message>
-    <message>
-        <source>This label turns red, if the priority is smaller than &quot;medium&quot;.</source>
-        <translation>Eğer öncelik &quot;ortadan&quot; düşükse bu etiket kırmızı olur.</translation>
-    </message>
-    <message>
-        <source>This label turns red, if any recipient receives an amount smaller than %1.</source>
-        <translation>Eğer herhangi bir alıcı %1&apos;den düşük bir meblağ alırsa bu etiket kırmızı olur.</translation>
-    </message>
-    <message>
-        <source>This means a fee of at least %1 is required.</source>
-        <translation>Bu, en az %1 tutarında bir ücret gerektiği anlamına gelir.</translation>
-    </message>
-    <message>
-        <source>Amounts below 0.546 times the minimum relay fee are shown as dust.</source>
-        <translation>Asgari yönlendirme ücretinin 0.546 oranının altındaki meblağlar toz olarak gösterilir.</translation>
-    </message>
-    <message>
-        <source>This label turns red, if the change is smaller than %1.</source>
-        <translation>Eğer para üstü %1&apos;den düşükse bu etiket kırmızı olur.</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -841,12 +802,12 @@ Adres: %4
         <translation>Gönderi adresini düzenle</translation>
     </message>
     <message>
-        <source>The entered address &quot;%1&quot; is already in the address book.</source>
-        <translation>Girilen &quot;%1&quot; adresi hâlihazırda adres defterinde mevcuttur.</translation>
+        <source>The entered address "%1" is already in the address book.</source>
+        <translation>Girilen "%1" adresi hâlihazırda adres defterinde mevcuttur.</translation>
     </message>
     <message>
-        <source>The entered address &quot;%1&quot; is not a valid GameCredits address.</source>
-        <translation>Girilen &quot;%1&quot; adresi geçerli bir GameCredits adresi değildir.</translation>
+        <source>The entered address "%1" is not a valid GameCredits address.</source>
+        <translation>Girilen "%1" adresi geçerli bir GameCredits adresi değildir.</translation>
     </message>
     <message>
         <source>Could not unlock wallet.</source>
@@ -883,10 +844,6 @@ Adres: %4
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>GameCredits Core - Command-line options</source>
-        <translation>GameCredits Çekirdeği - Komut satırı seçenekleri</translation>
-    </message>
-    <message>
         <source>GameCredits Core</source>
         <translation>GameCredits Çekirdeği</translation>
     </message>
@@ -895,36 +852,24 @@ Adres: %4
         <translation>sürüm</translation>
     </message>
     <message>
+        <source>(%1-bit)</source>
+        <translation>(%1-bit)</translation>
+    </message>
+    <message>
+        <source>About GameCredits Core</source>
+        <translation>GameCredits Çekirdeği hakkında</translation>
+    </message>
+    <message>
+        <source>Command-line options</source>
+        <translation>Komut satırı seçenekleri</translation>
+    </message>
+    <message>
         <source>Usage:</source>
         <translation>Kullanım:</translation>
     </message>
     <message>
         <source>command-line options</source>
         <translation>komut satırı seçenekleri</translation>
-    </message>
-    <message>
-        <source>UI options</source>
-        <translation>Kullanıcı arayüzü seçenekleri</translation>
-    </message>
-    <message>
-        <source>Set language, for example &quot;de_DE&quot; (default: system locale)</source>
-        <translation>Lisan belirt, mesela &quot;de_De&quot; (varsayılan: sistem dili)</translation>
-    </message>
-    <message>
-        <source>Start minimized</source>
-        <translation>Küçültülmüş olarak başlat</translation>
-    </message>
-    <message>
-        <source>Set SSL root certificates for payment request (default: -system-)</source>
-        <translation>Ödeme talebi için SSL kök sertifikalarını belirle (varsayılan: -system-)</translation>
-    </message>
-    <message>
-        <source>Show splash screen on startup (default: 1)</source>
-        <translation>Başlatıldığında başlangıç ekranını göster (varsayılan: 1)</translation>
-    </message>
-    <message>
-        <source>Choose data directory on startup (default: 0)</source>
-        <translation>Başlangıçta veri klasörü seç (varsayılan: 0)</translation>
     </message>
 </context>
 <context>
@@ -954,24 +899,24 @@ Adres: %4
         <translation>Özel bir veri klasörü kullan:</translation>
     </message>
     <message>
-        <source>GameCredits</source>
-        <translation>GameCredits</translation>
+        <source>GameCredits Core</source>
+        <translation>GameCredits Çekirdeği</translation>
     </message>
     <message>
-        <source>Error: Specified data directory &quot;%1&quot; can not be created.</source>
-        <translation>Hata: belirtilen &quot;%1&quot; veri klasörü oluşturulamaz.</translation>
+        <source>Error: Specified data directory "%1" cannot be created.</source>
+        <translation>Hata: belirtilen "%1" veri klasörü oluşturulamaz.</translation>
     </message>
     <message>
         <source>Error</source>
         <translation>Hata</translation>
     </message>
-    <message>
-        <source>GB of free space available</source>
-        <translation>GB boş alan mevcuttur</translation>
+    <message numerus="yes">
+        <source>%n GB of free space available</source>
+        <translation><numerusform>%n GB boş alan mevcuttur</numerusform><numerusform>%n GB boş alan mevcuttur</numerusform></translation>
     </message>
-    <message>
-        <source>(of %1GB needed)</source>
-        <translation>(gereken boyut: %1GB)</translation>
+    <message numerus="yes">
+        <source>(of %n GB needed)</source>
+        <translation><numerusform>(gereken %n GB alandan)</numerusform><numerusform>(gereken %n GB alandan)</numerusform></translation>
     </message>
 </context>
 <context>
@@ -982,7 +927,7 @@ Adres: %4
     </message>
     <message>
         <source>Open payment request from URI or file</source>
-        <translation>Dosyadan veya URI&apos;den ödeme talebi aç</translation>
+        <translation>Dosyadan veya URI'den ödeme talebi aç</translation>
     </message>
     <message>
         <source>URI:</source>
@@ -1008,22 +953,6 @@ Adres: %4
         <translation>&amp;Esas ayarlar</translation>
     </message>
     <message>
-        <source>Optional transaction fee per kB that helps make sure your transactions are processed quickly. Most transactions are 1 kB.</source>
-        <translation>Muamelelerin hızlı işlenmesini garantilemeye yardım eden, seçime dayalı kB başı muamele ücreti. Muamelelerin çoğunluğunun boyutu 1 kB&apos;dir.</translation>
-    </message>
-    <message>
-        <source>Pay transaction &amp;fee</source>
-        <translation>Muamele ücreti &amp;öde</translation>
-    </message>
-    <message>
-        <source>Automatically start GameCredits after logging in to the system.</source>
-        <translation>Sistemde oturum açıldığında GameCredits&apos;i otomatik olarak başlat.</translation>
-    </message>
-    <message>
-        <source>&amp;Start GameCredits on system login</source>
-        <translation>GameCredits&apos;i sistem oturumuyla &amp;başlat</translation>
-    </message>
-    <message>
         <source>Size of &amp;database cache</source>
         <translation>&amp;Veritabanı tamponunun boyutu</translation>
     </message>
@@ -1036,24 +965,32 @@ Adres: %4
         <translation>İş parçacıklarını &amp;denetleme betiği sayısı</translation>
     </message>
     <message>
-        <source>Connect to the GameCredits network through a SOCKS proxy.</source>
-        <translation>GameCredits şebekesine bir SOCKS vekil sunucusu vasıtasıyla bağlan.</translation>
+        <source>Accept connections from outside</source>
+        <translation>Dışarıdan gelen bağlantıları kabul et</translation>
     </message>
     <message>
-        <source>&amp;Connect through SOCKS proxy (default proxy):</source>
-        <translation>SOCKS vekil sunucusuyla &amp;bağlan (varsayılan vekil):</translation>
+        <source>Allow incoming connections</source>
+        <translation>Gelen bağlantılara izin ver</translation>
     </message>
     <message>
         <source>IP address of the proxy (e.g. IPv4: 127.0.0.1 / IPv6: ::1)</source>
         <translation>Vekil sunucusunun IP adresi (mesela IPv4: 127.0.0.1 / IPv6: ::1)</translation>
     </message>
     <message>
+        <source>Minimize instead of exit the application when the window is closed. When this option is enabled, the application will be closed only after selecting Exit in the menu.</source>
+        <translation>Pencere kapatıldığında uygulamadan çıkmak yerine uygulamayı küçültür. Bu seçenek etkinleştirildiğinde, uygulama sadece menüden çıkış seçildiğinde kapanacaktır.</translation>
+    </message>
+    <message>
+        <source>The user interface language can be set here. This setting will take effect after restarting GameCredits Core.</source>
+        <translation>Kullanıcı arayüzünün dili burada belirtilebilir. Bu ayar GameCredits Çekirdeği tekrar başlatıldığında etkinleşecektir.</translation>
+    </message>
+    <message>
         <source>Third party URLs (e.g. a block explorer) that appear in the transactions tab as context menu items. %s in the URL is replaced by transaction hash. Multiple URLs are separated by vertical bar |.</source>
-        <translation>Muameleler sekmesinde bağlam menüsü unsurları olarak görünen üçüncü taraf bağlantıları (mesela bir blok tarayıcısı). URL&apos;deki %s, muamele hash değeri ile değiştirilecektir. Birden çok bağlantılar düşey çubuklar | ile ayrılacaktır.</translation>
+        <translation>Muameleler sekmesinde bağlam menüsü unsurları olarak görünen üçüncü taraf bağlantıları (mesela bir blok tarayıcısı). URL'deki %s, muamele hash değeri ile değiştirilecektir. Birden çok bağlantılar düşey çubuklar | ile ayrılacaktır.</translation>
     </message>
     <message>
         <source>Third party transaction URLs</source>
-        <translation>Üçüncü taraf muamele URL&apos;leri</translation>
+        <translation>Üçüncü taraf muamele URL'leri</translation>
     </message>
     <message>
         <source>Active command-line options that override above options:</source>
@@ -1070,6 +1007,14 @@ Adres: %4
     <message>
         <source>&amp;Network</source>
         <translation>&amp;Şebeke</translation>
+    </message>
+    <message>
+        <source>Automatically start GameCredits Core after logging in to the system.</source>
+        <translation>Sistemde oturum açıldığında GameCredits Çekirdeğini otomatik olarak başlat.</translation>
+    </message>
+    <message>
+        <source>&amp;Start GameCredits Core on system login</source>
+        <translation>GameCredits Çekirdeğini sistem oturumuyla &amp;başlat</translation>
     </message>
     <message>
         <source>(0 = auto, &lt;0 = leave that many cores free)</source>
@@ -1104,6 +1049,14 @@ Adres: %4
         <translation>Portları &amp;UPnP kullanarak haritala</translation>
     </message>
     <message>
+        <source>Connect to the GameCredits network through a SOCKS5 proxy.</source>
+        <translation>GameCredits şebekesine SOCKS5 vekil sunucusu vasıtasıyla bağlan.</translation>
+    </message>
+    <message>
+        <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
+        <translation>SOCKS5 vekil sunucusu vasıtasıyla &amp;bağlan (varsayılan vekil sunucusu):</translation>
+    </message>
+    <message>
         <source>Proxy &amp;IP:</source>
         <translation>Vekil &amp;İP:</translation>
     </message>
@@ -1114,14 +1067,6 @@ Adres: %4
     <message>
         <source>Port of the proxy (e.g. 9050)</source>
         <translation>Vekil sunucunun portu (mesela 9050)</translation>
-    </message>
-    <message>
-        <source>SOCKS &amp;Version:</source>
-        <translation>SOCKS &amp;sürümü:</translation>
-    </message>
-    <message>
-        <source>SOCKS version of the proxy (e.g. 5)</source>
-        <translation>Vekil sunucunun SOCKS sürümü (mesela 5)</translation>
     </message>
     <message>
         <source>&amp;Window</source>
@@ -1136,10 +1081,6 @@ Adres: %4
         <translation>İşlem çubuğu yerine sistem çekmecesine &amp;küçült</translation>
     </message>
     <message>
-        <source>Minimize instead of exit the application when the window is closed. When this option is enabled, the application will be closed only after selecting Quit in the menu.</source>
-        <translation>Pencere kapatıldığında uygulamadan çıkmak yerine uygulamayı küçültür. Bu seçenek etkinleştirildiğinde, uygulama sadece menüden çıkış seçildiğinde kapanacaktır.</translation>
-    </message>
-    <message>
         <source>M&amp;inimize on close</source>
         <translation>Kapatma sırasında k&amp;üçült</translation>
     </message>
@@ -1152,24 +1093,12 @@ Adres: %4
         <translation>Kullanıcı arayüzü &amp;lisanı:</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting GameCredits.</source>
-        <translation>Kullanıcı arayüzünün dili burada belirtilebilir. Bu ayar GameCredits tekrar başlatıldığında etkinleşecektir.</translation>
-    </message>
-    <message>
         <source>&amp;Unit to show amounts in:</source>
         <translation>Meblağları göstermek için &amp;birim:</translation>
     </message>
     <message>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
         <translation>GameCredits gönderildiğinde arayüzde gösterilecek varsayılan alt birimi seçiniz.</translation>
-    </message>
-    <message>
-        <source>Whether to show GameCredits addresses in the transaction list or not.</source>
-        <translation>Muamele listesinde GameCredits adreslerinin gösterilip gösterilmeyeceklerini belirler.</translation>
-    </message>
-    <message>
-        <source>&amp;Display addresses in transaction list</source>
-        <translation>Muamele listesinde adresleri &amp;göster</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1200,8 +1129,8 @@ Adres: %4
         <translation>Değişikliklerin uygulanması için istemcinin yeniden başlatılması lazımdır.</translation>
     </message>
     <message>
-        <source>Client will be shutdown, do you want to proceed?</source>
-        <translation>İstemci kapanacaktır, devam etmek istiyor musunuz?</translation>
+        <source>Client will be shut down. Do you want to proceed?</source>
+        <translation>İstemci kapanacaktır. Devam etmek istiyor musunuz?</translation>
     </message>
     <message>
         <source>This change would require a client restart.</source>
@@ -1223,8 +1152,8 @@ Adres: %4
         <translation>Görüntülenen veriler zaman aşımına uğramış olabilir. Bağlantı kurulduğunda cüzdanınız otomatik olarak şebeke ile eşleşir ancak bu işlem henüz tamamlanmamıştır.</translation>
     </message>
     <message>
-        <source>Wallet</source>
-        <translation>Cüzdan</translation>
+        <source>Watch-only:</source>
+        <translation>Sadece-izlenen:</translation>
     </message>
     <message>
         <source>Available:</source>
@@ -1251,6 +1180,10 @@ Adres: %4
         <translation>Oluşturulan bakiye henüz olgunlaşmamıştır</translation>
     </message>
     <message>
+        <source>Balances</source>
+        <translation>Bakiyeler</translation>
+    </message>
+    <message>
         <source>Total:</source>
         <translation>Toplam:</translation>
     </message>
@@ -1259,12 +1192,28 @@ Adres: %4
         <translation>Güncel toplam bakiyeniz</translation>
     </message>
     <message>
-        <source>&lt;b&gt;Recent transactions&lt;/b&gt;</source>
-        <translation>&lt;b&gt;Son muameleler&lt;/b&gt;</translation>
+        <source>Your current balance in watch-only addresses</source>
+        <translation>Sadece izlenen adreslerdeki güncel bakiyeniz</translation>
     </message>
     <message>
-        <source>out of sync</source>
-        <translation>eşleşme dışı</translation>
+        <source>Spendable:</source>
+        <translation>Harcanabilir:</translation>
+    </message>
+    <message>
+        <source>Recent transactions</source>
+        <translation>Son muameleler</translation>
+    </message>
+    <message>
+        <source>Unconfirmed transactions to watch-only addresses</source>
+        <translation>Sadece izlenen adreslere gelen teyit edilmemiş muameleler</translation>
+    </message>
+    <message>
+        <source>Mined balance in watch-only addresses that has not yet matured</source>
+        <translation>Sadece izlenen adreslerin henüz olgunlaşmamış oluşturulan bakiyeleri</translation>
+    </message>
+    <message>
+        <source>Current total balance in watch-only addresses</source>
+        <translation>Sadece izlenen adreslerdeki güncel toplam bakiye</translation>
     </message>
 </context>
 <context>
@@ -1274,8 +1223,20 @@ Adres: %4
         <translation>URI yönetimi</translation>
     </message>
     <message>
-        <source>URI can not be parsed! This can be caused by an invalid GameCredits address or malformed URI parameters.</source>
-        <translation>URI okunamadı! Sebebi geçersiz bir GameCredits adresi veya hatalı URI parametreleri olabilir.</translation>
+        <source>Invalid payment address %1</source>
+        <translation>Geçersiz ödeme adresi %1</translation>
+    </message>
+    <message>
+        <source>Payment request rejected</source>
+        <translation>Ödeme talebi reddedildi</translation>
+    </message>
+    <message>
+        <source>Payment request network doesn't match client network.</source>
+        <translation>Ödeme talebi şebekesi istemci şebekesine denk gelmiyor.</translation>
+    </message>
+    <message>
+        <source>Payment request is not initialized.</source>
+        <translation>Ödeme talebi başlatılmamış.</translation>
     </message>
     <message>
         <source>Requested payment amount of %1 is too small (considered dust).</source>
@@ -1290,40 +1251,52 @@ Adres: %4
         <translation>GameCredits başlatılamadı: tıkla-ve-öde yöneticisi</translation>
     </message>
     <message>
-        <source>Net manager warning</source>
-        <translation>Şebeke yöneticisi uyarısı</translation>
-    </message>
-    <message>
-        <source>Your active proxy doesn&apos;t support SOCKS5, which is required for payment requests via proxy.</source>
-        <translation>Faal vekil sunucunuz, vekil vasıtasıyla ödeme talepleri için gereken SOCKS5&apos;i desteklememektedir.</translation>
-    </message>
-    <message>
         <source>Payment request fetch URL is invalid: %1</source>
-        <translation>Ödeme talebini alma URL&apos;i geçersiz: %1</translation>
+        <translation>Ödeme talebini alma URL'i geçersiz: %1</translation>
+    </message>
+    <message>
+        <source>URI cannot be parsed! This can be caused by an invalid GameCredits address or malformed URI parameters.</source>
+        <translation>URI okunamadı! Sebebi geçersiz bir GameCredits adresi veya hatalı URI parametreleri olabilir.</translation>
     </message>
     <message>
         <source>Payment request file handling</source>
         <translation>Ödeme talebi dosyası yönetimi</translation>
     </message>
     <message>
-        <source>Payment request file can not be read or processed! This can be caused by an invalid payment request file.</source>
+        <source>Payment request file cannot be read! This can be caused by an invalid payment request file.</source>
         <translation>Ödeme talebi okunamaz ya da işlenemez! Bunun sebebi geçersiz bir ödeme talebi dosyası olabilir.</translation>
+    </message>
+    <message>
+        <source>Payment request expired.</source>
+        <translation>Ödeme talebinin ömrü doldu.</translation>
     </message>
     <message>
         <source>Unverified payment requests to custom payment scripts are unsupported.</source>
         <translation>Özel ödeme betiklerine teyit edilmemiş ödeme talepleri desteklenmez.</translation>
     </message>
     <message>
+        <source>Invalid payment request.</source>
+        <translation>Geçersiz ödeme talebi.</translation>
+    </message>
+    <message>
         <source>Refund from %1</source>
         <translation>%1 öğesinden iade</translation>
+    </message>
+    <message>
+        <source>Payment request %1 is too large (%2 bytes, allowed %3 bytes).</source>
+        <translation>%1 ödeme talebi çok büyük (%2 bayt, müsaade edilen %3 bayt).</translation>
+    </message>
+    <message>
+        <source>Payment request DoS protection</source>
+        <translation>Ödeme talebi DoS koruması</translation>
     </message>
     <message>
         <source>Error communicating with %1: %2</source>
         <translation>%1 ile iletişimde hata: %2</translation>
     </message>
     <message>
-        <source>Payment request can not be parsed or processed!</source>
-        <translation>Ödeme talebi ayrıştırılamaz ya da işlenemez!</translation>
+        <source>Payment request cannot be parsed!</source>
+        <translation>Ödeme talebi ayrıştırılamaz!</translation>
     </message>
     <message>
         <source>Bad response from server %1</source>
@@ -1339,30 +1312,57 @@ Adres: %4
     </message>
 </context>
 <context>
+    <name>PeerTableModel</name>
+    <message>
+        <source>User Agent</source>
+        <translation>Kullanıcı Yazılımı</translation>
+    </message>
+    <message>
+        <source>Node/Service</source>
+        <translation>Düğüm/Servis</translation>
+    </message>
+    <message>
+        <source>Ping Time</source>
+        <translation>Ping Zamanı</translation>
+    </message>
+</context>
+<context>
     <name>QObject</name>
     <message>
-        <source>GameCredits</source>
-        <translation>GameCredits</translation>
+        <source>Amount</source>
+        <translation>Meblağ</translation>
     </message>
     <message>
-        <source>Error: Specified data directory &quot;%1&quot; does not exist.</source>
-        <translation>Hata: belirtilen &quot;%1&quot; veri klasörü yoktur.</translation>
+        <source>Enter a GameCredits address (e.g. %1)</source>
+        <translation>Bir GameCredits adresi giriniz (mesela %1)</translation>
     </message>
     <message>
-        <source>Error: Cannot parse configuration file: %1. Only use key=value syntax.</source>
-        <translation>Hata: %1 yapılandırma dosyası ayrıştırılamadı. Sadece anahtar=değer dizimini kullanınız.</translation>
+        <source>%1 d</source>
+        <translation>%1 g</translation>
     </message>
     <message>
-        <source>Error: Invalid combination of -regtest and -testnet.</source>
-        <translation>Hata: -regtest ve -testnet&apos;in geçersiz kombinasyonu.</translation>
+        <source>%1 h</source>
+        <translation>%1 s</translation>
     </message>
     <message>
-        <source>GameCredits Core didn&apos;t yet exit safely...</source>
-        <translation>GameCredits Çekirdeği henüz güvenli bir şekilde çıkış yapmamıştır...</translation>
+        <source>%1 m</source>
+        <translation>%1 d</translation>
     </message>
     <message>
-        <source>Enter a GameCredits address (e.g. bQ3Gyigyd12kJDkhwi9M9QSZ9qu6M4NZzR)</source>
-        <translation>GameCredits adresi giriniz (mesela bQ3Gyigyd12kJDkhwi9M9QSZ9qu6M4NZzR)</translation>
+        <source>%1 s</source>
+        <translation>%1 s</translation>
+    </message>
+    <message>
+        <source>None</source>
+        <translation>Boş</translation>
+    </message>
+    <message>
+        <source>N/A</source>
+        <translation>Mevcut değil</translation>
+    </message>
+    <message>
+        <source>%1 ms</source>
+        <translation>%1 ms</translation>
     </message>
 </context>
 <context>
@@ -1415,6 +1415,10 @@ Adres: %4
         <translation>Kullanılan OpenSSL sürümü</translation>
     </message>
     <message>
+        <source>Using BerkeleyDB version</source>
+        <translation>Kullanılan BerkeleyDB sürümü</translation>
+    </message>
+    <message>
         <source>Startup time</source>
         <translation>Başlama zamanı</translation>
     </message>
@@ -1439,8 +1443,80 @@ Adres: %4
         <translation>Güncel blok sayısı</translation>
     </message>
     <message>
-        <source>Estimated total blocks</source>
-        <translation>Tahmini toplam blok sayısı</translation>
+        <source>Open the GameCredits Core debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Güncel veri klasöründen GameCredits Çekirdeği hata ayıklama kütük dosyasını açar. Büyük kütük dosyaları için bu birkaç saniye alabilir.</translation>
+    </message>
+    <message>
+        <source>Received</source>
+        <translation>Alınan</translation>
+    </message>
+    <message>
+        <source>Sent</source>
+        <translation>Yollanan</translation>
+    </message>
+    <message>
+        <source>&amp;Peers</source>
+        <translation>&amp;Eşler</translation>
+    </message>
+    <message>
+        <source>Select a peer to view detailed information.</source>
+        <translation>Ayrıntılı bilgi görmek için bir eş seçin.</translation>
+    </message>
+    <message>
+        <source>Direction</source>
+        <translation>Yön</translation>
+    </message>
+    <message>
+        <source>Version</source>
+        <translation>Sürüm</translation>
+    </message>
+    <message>
+        <source>User Agent</source>
+        <translation>Kullanıcı Yazılımı</translation>
+    </message>
+    <message>
+        <source>Services</source>
+        <translation>Servisler</translation>
+    </message>
+    <message>
+        <source>Starting Height</source>
+        <translation>Başlama Yüksekliği</translation>
+    </message>
+    <message>
+        <source>Sync Height</source>
+        <translation>Eşleşme Yüksekliği</translation>
+    </message>
+    <message>
+        <source>Ban Score</source>
+        <translation>Yasaklama Skoru</translation>
+    </message>
+    <message>
+        <source>Connection Time</source>
+        <translation>Bağlantı Zamanı</translation>
+    </message>
+    <message>
+        <source>Last Send</source>
+        <translation>Son Gönderme</translation>
+    </message>
+    <message>
+        <source>Last Receive</source>
+        <translation>Son Alma</translation>
+    </message>
+    <message>
+        <source>Bytes Sent</source>
+        <translation>Yollanan Baytlar</translation>
+    </message>
+    <message>
+        <source>Bytes Received</source>
+        <translation>Alınan Baytlar</translation>
+    </message>
+    <message>
+        <source>Ping Time</source>
+        <translation>Ping Zamanı</translation>
+    </message>
+    <message>
+        <source>Time Offset</source>
+        <translation>Saat Farkı</translation>
     </message>
     <message>
         <source>Last block time</source>
@@ -1483,16 +1559,12 @@ Adres: %4
         <translation>Hata ayıklama kütük dosyası</translation>
     </message>
     <message>
-        <source>Open the GameCredits debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Güncel veri klasöründen GameCredits hata ayıklama kütük dosyasını açar. Büyük kütük dosyaları için bu birkaç saniye alabilir.</translation>
-    </message>
-    <message>
         <source>Clear console</source>
         <translation>Konsolu temizle</translation>
     </message>
     <message>
-        <source>Welcome to the GameCredits RPC console.</source>
-        <translation>GameCredits RPC konsoluna hoş geldiniz.</translation>
+        <source>Welcome to the GameCredits Core RPC console.</source>
+        <translation>GameCredits Çekirdeği RPC konsoluna hoş geldiniz.</translation>
     </message>
     <message>
         <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
@@ -1519,16 +1591,28 @@ Adres: %4
         <translation>%1 GB</translation>
     </message>
     <message>
-        <source>%1 m</source>
-        <translation>%1 d</translation>
+        <source>via %1</source>
+        <translation>%1 vasıtasıyla</translation>
     </message>
     <message>
-        <source>%1 h</source>
-        <translation>%1 s</translation>
+        <source>never</source>
+        <translation>asla</translation>
     </message>
     <message>
-        <source>%1 h %2 m</source>
-        <translation>%1 s %2 d</translation>
+        <source>Inbound</source>
+        <translation>Gelen</translation>
+    </message>
+    <message>
+        <source>Outbound</source>
+        <translation>Giden</translation>
+    </message>
+    <message>
+        <source>Unknown</source>
+        <translation>Bilinmiyor</translation>
+    </message>
+    <message>
+        <source>Fetching...</source>
+        <translation>Alınıyor...</translation>
     </message>
 </context>
 <context>
@@ -1622,7 +1706,7 @@ Adres: %4
     </message>
     <message>
         <source>Copy &amp;URI</source>
-        <translation>&amp;URI&apos;yi kopyala</translation>
+        <translation>&amp;URI'yi kopyala</translation>
     </message>
     <message>
         <source>Copy &amp;Address</source>
@@ -1666,7 +1750,7 @@ Adres: %4
     </message>
     <message>
         <source>Error encoding URI into QR Code.</source>
-        <translation>URI&apos;nin QR koduna kodlanmasında hata oluştu.</translation>
+        <translation>URI'nin QR koduna kodlanmasında hata oluştu.</translation>
     </message>
 </context>
 <context>
@@ -1743,10 +1827,6 @@ Adres: %4
         <translation>Ücret:</translation>
     </message>
     <message>
-        <source>Low Output:</source>
-        <translation>Düşük çıktı:</translation>
-    </message>
-    <message>
         <source>After Fee:</source>
         <translation>Ücretten sonra:</translation>
     </message>
@@ -1763,6 +1843,74 @@ Adres: %4
         <translation>Özel para üstü adresi</translation>
     </message>
     <message>
+        <source>Transaction Fee:</source>
+        <translation>Muamele ücreti:</translation>
+    </message>
+    <message>
+        <source>Choose...</source>
+        <translation>Seç...</translation>
+    </message>
+    <message>
+        <source>collapse fee-settings</source>
+        <translation>ücret-ayarlarını-küçült</translation>
+    </message>
+    <message>
+        <source>per kilobyte</source>
+        <translation>kilobayt başı</translation>
+    </message>
+    <message>
+        <source>If the custom fee is set to 1000 satoshis and the transaction is only 250 bytes, then "per kilobyte" only pays 250 satoshis in fee, while "total at least" pays 1000 satoshis. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Eğer özel ücret 1000 satoşi olarak ayarlandıysa ve muamele sadece 250 baytsa, "kilobayt başı" ücret olarak sadece 250 satoşi öder ve "toplam asgari" 1000 satoşi öder. Bir kilobayttan yüksek muameleler için ikisi de kilobayt başı ödeme yapar.</translation>
+    </message>
+    <message>
+        <source>Hide</source>
+        <translation>Sakla</translation>
+    </message>
+    <message>
+        <source>total at least</source>
+        <translation>toplam asgari</translation>
+    </message>
+    <message>
+        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks. But be aware that this can end up in a never confirming transaction once there is more demand for gamecredits transactions than the network can process.</source>
+        <translation>Asgari ücreti ödemek, bloklarda boşluktan daha az muamele hacmi olduğu sürece bir sorun çıkarmaz. Fakat şebekenin işleyecebileceğinden daha çok gamecredits muameleleri talebi olduğunda bunun asla teyit edilmeyen bir muamele olabileceğinin farkında olmalısınız.</translation>
+    </message>
+    <message>
+        <source>(read the tooltip)</source>
+        <translation>(bilgi balonunu oku)</translation>
+    </message>
+    <message>
+        <source>Recommended:</source>
+        <translation>Tavsiye edilen:</translation>
+    </message>
+    <message>
+        <source>Custom:</source>
+        <translation>Özel:</translation>
+    </message>
+    <message>
+        <source>(Smart fee not initialized yet. This usually takes a few blocks...)</source>
+        <translation>(Zeki ücret henüz başlatılmadı. Bu genelde birkaç blok alır...)</translation>
+    </message>
+    <message>
+        <source>Confirmation time:</source>
+        <translation>Teyit süresi:</translation>
+    </message>
+    <message>
+        <source>normal</source>
+        <translation>normal</translation>
+    </message>
+    <message>
+        <source>fast</source>
+        <translation>çabuk</translation>
+    </message>
+    <message>
+        <source>Send as zero-fee transaction if possible</source>
+        <translation>Mümkünse ücretsiz muamele olarak gönder</translation>
+    </message>
+    <message>
+        <source>(confirmation may take longer)</source>
+        <translation>(teyit daha uzun süre alabilir)</translation>
+    </message>
+    <message>
         <source>Send to multiple recipients at once</source>
         <translation>Birçok alıcıya aynı anda gönder</translation>
     </message>
@@ -1773,6 +1921,10 @@ Adres: %4
     <message>
         <source>Clear all fields of the form.</source>
         <translation>Formdaki tüm alanları temizle.</translation>
+    </message>
+    <message>
+        <source>Dust:</source>
+        <translation>Toz:</translation>
     </message>
     <message>
         <source>Clear &amp;All</source>
@@ -1823,10 +1975,6 @@ Adres: %4
         <translation>Önceliği kopyala</translation>
     </message>
     <message>
-        <source>Copy low output</source>
-        <translation>Düşük çıktıyı kopyala</translation>
-    </message>
-    <message>
         <source>Copy change</source>
         <translation>Para üstünü kopyala</translation>
     </message>
@@ -1837,10 +1985,6 @@ Adres: %4
     <message>
         <source>or</source>
         <translation>veya</translation>
-    </message>
-    <message>
-        <source>The recipient address is not valid, please recheck.</source>
-        <translation>Alıcı adresi geçerli değildir, lütfen denetleyiniz.</translation>
     </message>
     <message>
         <source>The amount to pay must be larger than 0.</source>
@@ -1855,16 +1999,32 @@ Adres: %4
         <translation>Toplam, %1 muamele ücreti ilâve edildiğinde bakiyenizi geçmektedir.</translation>
     </message>
     <message>
-        <source>Duplicate address found, can only send to each address once per send operation.</source>
-        <translation>Çift adres bulundu, belli bir gönderi sırasında her adrese sadece tek bir gönderide bulunulabilir.</translation>
-    </message>
-    <message>
         <source>Transaction creation failed!</source>
         <translation>Muamelenin oluşturulması başarısız oldu!</translation>
     </message>
     <message>
         <source>The transaction was rejected! This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
         <translation>Muamele reddedildi! Cüzdanınızdaki madenî paraların bazıları zaten harcanmış olduğunda bu meydana gelebilir. Örneğin wallet.dat dosyasının bir kopyasını kullandıysanız ve kopyada para harcandığında ancak burada harcandığı işaretlenmediğinde.</translation>
+    </message>
+    <message>
+        <source>A fee higher than %1 is considered an absurdly high fee.</source>
+        <translation>%1 tutarından yüksek ücret saçma derecede yüksek bir ücret olarak kabul edilir.</translation>
+    </message>
+    <message>
+        <source>Payment request expired.</source>
+        <translation>Ödeme talebinin ömrü doldu.</translation>
+    </message>
+    <message>
+        <source>Pay only the minimum fee of %1</source>
+        <translation>Sadece asgari ücret olan %1 tutarını öde</translation>
+    </message>
+    <message>
+        <source>The recipient address is not valid. Please recheck.</source>
+        <translation>Alıcı adresi geçerli değildir. Lütfen denetleyiniz.</translation>
+    </message>
+    <message>
+        <source>Duplicate address found: addresses should only be used once each.</source>
+        <translation>Çift adres bulundu: adresler herbiri için sadece bir kez kullanılmalıdır.</translation>
     </message>
     <message>
         <source>Warning: Invalid GameCredits address</source>
@@ -1879,20 +2039,16 @@ Adres: %4
         <translation>Uyarı: geçersiz para üstü adresi</translation>
     </message>
     <message>
+        <source>Copy dust</source>
+        <translation>Tozu kopyala</translation>
+    </message>
+    <message>
         <source>Are you sure you want to send?</source>
         <translation>Göndermek istediğinizden emin misiniz?</translation>
     </message>
     <message>
         <source>added as transaction fee</source>
         <translation>muamele ücreti olarak eklendi</translation>
-    </message>
-    <message>
-        <source>Payment request expired</source>
-        <translation>Ödeme talebinin ömrü doldu</translation>
-    </message>
-    <message>
-        <source>Invalid payment address %1</source>
-        <translation>Geçersiz ödeme adresi %1</translation>
     </message>
 </context>
 <context>
@@ -1904,10 +2060,6 @@ Adres: %4
     <message>
         <source>Pay &amp;To:</source>
         <translation>&amp;Şu adrese öde:</translation>
-    </message>
-    <message>
-        <source>The address to send the payment to (e.g. bQ3Gyigyd12kJDkhwi9M9QSZ9qu6M4NZzR)</source>
-        <translation>Ödemenin gönderileceği adres (mesela bQ3Gyigyd12kJDkhwi9M9QSZ9qu6M4NZzR)</translation>
     </message>
     <message>
         <source>Enter a label for this address to add it to your address book</source>
@@ -1926,6 +2078,10 @@ Adres: %4
         <translation>Bu, normal bir ödemedir.</translation>
     </message>
     <message>
+        <source>The GameCredits address to send the payment to</source>
+        <translation>Ödemenin yollanacağı GameCredits adresi</translation>
+    </message>
+    <message>
         <source>Alt+A</source>
         <translation>Alt+A</translation>
     </message>
@@ -1942,12 +2098,24 @@ Adres: %4
         <translation>Bu unsuru kaldır</translation>
     </message>
     <message>
+        <source>The fee will be deducted from the amount being sent. The recipient will receive less gamecredits than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
+        <translation>Ücret yollanan meblağdan alınacaktır. Alıcı meblağ alanında girdiğinizden daha az gamecredits alacaktır.  Eğer birden çok alıcı seçiliyse ücret eşit olarak bölünecektir.</translation>
+    </message>
+    <message>
+        <source>S&amp;ubtract fee from amount</source>
+        <translation>Ücreti meblağdan düş</translation>
+    </message>
+    <message>
         <source>Message:</source>
         <translation>Mesaj:</translation>
     </message>
     <message>
-        <source>This is a verified payment request.</source>
-        <translation>Bu, teyit edilmiş bir ödeme talebidir.</translation>
+        <source>This is an unauthenticated payment request.</source>
+        <translation>Bu, kimliği doğrulanmamış bir ödeme talebidir.</translation>
+    </message>
+    <message>
+        <source>This is an authenticated payment request.</source>
+        <translation>Bu, kimliği doğrulanmış bir ödeme talebidir.</translation>
     </message>
     <message>
         <source>Enter a label for this address to add it to the list of used addresses</source>
@@ -1955,11 +2123,7 @@ Adres: %4
     </message>
     <message>
         <source>A message that was attached to the gamecredits: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the GameCredits network.</source>
-        <translation>GameCredits: URI&apos;siyle ilişkili ve bilginiz için muameleyle saklanacak bir mesaj. Not: Bu mesaj GameCredits şebekesi üzerinden gönderilmeyecektir.</translation>
-    </message>
-    <message>
-        <source>This is an unverified payment request.</source>
-        <translation>Bu, teyit edilmemiş bir ödeme talebidir.</translation>
+        <translation>GameCredits: URI'siyle ilişkili ve bilginiz için muameleyle saklanacak bir mesaj. Not: Bu mesaj GameCredits şebekesi üzerinden gönderilmeyecektir.</translation>
     </message>
     <message>
         <source>Pay To:</source>
@@ -1992,12 +2156,12 @@ Adres: %4
         <translation>Mesaj &amp;imzala</translation>
     </message>
     <message>
-        <source>You can sign messages with your addresses to prove you own them. Be careful not to sign anything vague, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
-        <translation>Bir adresin sizin olduğunu ispatlamak için adresinizle mesaj imzalayabilirsiniz. Oltalama saldırılarının kimliğinizi imzanızla elde etmeyi deneyebilecekleri için belirsiz hiçbir şey imzalamamaya dikkat ediniz. Sadece ayrıntılı açıklaması olan ve tümüne katıldığınız ifadeleri imzalayınız.</translation>
+        <source>You can sign messages/agreements with your addresses to prove you can receive gamecredits sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
+        <translation>Adreslerinize yollanan gamecredits alabileceğiniz ispatlamak için adreslerinizle mesaj/anlaşma imzalayabilirsiniz. Oltalama saldırılarının kimliğinizi imzanızla elde etmeyi deneyebilecekleri için belirsiz ya da rastgele hiçbir şey imzalamamaya dikkat ediniz. Sadece ayrıntılı açıklaması olan ve tümüne katıldığınız ifadeleri imzalayınız.</translation>
     </message>
     <message>
-        <source>The address to sign the message with (e.g. bQ3Gyigyd12kJDkhwi9M9QSZ9qu6M4NZzR)</source>
-        <translation>Mesajın imzalanmasında kullanılacak adres (mesela bQ3Gyigyd12kJDkhwi9M9QSZ9qu6M4NZzR)</translation>
+        <source>The GameCredits address to sign the message with</source>
+        <translation>Mesajın imzalanmasında kullanılacak GameCredits adresi</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2048,12 +2212,12 @@ Adres: %4
         <translation>Mesaj &amp;kontrol et</translation>
     </message>
     <message>
-        <source>Enter the signing address, message (ensure you copy line breaks, spaces, tabs, etc. exactly) and signature below to verify the message. Be careful not to read more into the signature than what is in the signed message itself, to avoid being tricked by a man-in-the-middle attack.</source>
-        <translation>İmza için kullanılan adresi, mesajı (satır sonları, boşluklar, sekmeler vs. karakterleri tam olarak kopyaladığınızdan emin olunuz) ve imzayı aşağıda giriniz. Bir ortadaki adam saldırısı tarafından kandırılmaya mâni olmak için imzadan, imzalı mesajın içeriğini aşan bir anlam çıkarmamaya dikkat ediniz.</translation>
+        <source>Enter the receiver's address, message (ensure you copy line breaks, spaces, tabs, etc. exactly) and signature below to verify the message. Be careful not to read more into the signature than what is in the signed message itself, to avoid being tricked by a man-in-the-middle attack. Note that this only proves the signing party receives with the address, it cannot prove sendership of any transaction!</source>
+        <translation>Alıcının adresini, mesajı (satır sonları, boşluklar, sekmeler vs. karakterleri tam olarak kopyaladığınızdan emin olunuz) ve imzayı aşağıda giriniz. Bir ortadaki adam saldırısı tarafından kandırılmaya mâni olmak için imzadan, imzalı mesajın içeriğini aşan bir anlam çıkarmamaya dikkat ediniz. Bunun sadece imzalayan tarafın adres ile alım yapabildiğini ispatladığını ve herhangi bir muamelenin gönderi tarafını kanıtlayamayacağını unutmayınız!</translation>
     </message>
     <message>
-        <source>The address the message was signed with (e.g. bQ3Gyigyd12kJDkhwi9M9QSZ9qu6M4NZzR)</source>
-        <translation>Mesajı imzalamak için kullanılmış olan adres (mesela bQ3Gyigyd12kJDkhwi9M9QSZ9qu6M4NZzR)</translation>
+        <source>The GameCredits address the message was signed with</source>
+        <translation>Mesajın imzalanmasında kullanılan GameCredits adresi</translation>
     </message>
     <message>
         <source>Verify the message to ensure it was signed with the specified GameCredits address</source>
@@ -2068,12 +2232,8 @@ Adres: %4
         <translation>Tüm mesaj kontrolü alanlarını sıfırla</translation>
     </message>
     <message>
-        <source>Enter a GameCredits address (e.g. bQ3Gyigyd12kJDkhwi9M9QSZ9qu6M4NZzR)</source>
-        <translation>GameCredits adresi giriniz (mesela bQ3Gyigyd12kJDkhwi9M9QSZ9qu6M4NZzR)</translation>
-    </message>
-    <message>
-        <source>Click &quot;Sign Message&quot; to generate signature</source>
-        <translation>İmzayı oluşturmak için &quot;Mesaj İmzala&quot; unsurunu tıklayın</translation>
+        <source>Click "Sign Message" to generate signature</source>
+        <translation>İmzayı oluşturmak için "Mesaj İmzala" unsurunu tıklayın</translation>
     </message>
     <message>
         <source>The entered address is invalid.</source>
@@ -2131,7 +2291,7 @@ Adres: %4
         <translation>GameCredits Çekirdeği</translation>
     </message>
     <message>
-        <source>The Bitcoin Core Developers</source>
+        <source>The GameCredits Core developers</source>
         <translation>GameCredits Çekirdeği geliştiricileri</translation>
     </message>
     <message>
@@ -2201,6 +2361,10 @@ Adres: %4
         <translation>kendi adresiniz</translation>
     </message>
     <message>
+        <source>watch-only</source>
+        <translation>sadece-izlenen</translation>
+    </message>
+    <message>
         <source>label</source>
         <translation>etiket</translation>
     </message>
@@ -2219,6 +2383,14 @@ Adres: %4
     <message>
         <source>Debit</source>
         <translation>Gelir</translation>
+    </message>
+    <message>
+        <source>Total debit</source>
+        <translation>Toplam gider</translation>
+    </message>
+    <message>
+        <source>Total credit</source>
+        <translation>Toplam gelir</translation>
     </message>
     <message>
         <source>Transaction fee</source>
@@ -2245,8 +2417,8 @@ Adres: %4
         <translation>Tüccar</translation>
     </message>
     <message>
-        <source>Generated coins must mature %1 blocks before they can be spent. When you generated this block, it was broadcast to the network to be added to the block chain. If it fails to get into the chain, its state will change to &quot;not accepted&quot; and it won&apos;t be spendable. This may occasionally happen if another node generates a block within a few seconds of yours.</source>
-        <translation>Oluşturulan gamecredits&apos;lerin harcanabilmelerinden önce %1 blok beklemeleri gerekmektedir. Bu blok, oluşturduğunuzda, blok zincirine eklenmesi için ağda yayınlandı. Zincire eklenmesi başarısız olursa, durumu &quot;kabul edilmedi&quot; olarak değiştirilecek ve harcanamayacaktır. Bu, bazen başka bir düğüm sizden birkaç saniye önce ya da sonra blok oluşturursa meydana gelebilir.</translation>
+        <source>Generated coins must mature %1 blocks before they can be spent. When you generated this block, it was broadcast to the network to be added to the block chain. If it fails to get into the chain, its state will change to "not accepted" and it won't be spendable. This may occasionally happen if another node generates a block within a few seconds of yours.</source>
+        <translation>Oluşturulan gamecredits harcanabilmelerinden önce %1 blok beklemeleri gerekmektedir. Bu blok, oluşturduğunuzda, blok zincirine eklenmesi için ağda yayınlandı. Zincire eklenmesi başarısız olursa, durumu "kabul edilmedi" olarak değiştirilecek ve harcanamayacaktır. Bu, bazen başka bir düğüm sizden birkaç saniye önce ya da sonra blok oluşturursa meydana gelebilir.</translation>
     </message>
     <message>
         <source>Debug information</source>
@@ -2307,14 +2479,6 @@ Adres: %4
         <translation>Tür</translation>
     </message>
     <message>
-        <source>Address</source>
-        <translation>Adres</translation>
-    </message>
-    <message>
-        <source>Amount</source>
-        <translation>Meblağ</translation>
-    </message>
-    <message>
         <source>Immature (%1 confirmations, will be available after %2)</source>
         <translation>Olgunlaşmamış (%1 teyit, %2 teyit ardından kullanılabilir olacaktır)</translation>
     </message>
@@ -2341,6 +2505,10 @@ Adres: %4
     <message>
         <source>Offline</source>
         <translation>Çevrim dışı</translation>
+    </message>
+    <message>
+        <source>Label</source>
+        <translation>Etiket</translation>
     </message>
     <message>
         <source>Unconfirmed</source>
@@ -2375,6 +2543,10 @@ Adres: %4
         <translation>Madenden çıkarılan</translation>
     </message>
     <message>
+        <source>watch-only</source>
+        <translation>sadece-izlenen</translation>
+    </message>
+    <message>
         <source>(n/a)</source>
         <translation>(mevcut değil)</translation>
     </message>
@@ -2391,8 +2563,12 @@ Adres: %4
         <translation>Muamele türü.</translation>
     </message>
     <message>
-        <source>Destination address of transaction.</source>
-        <translation>Muamelenin alıcı adresi.</translation>
+        <source>Whether or not a watch-only address is involved in this transaction.</source>
+        <translation>Bu muamelede sadece izlenen bir adresin bulunup bulunmadığı.</translation>
+    </message>
+    <message>
+        <source>User-defined intent/purpose of the transaction.</source>
+        <translation>Muamelenin kullanıcı tanımlı niyeti/amacı.</translation>
     </message>
     <message>
         <source>Amount removed from or added to balance.</source>
@@ -2486,6 +2662,10 @@ Adres: %4
         <translation>Muamele tarihçesini dışa aktar</translation>
     </message>
     <message>
+        <source>Watch-only</source>
+        <translation>Sadece izlenen</translation>
+    </message>
+    <message>
         <source>Exporting Failed</source>
         <translation>Dışa aktarım başarısız oldu</translation>
     </message>
@@ -2526,10 +2706,6 @@ Adres: %4
         <translation>Adres</translation>
     </message>
     <message>
-        <source>Amount</source>
-        <translation>Meblağ</translation>
-    </message>
-    <message>
         <source>ID</source>
         <translation>Tanımlayıcı</translation>
     </message>
@@ -2540,6 +2716,13 @@ Adres: %4
     <message>
         <source>to</source>
         <translation>ilâ</translation>
+    </message>
+</context>
+<context>
+    <name>UnitDisplayStatusBarControl</name>
+    <message>
+        <source>Unit to show amounts in. Click to select another unit.</source>
+        <translation>Meblağları göstermek için birim. Başka bir birim seçmek için tıklayınız.</translation>
     </message>
 </context>
 <context>
@@ -2594,40 +2777,12 @@ Adres: %4
 <context>
     <name>gamecredits-core</name>
     <message>
-        <source>Usage:</source>
-        <translation>Kullanım:</translation>
-    </message>
-    <message>
-        <source>List commands</source>
-        <translation>Komutları listele</translation>
-    </message>
-    <message>
-        <source>Get help for a command</source>
-        <translation>Bir komut için yardım al</translation>
-    </message>
-    <message>
         <source>Options:</source>
         <translation>Seçenekler:</translation>
     </message>
     <message>
-        <source>Specify configuration file (default: gamecredits.conf)</source>
-        <translation>Yapılandırma dosyası belirt (varsayılan: gamecredits.conf)</translation>
-    </message>
-    <message>
-        <source>Specify pid file (default: gamecreditsd.pid)</source>
-        <translation>Pid dosyası belirt (varsayılan: gamecreditsd.pid)</translation>
-    </message>
-    <message>
         <source>Specify data directory</source>
         <translation>Veri dizinini belirt</translation>
-    </message>
-    <message>
-        <source>Listen for connections on &lt;port&gt; (default: 40002 or testnet: 50001)</source>
-        <translation>Bağlantılar için dinlenecek &lt;port&gt; (varsayılan: 40002 ya da testnet: 50001)</translation>
-    </message>
-    <message>
-        <source>Maintain at most &lt;n&gt; connections to peers (default: 125)</source>
-        <translation>Eşler ile en çok &lt;n&gt; adet bağlantı kur (varsayılan: 125)</translation>
     </message>
     <message>
         <source>Connect to a node to retrieve peer addresses, and disconnect</source>
@@ -2638,28 +2793,8 @@ Adres: %4
         <translation>Kendi genel adresinizi tanımlayın</translation>
     </message>
     <message>
-        <source>Threshold for disconnecting misbehaving peers (default: 100)</source>
-        <translation>Aksaklık gösteren eşlerle bağlantıyı kesme sınırı (varsayılan: 100)</translation>
-    </message>
-    <message>
-        <source>Number of seconds to keep misbehaving peers from reconnecting (default: 86400)</source>
-        <translation>Aksaklık gösteren eşlerle yeni bağlantıları engelleme süresi, saniye olarak (varsayılan: 86400)</translation>
-    </message>
-    <message>
-        <source>An error occurred while setting up the RPC port %u for listening on IPv4: %s</source>
-        <translation>IPv4 üzerinde dinlemek için %u numaralı RPC portunun kurulumu sırasında hata meydana geldi: %s</translation>
-    </message>
-    <message>
-        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: 40001 or testnet: 50000)</source>
-        <translation>JSON-RPC bağlantılarını &lt;port&gt; üzerinde dinle (varsayılan: 40001 veya tesnet: 50000)</translation>
-    </message>
-    <message>
         <source>Accept command line and JSON-RPC commands</source>
-        <translation>Konut satırı ve JSON-RPC komutlarını kabul et</translation>
-    </message>
-    <message>
-        <source>GameCredits Core RPC client version</source>
-        <translation>GameCredits Çekirdeği RPC istemci sürümü</translation>
+        <translation>Komut satırı ve JSON-RPC komutlarını kabul et</translation>
     </message>
     <message>
         <source>Run in the background as a daemon and accept commands</source>
@@ -2674,92 +2809,32 @@ Adres: %4
         <translation>Dışarıdan gelen bağlantıları kabul et (varsayılan: -proxy veya -connect yoksa 1)</translation>
     </message>
     <message>
-        <source>%s, you must set a rpcpassword in the configuration file:
-%s
-It is recommended you use the following random password:
-rpcuser=gamecreditsrpc
-rpcpassword=%s
-(you do not need to remember this password)
-The username and password MUST NOT be the same.
-If the file does not exist, create it with owner-readable-only file permissions.
-It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;GameCredits Alert&quot; admin@foo.com
-</source>
-        <translation>%s, şu yapılandırma dosyasında rpc parolası belirtmeniz gerekir:
-%s
-Aşağıdaki rastgele oluşturulan parolayı kullanmanız tavsiye edilir:
-rpcuser=gamecreditsrpc
-rpcpassword=%s
-(bu parolayı hatırlamanız gerekli değildir)
-Kullanıcı ismi ile parolanın FARKLI olmaları gerekir.
-Dosya mevcut değilse, sadece sahibi için okumayla sınırlı izin ile oluşturunuz.
-Sorunlar hakkında bildiri almak için alertnotify unsurunu ayarlamanız tavsiye edilir;
-mesela: alertnotify=echo %%s | mail -s &quot;GameCredits Alert&quot; admin@foo.com
-</translation>
-    </message>
-    <message>
-        <source>Acceptable ciphers (default: TLSv1.2+HIGH:TLSv1+HIGH:!SSLv2:!aNULL:!eNULL:!3DES:@STRENGTH)</source>
-        <translation>Kabul edilebilir şifreler (varsayılan: TLSv1.2+HIGH:TLSv1+HIGH:!SSLv2:!aNULL:!eNULL:!3DES:@STRENGTH)</translation>
-    </message>
-    <message>
-        <source>An error occurred while setting up the RPC port %u for listening on IPv6, falling back to IPv4: %s</source>
-        <translation>IPv6 üzerinde dinlemek için %u numaralı RPC portu kurulurken bir hata meydana geldi, IPv4&apos;e dönülüyor: %s</translation>
-    </message>
-    <message>
         <source>Bind to given address and always listen on it. Use [host]:port notation for IPv6</source>
         <translation>Belirtilen adrese bağlan ve daima ondan dinle. IPv6 için [makine]:port yazımını kullanınız</translation>
     </message>
     <message>
-        <source>Continuously rate-limit free transactions to &lt;n&gt;*1000 bytes per minute (default:15)</source>
-        <translation>Devamlı olarak ücretsiz muameleleri dakikada &lt;n&gt;*1000 bayt olarak sınırla (varsayılan: 15)</translation>
+        <source>Delete all wallet transactions and only recover those parts of the blockchain through -rescan on startup</source>
+        <translation>Tüm cüzdan muamelelerini sil ve başlangıçta -rescan ile sadece blok zincirinin parçası olanları geri getir</translation>
     </message>
     <message>
-        <source>Enter regression test mode, which uses a special chain in which blocks can be solved instantly. This is intended for regression testing tools and app development.</source>
-        <translation>Anında çözümlenebilen bloklar içeren ve özel zincir kullanan regresyon test kipine gir. Bu, uygulama geliştirme ve regresyon testi araçları için tasarlanmıştır.</translation>
-    </message>
-    <message>
-        <source>Enter regression test mode, which uses a special chain in which blocks can be solved instantly.</source>
-        <translation>Blokların anında çözülebileceği özel bir zincir kullanan regresyon deneme kipine gir.</translation>
-    </message>
-    <message>
-        <source>Error: Listening for incoming connections failed (listen returned error %d)</source>
-        <translation>Hata: İçeri gelen bağlantıların dinlenmesi başarısız oldu (dinleme %d hatası verdi)</translation>
-    </message>
-    <message>
-        <source>Error: The transaction was rejected! This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
-        <translation>Hata: Muamele reddedildi! Cüzdanınızdaki madenî paraların bazıları zaten harcanmış olduğunda bu meydana gelebilir. Örneğin wallet.dat dosyasının bir kopyasını kullandıysanız ve kopyada para harcandığında ancak burada harcandığı işaretlenmediğinde.</translation>
-    </message>
-    <message>
-        <source>Error: This transaction requires a transaction fee of at least %s because of its amount, complexity, or use of recently received funds!</source>
-        <translation>Hata: Muamelenin meblağı, karmaşıklığı ya da yakın geçmişte alınan fonların kullanılması nedeniyle bu muamele en az %s tutarında ücret gerektirmektedir!</translation>
+        <source>Distributed under the MIT software license, see the accompanying file COPYING or &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</source>
+        <translation>MIT yazılım lisansı kapsamında yayınlanmıştır, ekteki COPYING dosyasına ya da &lt;http://www.opensource.org/licenses/mit-license.php&gt; adresine bakınız.</translation>
     </message>
     <message>
         <source>Execute command when a wallet transaction changes (%s in cmd is replaced by TxID)</source>
-        <translation>Bir cüzdan muamelesi değiştiğinde komutu çalıştır (komuttaki %s TxID ile değiştirilecektir)</translation>
+        <translation>Bir cüzdan muamelesi değiştiğinde komutu çalıştır (komuttaki %s muamele kimliği ile değiştirilecektir)</translation>
     </message>
     <message>
-        <source>Fees smaller than this are considered zero fee (for transaction creation) (default:</source>
-        <translation>Bundan düşük ücretler sıfır değerinde sayılır (muamele oluşturulması için) (varsayılan:</translation>
+        <source>Maximum total fees to use in a single wallet transaction; setting this too low may abort large transactions (default: %s)</source>
+        <translation>Tek cüzdan muamelesinde kullanılacak azami toplam ücret; bunu çok düşük olarak ayarlamak büyük muameleleri iptal edebilir (varsayılan: %s)</translation>
     </message>
     <message>
-        <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: 100)</source>
-        <translation>Veritabanı etkinliğini bellekten disk kütüğüne her &lt;n&gt; megabaytta aktar (varsayılan: 100)</translation>
-    </message>
-    <message>
-        <source>How thorough the block verification of -checkblocks is (0-4, default: 3)</source>
-        <translation>-checkblocks&apos;un blok kontrolünün ne kadar kapsamlı olacağı (0 ilâ 4, varsayılan: 3)</translation>
-    </message>
-    <message>
-        <source>In this mode -genproclimit controls how many blocks are generated immediately.</source>
-        <translation>Bu kipte -genproclimit kaç sayıda bloğun anında oluşturulduğunu kontrol eder.</translation>
+        <source>Reduce storage requirements by pruning (deleting) old blocks. This mode disables wallet support and is incompatible with -txindex. Warning: Reverting this setting requires re-downloading the entire blockchain. (default: 0 = disable pruning blocks, &gt;%u = target size in MiB to use for block files)</source>
+        <translation>Depolama gerekliliğini eski blokları silerek düşür. Bu kip cüzdan desteğini devre dışı bırakır ve -txindex ile uyumsuzdur. İkaz: Bu ayarı geri almak tüm blok zincirini yeniden indirmeyi gerektirir. (varsayılan: 0 = blokları silmeyi devre dışı bırak, &gt;%u = MB olarak blok dosyaları için kullanılacak hedef boyut)</translation>
     </message>
     <message>
         <source>Set the number of script verification threads (%u to %d, 0 = auto, &lt;0 = leave that many cores free, default: %d)</source>
         <translation>Betik kontrolü iş parçacıklarının sayısını belirler (%u ilâ %d, 0 = otomatik, &lt;0 = bu sayıda çekirdeği kullanma, varsayılan: %d)</translation>
-    </message>
-    <message>
-        <source>Set the processor limit for when generation is on (-1 = unlimited, default: -1)</source>
-        <translation>Oluşturma etkinken işlemci sınırını belirler (-1 = sınırsız, varsayılan: -1)</translation>
     </message>
     <message>
         <source>This is a pre-release test build - use at your own risk - do not use for mining or merchant applications</source>
@@ -2770,16 +2845,8 @@ mesela: alertnotify=echo %%s | mail -s &quot;GameCredits Alert&quot; admin@foo.c
         <translation>Bu bilgisayarda %s unsuruna bağlanılamadı. GameCredits Çekirdeği muhtemelen hâlihazırda çalışmaktadır.</translation>
     </message>
     <message>
-        <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: -proxy)</source>
-        <translation>Eşlere gizli Tor servisleri ile ulaşmak için ayrı SOCKS5 vekil sunucusu kullan (varsayılan: -proxy)</translation>
-    </message>
-    <message>
         <source>Warning: -paytxfee is set very high! This is the transaction fee you will pay if you send a transaction.</source>
         <translation>Uyarı: -paytxfee çok yüksek bir değere ayarlanmış! Bu, muamele gönderirseniz ödeyeceğiniz muamele ücretidir.</translation>
-    </message>
-    <message>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong GameCredits will not work properly.</source>
-        <translation>Uyarı: Lütfen bilgisayarınızın tarih ve saatinin doğru olup olmadığını kontrol ediniz! Saatiniz doğru değilse GameCredits gerektiği gibi çalışamaz.</translation>
     </message>
     <message>
         <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
@@ -2798,12 +2865,12 @@ mesela: alertnotify=echo %%s | mail -s &quot;GameCredits Alert&quot; admin@foo.c
         <translation>Uyarı: wallet.dat bozuk, veriler geri kazanıldı! Özgün wallet.dat, wallet.{zamandamgası}.bak olarak %s klasörüne kaydedildi; bakiyeniz ya da muameleleriniz yanlışsa bir yedeklemeden tekrar yüklemeniz gerekir.</translation>
     </message>
     <message>
-        <source>(default: 1)</source>
-        <translation>(varsayılan: 1)</translation>
+        <source>Whitelist peers connecting from the given netmask or IP address. Can be specified multiple times.</source>
+        <translation>Belirtilen ağ maskesi ya da IP adresinden bağlanan eşleri beyaz listeye al. Birden fazla kez belirtilebilir.</translation>
     </message>
     <message>
-        <source>(default: wallet.dat)</source>
-        <translation>(varsayılan: wallet.dat)</translation>
+        <source>(default: 1)</source>
+        <translation>(varsayılan: 1)</translation>
     </message>
     <message>
         <source>&lt;category&gt; can be:</source>
@@ -2814,28 +2881,12 @@ mesela: alertnotify=echo %%s | mail -s &quot;GameCredits Alert&quot; admin@foo.c
         <translation>Bozuk bir wallet.dat dosyasından özel anahtarları geri kazanmayı dene</translation>
     </message>
     <message>
-        <source>GameCredits Core Daemon</source>
-        <translation>GameCredits Çekirdek servisi</translation>
-    </message>
-    <message>
         <source>Block creation options:</source>
         <translation>Blok oluşturma seçenekleri:</translation>
     </message>
     <message>
-        <source>Clear list of wallet transactions (diagnostic tool; implies -rescan)</source>
-        <translation>Cüzdanın muamele listesini temizle (tanı aracı; -rescan ima eder)</translation>
-    </message>
-    <message>
         <source>Connect only to the specified node(s)</source>
         <translation>Sadece belirtilen düğüme veya düğümlere bağlan</translation>
-    </message>
-    <message>
-        <source>Connect through SOCKS proxy</source>
-        <translation>SOCKS vekil sunucusuyla bağlan</translation>
-    </message>
-    <message>
-        <source>Connect to JSON-RPC on &lt;port&gt; (default: 40001 or testnet: 50000)</source>
-        <translation>&lt;port&gt; numarasında JSON-RPC&apos;ye bağlan (varsayılan: 40001 veya testnet: 50000)</translation>
     </message>
     <message>
         <source>Connection options:</source>
@@ -2848,14 +2899,6 @@ mesela: alertnotify=echo %%s | mail -s &quot;GameCredits Alert&quot; admin@foo.c
     <message>
         <source>Debugging/Testing options:</source>
         <translation>Hata ayıklama/deneme seçenekleri:</translation>
-    </message>
-    <message>
-        <source>Disable safemode, override a real safe mode event (default: 0)</source>
-        <translation>Güvenli kipi devre dışı bırak, gerçek bir güvenli olayı geçersiz kıl (varsayılan: 0)</translation>
-    </message>
-    <message>
-        <source>Discover own IP address (default: 1 when listening and no -externalip)</source>
-        <translation>Kendi IP adresini keşfet (varsayılan: dinlenildiğinde ve -externalip yoksa 1)</translation>
     </message>
     <message>
         <source>Do not load the wallet and disable wallet RPC calls</source>
@@ -2882,84 +2925,16 @@ mesela: alertnotify=echo %%s | mail -s &quot;GameCredits Alert&quot; admin@foo.c
         <translation>Blok veritabanının açılışı sırasında hata</translation>
     </message>
     <message>
+        <source>Error: A fatal internal error occured, see debug.log for details</source>
+        <translation>Hata: Ölümcül dahili bir hata meydana geldi, ayrıntılar için debug.log dosyasına bakınız</translation>
+    </message>
+    <message>
         <source>Error: Disk space is low!</source>
         <translation>Hata: Disk alanı düşük!</translation>
     </message>
     <message>
-        <source>Error: Wallet locked, unable to create transaction!</source>
-        <translation>Hata: Cüzdan kilitli, muamele oluşturulamadı!</translation>
-    </message>
-    <message>
-        <source>Error: system error: </source>
-        <translation>Hata: sistem hatası:</translation>
-    </message>
-    <message>
         <source>Failed to listen on any port. Use -listen=0 if you want this.</source>
         <translation>Herhangi bir portun dinlenmesi başarısız oldu. Bunu istiyorsanız -listen=0 seçeneğini kullanınız.</translation>
-    </message>
-    <message>
-        <source>Failed to read block info</source>
-        <translation>Blok verileri okunamadı</translation>
-    </message>
-    <message>
-        <source>Failed to read block</source>
-        <translation>Blok okunamadı</translation>
-    </message>
-    <message>
-        <source>Failed to sync block index</source>
-        <translation>Blok indeksi eşleştirilemedi</translation>
-    </message>
-    <message>
-        <source>Failed to write block index</source>
-        <translation>Blok indeksi yazılamadı</translation>
-    </message>
-    <message>
-        <source>Failed to write block info</source>
-        <translation>Blok verileri yazılamadı</translation>
-    </message>
-    <message>
-        <source>Failed to write block</source>
-        <translation>Blok yazılamadı</translation>
-    </message>
-    <message>
-        <source>Failed to write file info</source>
-        <translation>Dosya verileri yazılamadı</translation>
-    </message>
-    <message>
-        <source>Failed to write to coin database</source>
-        <translation>Madenî para veritabanına yazılamadı</translation>
-    </message>
-    <message>
-        <source>Failed to write transaction index</source>
-        <translation>Muamele indeksi yazılamadı</translation>
-    </message>
-    <message>
-        <source>Failed to write undo data</source>
-        <translation>Geri alma verilerinin yazılamadı</translation>
-    </message>
-    <message>
-        <source>Fee per kB to add to transactions you send</source>
-        <translation>Yolladığınız muameleler için eklenecek kB başı ücret</translation>
-    </message>
-    <message>
-        <source>Fees smaller than this are considered zero fee (for relaying) (default:</source>
-        <translation>Bundan düşük ücretler sıfır değerinde sayılacaktır (aktarım için) (varsayılan:</translation>
-    </message>
-    <message>
-        <source>Find peers using DNS lookup (default: 1 unless -connect)</source>
-        <translation>Eşleri DNS araması vasıtasıyla bul (varsayılan: 1, eğer -connect kullanılmadıysa)</translation>
-    </message>
-    <message>
-        <source>Force safe mode (default: 0)</source>
-        <translation>Güvenli kipi zorla (varsayılan: 0)</translation>
-    </message>
-    <message>
-        <source>Generate coins (default: 0)</source>
-        <translation>GameCredits oluştur (varsayılan: 0)</translation>
-    </message>
-    <message>
-        <source>How many blocks to check at startup (default: 288, 0 = all)</source>
-        <translation>Başlangıçta kontrol edilecek blok sayısı (varsayılan: 288, 0 = hepsi)</translation>
     </message>
     <message>
         <source>If &lt;category&gt; is not supplied, output all debugging information.</source>
@@ -2974,28 +2949,24 @@ mesela: alertnotify=echo %%s | mail -s &quot;GameCredits Alert&quot; admin@foo.c
         <translation>Yanlış ya da bulunamamış doğuş bloku. Şebeke için yanlış veri klasörü mü?</translation>
     </message>
     <message>
-        <source>Invalid -onion address: &apos;%s&apos;</source>
-        <translation>Geçersiz -onion adresi: &apos;%s&apos;</translation>
+        <source>Invalid -onion address: '%s'</source>
+        <translation>Geçersiz -onion adresi: '%s'</translation>
     </message>
     <message>
         <source>Not enough file descriptors available.</source>
         <translation>Kafi derecede dosya tanımlayıcıları mevcut değil.</translation>
     </message>
     <message>
-        <source>Prepend debug output with timestamp (default: 1)</source>
-        <translation>Hata ayıklama verilerinin önüne zaman damgası ekle (varsayılan: 1)</translation>
+        <source>Only connect to nodes in network &lt;net&gt; (ipv4, ipv6 or onion)</source>
+        <translation>Sadece &lt;net&gt; şebekesindeki düğümlere bağlan (ipv4, ipv6 veya onion)</translation>
     </message>
     <message>
-        <source>RPC client options:</source>
-        <translation>RPC istemci seçenekleri:</translation>
+        <source>Prune cannot be configured with a negative value.</source>
+        <translation>Prune negatif bir değerle yapılandırılamaz.</translation>
     </message>
     <message>
-        <source>Rebuild block chain index from current blk000??.dat files</source>
-        <translation>Blok zinciri indeksini güncel blk000??.dat dosyalarından tekrar inşa et</translation>
-    </message>
-    <message>
-        <source>Select SOCKS version for -proxy (4 or 5, default: 5)</source>
-        <translation>-proxy için SOCKS sürümünü seç (4 veya 5, varsayılan: 5)</translation>
+        <source>Prune mode is incompatible with -txindex.</source>
+        <translation>Prune kipi -txindex ile uyumsuzdur.</translation>
     </message>
     <message>
         <source>Set database cache size in megabytes (%d to %d, default: %d)</source>
@@ -3006,24 +2977,12 @@ mesela: alertnotify=echo %%s | mail -s &quot;GameCredits Alert&quot; admin@foo.c
         <translation>Azami blok boyutunu bayt olarak ayarla (varsayılan: %d)</translation>
     </message>
     <message>
-        <source>Set the number of threads to service RPC calls (default: 4)</source>
-        <translation>RPC aramaları için iş parçacığı sayısını belirle (varsayılan: 4)</translation>
-    </message>
-    <message>
         <source>Specify wallet file (within data directory)</source>
         <translation>Cüzdan dosyası belirtiniz (veri klasörünün içinde)</translation>
     </message>
     <message>
-        <source>Spend unconfirmed change when sending transactions (default: 1)</source>
-        <translation>Gönderme muamelelerinde teyit edilmemiş para üstünü harca (varsayılan: 1)</translation>
-    </message>
-    <message>
-        <source>This is intended for regression testing tools and app development.</source>
-        <translation>Bu, regresyon deneme araçları ve uygulama geliştirmesi için tasarlanmıştır. </translation>
-    </message>
-    <message>
-        <source>Usage (deprecated, use gamecredits-cli):</source>
-        <translation>Kullanım (önerilmemektedir, gamecredits-cli kullanın):</translation>
+        <source>Use UPnP to map the listening port (default: %u)</source>
+        <translation>Dinleme portunu haritalamak için UPnP kullan (varsayılan: %u)</translation>
     </message>
     <message>
         <source>Verifying blocks...</source>
@@ -3034,10 +2993,6 @@ mesela: alertnotify=echo %%s | mail -s &quot;GameCredits Alert&quot; admin@foo.c
         <translation>Cüzdan kontrol ediliyor...</translation>
     </message>
     <message>
-        <source>Wait for RPC server to start</source>
-        <translation>RPC sunucusunun başlamasını bekle</translation>
-    </message>
-    <message>
         <source>Wallet %s resides outside data directory %s</source>
         <translation>%s cüzdan %s veri klasörünün dışında bulunuyor</translation>
     </message>
@@ -3046,128 +3001,272 @@ mesela: alertnotify=echo %%s | mail -s &quot;GameCredits Alert&quot; admin@foo.c
         <translation>Cüzdan seçenekleri:</translation>
     </message>
     <message>
-        <source>Warning: Deprecated argument -debugnet ignored, use -debug=net</source>
-        <translation>Uyarı: eskimiş seçenek -debugnet görmezden gelinir, -debug=net kullanınız</translation>
+        <source>Warning: This version is obsolete; upgrade required!</source>
+        <translation>Uyarı: Bu sürüm çok eskidir; güncellemeniz gerekir!</translation>
     </message>
     <message>
         <source>You need to rebuild the database using -reindex to change -txindex</source>
-        <translation>-txindex&apos;i değiştirmek için veritabanını -reindex kullanarak tekrar inşa etmeniz gerekmektedir</translation>
+        <translation>-txindex'i değiştirmek için veritabanını -reindex kullanarak tekrar inşa etmeniz gerekmektedir</translation>
     </message>
     <message>
         <source>Imports blocks from external blk000??.dat file</source>
         <translation>Harici blk000??.dat dosyasından blokları içe aktarır</translation>
     </message>
     <message>
+        <source>Allow JSON-RPC connections from specified source. Valid for &lt;ip&gt; are a single IP (e.g. 1.2.3.4), a network/netmask (e.g. 1.2.3.4/255.255.255.0) or a network/CIDR (e.g. 1.2.3.4/24). This option can be specified multiple times</source>
+        <translation>Belirtilen kaynaktan JSON-RPC bağlantılarını kabul et. Bir &lt;ip&gt; için geçerli olanlar şunlardır: salt IP adresi (mesela 1.2.3.4), bir şebeke/ağ maskesi (örneğin 1.2.3.4/255.255.255.0) ya da bir şebeke/CIDR (mesela 1.2.3.4/24). Bu seçenek birden fazla kez belirtilebilir</translation>
+    </message>
+    <message>
+        <source>An error occurred while setting up the RPC address %s port %u for listening: %s</source>
+        <translation>Dinleme için RPC adresi %s port %u kurulurken bir hata meydana geldi: %s</translation>
+    </message>
+    <message>
+        <source>Bind to given address and whitelist peers connecting to it. Use [host]:port notation for IPv6</source>
+        <translation>Belirtilen adrese bağlan ve ona bağlanan eşleri beyaz listeye al. IPv6 için [makine]:port imlasını kullanınız</translation>
+    </message>
+    <message>
+        <source>Bind to given address to listen for JSON-RPC connections. Use [host]:port notation for IPv6. This option can be specified multiple times (default: bind to all interfaces)</source>
+        <translation>Belirtilen adrese bağlan ve JSON RPC bağlantıları için dinlemeye geç. IPv6 için [makine]:port imlasını kullanınız. Bu seçenek birden çok kez belirtilebilir (varsayılan: tüm arayüzlere bağlan)</translation>
+    </message>
+    <message>
         <source>Cannot obtain a lock on data directory %s. GameCredits Core is probably already running.</source>
         <translation>%s veri dizininde kilit elde edilemedi. GameCredits Çekirdeği muhtemelen hâlihazırda çalışmaktadır.</translation>
+    </message>
+    <message>
+        <source>Create new files with system default permissions, instead of umask 077 (only effective with disabled wallet functionality)</source>
+        <translation>Yeni dosyaları umask 077 yerine varsayılan izinlerle oluştur (sadece devre dışı cüzdan işlevselliği ile etkilidir)</translation>
+    </message>
+    <message>
+        <source>Discover own IP addresses (default: 1 when listening and no -externalip or -proxy)</source>
+        <translation>Kendi IP adreslerini keşfet (varsayılan: dinlenildiğinde ve -externalip ya da -proxy yoksa 1)</translation>
+    </message>
+    <message>
+        <source>Error: Listening for incoming connections failed (listen returned error %s)</source>
+        <translation>Hata: İçeri gelen bağlantıların dinlenmesi başarısız oldu (dinleme %s hatasını verdi)</translation>
+    </message>
+    <message>
+        <source>Error: Unsupported argument -socks found. Setting SOCKS version isn't possible anymore, only SOCKS5 proxies are supported.</source>
+        <translation>Hata: Desteklenmeyen -socks argümanı bulundu. SOCKS sürümünün ayarlanması artık mümkün değildir, sadece SOCKS5 vekilleri desteklenmektedir.</translation>
     </message>
     <message>
         <source>Execute command when a relevant alert is received or we see a really long fork (%s in cmd is replaced by message)</source>
         <translation>İlgili bir uyarı alındığında ya da gerçekten uzun bir çatallama gördüğümüzde komutu çalıştır (komuttaki %s mesaj ile değiştirilir)</translation>
     </message>
     <message>
-        <source>Output debugging information (default: 0, supplying &lt;category&gt; is optional)</source>
-        <translation>Hata ayıklama bilgisi dök (varsayılan:0, &lt;kategori&gt; sağlanması seçime dayalıdır)</translation>
+        <source>Fees (in GAME/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>Kb başına GAME olarak bundan düşük ücretler aktarım için sıfır değerinde ücret olarak kabul edilir (varsayılan: %s)</translation>
+    </message>
+    <message>
+        <source>If paytxfee is not set, include enough fee so transactions begin confirmation on average within n blocks (default: %u)</source>
+        <translation>Eğer paytxfee ayarlanmadıysa kafi derecede ücret ekleyin ki muameleler teyite vasati n blok içinde başlasın (varsayılan: %u)</translation>
+    </message>
+    <message>
+        <source>Invalid amount for -maxtxfee=&lt;amount&gt;: '%s' (must be at least the minrelay fee of %s to prevent stuck transactions)</source>
+        <translation>-maxtxfee=&lt;tutar&gt; için geçersiz tutar: '%s' (Sıkışmış muameleleri önlemek için en az %s değerinde asgari aktarım ücretine eşit olmalıdır)</translation>
+    </message>
+    <message>
+        <source>Maximum size of data in data carrier transactions we relay and mine (default: %u)</source>
+        <translation>Aktardığımız ve oluşturduğumuz veri taşıyıcı muamelelerindeki azami veri boyutu (varsayılan: %u)</translation>
+    </message>
+    <message>
+        <source>Prune configured below the minimum of %d MB.  Please use a higher number.</source>
+        <translation>Prune, asgari değer olan %d MB'den düşük olarak ayarlanmıştır. Lütfen daha yüksek bir sayı kullanınız.</translation>
+    </message>
+    <message>
+        <source>Query for peer addresses via DNS lookup, if low on addresses (default: 1 unless -connect)</source>
+        <translation>Adres sayısı azaldıysa DNS sorgulamasıyla eş adresleri ara (varsayılan: 1 -connect kullanılmadıysa)</translation>
+    </message>
+    <message>
+        <source>Randomize credentials for every proxy connection. This enables Tor stream isolation (default: %u)</source>
+        <translation>Her vekil bağlantısı için kimlik verilerini rastgele yap. Bu, Tor akış izolasyonunu etkinleştirir (varsayılan: %u)</translation>
     </message>
     <message>
         <source>Set maximum size of high-priority/low-fee transactions in bytes (default: %d)</source>
         <translation>Yüksek öncelikli/düşük ücretli muamelelerin azami boyutunu bayt olarak ayarla (varsayılan: %d)</translation>
     </message>
     <message>
+        <source>Set the number of threads for coin generation if enabled (-1 = all cores, default: %d)</source>
+        <translation>Etkinse gamecredits oluşuturulmasına atanan iş parçacığı sayısını ayarla (-1 = tüm çekirdekler, varsayılan: %d)</translation>
+    </message>
+    <message>
+        <source>The transaction amount is too small to send after the fee has been deducted</source>
+        <translation>Bu muamele, ücret düşüldükten sonra göndermek için çok düşük</translation>
+    </message>
+    <message>
+        <source>This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit &lt;https://www.openssl.org/&gt; and cryptographic software written by Eric Young and UPnP software written by Thomas Bernard.</source>
+        <translation>Bu ürün OpenSSL projesi tarafından OpenSSL araç takımı (http://www.openssl.org/) için geliştirilen yazılımlar, Eric Young (eay@cryptsoft.com) tarafından hazırlanmış şifreleme yazılımları ve Thomas Bernard tarafından programlanmış UPnP yazılımı içerir.</translation>
+    </message>
+    <message>
+        <source>To use gamecreditsd, or the -server option to gamecredits-qt, you must set an rpcpassword in the configuration file:
+%s
+It is recommended you use the following random password:
+rpcuser=gamecreditsrpc
+rpcpassword=%s
+(you do not need to remember this password)
+The username and password MUST NOT be the same.
+If the file does not exist, create it with owner-readable-only file permissions.
+It is also recommended to set alertnotify so you are notified of problems;
+for example: alertnotify=echo %%s | mail -s "GameCredits Alert" admin@foo.com
+</source>
+        <translation>gamecreditsd ya da gamecredits-qt ile -server seçeneğini kullanmak için yapılandırma dosyasında bir rpc parolası belirtmeniz gerekir:
+%s
+Aşağıdaki rastgele oluşturulan parolayı kullanmanız tavsiye edilir:
+rpcuser=gamecreditsrpc
+rpcpassword=%s
+(bu parolayı hatırlamanız gerekli değildir)
+Kullanıcı ismi ile parolanın FARKLI olmaları gerekir.
+Dosya mevcut değilse, sadece sahibi için okumayla sınırlı izin ile oluşturunuz.
+Sorunlar hakkında bildiri almak için alertnotify unsurunu ayarlamanız tavsiye edilir;
+mesela: alertnotify=echo %%s | mail -s "GameCredits Alert" admin@foo.com
+</translation>
+    </message>
+    <message>
+        <source>Warning: -maxtxfee is set very high! Fees this large could be paid on a single transaction.</source>
+        <translation>İkaz: -maxtxfee çok yüksek bir değere ayarlanmış! Bu denli yüksek ücretler tek bir muamelede ödenebilir.</translation>
+    </message>
+    <message>
+        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong GameCredits Core will not work properly.</source>
+        <translation>Uyarı: Lütfen bilgisayarınızın saat ve tarihinin doğru olduğunu kontol ediniz! Saatinizde gecikme varsa GameCredits Çekirdeği doğru şekilde çalışamaz.</translation>
+    </message>
+    <message>
+        <source>Whitelisted peers cannot be DoS banned and their transactions are always relayed, even if they are already in the mempool, useful e.g. for a gateway</source>
+        <translation>Beyaz listeye alınan eşler DoS yasaklamasına uğramazlar ve muameleleri zaten mempool'da olsalar da daima aktarılır, bu mesela bir geçit için kullanışlıdır</translation>
+    </message>
+    <message>
+        <source>You need to rebuild the database using -reindex to go back to unpruned mode.  This will redownload the entire blockchain</source>
+        <translation>Prune olmayan kipe dönmek için veritabanını -reindex ile tekrar derlemeniz gerekir. Bu, tüm blok zincirini tekrar indirecektir</translation>
+    </message>
+    <message>
+        <source>(default: %u)</source>
+        <translation>(varsayılan: %u)</translation>
+    </message>
+    <message>
+        <source>Accept public REST requests (default: %u)</source>
+        <translation>Herkese açık REST taleplerini kabul et (varsayılan: %u)</translation>
+    </message>
+    <message>
+        <source>Activating best chain...</source>
+        <translation>En iyi zincir etkinleştiriliyor...</translation>
+    </message>
+    <message>
+        <source>Can't run with a wallet in prune mode.</source>
+        <translation>Prune kipindeki bir cüzdan ile çalışamaz.</translation>
+    </message>
+    <message>
+        <source>Cannot resolve -whitebind address: '%s'</source>
+        <translation>-whitebind adresi çözümlenemedi: '%s'</translation>
+    </message>
+    <message>
+        <source>Choose data directory on startup (default: 0)</source>
+        <translation>Başlangıçta veri klasörü seç (varsayılan: 0)</translation>
+    </message>
+    <message>
+        <source>Connect through SOCKS5 proxy</source>
+        <translation>SOCKS5 vekil sunucusu vasıtasıyla bağlan</translation>
+    </message>
+    <message>
+        <source>Copyright (C) 2009-%i The Bitcoin and GameCredits Core Developers</source>
+        <translation>Telif hakkı 2009-%i GameCredits Çekirdeği Geliştiricileri</translation>
+    </message>
+    <message>
+        <source>Could not parse -rpcbind value %s as network address</source>
+        <translation>-rpcbind değeri %s şebeke adresi olarak ayrıştırılamadı</translation>
+    </message>
+    <message>
+        <source>Error loading wallet.dat: Wallet requires newer version of GameCredits Core</source>
+        <translation>wallet.dat dosyasının yüklenmesinde hata: Cüzdan GameCredits Çekirdeğinin daha yeni bir sürümünü gerektirmektedir</translation>
+    </message>
+    <message>
+        <source>Error reading from database, shutting down.</source>
+        <translation>Veritabanından okumada hata, kapatılıyor.</translation>
+    </message>
+    <message>
+        <source>Error: Unsupported argument -tor found, use -onion.</source>
+        <translation>Hata: Deskteklenmeyen -tor argümanı bulundu, -onion kullanınız.</translation>
+    </message>
+    <message>
+        <source>Fee (in GAME/kB) to add to transactions you send (default: %s)</source>
+        <translation>Yolladığınız muamelelere kB başına GAME olarak eklenecek ücret (varsayılan: %s)</translation>
+    </message>
+    <message>
         <source>Information</source>
         <translation>Bilgi</translation>
     </message>
     <message>
-        <source>Invalid amount for -minrelaytxfee=&lt;amount&gt;: &apos;%s&apos;</source>
-        <translation>-minrelaytxfee=&lt;amount&gt; için geçersiz meblağ: &apos;%s&apos;</translation>
+        <source>Initialization sanity check failed. GameCredits Core is shutting down.</source>
+        <translation>Başlatma sınaması başarısız oldu. GameCredits Çekirdeği kapatılıyor.</translation>
     </message>
     <message>
-        <source>Invalid amount for -mintxfee=&lt;amount&gt;: &apos;%s&apos;</source>
-        <translation>-mintxfee=&lt;amount&gt; için geçersiz meblağ: &apos;%s&apos;</translation>
+        <source>Invalid amount for -maxtxfee=&lt;amount&gt;: '%s'</source>
+        <translation>-maxtxfee=&lt;tutar&gt; için geçersiz tutar: '%s'</translation>
     </message>
     <message>
-        <source>Limit size of signature cache to &lt;n&gt; entries (default: 50000)</source>
-        <translation>İmza arabelleğinin boyutunu &lt;n&gt; unsurla sınırla (varsayılan: 50000)</translation>
+        <source>Invalid amount for -minrelaytxfee=&lt;amount&gt;: '%s'</source>
+        <translation>-minrelaytxfee=&lt;amount&gt; için geçersiz meblağ: '%s'</translation>
     </message>
     <message>
-        <source>Log transaction priority and fee per kB when mining blocks (default: 0)</source>
-        <translation>Blok oluşturulduğunda muamele önceliğini ve kB başı ücreti kütüğe al (varsayılan: 0)</translation>
+        <source>Invalid amount for -mintxfee=&lt;amount&gt;: '%s'</source>
+        <translation>-mintxfee=&lt;amount&gt; için geçersiz meblağ: '%s'</translation>
     </message>
     <message>
-        <source>Maintain a full transaction index (default: 0)</source>
-        <translation>Muamelelerin tamamının indeksini tut (varsayılan: 0)</translation>
+        <source>Invalid amount for -paytxfee=&lt;amount&gt;: '%s' (must be at least %s)</source>
+        <translation>-paytxfee=&lt;tutar&gt;:'%s' unsurunda geçersiz tutar (asgari %s olması lazımdır)</translation>
     </message>
     <message>
-        <source>Maximum per-connection receive buffer, &lt;n&gt;*1000 bytes (default: 5000)</source>
-        <translation>Bağlantı başına azami alım tamponu, &lt;n&gt;*1000 bayt (varsayılan: 5000)</translation>
+        <source>Invalid netmask specified in -whitelist: '%s'</source>
+        <translation>-whitelist: '%s' unsurunda geçersiz bir ağ maskesi belirtildi</translation>
     </message>
     <message>
-        <source>Maximum per-connection send buffer, &lt;n&gt;*1000 bytes (default: 1000)</source>
-        <translation>Bağlantı başına azami yollama tamponu, &lt;n&gt;*1000 bayt (varsayılan: 1000)</translation>
+        <source>Keep at most &lt;n&gt; unconnectable transactions in memory (default: %u)</source>
+        <translation>Hafızada en çok &lt;n&gt; bağlanılamaz muamele tut (varsayılan: %u)</translation>
     </message>
     <message>
-        <source>Only accept block chain matching built-in checkpoints (default: 1)</source>
-        <translation>Sadece yerleşik kontrol noktalarıyla eşleşen blok zincirini kabul et (varsayılan: 1)</translation>
+        <source>Need to specify a port with -whitebind: '%s'</source>
+        <translation>-whitebind: '%s' ile bir port belirtilmesi lazımdır</translation>
     </message>
     <message>
-        <source>Only connect to nodes in network &lt;net&gt; (IPv4, IPv6 or Tor)</source>
-        <translation>Sadece &lt;net&gt; şebekesindeki düğümlere bağlan (IPv4, IPv6 ya da Tor)</translation>
+        <source>Node relay options:</source>
+        <translation>Düğüm röle seçenekleri:</translation>
     </message>
     <message>
-        <source>Print block on startup, if found in block index</source>
-        <translation>Başlangıçta bloğu göster, blok indeksinde bulunduysa</translation>
-    </message>
-    <message>
-        <source>Print block tree on startup (default: 0)</source>
-        <translation>Başlangıçta blok ağacını göster (varsayılan: 0)</translation>
-    </message>
-    <message>
-        <source>RPC SSL options: (see the GameCredits Wiki for SSL setup instructions)</source>
-        <translation>RPC SSL seçenekleri: (SSL kurulumu yönergeleri için GameCredits vikisine bakınız)</translation>
+        <source>RPC SSL options: (see the Bitcoin Wiki for SSL setup instructions)</source>
+        <translation>RPC SSL seçenekleri: (SSL kurulumu yönergeleri için Bitcoin vikisine bakınız)</translation>
     </message>
     <message>
         <source>RPC server options:</source>
         <translation>RPC sunucu seçenekleri:</translation>
     </message>
     <message>
-        <source>Randomly drop 1 of every &lt;n&gt; network messages</source>
-        <translation>Her &lt;n&gt; şebeke mesajından rastgele 1 mesajı görmezden gel</translation>
+        <source>RPC support for HTTP persistent connections (default: %d)</source>
+        <translation>Kalıcı HTTP bağlantıları için RPC desteği (varsayılan: %d)</translation>
     </message>
     <message>
-        <source>Randomly fuzz 1 of every &lt;n&gt; network messages</source>
-        <translation>Her &lt;n&gt; şebeke mesajından rastgele birini bulanıklaştır</translation>
-    </message>
-    <message>
-        <source>Run a thread to flush wallet periodically (default: 1)</source>
-        <translation>Periyodik olarak cüdanı diske yazdırmak için bir iş parçacığı çalıştır (varsayılan: 1)</translation>
-    </message>
-    <message>
-        <source>SSL options: (see the GameCredits Wiki for SSL setup instructions)</source>
-        <translation> SSL seçenekleri: (SSL kurulum bilgisi için GameCredits vikisine bakınız)</translation>
-    </message>
-    <message>
-        <source>Send command to GameCredits Core</source>
-        <translation>GameCredits Çekirdeğine komut yolla</translation>
+        <source>Rebuild block chain index from current blk000??.dat files on startup</source>
+        <translation>Başlangıçta blok zinciri indeksini güncel blk000??.dat dosyalarından tekrar inşa et</translation>
     </message>
     <message>
         <source>Send trace/debug info to console instead of debug.log file</source>
         <translation>Trace/hata ayıklama verilerini debug.log dosyası yerine konsola gönder</translation>
     </message>
     <message>
-        <source>Set minimum block size in bytes (default: 0)</source>
-        <translation>Bayt olarak asgari blok boyutunu tanımla (varsayılan: 0)</translation>
+        <source>Send transactions as zero-fee transactions if possible (default: %u)</source>
+        <translation>Muameleleri mümkünse ücretsiz olarak gönder (varsayılan: %u)</translation>
     </message>
     <message>
-        <source>Sets the DB_PRIVATE flag in the wallet db environment (default: 1)</source>
-        <translation>Cüzdan veritabanı ortamında DB_PRIVATE bayrağını koyar (varsayılan: 1)</translation>
+        <source>Set SSL root certificates for payment request (default: -system-)</source>
+        <translation>Ödeme talebi için SSL kök sertifikalarını belirle (varsayılan: -system-)</translation>
+    </message>
+    <message>
+        <source>Set language, for example "de_DE" (default: system locale)</source>
+        <translation>Lisan belirt, mesela "de_De" (varsayılan: sistem dili)</translation>
     </message>
     <message>
         <source>Show all debugging options (usage: --help -help-debug)</source>
         <translation>Tüm hata ayıklama seçeneklerini göster (kullanımı: --help -help-debug)</translation>
     </message>
     <message>
-        <source>Show benchmark information (default: 0)</source>
-        <translation>Denektaşı verilerini göster (varsayılan: 0)</translation>
+        <source>Show splash screen on startup (default: 1)</source>
+        <translation>Başlatıldığında başlangıç ekranını göster (varsayılan: 1)</translation>
     </message>
     <message>
         <source>Shrink debug.log file on client startup (default: 1 when no -debug)</source>
@@ -3178,16 +3277,16 @@ mesela: alertnotify=echo %%s | mail -s &quot;GameCredits Alert&quot; admin@foo.c
         <translation>Muamelenin imzalanması başarısız oldu</translation>
     </message>
     <message>
-        <source>Specify connection timeout in milliseconds (default: 5000)</source>
-        <translation>Bağlantı zaman aşım süresini milisaniye olarak belirt (varsayılan: 5000)</translation>
+        <source>Start minimized</source>
+        <translation>Küçültülmüş olarak başlat</translation>
     </message>
     <message>
-        <source>Start GameCredits Core Daemon</source>
-        <translation>GameCredits Çekirdeği servisini başlat</translation>
+        <source>The transaction amount is too small to pay the fee</source>
+        <translation>Muamele meblağı ücreti ödemek için çok düşük</translation>
     </message>
     <message>
-        <source>System error: </source>
-        <translation>Sistem hatası:</translation>
+        <source>This is experimental software.</source>
+        <translation>Bu, deneysel bir yazılımdır.</translation>
     </message>
     <message>
         <source>Transaction amount too small</source>
@@ -3198,12 +3297,20 @@ mesela: alertnotify=echo %%s | mail -s &quot;GameCredits Alert&quot; admin@foo.c
         <translation>Muamele tutarının pozitif olması lazımdır</translation>
     </message>
     <message>
+        <source>Transaction too large for fee policy</source>
+        <translation>Ücret politikası için çok büyük muamele</translation>
+    </message>
+    <message>
         <source>Transaction too large</source>
         <translation>Muamele çok büyük</translation>
     </message>
     <message>
-        <source>Use UPnP to map the listening port (default: 0)</source>
-        <translation>Dinlenecek portu haritalamak için UPnP kullan (varsayılan: 0)</translation>
+        <source>UI Options:</source>
+        <translation>Arayüz Seçenkleri:</translation>
+    </message>
+    <message>
+        <source>Unable to bind to %s on this computer (bind returned error %s)</source>
+        <translation>Bu bilgisayarda %s unsuruna bağlanılamadı (bağlanma %s hatasını verdi)</translation>
     </message>
     <message>
         <source>Use UPnP to map the listening port (default: 1 when listening)</source>
@@ -3214,12 +3321,20 @@ mesela: alertnotify=echo %%s | mail -s &quot;GameCredits Alert&quot; admin@foo.c
         <translation>JSON-RPC bağlantıları için kullanıcı ismi</translation>
     </message>
     <message>
+        <source>Wallet needed to be rewritten: restart GameCredits Core to complete</source>
+        <translation>Cüzdanın tekrar yazılması gerekmektedir: tamamlamak için GameCredits Çekirdeğini yeniden başlatın</translation>
+    </message>
+    <message>
         <source>Warning</source>
         <translation>Uyarı</translation>
     </message>
     <message>
-        <source>Warning: This version is obsolete, upgrade required!</source>
-        <translation>Uyarı: Bu sürüm çok eskidir, güncellemeniz gerekir!</translation>
+        <source>Warning: Unsupported argument -benchmark ignored, use -debug=bench.</source>
+        <translation>Uyarı: Deskteklenmeyen -benchmark argümanı görmezden gelindi, -debug=bench kullanınız.</translation>
+    </message>
+    <message>
+        <source>Warning: Unsupported argument -debugnet ignored, use -debug=net.</source>
+        <translation>Uyarı: Desteklenmeyen -debugnet argümanı görmezden gelindi, debug=net kullanınız.</translation>
     </message>
     <message>
         <source>Zapping all transactions from wallet...</source>
@@ -3230,24 +3345,12 @@ mesela: alertnotify=echo %%s | mail -s &quot;GameCredits Alert&quot; admin@foo.c
         <translation>başlangıçta</translation>
     </message>
     <message>
-        <source>version</source>
-        <translation>sürüm</translation>
-    </message>
-    <message>
         <source>wallet.dat corrupt, salvage failed</source>
         <translation>wallet.dat bozuk, geri kazanım başarısız oldu</translation>
     </message>
     <message>
         <source>Password for JSON-RPC connections</source>
         <translation>JSON-RPC bağlantıları için parola</translation>
-    </message>
-    <message>
-        <source>Allow JSON-RPC connections from specified IP address</source>
-        <translation>Belirtilen İP adresinden JSON-RPC bağlantılarını kabul et</translation>
-    </message>
-    <message>
-        <source>Send commands to node running on &lt;ip&gt; (default: 127.0.0.1)</source>
-        <translation>Şu &lt;ip&gt; adresinde (varsayılan: 127.0.0.1) çalışan düğüme komut yolla</translation>
     </message>
     <message>
         <source>Execute command when the best block changes (%s in cmd is replaced by block hash)</source>
@@ -3258,10 +3361,6 @@ mesela: alertnotify=echo %%s | mail -s &quot;GameCredits Alert&quot; admin@foo.c
         <translation>Cüzdanı en yeni biçime güncelle</translation>
     </message>
     <message>
-        <source>Set key pool size to &lt;n&gt; (default: 100)</source>
-        <translation>Anahtar alan boyutunu &lt;n&gt; değerine ayarla (varsayılan: 100)</translation>
-    </message>
-    <message>
         <source>Rescan the block chain for missing wallet transactions</source>
         <translation>Blok zincirini eksik cüzdan muameleleri için tekrar tara</translation>
     </message>
@@ -3270,20 +3369,8 @@ mesela: alertnotify=echo %%s | mail -s &quot;GameCredits Alert&quot; admin@foo.c
         <translation>JSON-RPC bağlantıları için OpenSSL (https) kullan</translation>
     </message>
     <message>
-        <source>Server certificate file (default: server.cert)</source>
-        <translation>Sunucu sertifika dosyası (varsayılan: server.cert)</translation>
-    </message>
-    <message>
-        <source>Server private key (default: server.pem)</source>
-        <translation>Sunucu özel anahtarı (varsayılan: server.pem)</translation>
-    </message>
-    <message>
         <source>This help message</source>
         <translation>Bu yardım mesajı</translation>
-    </message>
-    <message>
-        <source>Unable to bind to %s on this computer (bind returned error %d, %s)</source>
-        <translation>Bu bilgisayarda %s unsuruna bağlanılamadı. (bind şu hatayı iletti: %d, %s)</translation>
     </message>
     <message>
         <source>Allow DNS lookups for -addnode, -seednode and -connect</source>
@@ -3298,44 +3385,152 @@ mesela: alertnotify=echo %%s | mail -s &quot;GameCredits Alert&quot; admin@foo.c
         <translation>wallet.dat dosyasının yüklenmesinde hata oluştu: bozuk cüzdan</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of GameCredits</source>
-        <translation>wallet.dat dosyasının yüklenmesinde hata oluştu: cüzdanın daha yeni bir GameCredits sürümüne ihtiyacı var</translation>
+        <source>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</source>
+        <translation>(1 = tx meta verilerini tut mesela hesap sahibi ve ödeme talebi bilgileri, 2 = tx meta verilerini at)</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart GameCredits to complete</source>
-        <translation>Cüzdanın tekrar yazılması gerekiyordu: işlemi tamamlamak için GameCredits&apos;i yeniden başlatınız</translation>
+        <source>How thorough the block verification of -checkblocks is (0-4, default: %u)</source>
+        <translation>-checkblocks'un blok kontrolünün ne kadar kapsamlı olacağı (0 ilâ 4, varsayılan: %u)</translation>
+    </message>
+    <message>
+        <source>Maintain a full transaction index, used by the getrawtransaction rpc call (default: %u)</source>
+        <translation>Muamelelerin tamamının indeksini tut, getrawtransaction rpc çağrısı tarafından kullanılır (varsayılan: %u)</translation>
+    </message>
+    <message>
+        <source>Number of seconds to keep misbehaving peers from reconnecting (default: %u)</source>
+        <translation>Aksaklık gösteren eşlerle terkar bağlantıyı engelleme süresi, saniye olarak (varsayılan: %u)</translation>
+    </message>
+    <message>
+        <source>Output debugging information (default: %u, supplying &lt;category&gt; is optional)</source>
+        <translation>Hata ayıklama bilgisi dök (varsayılan: %u, &lt;kategori&gt; sağlanması seçime dayalıdır)</translation>
+    </message>
+    <message>
+        <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
+        <translation>Eşlere gizli Tor servisleri ile ulaşmak için ayrı SOCKS5 vekil sunucusu kullan (varsayılan: %s)</translation>
+    </message>
+    <message>
+        <source>(default: %s)</source>
+        <translation>(varsayılan: %s)</translation>
+    </message>
+    <message>
+        <source>Acceptable ciphers (default: %s)</source>
+        <translation>Kabul edilebilir şifreler (varsayılan: %s)</translation>
+    </message>
+    <message>
+        <source>Always query for peer addresses via DNS lookup (default: %u)</source>
+        <translation>Eş adresleri sorgulaması için daima DNS aramasını kullan (varsayılan: %u)</translation>
     </message>
     <message>
         <source>Error loading wallet.dat</source>
         <translation>wallet.dat dosyasının yüklenmesinde hata oluştu</translation>
     </message>
     <message>
-        <source>Invalid -proxy address: &apos;%s&apos;</source>
-        <translation>Geçersiz -proxy adresi: &apos;%s&apos;</translation>
+        <source>Generate coins (default: %u)</source>
+        <translation>GameCredits oluştur (varsayılan: %u)</translation>
     </message>
     <message>
-        <source>Unknown network specified in -onlynet: &apos;%s&apos;</source>
-        <translation>-onlynet için bilinmeyen bir şebeke belirtildi: &apos;%s&apos;</translation>
+        <source>How many blocks to check at startup (default: %u, 0 = all)</source>
+        <translation>Başlangıçta kontrol edilecek blok sayısı (varsayılan: %u, 0 = hepsi)</translation>
     </message>
     <message>
-        <source>Unknown -socks proxy version requested: %i</source>
-        <translation>Bilinmeyen bir -socks vekil sürümü talep edildi: %i</translation>
+        <source>Include IP addresses in debug output (default: %u)</source>
+        <translation>Hata ayıklama çıktısına IP adreslerini dahil et (varsayılan: %u)</translation>
     </message>
     <message>
-        <source>Cannot resolve -bind address: &apos;%s&apos;</source>
-        <translation>-bind adresi çözümlenemedi: &apos;%s&apos;</translation>
+        <source>Invalid -proxy address: '%s'</source>
+        <translation>Geçersiz -proxy adresi: '%s'</translation>
     </message>
     <message>
-        <source>Cannot resolve -externalip address: &apos;%s&apos;</source>
-        <translation>-externalip adresi çözümlenemedi: &apos;%s&apos;</translation>
+        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: %u or testnet: %u)</source>
+        <translation>JSON-RPC bağlantılarını &lt;port&gt; üzerinde dinle (varsayılan: %u veya tesnet: %u)</translation>
     </message>
     <message>
-        <source>Invalid amount for -paytxfee=&lt;amount&gt;: &apos;%s&apos;</source>
-        <translation>-paytxfee=&lt;meblağ&gt; için geçersiz meblağ: &apos;%s&apos;</translation>
+        <source>Listen for connections on &lt;port&gt; (default: %u or testnet: %u)</source>
+        <translation>Bağlantılar için dinlenecek &lt;port&gt; (varsayılan: %u ya da testnet: %u)</translation>
     </message>
     <message>
-        <source>Invalid amount</source>
-        <translation>Geçersiz meblağ</translation>
+        <source>Maintain at most &lt;n&gt; connections to peers (default: %u)</source>
+        <translation>Eşler ile en çok &lt;n&gt; adet bağlantı kur (varsayılan: %u)</translation>
+    </message>
+    <message>
+        <source>Make the wallet broadcast transactions</source>
+        <translation>Cüzdanın muameleleri yayınlamasını sağla</translation>
+    </message>
+    <message>
+        <source>Maximum per-connection receive buffer, &lt;n&gt;*1000 bytes (default: %u)</source>
+        <translation>Her bağlantı için azami alım tamponu, &lt;n&gt;*1000 bayt (varsayılan: %u)</translation>
+    </message>
+    <message>
+        <source>Maximum per-connection send buffer, &lt;n&gt;*1000 bytes (default: %u)</source>
+        <translation>Her bağlantı için azami yollama tamponu, &lt;n&gt;*1000 bayt (varsayılan: %u)</translation>
+    </message>
+    <message>
+        <source>Prepend debug output with timestamp (default: %u)</source>
+        <translation>Hata ayıklama verilerinin önüne zaman damgası ekle (varsayılan: %u)</translation>
+    </message>
+    <message>
+        <source>Relay and mine data carrier transactions (default: %u)</source>
+        <translation>Veri taşıyıcı muameleleri oluştur ve aktar (varsayılan: %u)</translation>
+    </message>
+    <message>
+        <source>Relay non-P2SH multisig (default: %u)</source>
+        <translation>P2SH olmayan çoklu imzaları aktar (varsayılan: %u)</translation>
+    </message>
+    <message>
+        <source>Server certificate file (default: %s)</source>
+        <translation>Sunucu sertifika dosyası (varsayılan: %s)</translation>
+    </message>
+    <message>
+        <source>Server private key (default: %s)</source>
+        <translation>Sunucu özel anahtarı (varsayılan: %s)</translation>
+    </message>
+    <message>
+        <source>Set key pool size to &lt;n&gt; (default: %u)</source>
+        <translation>Anahtar alan boyutunu &lt;n&gt; değerine ayarla (varsayılan: %u)</translation>
+    </message>
+    <message>
+        <source>Set minimum block size in bytes (default: %u)</source>
+        <translation>Bayt olarak asgari blok boyutunu tanımla (varsayılan: %u)</translation>
+    </message>
+    <message>
+        <source>Set the number of threads to service RPC calls (default: %d)</source>
+        <translation>Hizmet RCP aramaları iş parçacığı sayısını belirle (varsayılan: %d)</translation>
+    </message>
+    <message>
+        <source>Specify configuration file (default: %s)</source>
+        <translation>Yapılandırma dosyası belirtiniz (varsayılan: %s)</translation>
+    </message>
+    <message>
+        <source>Specify connection timeout in milliseconds (minimum: 1, default: %d)</source>
+        <translation>Bağlantı zaman aşım süresini milisaniye olarak belirt (asgari: 1, varsayılan: %d)</translation>
+    </message>
+    <message>
+        <source>Specify pid file (default: %s)</source>
+        <translation>Pid dosyası belirtiniz (varsayılan: %s)</translation>
+    </message>
+    <message>
+        <source>Spend unconfirmed change when sending transactions (default: %u)</source>
+        <translation>Gönderme muamelelerinde teyit edilmemiş para üstünü harca (varsayılan: %u)</translation>
+    </message>
+    <message>
+        <source>Threshold for disconnecting misbehaving peers (default: %u)</source>
+        <translation>Aksaklık gösteren eşlerle bağlantıyı kesme sınırı (varsayılan: %u)</translation>
+    </message>
+    <message>
+        <source>Unknown network specified in -onlynet: '%s'</source>
+        <translation>-onlynet için bilinmeyen bir şebeke belirtildi: '%s'</translation>
+    </message>
+    <message>
+        <source>Cannot resolve -bind address: '%s'</source>
+        <translation>-bind adresi çözümlenemedi: '%s'</translation>
+    </message>
+    <message>
+        <source>Cannot resolve -externalip address: '%s'</source>
+        <translation>-externalip adresi çözümlenemedi: '%s'</translation>
+    </message>
+    <message>
+        <source>Invalid amount for -paytxfee=&lt;amount&gt;: '%s'</source>
+        <translation>-paytxfee=&lt;meblağ&gt; için geçersiz meblağ: '%s'</translation>
     </message>
     <message>
         <source>Insufficient funds</source>
@@ -3370,20 +3565,8 @@ mesela: alertnotify=echo %%s | mail -s &quot;GameCredits Alert&quot; admin@foo.c
         <translation>Yükleme tamamlandı</translation>
     </message>
     <message>
-        <source>To use the %s option</source>
-        <translation>%s seçeneğini kullanmak için</translation>
-    </message>
-    <message>
         <source>Error</source>
         <translation>Hata</translation>
-    </message>
-    <message>
-        <source>You must set rpcpassword=&lt;password&gt; in the configuration file:
-%s
-If the file does not exist, create it with owner-readable-only file permissions.</source>
-        <translation>rpcpassword=&lt;parola&gt; şu yapılandırma dosyasında belirtilmelidir:
-%s
-Dosya mevcut değilse, sadece sahibi için okumayla sınırlı izin ile oluşturunuz.</translation>
     </message>
 </context>
 </TS>

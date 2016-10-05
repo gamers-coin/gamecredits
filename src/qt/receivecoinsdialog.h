@@ -1,10 +1,11 @@
-// Original Code: Copyright (c) 2011-2014 The Bitcoin Core Developers
-// Modified Code: Copyright (c) 2015 Gamecredits Foundation
-// Distributed under the MIT/X11 software license, see the accompanying
+// Copyright (c) 2011-2014 The Bitcoin Core developers
+// Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef RECEIVECOINSDIALOG_H
-#define RECEIVECOINSDIALOG_H
+#ifndef BITCOIN_QT_RECEIVECOINSDIALOG_H
+#define BITCOIN_QT_RECEIVECOINSDIALOG_H
+
+#include "guiutil.h"
 
 #include <QDialog>
 #include <QHeaderView>
@@ -14,13 +15,12 @@
 #include <QPoint>
 #include <QVariant>
 
-#include "guiutil.h"
+class OptionsModel;
+class WalletModel;
 
 namespace Ui {
     class ReceiveCoinsDialog;
 }
-class OptionsModel;
-class WalletModel;
 
 QT_BEGIN_NAMESPACE
 class QModelIndex;
@@ -73,4 +73,4 @@ private slots:
     void copyAmount();
 };
 
-#endif // RECEIVECOINSDIALOG_H
+#endif // BITCOIN_QT_RECEIVECOINSDIALOG_H
